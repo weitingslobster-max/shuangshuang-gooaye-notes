@@ -1,0 +1,18 @@
+# 雙雙's 股癌投資筆記
+
+這個 repository 用來整理雙雙製作的股癌（Gooaye）單集投資筆記 HTML。
+
+GitHub Pages：<https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/>
+
+## 內容整理方式
+
+- 根目錄 `index.html` 是總索引頁
+- 每集使用獨立資料夾整理，例如：`ep-657/`
+- 每集資料夾內只保留 HTML：`index.html`
+- 目前內容：
+  - `ep-657/`：股癌 EP657 投資筆記整理
+  - `ep-658/`：股癌 EP658 投資筆記整理
+
+## 注意
+
+這些內容是 podcast 投資討論的學習整理與研究筆記，不構成個人化投資建議。投資前仍應依照自身資產配置、風險承受度與稅務情況判斷。
