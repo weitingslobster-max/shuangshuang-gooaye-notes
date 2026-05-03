@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>股癌 EP658 投資筆記整理</title>
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --paper: #fffdf9;
+      --ink: #1f2933;
+      --muted: #64748b;
+      --line: #e6dfd3;
+      --accent: #b45309;
+      --accent-soft: #fff3df;
+      --green: #15803d;
+      --yellow: #a16207;
+      --red: #b91c1c;
+      --blue: #1d4ed8;
+      --shadow: 0 18px 45px rgba(90, 60, 30, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, #fff7ed 0, var(--bg) 42%, #f8fafc 100%);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 20px 72px; }
+    .hero {
+      background: linear-gradient(135deg, #fffdf9 0%, #fff7ed 100%);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "🦞🌱";
+      position: absolute;
+      right: 26px;
+      top: 20px;
+      font-size: 38px;
+      opacity: .28;
+    }
+    h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 48px); letter-spacing: -0.04em; }
+    .subtitle { color: var(--muted); margin: 0; max-width: 760px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 11px; border-radius: 999px;
+      background: #fff; border: 1px solid var(--line); color: #475569;
+      font-size: 13px;
+    }
+    nav.toc {
+      margin: 22px 0 0;
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    nav.toc a {
+      text-decoration: none;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #fed7aa;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
+    .card, section {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 10px 26px rgba(90, 60, 30, 0.06);
+    }
+    .card { padding: 18px; }
+    .card h3 { margin: 0 0 8px; font-size: 17px; }
+    .card p { margin: 0; color: #475569; }
+    section { margin-top: 22px; padding: 28px; }
+    h2 { margin: 0 0 14px; font-size: 27px; letter-spacing: -0.025em; }
+    h3 { margin: 24px 0 8px; font-size: 20px; }
+    h4 { margin: 18px 0 6px; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 5px 0; }
+    .note {
+      border-left: 5px solid var(--accent);
+      background: #fff7ed;
+      padding: 12px 14px;
+      border-radius: 12px;
+      color: #7c2d12;
+    }
+    .warn {
+      border-left-color: var(--red);
+      background: #fff1f2;
+      color: #881337;
+    }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; overflow: hidden; border-radius: 14px; }
+    th, td { border: 1px solid var(--line); padding: 10px 12px; vertical-align: top; }
+    th { background: #f8f1e7; text-align: left; color: #334155; }
+    tr:nth-child(even) td { background: #fffaf3; }
+    .tag { display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+    .pos { color: var(--green); background: #dcfce7; }
+    .mid { color: var(--yellow); background: #fef3c7; }
+    .risk { color: var(--red); background: #fee2e2; }
+    .ctx { color: var(--blue); background: #dbeafe; }
+    .hypothesis { display: grid; gap: 12px; }
+    .hypothesis article { border: 1px solid var(--line); border-radius: 18px; padding: 16px; background: #fffefb; }
+    .hypothesis h3 { margin-top: 0; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .small { font-size: 13px; color: var(--muted); }
+    footer { color: var(--muted); text-align: center; margin-top: 28px; font-size: 13px; }
+    @media (max-width: 860px) {
+      .grid, .two-col { grid-template-columns: 1fr; }
+      section, .hero { padding: 22px; }
+      table { display: block; overflow-x: auto; white-space: nowrap; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>股癌 EP658 投資筆記整理</h1>
+      <p class="subtitle">把社工日常的二手 podcast 筆記整理成可閱讀、可查證、可追蹤的投資研究頁。重點是建立 baseline workflow：先分類，再查證，再追蹤。</p>
+      <div class="meta">
+        <span class="pill">來源：socialworkerdaily.com</span>
+        <span class="pill">整理日期：2026-05-03 PDT</span>
+        <span class="pill">狀態：Baseline v1</span>
+        <span class="pill">用途：Watchlist / 研究追蹤，不是買賣建議</span>
+      </div>
+      <nav class="toc" aria-label="頁內導覽">
+        <a href="#quick">快速結論</a>
+        <a href="#source-levels">來源分層</a>
+        <a href="#host-views">孟恭觀點</a>
+        <a href="#sectors">Sector 分析</a>
+        <a href="#watchlist">公司 Watchlist</a>
+        <a href="#hypotheses">投資假說</a>
+        <a href="#verification">待查證事項</a>
+        <a href="#tracking">追蹤表</a>
+        <a href="#risks">風險提醒</a>
+      </nav>
+    </header>
+
+    <section id="quick">
+      <h2>快速結論</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1. 市場太熱，但不急著摸頭</h3>
+          <p>四月行情很瘋，回檔風險升高；但操作上不是主觀猜高點，而是等市場出現反應。</p>
+        </div>
+        <div class="card">
+          <h3>2. SaaS 可能成為輪動候選</h3>
+          <p>Atlassian 財報讓市場重新思考 SaaS 是否被殺過頭；NET、CRWD、PLTR 是明確觀察名單。</p>
+        </div>
+        <div class="card">
+          <h3>3. 半導體焦點延伸到 TPU / 封裝</h3>
+          <p>MediaTek、TSMC、Intel 與 Google TPU 相關供應鏈敘事值得追，但數字與訂單需要查證。</p>
+        </div>
+      </div>
+      <p class="note">閱讀方式：本頁把 <strong>output.md</strong> 的結論、<strong>verification.md</strong> 的查證清單、<strong>tracking.md</strong> 的追蹤表合成一頁；原始 md 仍保留，方便 diff 與後續 iterate。</p>
+    </section>
+
+    <section id="source-levels">
+      <h2>來源分層：不要混在一起</h2>
+      <table>
+        <thead><tr><th>層級</th><th>定義</th><th>本集例子</th><th>處理方式</th></tr></thead>
+        <tbody>
+          <tr><td>主持人可能觀點</td><td>從二手筆記推回孟恭可能在節目中表達的觀點</td><td>市場過熱、SaaS 沒那麼慘、Intel 漲到看不懂</td><td>保留不確定性；重要觀點需回聽確認</td></tr>
+          <tr><td>筆記作者心得</td><td>原文「本集啟發」、操作日記、括號補述或語氣型心得</td><td>CPU 休息就減碼 CPU 加碼軟體；MediaTek 是修正避風港</td><td>另列，不直接當主持人觀點</td></tr>
+          <tr><td>整理者補充</td><td>為方便檢索補上的 ticker、公司分類、投資假說</td><td>Atlassian（TEAM 為整理時補充）</td><td>明確標示「整理時補充 / inferred」</td></tr>
+          <tr><td>待查證資料</td><td>供應鏈數字、EPS 預估、訂單傳聞、財務數據</td><td>TPU V8 40K、MediaTek EPS 400、Intel EMIB-T 風險</td><td>放入 verification，不直接作為事實</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="host-views">
+      <h2>孟恭可能的核心觀點</h2>
+      <p class="note">信心分級：以下是從二手筆記推回主持人可能觀點，不是逐字稿；重要結論仍需回聽 podcast 或查一手資料。</p>
+      <h3>大盤 / 市場節奏</h3>
+      <ul>
+        <li>四月行情非常瘋狂，漲勢未必能長期維持。</li>
+        <li>回檔可能發生，但時間點不確定，可能是五月或六月。</li>
+        <li>當市場普遍相信股票不會跌時，反而要提高警覺。</li>
+        <li>不建議主觀摸頭；比較偏向等市場出現反應後再行動。</li>
+      </ul>
+      <h3>AI 與工程師</h3>
+      <ul>
+        <li>AI coding 的衝擊不應只用「工程師會不會消失」的零和框架看。</li>
+        <li>寫程式變快，不代表工程師不值錢；價值會移往產品設計、監督、整合與責任承擔。</li>
+        <li>純粹像「程式碼打字員」的工作會更危險，但能負責產品結果的人仍有價值。</li>
+      </ul>
+      <h3>SaaS / 軟體股</h3>
+      <ul>
+        <li>SaaS 可能沒有前一段市場殺估值時想得那麼差。</li>
+        <li>軟體股可能成為下一波類股輪動候選。</li>
+        <li>較有興趣的觀察名單：NET、CRWD、PLTR。</li>
+        <li>Adobe 受 AI 侵蝕初階應用的風險較高，估值下修可理解。</li>
+        <li>Salesforce 評價偏中立，仍有轉型 / Agentforce 變現機會。</li>
+      </ul>
+      <h3>半導體 / 先進封裝</h3>
+      <ul>
+        <li>MediaTek 找來台積電先進封裝相關人才，可能更多是「神主牌 / 商務信任」作用，不一定直接代表訂單。</li>
+        <li>TPU V8 / V9 的封裝安排與 Intel EMIB-T 執行風險值得追蹤。</li>
+        <li>Intel 近期漲勢讓主持人看不懂，傾向不加碼。</li>
+      </ul>
+      <h3>記憶體 / 邊緣運算</h3>
+      <ul>
+        <li>記憶體基本面仍不錯，但市場題材很多，資金不一定持續集中。</li>
+        <li>近期未看到邊緣運算爆發契機。</li>
+      </ul>
+    </section>
+
+    <section id="sectors">
+      <h2>Sector 分析</h2>
+      <h3>大盤 / 市場情緒</h3>
+      <ul>
+        <li>本集不是單純看空，而是提醒「趨勢還在時不要亂摸頭，但要開始準備風控」。</li>
+        <li>可追蹤：Nasdaq、費半、台股加權、VIX、市場寬度、熱門股成交占比。</li>
+      </ul>
+      <h3>SaaS / 軟體</h3>
+      <ul>
+        <li>核心問題：AI 是侵蝕軟體價值，還是提升軟體公司產品力？答案會因公司而異。</li>
+        <li>候選名單：NET、CRWD、PLTR、CRM、Atlassian（TEAM 為整理時補充）。Adobe 偏反面案例觀察。</li>
+      </ul>
+      <h3>半導體 / TPU / 先進封裝</h3>
+      <ul>
+        <li>MediaTek、TSMC、Intel 與 Google TPU 的敘事有研究價值，但目前不能跳成投資結論。</li>
+        <li>關鍵查證：TPU V8/V9 封裝量、Intel EMIB-T 交付風險、CoWoS / CoPoS 是否承接需求。</li>
+      </ul>
+      <h3>記憶體與邊緣運算</h3>
+      <ul>
+        <li>記憶體基本面不錯，但若市場已充分知道，股價短期未必最有彈性。</li>
+        <li>邊緣運算：本集偏保守，近期未看到爆發契機。</li>
+      </ul>
+    </section>
+
+    <section id="watchlist">
+      <h2>公司 Watchlist</h2>
+      <table>
+        <thead><tr><th>公司 / 標的</th><th>類別</th><th>本集態度</th><th>為什麼重要</th><th>待追蹤</th></tr></thead>
+        <tbody>
+          <tr><td>Cloudflare / NET</td><td>SaaS / Edge / Security</td><td><span class="tag pos">正向觀察</span></td><td>被列入未來若抄底會考慮的三家公司之一</td><td>營收成長、RPO、Workers / AI、估值</td></tr>
+          <tr><td>CrowdStrike / CRWD</td><td>資安 SaaS</td><td><span class="tag pos">正向觀察</span></td><td>資安需求仍強，被列入抄底名單</td><td>ARR、net retention、資安預算</td></tr>
+          <tr><td>Palantir / PLTR</td><td>AI software / data platform</td><td><span class="tag pos">正向觀察</span></td><td>AI software 代表股，被列入抄底名單</td><td>AIP adoption、商業收入、政府收入、估值</td></tr>
+          <tr><td>Atlassian（TEAM 為整理時補充）</td><td>協作軟體</td><td><span class="tag ctx">正向參考</span></td><td>財報可能說明 SaaS 沒有市場想得那麼慘</td><td>Cloud growth、enterprise demand、AI 變現</td></tr>
+          <tr><td>Adobe / ADBE</td><td>創意軟體</td><td><span class="tag risk">偏負面</span></td><td>初階創意應用可能被 AI 替代，估值下修合理</td><td>Creative Cloud、Firefly monetization、用戶留存</td></tr>
+          <tr><td>Salesforce / CRM</td><td>企業軟體</td><td><span class="tag mid">中立觀察</span></td><td>Agentforce 可能是轉型點，但仍需驗證變現</td><td>Agentforce adoption、AI ARR、margin discipline</td></tr>
+          <tr><td>TSMC / TSM / 2330</td><td>Foundry / 先進封裝</td><td><span class="tag ctx">間接受益觀察</span></td><td>TPU / 先進封裝需求相關</td><td>CoWoS / CoPoS 產能、Google TPU 供應鏈</td></tr>
+          <tr><td>MediaTek / 2454</td><td>IC design / ASIC 可能性</td><td><span class="tag mid">偏正向但待查</span></td><td>先進封裝人才、ASIC / TPU 敘事值得追蹤</td><td>EPS 共識、ASIC 訂單、封裝合作</td></tr>
+          <tr><td>Intel / INTC</td><td>IDM / 封裝</td><td><span class="tag risk">謹慎</span></td><td>股價漲勢看不懂，EMIB-T 執行風險需追蹤</td><td>EMIB-T、IFS 客戶、封裝執行力</td></tr>
+          <tr><td>Alphabet / GOOGL</td><td>TPU / Hyperscaler</td><td><span class="tag ctx">背景追蹤</span></td><td>TPU 世代與 capex 影響供應鏈</td><td>TPU 世代、AI infra spending</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="hypotheses">
+      <h2>投資假說</h2>
+      <div class="hypothesis">
+        <article><h3>H1：軟體股可能接棒半導體</h3><p>如果 CPU / 半導體主線休息，資金可能尋找被殺過、但基本面沒有崩壞的 SaaS。觀察 NET、CRWD、PLTR、CRM、Atlassian。</p><p><strong>反證：</strong>SaaS 財報繼續下修、AI 侵蝕商業模式、利率上行壓縮估值。</p></article>
+        <article><h3>H2：AI coding 提升生產力，不必然壓垮軟體價值</h3><p>真正的價值可能從「寫 code」移到產品設計、監督、整合與責任承擔。</p><p><strong>反證：</strong>企業大幅縮減工程師 headcount，或 seat-based pricing 被破壞。</p></article>
+        <article><h3>H3：Adobe 是 AI 侵蝕 SaaS 的壓力測試</h3><p>高階專業 workflow 仍有護城河，但初階用戶與簡單創意工作可能被生成式 AI 替代。</p><p><strong>反證：</strong>Adobe 成功把 Firefly / AI 功能轉成付費增量，且留存穩定。</p></article>
+        <article><h3>H4：MediaTek / TPU / 先進封裝值得追，但必須先驗證</h3><p>人才與供應鏈敘事值得看，但 EPS、訂單、封裝數字都還不能當事實。</p><p><strong>反證：</strong>EPS 400 說法無來源、沒有實質訂單、敘事降溫。</p></article>
+        <article><h3>H5：Intel 反彈需要更多基本面證明</h3><p>如果只是題材或轉機想像，風險較高；若能證明 EMIB-T / foundry 執行力，才可能重新評價。</p><p><strong>反證：</strong>Intel 取得高品質外部客戶並證明交付能力。</p></article>
+      </div>
+    </section>
+
+    <section id="verification">
+      <h2>待查證事項</h2>
+      <div class="two-col">
+        <div>
+          <h3>高優先</h3>
+          <ul>
+            <li>TPU V8 先進封裝端約 40K：確認單位與期間。</li>
+            <li>TPU V8 隔一年 150–180K：確認來源與口徑。</li>
+            <li>TPU V9 前段 TSMC、後段 Intel EMIB-T：確認是否有公開來源。</li>
+            <li>部分 TPU V9 轉 CoWoS / CoPoS：確認是傳聞還是供應鏈證據。</li>
+            <li>MediaTek EPS 接近 400：確認券商、年份、假設。</li>
+          </ul>
+        </div>
+        <div>
+          <h3>中優先</h3>
+          <ul>
+            <li>SaaS 財報是否真的「沒那麼慘」：TEAM/NET/CRWD/PLTR/CRM/ADBE。</li>
+            <li>Adobe 被 AI 侵蝕程度：Creative Cloud、Firefly、競品替代。</li>
+            <li>Intel EMIB-T 執行風險：良率、客戶、交付紀錄。</li>
+            <li>記憶體基本面：DRAM / NAND / HBM 報價、庫存、capex。</li>
+            <li>邊緣運算：是否有殺手級應用或只是漸進升級。</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note warn"><strong>查證原則：</strong>供應鏈數字、EPS 預估、訂單傳聞必須回到公司財報、法說、官方資料或可信供應鏈媒體；二手筆記不能直接當投資事實。</p>
+    </section>
+
+    <section id="tracking">
+      <h2>追蹤表</h2>
+      <table>
+        <thead><tr><th>ID</th><th>假說</th><th>初始方向</th><th>驗證指標</th><th>狀態</th><th>下次檢查</th></tr></thead>
+        <tbody>
+          <tr><td>H1</td><td>軟體 / SaaS 可能接棒半導體</td><td>偏多 SaaS</td><td>NET/CRWD/PLTR/Atlassian/CRM 相對 QQQ、SMH 表現；財報後反應</td><td>待追蹤</td><td>2026-06</td></tr>
+          <tr><td>H2</td><td>AI coding 提升工程師效率</td><td>偏多高品質軟體</td><td>AI 功能變現、ARR/RPO、developer tool adoption</td><td>待追蹤</td><td>2026-08</td></tr>
+          <tr><td>H3</td><td>Adobe 面臨 AI 估值壓力</td><td>偏空 / 謹慎</td><td>Creative Cloud 增長、Firefly monetization、guidance</td><td>待追蹤</td><td>ADBE 財報後</td></tr>
+          <tr><td>H4</td><td>MediaTek / TPU / ASIC 敘事值得追</td><td>偏多但需驗證</td><td>EPS 共識、ASIC 訂單、TPU 供應鏈、封裝合作</td><td>待查證</td><td>2026-06</td></tr>
+          <tr><td>H5</td><td>Intel 股價反彈需要基本面證明</td><td>謹慎</td><td>EMIB-T 交付、IFS 客戶、毛利率、現金流</td><td>待追蹤</td><td>INTC 財報後</td></tr>
+          <tr><td>H6</td><td>記憶體基本面好，但短期缺新故事</td><td>中性 / 等回檔</td><td>DRAM/NAND/HBM 報價、記憶體股相對表現</td><td>待追蹤</td><td>2026-06</td></tr>
+        </tbody>
+      </table>
+      <h3>建議檢查節奏</h3>
+      <ul>
+        <li><strong>每月：</strong>SaaS watchlist 相對 QQQ / SMH 表現、半導體與軟體資金輪動、TPU / ASIC 供應鏈消息。</li>
+        <li><strong>每季：</strong>NET、CRWD、PLTR、Atlassian、CRM、ADBE、TSMC、MediaTek、Intel 財報與法說。</li>
+        <li><strong>事件觸發：</strong>MediaTek ASIC / TPU 正式消息、Intel 封裝客戶或延遲、Adobe AI 定價 / 收入揭露。</li>
+      </ul>
+    </section>
+
+    <section id="risks">
+      <h2>風險與使用提醒</h2>
+      <ul>
+        <li>本頁不是買賣建議，只是把 podcast 二手筆記轉成研究追蹤框架。</li>
+        <li>重要觀點應回聽原 podcast；供應鏈和財務數字需查證。</li>
+        <li>市場過熱後若快速回檔，軟體股也可能一起被賣，不一定能接棒。</li>
+        <li>SaaS 被 AI 侵蝕的程度可能比預期更嚴重，尤其 seat-based pricing。</li>
+        <li>MediaTek / TPU / ASIC 敘事目前偏傳聞與供應鏈推論，不能直接作為投資結論。</li>
+      </ul>
+      <p class="small">對應 md：source.md、structured-notes.md、verification.md、tracking.md、output.md。建議後續由 fresh agent 只讀這些 md 來重建 HTML，避免原始資料 context 過大。</p>
+    </section>
+
+    <footer>
+      Generated locally in gooaye-investment-notes/ep-658/report.html · Baseline v1 · 🦞🌱
+    </footer>
+  </main>
+</body>
+</html>
