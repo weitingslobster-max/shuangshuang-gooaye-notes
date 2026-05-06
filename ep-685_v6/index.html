@@ -17,7 +17,7 @@
       <div class="meta">
         <span class="pill">Folder: ep-685_v6</span><span class="pill">Source episode: EP658</span><span class="pill">NotebookLM formatted-copy workflow</span><span class="pill">Secondary note validated</span><span class="pill">不是投資建議</span>
       </div>
-      <nav><a href="#takeaways">核心結論</a><a href="#triangulation">Source triangulation</a><a href="#watchlist">Watchlist</a><a href="#verification">外部查證</a><a href="#tracking">追蹤計畫</a></nav>
+      <nav><a href="#takeaways">核心結論</a><a href="#triangulation">來源交叉比對</a><a href="#company-map">公司 / ticker 對照</a><a href="#watchlist">觀察清單</a><a href="#verification">外部查證</a><a href="#tracking">追蹤計畫</a></nav>
     </header>
 
     <main>
@@ -35,7 +35,7 @@
       </section>
 
       <section id="triangulation">
-        <h2>Source triangulation</h2>
+        <h2>來源交叉比對</h2>
         <div class="table-wrap"><table><thead><tr><th>主題</th><th>來源狀態</th><th>校正後判斷</th><th>投資研究下一步</th></tr></thead><tbody>
           <tr><td>市場過熱 / 回檔</td><td>Both sources</td><td>Supported but needs nuance：風控假設，不是確定預測。</td><td>觀察市場修正時哪些 watchlist 名稱有相對強度。</td></tr>
           <tr><td>心理帳戶 / 免費部位</td><td>Primary + supplementary</td><td>心理穩壓器，不是買賣指令。</td><td>可納入行為金融筆記，但不可當選股 thesis。</td></tr>
@@ -47,8 +47,27 @@
         </tbody></table></div>
       </section>
 
+      <section id="company-map">
+        <h2>公司 / ticker 對照表</h2>
+        <p>這張表保留 `structured-notes.md` 裡最有用的檢索結構：每個公司或資產在本集扮演什麼角色、source support 到哪裡、以及下一步要查什麼。</p>
+        <div class="table-wrap"><table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>目前判斷</th><th>下一步</th></tr></thead><tbody>
+          <tr><td>Atlassian</td><td>TEAM</td><td>SaaS 韌性案例</td><td>節目用 Atlassian 財報反駁「SaaS apocalypse」過度悲觀；外部查證也支持公司層級的 growth / RPO 韌性。</td><td>追 cloud growth、RPO、seat / customer expansion、AI monetization。</td></tr>
+          <tr><td>Salesforce</td><td>CRM</td><td>Agentforce / founder-led 轉型案例</td><td>本集偏中立觀察；官方資料支持 Agentforce 有揭露 metrics，但還要看實際變現品質。</td><td>追 Agentforce ARR / deals、Data 360 adoption、margin、guidance。</td></tr>
+          <tr><td>Adobe</td><td>ADBE</td><td>AI 侵蝕風險案例</td><td>節目認為初階 creative workflow 受壓，高階應用未必完全被取代；官方財報顯示公司沒有崩壞。</td><td>追 Firefly monetization、Creative Cloud growth、churn、generative credit adoption。</td></tr>
+          <tr><td>Cloudflare</td><td>NET</td><td>Secondary-note watchlist</td><td>被列入可能觀察 / 抄底的軟體名單，但尚未形成公司級 thesis。</td><td>補公司 snapshot：revenue growth、RPO、Workers/AI、security/application edge 需求、valuation。</td></tr>
+          <tr><td>CrowdStrike</td><td>CRWD</td><td>Secondary-note watchlist</td><td>資安 SaaS 觀察名單；source support 是被點名，不是買入建議。</td><td>補 ARR、net retention、Falcon platform consolidation、資安預算趨勢。</td></tr>
+          <tr><td>Palantir</td><td>PLTR</td><td>AI software / FDE 模式觀察</td><td>補充 report 支持 FDE / enterprise AI deployment 的價值，但需避免把 NotebookLM inference 當成原始結論。</td><td>追 AIP adoption、commercial revenue、FDE/services intensity、valuation。</td></tr>
+          <tr><td>TSMC / 台積電</td><td>2330.TW / TSM</td><td>Advanced packaging / CoWoS 核心供應鏈</td><td>官方財報支持 HPC / advanced-node 強勢背景；但 Google TPU backup plan 未被外部驗證。</td><td>查 CoWoS / SoIC capacity commentary、Google TPU 供應鏈、客戶集中與 capex。</td></tr>
+          <tr><td>MediaTek / 聯發科</td><td>2454.TW</td><td>ASIC / TPU / 神主牌敘事</td><td>本集供應鏈線索高價值但未驗證；EPS 400 應視為券商極端情境，不是 base case。</td><td>查 ASIC/custom silicon revenue、Google exposure、EPS assumptions、先進封裝人才公開資訊。</td></tr>
+          <tr><td>Intel</td><td>INTC</td><td>EMIB-T / advanced packaging execution risk</td><td>source stance 是看不懂、謹慎、可能減持，不是看多 Intel。</td><td>查 EMIB-T 良率、foundry customer proof、advanced packaging schedule / margin。</td></tr>
+          <tr><td>Micron</td><td>MU</td><td>Memory-cycle proxy</td><td>官方資料支持 AI memory / tight supply 大方向；不能直接驗證台灣模組廠庫存數字。</td><td>追 DRAM / NAND / HBM pricing、AI server mix、capex discipline。</td></tr>
+          <tr><td>Apple</td><td>AAPL</td><td>Memory-cost cross-check</td><td>官方 quarter verified；memory-cost wording 仍需要 earnings call transcript 精確確認。</td><td>拉 official call transcript / webcast，確認 memory cost 對毛利與未來季度的語句。</td></tr>
+          <tr><td>Alphabet / Google</td><td>GOOGL</td><td>TPU demand driver</td><td>本集 TPU V8/V9 敘事核心客戶；具體代際、封裝分配、產能數字未驗證。</td><td>追 capex、TPU roadmap、AI infra commentary、供應鏈報導。</td></tr>
+        </tbody></table></div>
+      </section>
+
       <section id="watchlist">
-        <h2>Watchlist</h2>
+        <h2>觀察清單</h2>
         <h3>SaaS / AI software</h3>
         <ul><li><span class="tag">TEAM</span> — Atlassian：SaaS 韌性與 seat / cloud expansion 觀察。</li><li><span class="tag">CRM</span> — Salesforce：Agentforce / Data 360 轉型觀察。</li><li><span class="tag">NET, CRWD, PLTR</span> — 二手筆記與補充來源支持的 watchlist；需要獨立基本面 review。</li><li><span class="tag">ADBE</span> — AI lower-end creative workflow 侵蝕風險案例。</li></ul>
         <h3>Semiconductor / ASIC / packaging</h3>
@@ -79,6 +98,16 @@
           <li><strong>第三優先：</strong>Micron、Apple call、台灣記憶體模組公司法說，確認記憶體週期與庫存 claims。</li>
           <li><strong>行為金融筆記：</strong>把「心理帳戶 / 免費部位」記為風險管理工具，不把它混進投資 thesis。</li>
         </ul>
+        <h3>事件觸發條件</h3>
+        <div class="table-wrap"><table><thead><tr><th>Trigger / 事件</th><th>為什麼重要</th><th>後續動作</th></tr></thead><tbody>
+          <tr><td>可信來源確認 TPU V9 的 Intel / TSMC 封裝分工</td><td>驗證或推翻本集最高價值供應鏈 thesis。</td><td>更新 TSMC、MediaTek、Intel thesis；把未驗證 supply-chain claim 升級或移除。</td></tr>
+          <tr><td>MediaTek guidance 明確提到 ASIC/custom silicon scale</td><td>把「券商 / 節目傳聞」轉成公司支持的投資假說。</td><td>建立獨立 MediaTek note，重估 EPS / revenue mix assumptions。</td></tr>
+          <tr><td>TEAM 下一季仍確認 cloud / RPO / expansion 強勢</td><td>檢驗 SaaS 韌性是否可延續。</td><td>更新 SaaS bucket confidence，但仍避免外推到整個 sector。</td></tr>
+          <tr><td>CRM Agentforce ARR / deals 繼續放大且帶動 revenue acceleration</td><td>檢驗 AI-agent monetization 是否從敘事變成財務貢獻。</td><td>更新 CRM thesis，檢查 valuation 是否已 price in。</td></tr>
+          <tr><td>Adobe Creative Cloud growth 放緩或 Firefly 變現不如預期</td><td>驗證 lower-end creative workflow 被 AI 侵蝕的風險。</td><td>提高 ADBE 風險權重，對比 Canva / OpenAI / Midjourney / Google。</td></tr>
+          <tr><td>Micron 或 DRAM/HBM price trend 反轉</td><td>記憶體週期可能從「基本面好」變成「預期太滿」。</td><td>降低 memory-cycle confidence，回查台灣模組廠庫存風險。</td></tr>
+          <tr><td>市場在 2026 年 5–6 月出現明顯修正</td><td>回測主持人的市場過熱心理假設。</td><td>觀察 watchlist 相對強度，不把回檔本身當買入訊號。</td></tr>
+        </tbody></table></div>
       </section>
     </main>
     <footer>Generated by 雙雙 🦞🌱 · 2026-05-05 · Source episode EP658 / requested folder ep-685_v6</footer>
