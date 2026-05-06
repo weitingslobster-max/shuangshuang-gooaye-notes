@@ -17,7 +17,7 @@
       <div class="meta">
         <span class="pill">Folder: ep-685_v6</span><span class="pill">Source episode: EP658</span><span class="pill">NotebookLM formatted-copy workflow</span><span class="pill">Secondary note validated</span><span class="pill">不是投資建議</span>
       </div>
-      <nav><a href="#takeaways">核心結論</a><a href="#triangulation">來源交叉比對</a><a href="#company-map">公司 / ticker 對照</a><a href="#watchlist">觀察清單</a><a href="#verification">外部查證</a><a href="#tracking">追蹤計畫</a></nav>
+      <nav><a href="#takeaways">核心結論</a><a href="#triangulation">來源交叉比對</a><a href="#host-view">主持人觀點</a><a href="#company-map">公司 / ticker 對照</a><a href="#watchlist">觀察清單</a><a href="#verification">外部查證</a><a href="#tracking">追蹤計畫</a></nav>
     </header>
 
     <main>
@@ -47,22 +47,37 @@
         </tbody></table></div>
       </section>
 
+      <section id="host-view">
+        <h2>主持人觀點 vs 筆記作者詮釋</h2>
+        <p>這一節專門把「本集方向」和二手筆記作者的操作心得拆開，避免把筆記作者延伸誤寫成主持人建議。</p>
+        <div class="table-wrap"><table><thead><tr><th>主題 / 公司</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>整理注意事項</th></tr></thead><tbody>
+          <tr><td>市場過熱 / 5–6 月回檔</td><td>謹慎 / 風控提醒</td><td>支持「四月太瘋」但也提醒不主觀摸頭。</td><td>不可升級為硬擇時訊號。</td></tr>
+          <tr><td>AI 與工程師</td><td>偏正向觀察 AI 工具，但強調 accountability</td><td>聚焦監管 Claude / 控制輸出 / 扛責任。</td><td>核心是職能轉向交付與責任歸屬。</td></tr>
+          <tr><td>SaaS 總體</td><td>中立觀察 / 不一刀切看壞</td><td>延伸出 TEAM、NET、CRWD、PLTR、ADBE、CRM watchlist。</td><td>需分公司研究，不能外推整個 sector。</td></tr>
+          <tr><td>Adobe</td><td>偏負面 / 風險案例</td><td>語氣更悲觀，但仍承認高階 workflow 較穩。</td><td>區分 lower-end workflow risk 與公司整體財務。</td></tr>
+          <tr><td>TPU / MediaTek / TSMC / Intel</td><td>高興趣但高不確定；Intel 偏謹慎 / 看不懂</td><td>有較強供應鏈與操作延伸。</td><td>封裝分工、EPS 400、backup plan 必須查證。</td></tr>
+          <tr><td>記憶體</td><td>偏正向基本面，但謹慎看預期差</td><td>偏向「大跌再買」與台灣題材觀察。</td><td>「大跌再買」屬筆記作者操作詮釋。</td></tr>
+          <tr><td>AIPC / edge</td><td>低優先 / 暫無催化</td><td>支持近期沒有看到爆發契機。</td><td>暫列 parking lot。</td></tr>
+        </tbody></table></div>
+      </section>
+
       <section id="company-map">
         <h2>公司 / ticker 對照表</h2>
-        <p>這張表保留 `structured-notes.md` 裡最有用的檢索結構：每個公司或資產在本集扮演什麼角色、source support 到哪裡、以及下一步要查什麼。</p>
-        <div class="table-wrap"><table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>目前判斷</th><th>下一步</th></tr></thead><tbody>
-          <tr><td>Atlassian</td><td>TEAM</td><td>SaaS 韌性案例</td><td>節目用 Atlassian 財報反駁「SaaS apocalypse」過度悲觀；外部查證也支持公司層級的 growth / RPO 韌性。</td><td>追 cloud growth、RPO、seat / customer expansion、AI monetization。</td></tr>
-          <tr><td>Salesforce</td><td>CRM</td><td>Agentforce / founder-led 轉型案例</td><td>本集偏中立觀察；官方資料支持 Agentforce 有揭露 metrics，但還要看實際變現品質。</td><td>追 Agentforce ARR / deals、Data 360 adoption、margin、guidance。</td></tr>
-          <tr><td>Adobe</td><td>ADBE</td><td>AI 侵蝕風險案例</td><td>節目認為初階 creative workflow 受壓，高階應用未必完全被取代；官方財報顯示公司沒有崩壞。</td><td>追 Firefly monetization、Creative Cloud growth、churn、generative credit adoption。</td></tr>
-          <tr><td>Cloudflare</td><td>NET</td><td>Secondary-note watchlist</td><td>被列入可能觀察 / 抄底的軟體名單，但尚未形成公司級 thesis。</td><td>補公司 snapshot：revenue growth、RPO、Workers/AI、security/application edge 需求、valuation。</td></tr>
-          <tr><td>CrowdStrike</td><td>CRWD</td><td>Secondary-note watchlist</td><td>資安 SaaS 觀察名單；source support 是被點名，不是買入建議。</td><td>補 ARR、net retention、Falcon platform consolidation、資安預算趨勢。</td></tr>
-          <tr><td>Palantir</td><td>PLTR</td><td>AI software / FDE 模式觀察</td><td>補充 report 支持 FDE / enterprise AI deployment 的價值，但需避免把 NotebookLM inference 當成原始結論。</td><td>追 AIP adoption、commercial revenue、FDE/services intensity、valuation。</td></tr>
-          <tr><td>TSMC / 台積電</td><td>2330.TW / TSM</td><td>Advanced packaging / CoWoS 核心供應鏈</td><td>官方財報支持 HPC / advanced-node 強勢背景；但 Google TPU backup plan 未被外部驗證。</td><td>查 CoWoS / SoIC capacity commentary、Google TPU 供應鏈、客戶集中與 capex。</td></tr>
-          <tr><td>MediaTek / 聯發科</td><td>2454.TW</td><td>ASIC / TPU / 神主牌敘事</td><td>本集供應鏈線索高價值但未驗證；EPS 400 應視為券商極端情境，不是 base case。</td><td>查 ASIC/custom silicon revenue、Google exposure、EPS assumptions、先進封裝人才公開資訊。</td></tr>
-          <tr><td>Intel</td><td>INTC</td><td>EMIB-T / advanced packaging execution risk</td><td>source stance 是看不懂、謹慎、可能減持，不是看多 Intel。</td><td>查 EMIB-T 良率、foundry customer proof、advanced packaging schedule / margin。</td></tr>
-          <tr><td>Micron</td><td>MU</td><td>Memory-cycle proxy</td><td>官方資料支持 AI memory / tight supply 大方向；不能直接驗證台灣模組廠庫存數字。</td><td>追 DRAM / NAND / HBM pricing、AI server mix、capex discipline。</td></tr>
-          <tr><td>Apple</td><td>AAPL</td><td>Memory-cost cross-check</td><td>官方 quarter verified；memory-cost wording 仍需要 earnings call transcript 精確確認。</td><td>拉 official call transcript / webcast，確認 memory cost 對毛利與未來季度的語句。</td></tr>
-          <tr><td>Alphabet / Google</td><td>GOOGL</td><td>TPU demand driver</td><td>本集 TPU V8/V9 敘事核心客戶；具體代際、封裝分配、產能數字未驗證。</td><td>追 capex、TPU roadmap、AI infra commentary、供應鏈報導。</td></tr>
+        <p>這張表保留 <code>structured-notes.md</code> 裡最有用的檢索結構：公司角色、本集方向、筆記作者詮釋、source support 與下一步查證。</p>
+        <div class="table-wrap"><table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>下一步</th></tr></thead><tbody>
+          <tr><td>Atlassian</td><td>TEAM</td><td>SaaS 韌性案例</td><td>偏正向觀察</td><td>作為 SaaS 可抄底 / 觀察線索之一。</td><td>Both + external partially supported</td><td>Cloud growth、RPO、seat/customer expansion、AI monetization。</td></tr>
+          <tr><td>Salesforce</td><td>CRM</td><td>Agentforce / founder-led 轉型案例</td><td>中立觀察</td><td>AI agent 轉型 watchlist。</td><td>Both + external supported</td><td>Agentforce ARR / deals、Data 360 adoption、margin、guidance。</td></tr>
+          <tr><td>Adobe</td><td>ADBE</td><td>AI 侵蝕風險案例</td><td>偏負面 / 風險案例</td><td>語氣偏悲觀，但高階 workflow 較穩。</td><td>Secondary + external partially supported</td><td>Firefly monetization、Creative Cloud growth、churn。</td></tr>
+          <tr><td>Cloudflare</td><td>NET</td><td>Secondary-note watchlist</td><td>主持人未明確表態</td><td>筆記作者列入未來軟體股觀察名單。</td><td>Secondary-supported only</td><td>Revenue growth、RPO、Workers/AI、security/application edge 需求、valuation。</td></tr>
+          <tr><td>CrowdStrike</td><td>CRWD</td><td>Secondary-note watchlist</td><td>主持人未明確表態</td><td>筆記作者列入資安 SaaS 觀察名單。</td><td>Secondary-supported only</td><td>ARR、net retention、Falcon platform consolidation、資安預算趨勢。</td></tr>
+          <tr><td>Palantir</td><td>PLTR</td><td>AI software / FDE 模式觀察</td><td>只被提及 / 中立觀察</td><td>延伸 FDE / enterprise AI deployment thesis。</td><td>Secondary + NotebookLM inference</td><td>AIP adoption、commercial revenue、FDE/services intensity、valuation。</td></tr>
+          <tr><td>TSMC / 台積電</td><td>2330.TW / TSM</td><td>Advanced packaging / CoWoS 核心供應鏈</td><td>偏正向供應鏈線索，但未驗證</td><td>放在 TPU backup / advanced packaging 敘事中。</td><td>Both + external high-level supported</td><td>CoWoS / SoIC capacity、Google TPU 供應鏈、客戶集中與 capex。</td></tr>
+          <tr><td>MediaTek / 聯發科</td><td>2454.TW</td><td>ASIC / TPU / 神主牌敘事</td><td>偏正向線索，但高度未驗證</td><td>EPS 400、神主牌與操作想像多屬延伸。</td><td>Both, not externally verified</td><td>ASIC/custom silicon revenue、Google exposure、EPS assumptions、先進封裝人才資訊。</td></tr>
+          <tr><td>Intel</td><td>INTC</td><td>EMIB-T / advanced packaging execution risk</td><td>謹慎 / 看不懂</td><td>支持「不加碼、有機會可能丟」這類操作語氣。</td><td>Both, not externally verified</td><td>EMIB-T 良率、foundry customer proof、advanced packaging schedule / margin。</td></tr>
+          <tr><td>Micron</td><td>MU</td><td>Memory-cycle proxy</td><td>偏正向基本面</td><td>用作記憶體 cycle proxy；非主持人直接交易指令。</td><td>NotebookLM + external industry supported</td><td>DRAM / NAND / HBM pricing、AI server mix、capex discipline。</td></tr>
+          <tr><td>Apple</td><td>AAPL</td><td>Memory-cost cross-check</td><td>只被提及</td><td>用來交叉檢查 memory cost 壓力，不是 Apple thesis。</td><td>NotebookLM claim + official quarter checked</td><td>Official call transcript / webcast。</td></tr>
+          <tr><td>Alphabet / Google</td><td>GOOGL</td><td>TPU demand driver</td><td>只被提及 / 需求背景</td><td>TPU demand 與供應鏈敘事核心客戶。</td><td>Both, not externally verified for details</td><td>Capex、TPU roadmap、AI infra commentary、供應鏈報導。</td></tr>
+          <tr><td>台灣記憶體模組廠</td><td>待確認</td><td>Memory inventory / local cycle</td><td>主持人未明確表態</td><td>庫存與操作想像的公司與口徑不明。</td><td>NotebookLM-only / unclear</td><td>威剛、十銓或其他模組廠法說與財報。</td></tr>
         </tbody></table></div>
       </section>
 
