@@ -10,6 +10,7 @@ GitHub Pages：<https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/
 - 每集使用獨立資料夾整理，例如：`ep-657/`
 - 每集資料夾內只保留 HTML：`index.html`
 - 目前內容（新集數在前）：
+  - `ep-660/`：股癌 EP660 投資研究筆記（primary-source-only edge-case；YouTube/NotebookLM only，尚未含 Social Worker Daily secondary note）
   - `ep-659/`：股癌 EP659 投資研究筆記（NotebookLM primary + validated Social Worker Daily secondary note + supplementary triangulation + external verification）
   - `ep-685_v7/`：股癌 EP658 投資研究筆記（fresh NotebookLM run；NotebookLM + validated secondary note + supplementary triangulation）
   - `ep-685_v6/`：股癌 EP658 投資研究筆記（使用者指定資料夾；NotebookLM + validated secondary note + supplementary triangulation）
