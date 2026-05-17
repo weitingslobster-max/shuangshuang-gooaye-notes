@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP662 投資研究筆記</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#111827;--ink:#e5edf7;--muted:#9fb0c5;--line:#2a3850;--accent:#f97316;--blue:#38bdf8;--green:#34d399;--red:#f87171;}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,#1e293b 0,#0b1020 45%,#060913 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif;line-height:1.72} main{max-width:1120px;margin:0 auto;padding:38px 20px 80px}.back{display:inline-block;margin-bottom:18px;color:#fed7aa;text-decoration:none;font-weight:700}.back:hover{text-decoration:underline} header,.card{border:1px solid var(--line);background:rgba(17,24,39,.82);border-radius:24px;padding:26px;margin-bottom:20px;box-shadow:0 12px 30px rgba(0,0,0,.22)}.eyebrow{color:#fed7aa;font-size:13px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}h1{font-size:36px;line-height:1.16;margin:8px 0 10px}h2{margin:0 0 16px;border-left:5px solid var(--accent);padding-left:12px;font-size:25px}h3{margin-top:22px;color:#dbeafe}.sub,.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 10px;margin:4px 6px 4px 0;color:#dbeafe;background:#0f172a}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.mini{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(15,23,42,.72)}table{width:100%;border-collapse:collapse;margin:14px 0 8px;font-size:14px}th,td{border:1px solid #334155;padding:9px 10px;vertical-align:top}th{background:#172033;color:#f8fafc}tr:nth-child(even) td{background:rgba(15,23,42,.42)}.ok{color:var(--green);font-weight:700}.warn{color:#fbbf24;font-weight:700}.bad{color:var(--red);font-weight:700}a{color:var(--blue)}ul{padding-left:1.4rem}.note{border-left:4px solid var(--blue);padding:10px 14px;background:rgba(56,189,248,.08);border-radius:12px}.footer{color:var(--muted);font-size:13px;margin-top:28px}
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye EP662 investment research note</div>
+    <h1>股癌 EP662：台積電權重重配、被動元件漲價訊號與右側交易紀律</h1>
+    <p class="sub">來源層級：YouTube/NotebookLM primary report + Social Worker Daily validated secondary note + NotebookLM supplementary triangulation + external verification。本文為研究筆記，不構成個人化投資建議。</p>
+    <div>
+      <span class="pill">EP662</span><span class="pill">繁體中文</span><span class="pill">Source-layer separated</span><span class="pill">Published 2026-05-17</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>核心結論</h2>
+    <div class="grid">
+      <div class="mini"><strong>1. 資金輪動</strong><br>FSC 放寬國內基金單一公司持股限制後，台積電成為權重重配核心；但實際增持節奏仍需看投信買超與基金文件。</div>
+      <div class="mini"><strong>2. 被動元件</strong><br>節目對 SP-Cap、電阻、電容/電感、lead time、停止接單有高度關注；但 30% 漲價與 ROHM 漲價仍屬待確認訊號。</div>
+      <div class="mini"><strong>3. 右側交易</strong><br>主持人重點不是「接刀特定個股」，而是回檔後觀察誰先站回、誰能創高，藉此汰弱留強。</div>
+      <div class="mini"><strong>4. 防止誤讀</strong><br>Social Worker Daily 的括號猜測與操作日記（國巨、群聯、健策等）不可視為主持人明確觀點。</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>來源層級與方法限制</h2>
+    <table>
+      <tr><th>層級</th><th>來源</th><th>用途</th><th>限制</th></tr>
+      <tr><td>Primary</td><td>NotebookLM primary report from YouTube</td><td>節目主軸、公司/產業清單、主持人語氣</td><td>無精確時間戳；部分供應鏈說法需查證</td></tr>
+      <tr><td>Secondary</td><td>Social Worker Daily 股癌筆記 EP662</td><td>補足章節、金句、筆記作者心得</td><td>明確含主觀補述；操作日記不是主持人觀點</td></tr>
+      <tr><td>Supplementary</td><td>NotebookLM source-triangulation report</td><td>分離主持人觀點、筆記作者詮釋、AI 推論</td><td>仍是 NotebookLM 摘要，非逐字稿審計</td></tr>
+      <tr><td>External</td><td>FSC/Reuters、Panasonic、ROHM、CRWD、Figma</td><td>查證政策、產品線與公司基本資料</td><td>漲價/停單等供應鏈訊號多未公開證實</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Source triangulation / 來源交叉比對</h2>
+    <table>
+      <tr><th>主題</th><th>Podcast / Primary</th><th>Secondary note</th><th>判斷</th><th>下一步</th></tr>
+      <tr><td>週五大跌</td><td>主持人不恐慌，視為籌碼清理與汰弱留強窗口</td><td>記錄「跌超大」、低成本部位可扛波段</td><td class="ok">一致</td><td>看誰先站回成本線/創高</td></tr>
+      <tr><td>台積電資金輪動</td><td>政策放寬後，市場存量資金可能轉向 TSMC</td><td>記錄投信改公開說明書約 2–5 個月</td><td class="warn">政策支持，節奏待驗證</td><td>投信買超、基金持股更新</td></tr>
+      <tr><td>老 AI</td><td>毛利壓力可能是產品迭代/R&D，短線難立刻解套</td><td>建議先讓它盤整</td><td class="ok">方向一致</td><td>查毛利率與產品迭代成本</td></tr>
+      <tr><td>被動元件</td><td>電阻、SP-Cap、lead time、停止接單是關鍵訊號</td><td>補充 Panasonic SP-Cap、MLCC、鋁電容等</td><td class="warn">族群線索強，具體漲價未確認</td><td>正式漲價函、報價、lead time</td></tr>
+      <tr><td>美股軟體/資安</td><td>CRWD 創新高、Figma 成績好，偏右側交易</td><td>記錄資安與軟體族群汰弱留強</td><td class="ok">一致</td><td>查 CRWD/Figma 財報與族群 breadth</td></tr>
+      <tr><td>操作日記</td><td>主持人未明確提及國巨/群聯/健策作為本集觀點</td><td>列出作者個人操作</td><td class="bad">需排除</td><td>不可視為主持人建議</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Host view vs note-author interpretation</h2>
+    <table>
+      <tr><th>主題</th><th>Likely host view</th><th>筆記作者詮釋</th><th>處理方式</th></tr>
+      <tr><td>被動元件</td><td>供需、漲價與停單訊號值得密切追蹤；觀察強勢標的</td><td>猜測「信X電?」與接刀</td><td>保留族群線索；刪除具體個股推定與接刀語氣</td></tr>
+      <tr><td>台積電</td><td>政策改變可能造成投信資金重配</td><td>台積電劇本仍在</td><td>當成政策/資金流假說，不當成必然上漲</td></tr>
+      <tr><td>老 AI</td><td>短線籌碼重，毛利壓力可能是迭代成本</td><td>先盤整一段時間</td><td>等待右側與財報確認</td></tr>
+      <tr><td>美股軟體</td><td>強者續強，偏好創新高/突破下降趨勢</td><td>可能用槓桿 ETF 打右側</td><td>保留右側紀律，不納入槓桿建議</td></tr>
+      <tr><td>國巨/群聯/健策</td><td>主持人未明確表態</td><td>作者操作日記</td><td>排除於 host stance 之外</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Company / ticker map / 公司與 ticker 對照表</h2>
+    <table>
+      <tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr>
+      <tr><td>台積電</td><td>2330.TW / TSM</td><td>政策資金輪動核心</td><td>偏正向觀察</td><td>投信提款中小股買 TSMC</td><td>Primary + secondary + external support</td><td>FSC 規範、投信買超、基金持股</td></tr>
+      <tr><td>老 AI / AI ODM-OEM</td><td>N/A</td><td>被資金提款、毛利短壓族群</td><td>謹慎 / 看不懂</td><td>暫不急解套</td><td>Primary + secondary support</td><td>毛利率、R&D、產品迭代</td></tr>
+      <tr><td>被動元件</td><td>N/A</td><td>供需與漲價主題</td><td>偏正向觀察</td><td>被推定為跌停承接族群</td><td>族群支持；個股推定不支持</td><td>報價、lead time、停止接單</td></tr>
+      <tr><td>Panasonic SP-Cap</td><td>6752.T / PCRFY</td><td>漲價/產品指標</td><td>偏正向觀察</td><td>SP-Cap 漲三成</td><td>產品存在 verified；漲價 source-supported only</td><td>正式漲價函、通路報價</td></tr>
+      <tr><td>ROHM</td><td>6723.T / ROHCY</td><td>Power/discrete 元件指標</td><td>偏正向觀察</td><td>準備漲價</td><td>產品方向 verified；漲價 source-supported only</td><td>IR、客戶通知、產業新聞</td></tr>
+      <tr><td>CrowdStrike</td><td>CRWD</td><td>美股資安強勢股</td><td>偏正向觀察</td><td>資安股創新高代表</td><td>IR 支持營運動能</td><td>新高延續、估值、同業 breadth</td></tr>
+      <tr><td>Figma</td><td>FIG</td><td>軟體/AI 生產力驗證</td><td>偏正向觀察</td><td>成績好</td><td>IR 支持 Q1 成長</td><td>AI 貢獻、後續季報</td></tr>
+      <tr><td>國巨 / 群聯 / 健策</td><td>2327 / 8299 / 3653</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>減碼 / 砍出 / 抄底</td><td class="bad">Not supported as host view</td><td>不納入本集主持人觀點</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>外部查證摘要</h2>
+    <table>
+      <tr><th>主張</th><th>狀態</th><th>證據</th><th>判斷</th></tr>
+      <tr><td>台灣放寬國內基金投資單一公司比率，TSMC 可受惠</td><td class="warn">Partially supported</td><td>Reuters 2026-04-16 報導台灣允許基金提高 TSMC 權重</td><td>政策方向可驗證；實際增持節奏需追蹤</td></tr>
+      <tr><td>Panasonic 有 SP-Cap / OS-CON 產品線</td><td class="ok">Verified</td><td>Panasonic Industry 官方 SP-Cap 頁面與 2026-04-09 lifecycle notice</td><td>產品事實成立；漲價未確認</td></tr>
+      <tr><td>Panasonic SP-Cap / 電阻漲價 30%</td><td class="warn">Needs external verification</td><td>節目與 secondary note；未見官方公開公告</td><td>列追蹤訊號，不作交易結論</td></tr>
+      <tr><td>ROHM power/discrete 漲價</td><td class="warn">Source-supported only</td><td>節目引用聽眾回饋；ROHM 官方新聞支持其 power module/SiC 產品線推進</td><td>產品方向合理，漲價待驗證</td></tr>
+      <tr><td>CRWD 基本面成長</td><td class="ok">Verified</td><td>CRWD FY2026 Q1：ARR 44.4 億美元，年增 22%</td><td>支持資安龍頭營運動能，估值另查</td></tr>
+      <tr><td>Figma Q1 表現佳</td><td class="ok">Verified</td><td>Figma Q1 2026 revenue 228.2M 美元，YoY +46%</td><td>支持軟體/AI 生產力工具敘事</td></tr>
+      <tr><td>國巨/群聯/健策代表主持人觀點</td><td class="bad">Contradicted / Not verified</td><td>只出現在 secondary note 操作日記或括號猜測</td><td>排除</td></tr>
+    </table>
+    <p class="note">查證結論：硬資料支持「政策改變、相關產品線存在、CRWD/Figma 公司資料強」；最該保守處理的是「漲價 30%、ROHM 漲價、特定被動元件個股推定」。</p>
+  </section>
+
+  <section class="card">
+    <h2>Watchlist / 觀察清單與事件觸發條件</h2>
+    <h3>高優先追蹤</h3>
+    <ul>
+      <li><strong>台積電資金流：</strong>投信 2330 買超、ETF/主動基金持股變化、外資是否抵銷國內資金。</li>
+      <li><strong>被動元件：</strong>Panasonic/通路漲價函、lead time、停止接單、合約價 vs 現貨價。</li>
+      <li><strong>Power components：</strong>ROHM 與同業法說、客戶通知、SiC/power module 出貨。</li>
+    </ul>
+    <h3>提高信心的訊號</h3>
+    <ul>
+      <li>正式漲價函或停止接單出現，且不只限單一小料號。</li>
+      <li>大盤回穩時，被動元件或 power components 族群率先站回跌前高點。</li>
+      <li>台積電投信買超連續，且基金公開文件確實上調權重。</li>
+      <li>CRWD/Figma 後續數據延續強勢，軟體/資安 breadth 擴散。</li>
+    </ul>
+    <h3>需要降溫的訊號</h3>
+    <ul>
+      <li>30% 漲價證實只是短期現貨或少數料號，合約價不跟。</li>
+      <li>供應鏈 lead time 沒有延長，廠商法說否認缺貨。</li>
+      <li>老 AI 毛利下滑來自價格競爭或需求轉弱，而非研發/迭代成本。</li>
+      <li>軟體/資安只有 CRWD 單點強勢，其他同業未跟進。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>研究紀律</h2>
+    <ul>
+      <li>本文是 podcast 投資討論的研究筆記，不是個人化投資建議。</li>
+      <li>「主持人觀點」與「筆記作者操作日記」必須嚴格分離。</li>
+      <li>供應鏈傳聞採「追蹤而非定論」：正式漲價函、停止接單、lead time、財報指引才是更硬的訊號。</li>
+      <li>右側交易紀律：本集更像是在找強勢族群確認，而不是鼓勵跌深接刀。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>外部資料來源</h2>
+    <ul>
+      <li><a href="https://www.reuters.com/world/china/taiwan-allow-funds-increase-stake-tsmc-2026-04-16/">Reuters: Taiwan to allow funds to increase stake in TSMC</a></li>
+      <li><a href="https://industrial.panasonic.com/ww/products/pt/sp-cap">Panasonic Industry: SP-Cap product page</a></li>
+      <li><a href="https://industrial.panasonic.com/ww/news/2026/04/09/sp-cap-introduction">Panasonic Industry: SP-Cap introduction notice</a></li>
+      <li><a href="https://www.rohm.com/news-detail?defaultGroupId=false&amp;news-title=2026-05-07_news_vitesco&amp;newsCategory=press">ROHM: SiC power module TRCDRIVE pack™ news</a></li>
+      <li><a href="https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-first-quarter-fiscal-year-2026-financial">CrowdStrike FY2026 Q1 results</a></li>
+      <li><a href="https://investor.figma.com/news-releases/news-release-details/figma-announces-first-quarter-2026-financial-results">Figma Q1 2026 financial results</a></li>
+    </ul>
+  </section>
+
+  <p class="footer">Generated by 雙雙 🦞🌱 · Source folder: gooaye-investment-notes/ep-662 · Published page keeps only HTML.</p>
+</main>
+</body>
+</html>
