@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP663 投資研究筆記</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#111827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 42%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.7; }
+    main { max-width:1180px; margin:0 auto; padding:34px 20px 80px; }
+    .back { display:inline-block; margin-bottom:18px; color:#fed7aa; text-decoration:none; font-weight:700; }
+    header { border:1px solid var(--line); background:rgba(17,24,39,.86); border-radius:26px; padding:30px; margin-bottom:24px; }
+    .eyebrow { color:#fbbf24; letter-spacing:.1em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { margin:.2em 0; font-size:34px; line-height:1.18; }
+    h2 { margin-top:36px; border-left:5px solid var(--accent); padding-left:12px; }
+    h3 { margin-top:28px; color:#bae6fd; }
+    p, li { color:#d8e2f0; }
+    .note { color:var(--muted); }
+    table { width:100%; border-collapse:collapse; margin:18px 0 26px; background:rgba(17,24,39,.72); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:block; overflow-x:auto; }
+    th, td { border:1px solid var(--line); padding:10px 12px; vertical-align:top; min-width:120px; }
+    th { background:#172033; color:#f8fafc; text-align:left; }
+    a { color:#7dd3fc; }
+    footer { margin-top:44px; color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye EP663 Research Notes</div>
+    <h1>股癌 EP663：被動元件漲價循環、Google TPU 載板傳聞與老 AI 修復觀察</h1>
+    <p class="note">依 NotebookLM primary report、Social Worker Daily secondary note、supplementary triangulation 與外部查證整理。這是研究筆記，不構成個人化投資建議。</p>
+  </header>
+  <h1>EP663 structured notes / 股癌投資研究筆記</h1>
+<h2>Source stack / 來源層級</h2>
+<table><thead><tr><th>層級</th><th>來源</th><th>用途</th><th>限制</th></tr></thead><tbody>
+<tr><td>Primary</td><td>NotebookLM primary report from YouTube：`sources/notebooklm_source.md`</td><td>節目投資主題、主持人語氣、公司/產業清單</td><td>NotebookLM 未提供精確時間戳；技術代號與供應鏈傳聞需回原始節目與外部資料查證</td></tr>
+<tr><td>Secondary</td><td>Social Worker Daily 筆記：`sources/secondary_note.md`</td><td>補足章節順序、主持人金句、筆記作者心得</td><td>筆記作者明確聲明含主觀補述；操作日記不可視為主持人觀點</td></tr>
+<tr><td>Supplementary</td><td>NotebookLM triangulation：`sources/notebooklm_supplementary_report.md`</td><td>比對主持人觀點、筆記作者詮釋與 AI 推論</td><td>仍依賴 NotebookLM 摘要；對「信心 9/10」等強語氣需降溫處理</td></tr>
+<tr><td>External verification</td><td>Panasonic/被動元件產業新聞、Anthropic/Broadcom-Google TPU 相關公告、TSMC/COUPE 相關資料</td><td>查證可外部支撐的政策、技術、公司事件</td><td>Panasonic 漲價信與 Broadcom 雙拼載板仍未找到官方直接確認</td></tr>
+</tbody></table>
+<h2>Core takeaways / 核心結論</h2>
+<p>1. **本集最高價值線索是被動元件供需與定價權回升**。主持人把 Panasonic 漲價信、現貨掃貨、低階料號產能紀律與高階 MLCC / 鋁電容需求放在同一條主線；這是研究優先度最高的投資假說，但仍需用正式漲價函、通路報價與各廠 capex/稼動率驗證。</p>
+<p>2. **市場盤勢被描述為健康輪動，不是全面崩壞**。四月萬物齊漲後，資金開始往 MLCC、鋁電容等強勢族群集中；主持人同時提醒「強勢族群縮小」時要提高警覺。</p>
+<p>3. **Google TPU / Broadcom / MediaTek 的技術代號與雙拼載板故事值得追，但證據層級較低**。節目提到 Zebrafish、Humu Fish、Sunfish 與大顆 Sunfish 雙拼載板；外部可確認的是 Google/Broadcom/Anthropic 對 TPU compute 的長約與需求強度，不能直接確認雙拼設計。</p>
+<p>4. **老 AI 族群不是被長線否定，而是短線接刀風險高**。主持人把「毛利率可能只短暫一兩季」與 Nvidia 路線圖持續推進放在觀察框架內；secondary note 則加入「不破底再看」等技術門檻。</p>
+<p>5. **Secondary note 的國巨、健策、群聯操作日記必須獨立隔離**。國巨加碼、健策停損、群聯賣出是筆記作者個人交易紀錄，不是主持人建議，也不是本報告的投資建議。</p>
+<h2>Source triangulation / 來源交叉比對</h2>
+<table><thead><tr><th>主題</th><th>Primary / Podcast source</th><th>Secondary note</th><th>Triangulation / 判斷</th><th>後續查證</th></tr></thead><tbody>
+<tr><td>盤勢與資金輪動</td><td>健康輪動；只要仍有強勢族群，盤面尚可</td><td>體感沒有大修正、MLCC/鋁電容強，強勢股縮小需警覺</td><td>一致。屬市場結構觀察，不是保證上漲</td><td>追蹤強勢族群 breadth、前高突破/失敗、融資與成交量</td></tr>
+<tr><td>被動元件漲價循環</td><td>Panasonic 漲價信、現貨掃貨、低階不做轉高階、上升循環</td><td>記錄相同內容，並補充若大廠擴廠則劇本受損</td><td>高度一致。是本集最可研究的主線</td><td>Panasonic/Taiyo Yuden/Yageo/Walsin/Murata 報價、capex、lead time</td></tr>
+<tr><td>Google TPU / 雙拼載板</td><td>V8/V9、MediaTek 與 Broadcom 對應，較大 Sunfish 可能雙拼載板</td><td>記錄 Zebrafish/Humu Fish/Sunfish 對應</td><td>來源支持「節目有談」，但技術細節仍屬傳聞/需查證</td><td>Broadcom/Google/研調報告、ABF 載板廠法說、TPU roadmap</td></tr>
+<tr><td>老 AI</td><td>現在進去可能接刀；未來 Nvidia 仍按路線推進，毛利率壓力可能短暫</td><td>老 AI 打底不破底可觀察，若 AI 庫存堆積則小心</td><td>方向一致但 secondary note 有操作化詮釋</td><td>Nvidia roadmap、ODM/OEM 財報毛利率、庫存、AI capex</td></tr>
+<tr><td>健康投資</td><td>減重、物理治療、機能訓練與「身體機能值得投資」</td><td>完整記錄金句與方法</td><td>非股票研究主線，但可保留為人力資本觀點</td><td>無需外部查證</td></tr>
+<tr><td>筆記作者操作日記</td><td>主持人未提供國巨/健策/群聯買賣建議</td><td>國巨加碼、健策停損、群聯賣出</td><td>必須隔離為筆記作者行為</td><td>不納入 host stance；若研究個股另行建模</td></tr>
+</tbody></table>
+<h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+<table><thead><tr><th>主題</th><th>Likely host view</th><th>筆記作者詮釋</th><th>我們的處理</th></tr></thead><tbody>
+<tr><td>被動元件</td><td>產業供需、漲價與擴產紀律都偏正向；但股價已漲不少，不宜無限喊多</td><td>續抱，觀察大廠是否擴廠；若只是短期缺料要小心</td><td>保留產業假說；降低操作語氣</td></tr>
+<tr><td>市場輪動</td><td>回到健康資金輪動；強勢族群存在代表盤面尚可</td><td>反彈未過前高可能做頭，不上槓</td><td>保留為風險管理與 breadth 觀察</td></tr>
+<tr><td>Google TPU / 載板</td><td>技術路線與載板/IPD 需求可能變重要</td><td>可能連結愛普、ABF 等標的</td><td>保留技術假說，但標示 supply-chain rumor</td></tr>
+<tr><td>老 AI</td><td>短線接刀風險，但基本面/路線圖未必壞掉</td><td>不破底再看，估值低且有營收獲利的老 AI 可重新被擁抱</td><td>保留觀察條件，不寫成買進建議</td></tr>
+<tr><td>個人操作</td><td>未明確表態</td><td>國巨、健策、群聯個人交易</td><td>全部放進風險提醒，不列為主持人觀點</td></tr>
+</tbody></table>
+<h2>Company / ticker map / 公司與 ticker 對照表</h2>
+<table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead><tbody>
+<tr><td>Panasonic Holdings</td><td>6752.T / PCRFY</td><td>被動元件漲價信指標</td><td>偏正向觀察</td><td>Panasonic 漲價導致採購掃貨</td><td>Primary + secondary；外部未找到官方直接確認本次漲價信</td><td>查官方 IR、代理商報價、客戶通知、lead time</td></tr>
+<tr><td>被動元件 / MLCC / 鋁電容</td><td>N/A</td><td>本集投資主線</td><td>偏正向觀察，但不宜追高喊多</td><td>續抱並看擴產紀律</td><td>Primary + secondary；產業新聞支持 2026 被動元件漲價壓力</td><td>追蹤國巨、華新科、村田、太陽誘電 capex 與報價</td></tr>
+<tr><td>國巨</td><td>2327.TW</td><td>被動元件指標；secondary 操作日記</td><td>主持人未明確點名為買賣建議</td><td>筆記作者「繼續加碼」</td><td>Secondary-only as operation diary</td><td>若研究需回到公司法說/營收/利用率，不採用操作日記</td></tr>
+<tr><td>Broadcom</td><td>AVGO</td><td>Google TPU / custom AI chip 關鍵供應鏈</td><td>技術戰略觀察</td><td>Sunfish / 大顆 Sunfish 技術路線</td><td>Primary + secondary；外部可確認 Google/Anthropic/Broadcom TPU 需求，但不能確認雙拼載板</td><td>查 SEC filing、Google TPU roadmap、研調報告</td></tr>
+<tr><td>MediaTek / 聯發科</td><td>2454.TW</td><td>Zebrafish / Humu Fish 對應</td><td>中立觀察</td><td>TPU 代號與競合關係</td><td>Primary + secondary</td><td>查官方法說與 ASIC/TPU 參與度</td></tr>
+<tr><td>AP Memory / 愛普</td><td>6531.TW</td><td>NotebookLM 推論連到 IPD / TPU 受益</td><td>只被提及或需逐字稿確認</td><td>可能是概念股延伸</td><td>NotebookLM inference；secondary 原文未明確列投資操作</td><td>查產品、客戶集中度、IPD 營收占比</td></tr>
+<tr><td>TSMC / 台積電</td><td>2330.TW / TSM</td><td>矽光子 / 先進封裝技術背景</td><td>只被提及 / 技術背景</td><td>光通訊利多可能已有預期</td><td>NotebookLM primary；外部資料支持 COUPE/CPO 方向</td><td>查 TSMC annual report / symposium slides</td></tr>
+<tr><td>Nvidia</td><td>NVDA</td><td>老 AI 路線圖參照</td><td>中立偏正向觀察</td><td>AI 繼續推進則老 AI 還有機會</td><td>Primary + secondary</td><td>查下一季財報、GPU roadmap、AI capex</td></tr>
+<tr><td>健策</td><td>3653.TW</td><td>secondary 操作日記</td><td>主持人未明確表態</td><td>減碼停損</td><td>Secondary-only</td><td>不納入主持人觀點</td></tr>
+<tr><td>群聯</td><td>8299.TWO</td><td>secondary 操作日記</td><td>主持人未明確表態</td><td>賣出</td><td>Secondary-only</td><td>不納入主持人觀點</td></tr>
+<tr><td>油價 / 通膨</td><td>N/A</td><td>NotebookLM primary 提及的總經觀察</td><td>只被提及</td><td>無</td><td>Primary only</td><td>若納入研究，需用 EIA/FRED/市場價格查證</td></tr>
+</tbody></table>
+<h2>Topic map / 主題地圖</h2>
+<ul>
+<li>**市場結構**：四月萬物齊漲後進入健康輪動；強勢股存在但 breadth 縮小要警覺。</li>
+<li>**被動元件**：Panasonic 漲價信、現貨掃貨、低階料轉高階、擴產紀律、壓力測試。</li>
+<li>**AI 硬體技術路徑**：Google TPU V8/V9、MediaTek / Broadcom 對應、Sunfish 雙拼載板傳聞。</li>
+<li>**老 AI 修正**：短線接刀風險，長線仍看 Nvidia 路線圖與毛利率是否恢復。</li>
+<li>**研究紀律**：分離主持人觀點、筆記作者詮釋、NotebookLM 推論與外部查證結果。</li>
+</ul>
+<h2>Draft investment hypotheses / 投資假說草稿</h2>
+<table><thead><tr><th>假說</th><th>證據</th><th>反證 / 風險</th><th>第一個檢查點</th></tr></thead><tbody>
+<tr><td>被動元件進入可持續的漲價/毛利擴張循環</td><td>Podcast + secondary 均記錄 Panasonic 漲價信、掃貨、產能紀律</td><td>若只是短期供需錯配，或大廠集體擴產，股價可能快速回落</td><td>正式漲價函、lead time、capex、低階/高階產品 mix</td></tr>
+<tr><td>TPU 雙拼載板提高 ABF / IPD 內容價值</td><td>節目提到大顆 Sunfish 雙拼兩片晶片在載板上</td><td>目前缺乏官方確認；技術代號可能轉譯錯誤</td><td>Broadcom/Google TPU roadmap、ABF 載板廠法說、SemiAnalysis/產業報告</td></tr>
+<tr><td>老 AI 短線弱勢但可列入修復觀察</td><td>主持人認為 Nvidia 仍按計畫、毛利率壓力可能短暫</td><td>庫存堆積、毛利率惡化、AI capex 下修會破壞假說</td><td>Nvidia 與 AI ODM/OEM 財報、庫存、毛利率、訂單能見度</td></tr>
+<tr><td>市場輪動仍健康但 breadth 縮小需要降槓桿</td><td>強勢族群仍在，但 secondary note 提醒不上槓</td><td>若強勢族群失守且反彈不過前高，可能形成頭部</td><td>強勢族群數量、指數前高、成交量、融資</td></tr>
+</tbody></table>
+<h2>Research discipline notes / 研究紀律</h2>
+<ul>
+<li>本筆記是研究地圖，不是買賣建議。</li>
+<li>所有「漲價信、掃貨、雙拼載板、TPU 代號」都屬需要外部查證的 factual claims。</li>
+<li>NotebookLM 對愛普、ABF、IPD 的延伸可能合理，但證據層級低於主持人原話與 secondary note；在 HTML 中應標為推論或待查。</li>
+<li>Secondary note 的操作日記只可作為「市場參與者行為樣本」，不可作為主持人觀點或建議。</li>
+</ul>
+<h1>EP663 verification / 查證筆記</h1>
+<h2>Verification scope / 查證範圍</h2>
+<p>本次只查證會影響投資假說的核心 factual claims：被動元件漲價循環、Google TPU / Broadcom 需求、雙拼載板傳聞、TSMC COUPE / 矽光子方向，以及 secondary note 個人操作與主持人觀點的分離。</p>
+<h2>Verification table / 查證表</h2>
+<table><thead><tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr></thead><tbody>
+<tr><td>Panasonic 對部分客戶發出被動元件漲價信，導致採購掃貨</td><td>Source-supported only</td><td>Podcast/NotebookLM + Social Worker Daily 均記錄；未找到 Panasonic 官方公告直接確認 EP663 所稱漲價信</td><td>可作為節目來源事實與研究線索，但不可當作已官方確認；需追代理商/客戶通知</td></tr>
+<tr><td>2026 被動元件產業存在漲價壓力與多品類調價</td><td>Partially supported</td><td>SemiMedia 報導 Taiyo Yuden 2026/5/1 起調漲 MLCC、電感、RF、鋁電容等被動元件；其他市場報導也提及 MLCC 現貨與供應壓力</td><td>支持「產業漲價環境」存在，但不等同 Panasonic 這封信已確認</td></tr>
+<tr><td>大廠若維持擴產紀律，被動元件毛利率可能擴張</td><td>Source-supported only</td><td>Podcast/secondary 的產業邏輯；尚未逐一查各廠 2026 capex/利用率</td><td>合理假說，但需要公司法說與 capex 資料驗證</td></tr>
+<tr><td>Broadcom / Google / Anthropic 的 TPU compute 需求確實擴大</td><td>Verified</td><td>Anthropic 2026-04-06 官方公告與 Reuters/SEC filing 報導：與 Google、Broadcom 擴大合作，多 gigawatt TPU capacity 自 2027 起上線；Reuters/Investing.com 報導 Broadcom 與 Google 長約至 2031</td><td>支持 TPU 需求與 Broadcom custom AI chip 供應鏈重要性</td></tr>
+<tr><td>Broadcom 下一代 Google TPU 採雙拼載板 / Dual-die on substrate</td><td>Source-supported only / Needs exact transcript</td><td>Podcast/NotebookLM/secondary 提及；外部公開資料未確認此具體架構</td><td>可放入高風險研究假說，不可寫成事實</td></tr>
+<tr><td>TSMC COUPE / CPO / silicon photonics 是 AI/HPC 封裝與互連方向</td><td>Partially supported</td><td>TSMC 2025 annual report 提及 COUPE to enable silicon photonic integration；SemiEngineering / TrendForce 等報導 2026 symposium 與 COUPE/CPO roadmaps</td><td>支持矽光子方向，但 EP663 的「三層蛋糕」語境仍需回原始節目確認</td></tr>
+<tr><td>老 AI 毛利壓力可能只是一兩季，未來仍可能回市場中心</td><td>Source-supported only</td><td>Podcast/secondary 觀點；需公司財報驗證</td><td>投資假說，需用 Nvidia roadmap、ODM/OEM 毛利率與庫存資料驗證</td></tr>
+<tr><td>國巨加碼、健策停損、群聯賣出是主持人建議</td><td>Contradicted</td><td>Secondary note 明確列在「操作日記」且聲明非推薦買賣；primary 未支持為主持人建議</td><td>必須排除，僅標為筆記作者個人操作</td></tr>
+</tbody></table>
+<h2>Open verification queue / 待查清單</h2>
+<p>1. Panasonic 漲價信：尋找客戶通知、代理商報價、日文原文或公司 IR 對高階 MLCC/鋁電容供需說明。</p>
+<p>2. 被動元件 capex discipline：查國巨、華新科、村田、太陽誘電、Panasonic 近期法說對產能與產品 mix 的描述。</p>
+<p>3. Google TPU roadmap：查 SemiAnalysis、Google Cloud、Broadcom filings 是否有 Zebrafish / Sunfish / Humu Fish 與 dual-die substrate 的可靠描述。</p>
+<p>4. ABF / IPD 受益鏈：回到欣興、Ibiden、愛普等公司資料，確認是否有直接可驗證的產品 exposure。</p>
+<p>5. 老 AI 修復：追 Nvidia 財報後的 AI ODM/OEM 毛利率、庫存與訂單能見度。</p>
+<h2>Bottom line / 查證結論</h2>
+<p>外部資料能支持「TPU compute 需求擴大」與「被動元件產業存在漲價/供應壓力」兩個大方向，但無法把 EP663 中最敏感的 Panasonic 特定漲價信與 Broadcom 雙拼載板傳聞升級為已驗證事實。最穩健的寫法是：被動元件列為高優先研究主線；TPU 雙拼載板列為高 upside、低驗證度的技術假說；筆記作者操作日記完全隔離。</p>
+<h2>Sources checked / 查證來源</h2>
+<ul>
+<li>Social Worker Daily EP663 secondary note: <a href="https://socialworkerdaily.com/notes-of-gooaye-ep-663/">https://socialworkerdaily.com/notes-of-gooaye-ep-663/</a></li>
+<li>YouTube / Gooaye EP663: <a href="https://www.youtube.com/watch?v=wgd3AJ3Wuzk">https://www.youtube.com/watch?v=wgd3AJ3Wuzk</a></li>
+<li>Anthropic official announcement, 2026-04-06: <a href="https://www.anthropic.com/news/google-broadcom-partnership-compute">https://www.anthropic.com/news/google-broadcom-partnership-compute</a></li>
+<li>Reuters via Investing.com, Broadcom-Google long-term AI chip/components agreement through 2031: <a href="https://www.investing.com/news/stock-market-news/broadcom-signs-longterm-deal-to-develop-googles-custom-ai-chips-4599542">https://www.investing.com/news/stock-market-news/broadcom-signs-longterm-deal-to-develop-googles-custom-ai-chips-4599542</a></li>
+<li>SemiMedia, Taiyo Yuden passive component price increases from May 2026: <a href="https://www.semimedia.cc/20906.html">https://www.semimedia.cc/20906.html</a></li>
+<li>TSMC 2025 Annual Report, chapter 5 PDF: <a href="https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch5.pdf">https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch5.pdf</a></li>
+<li>TrendForce, TSMC COUPE / silicon photonics 2026 report: <a href="https://www.trendforce.com/news/2026/04/01/news-silicon-photonics-race-intensifies-as-tsmc-targets-2026-coupe-production-samsung-eyes-2029-cpo-turnkey/">https://www.trendforce.com/news/2026/04/01/news-silicon-photonics-race-intensifies-as-tsmc-targets-2026-coupe-production-samsung-eyes-2029-cpo-turnkey/</a></li>
+</ul>
+<h1>EP663 tracking / 追蹤計畫</h1>
+<h2>Watchlist buckets / 觀察清單分組</h2>
+<h3>A. 高優先：被動元件漲價循環</h3>
+<table><thead><tr><th>觀察項</th><th>為什麼重要</th><th>追蹤指標</th></tr></thead><tbody>
+<tr><td>Panasonic / Taiyo Yuden / Murata / Yageo / Walsin 報價</td><td>驗證漲價是否擴散、是否只是現貨短缺</td><td>漲價函、代理商報價、lead time、book-to-bill</td></tr>
+<tr><td>擴產紀律</td><td>主持人明確把「大廠是否擴廠」視為劇本風險</td><td>Capex guidance、產能利用率、低階產品停產/轉高階</td></tr>
+<tr><td>高階 MLCC / 鋁電容需求</td><td>判斷 AI 伺服器需求是否真的支撐 mix up</td><td>伺服器/AI 客戶訂單、產品 mix、毛利率</td></tr>
+</tbody></table>
+<h3>B. 高 upside 但需查證：Google TPU / 載板 / IPD</h3>
+<table><thead><tr><th>觀察項</th><th>為什麼重要</th><th>追蹤指標</th></tr></thead><tbody>
+<tr><td>Broadcom-Google TPU 長約與 Anthropic capacity</td><td>驗證 TPU demand runway</td><td>SEC filing、Broadcom AI revenue、Google Cloud TPU 公告</td></tr>
+<tr><td>Sunfish / Humu Fish / dual-die substrate</td><td>決定 ABF / IPD 內容價值是否提高</td><td>研調報告、供應鏈法說、實際產品拆解</td></tr>
+<tr><td>AP Memory / ABF 載板鏈</td><td>NotebookLM 推論鏈，需要降噪</td><td>公司營收、客戶集中度、產品 exposure</td></tr>
+</tbody></table>
+<h3>C. 中優先：老 AI 修復</h3>
+<table><thead><tr><th>觀察項</th><th>為什麼重要</th><th>追蹤指標</th></tr></thead><tbody>
+<tr><td>Nvidia roadmap 持續性</td><td>主持人認為老 AI 未必基本面轉壞</td><td>NVDA 財報、產品時程、AI capex</td></tr>
+<tr><td>ODM/OEM 毛利與庫存</td><td>驗證「毛利率壓力只一兩季」</td><td>毛利率、庫存天數、管理層指引</td></tr>
+<tr><td>股價不破底 / breadth</td><td>secondary note 的操作化條件</td><td>技術面、資金流、融資變化</td></tr>
+</tbody></table>
+<h2>Event triggers / 事件觸發條件</h2>
+<table><thead><tr><th>Trigger</th><th>代表意義</th><th>行動</th></tr></thead><tbody>
+<tr><td>多家被動元件龍頭正式公告或通路確認漲價</td><td>被動元件假說升級</td><td>更新 verification，研究國巨/華新科/村田等公司財務彈性</td></tr>
+<tr><td>任一龍頭宣布大規模擴產低階 MLCC/電容</td><td>供給紀律破壞</td><td>下修被動元件循環持續性</td></tr>
+<tr><td>Broadcom 或 Google 官方揭露下一代 TPU 架構/封裝方向</td><td>雙拼載板假說可被驗證或否定</td><td>更新 TPU/ABF/IPD 研究地圖</td></tr>
+<tr><td>AI capex 或 Nvidia roadmap 下修</td><td>老 AI 與被動元件需求風險升高</td><td>重新檢查所有 AI hardware exposure</td></tr>
+<tr><td>強勢族群縮小且反彈不過前高</td><td>市場由健康輪動轉成頭部風險</td><td>降低追價假說權重，增加現金/防守觀察</td></tr>
+</tbody></table>
+<h2>Current stance / 目前判斷</h2>
+<ul>
+<li>**被動元件：高優先研究，但不追高。** 來源一致、外部產業新聞有支撐，但核心仍要看正式報價與擴產紀律。</li>
+<li>**TPU / 載板 / IPD：高 upside、低驗證度。** 外部資料支持 TPU compute 需求，但 dual-die substrate 尚未驗證。</li>
+<li>**老 AI：列入修復觀察，不是立即結論。** 等財報、毛利率與庫存資料。</li>
+<li>**個人操作日記：不納入研究 stance。** 國巨、健策、群聯操作只保留為來源分層提醒。</li>
+</ul>
+<h2>Parking lot / 暫停追蹤</h2>
+<ul>
+<li>健康、減重、物理治療：保留為人力資本與生活品質筆記，不進入股票 watchlist。</li>
+<li>遊戲與 QA 閒聊：除非與公司/產業投資主題直接相連，否則不追蹤。</li>
+</ul>
+  <footer>Generated and maintained by 雙雙 🦞🌱</footer>
+</main>
+</body>
+</html>
