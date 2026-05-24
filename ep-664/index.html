@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP664 投資研究筆記</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#111827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; --green:#34d399; --warn:#fbbf24; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 42%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.72; }
+    main { max-width:1180px; margin:0 auto; padding:34px 20px 80px; }
+    .back { display:inline-block; margin-bottom:18px; color:#fed7aa; text-decoration:none; font-weight:700; }
+    header { border:1px solid var(--line); background:rgba(17,24,39,.86); border-radius:26px; padding:30px; margin-bottom:24px; }
+    .eyebrow { color:#fbbf24; letter-spacing:.1em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { margin:.2em 0; font-size:34px; line-height:1.18; }
+    h2 { margin-top:36px; border-left:5px solid var(--accent); padding-left:12px; }
+    h3 { margin-top:28px; color:#bae6fd; }
+    p, li { color:#d8e2f0; }
+    .note { color:var(--muted); }
+    .pill { display:inline-block; padding:4px 9px; border-radius:999px; background:#172033; border:1px solid var(--line); color:#c7d2fe; font-size:13px; margin:2px; }
+    table { width:100%; border-collapse:collapse; margin:18px 0 26px; background:rgba(17,24,39,.72); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:block; overflow-x:auto; }
+    th, td { border:1px solid var(--line); padding:10px 12px; vertical-align:top; min-width:120px; }
+    th { background:#172033; color:#f8fafc; text-align:left; }
+    a { color:#7dd3fc; }
+    footer { margin-top:44px; color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye EP664 Research Notes</div>
+    <h1>股癌 EP664：AI 算力變現、Google TPU Cloud、Power Rack 與被動元件瓶頸</h1>
+    <p class="note">依 NotebookLM primary report、Social Worker Daily validated secondary note、supplementary triangulation 與外部查證整理。這是研究筆記，不構成個人化投資建議。</p>
+    <p><span class="pill">Primary: YouTube / NotebookLM</span><span class="pill">Secondary: Social Worker Daily</span><span class="pill">Verification: external sources</span><span class="pill">Language: 繁體中文</span></p>
+  </header>
+
+  <h2>核心結論</h2>
+  <ol>
+    <li><strong>EP664 的主線是「AI 算力變現 → 硬體投資續航 → 電力與被動元件瓶頸」。</strong>主持人把 Anthropic 獲利預期、xAI/Colossus 算力出租、Google/Blackstone TPU Cloud 與高功率 AI 機櫃串成同一條邏輯：只要算力可變現，AI capex 的硬體鏈就還沒結束。</li>
+    <li><strong>Google TPU 從自用走向更外部化，是本集最重要的結構變化。</strong>Blackstone 5B 美元、500MW、2027 上線的 TPU Cloud JV 能外部驗證「TPU access 被商品化」；但節目提到的「3:1 自用/外銷」仍需回原始音訊與後續供應鏈資料確認。</li>
+    <li><strong>被動元件不是泛泛漲價，而是 AI Power Rack / 高壓 MLCC / Snap-in 鋁電容帶來的規格升級。</strong>Murata 與 TrendForce 的外部資料支持高階 MLCC 需求與產品 mix 升級；但 47u/22u 缺貨、信昌電對應、個股漲停仍多屬 source layer。</li>
+    <li><strong>台積電與產能限制器的概念是風險管理框架。</strong>主持人認為產能不足延緩 AI 泡沫化；若晶圓代工、記憶體、光通、OSAT 產能全部大開，短期營收更好但可能加速供需反轉。</li>
+    <li><strong>處置股、健策抄底、信昌電推測等內容必須隔離為操作語境。</strong>筆記作者的「抄一點」與 ticker 猜測不是主持人觀點，也不是投資建議。</li>
+  </ol>
+
+  <h2>來源層級</h2>
+  <table><thead><tr><th>層級</th><th>來源</th><th>用途</th><th>限制</th></tr></thead><tbody>
+    <tr><td>Primary</td><td>NotebookLM primary report from YouTube：<code>sources/notebooklm_source.md</code></td><td>節目投資主題、主持人語氣、公司/產業清單</td><td>NotebookLM 未提供精確時間戳；供應鏈傳聞需回原始音訊與外部資料查證。</td></tr>
+    <tr><td>Secondary</td><td>Social Worker Daily 筆記：<code>sources/secondary_note.md</code></td><td>補足章節順序、主持人金句、筆記作者心得與操作日記</td><td>筆記作者明確聲明含主觀補述；操作日記不可視為主持人觀點。</td></tr>
+    <tr><td>Supplementary</td><td>NotebookLM triangulation：<code>sources/notebooklm_supplementary_report.md</code></td><td>比對主持人觀點、筆記作者詮釋與 AI 推論</td><td>ticker 對應與「高度合理」推測仍須降級處理。</td></tr>
+    <tr><td>External verification</td><td>Blackstone/Google TPU Cloud、Google Ironwood TPU、Broadcom 8-K、Murata/TrendForce、TechCrunch/WSJ 摘要</td><td>查證可外部支撐的技術、商業與供應鏈主張</td><td>可支持大方向，不一定支持節目中的所有比例與料號細節。</td></tr>
+  </tbody></table>
+
+  <h2>來源交叉比對</h2>
+  <table><thead><tr><th>主題</th><th>Primary / Podcast source</th><th>Secondary note</th><th>Triangulation / 判斷</th><th>後續查證</th></tr></thead><tbody>
+    <tr><td>Anthropic 獲利與 AI 算力變現</td><td>Anthropic 傳出轉獲利；若最燒錢模型商可獲利，硬體投資有續航。</td><td>可能是上市前美化，但仍是硬體強心針。</td><td>外部媒體支持 Anthropic 告知投資人 Q2 可能首次 operating profit；仍非 audited filing。</td><td>追正式揭露、revenue quality、compute cost。</td></tr>
+    <tr><td>Google + Blackstone TPU Cloud</td><td>第三方 TPU Cloud 降低使用者對 Google 直營疑慮；外銷/自用比例重要。</td><td>同步記錄，推論 TPU 供應鏈受益。</td><td>Blackstone press release 支持 JV、5B equity、500MW、2027；3:1 比例仍是 podcast claim。</td><td>查 JV 客戶、Google Cloud TPU 使用量、Broadcom/Google supply agreement。</td></tr>
+    <tr><td>被動元件</td><td>高壓 MLCC、47u/22u、Snap-in 鋁電容、Power Rack；下半年缺貨。</td><td>同步記錄，並猜信昌電、國巨、金山電、台達/光寶等。</td><td>外部資料支持 AI server 高階 MLCC 需求與產品 mix 升級；個股對應與料號缺貨需查證。</td><td>查 Murata/SEMCO/Taiyo lead time、台廠法說、通路報價、AI rack BOM。</td></tr>
+    <tr><td>產能限制器 / AI 泡沫</td><td>台積電若大擴產，NVIDIA 營收更好但泡沫可能更快破；產能不足反而延緩泡沫。</td><td>同步記錄。</td><td>主持人的市場結構判斷，不是單一可驗證事實。</td><td>追 TSMC capex、CoWoS、HBM、optics、OSAT 供給。</td></tr>
+    <tr><td>處置股</td><td>主持人從討厭到中性看待，理解玩法後視為市場機制。</td><td>筆記作者語氣更操作化；健策抄一點、信昌電推測。</td><td>主持人態度可記錄；個股操作不可升格為建議。</td><td>若研究個股，另看公司基本面與流動性風險。</td></tr>
+  </tbody></table>
+
+  <h2>主持人觀點 vs 筆記作者詮釋</h2>
+  <table><thead><tr><th>主題</th><th>Likely host view</th><th>筆記作者詮釋</th><th>我們的處理</th></tr></thead><tbody>
+    <tr><td>AI capex</td><td>算力可以轉出租/轉獲利，硬體商還可好一陣子，直到特殊情況出現。</td><td>Anthropic 可能為上市美化，但基本方向仍強心針。</td><td>保留為高優先假說；把未上市財務數字標為未審計/需查證。</td></tr>
+    <tr><td>TPU Cloud</td><td>Google 透過 Blackstone 第三方架構把 TPU access 外部化，對 ASIC/雲端競爭格局重要。</td><td>TPU 供應鏈利多，CLS/FLEX 等可能受益。</td><td>保留 TPU 外部化主線；供應鏈標的分層查證。</td></tr>
+    <tr><td>被動元件</td><td>高壓 MLCC、Snap-in 鋁電容、Power Rack 可能是瓶頸；大噴時先看資金，回檔後找真正供需失衡。</td><td>直接推信昌電、國巨、金山電、台達/光寶等。</td><td>產業假說保留；個股對應降級為 secondary interpretation。</td></tr>
+    <tr><td>產能包板 / 卡位</td><td>包產能即使不用也能限制對手，競爭延伸到記憶體、晶圓代工、光通、OSAT。</td><td>台積電產能沒全開延緩 AI 泡沫。</td><td>作為 supply-chain strategy watch item，不寫成確定事實。</td></tr>
+    <tr><td>個人操作</td><td>未明確給買賣建議。</td><td>健策抄一點、信昌電可能是加碼標的。</td><td>全部標示「筆記作者操作/推測」，不得作為 host stance。</td></tr>
+  </tbody></table>
+
+  <h2>公司與 ticker 對照表</h2>
+  <table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead><tbody>
+    <tr><td>Anthropic</td><td>Private</td><td>AI 模型商獲利能力指標</td><td>偏正向觀察</td><td>可能為上市前美化，但仍打臉泡沫論。</td><td>Primary + external media（未審計）</td><td>正式財務揭露、revenue quality、compute cost。</td></tr>
+    <tr><td>xAI / Colossus</td><td>Private</td><td>算力出租、回本週期案例</td><td>偏正向觀察</td><td>Grok 不如預期，轉租算力也能賺。</td><td>Primary only</td><td>出租合約、使用率、capex/opex。</td></tr>
+    <tr><td>Google / Alphabet</td><td>GOOGL</td><td>TPU Cloud、TPU 外部化、AI Hypercomputer</td><td>偏正向觀察</td><td>TPU 供應鏈利多，對 Google 股價可能更偏估值影響。</td><td>Primary + Blackstone/Google external</td><td>TPU Cloud 客戶、TPU revenue/capex、Ironwood availability。</td></tr>
+    <tr><td>Blackstone</td><td>BX</td><td>TPU Cloud JV 資本方/第三方平台</td><td>中立觀察</td><td>提供第三方信任與資本。</td><td>Primary + external press release</td><td>500MW 建設進度、客戶與電力供給。</td></tr>
+    <tr><td>Broadcom</td><td>AVGO</td><td>Google TPU / AI racks supply agreement</td><td>偏正向觀察</td><td>TPU 供應鏈核心之一。</td><td>External 8-K + source context</td><td>AI revenue、custom ASIC margin、Google exposure。</td></tr>
+    <tr><td>NVIDIA</td><td>NVDA</td><td>AI GPU/產能競爭/包產能參照</td><td>中立偏正向觀察</td><td>若台積電產能更大，營收可更高但泡沫更快。</td><td>Primary</td><td>GPU roadmap、HBM/CoWoS/optics constraints。</td></tr>
+    <tr><td>TSMC / 台積電</td><td>2330.TW / TSM</td><td>晶圓代工與產能限制器</td><td>中立觀察</td><td>產能不足延緩 AI 泡沫。</td><td>Primary + secondary</td><td>capex、CoWoS、advanced packaging、customer allocation。</td></tr>
+    <tr><td>Murata</td><td>6981.T</td><td>高階 MLCC / AI server demand 指標</td><td>偏正向觀察</td><td>47u/22u 料號缺貨核心供應商之一。</td><td>Primary + TrendForce/Murata external</td><td>lead time、AI server MLCC mix、價格調整。</td></tr>
+    <tr><td>Samsung Electro-Mechanics / SEMCO</td><td>009150.KS</td><td>高階 MLCC 供應商</td><td>偏正向觀察</td><td>與 Murata 共同供應關鍵料號。</td><td>Primary + TrendForce external</td><td>產能利用率、AI server orders。</td></tr>
+    <tr><td>被動元件 / 高壓 MLCC / Snap-in 鋁電容</td><td>N/A</td><td>本集最高價值產業主線</td><td>偏正向觀察</td><td>回檔後鎖定瓶頸標的。</td><td>Primary + secondary + external industry support</td><td>通路報價、法說、庫存天數、Power Rack BOM。</td></tr>
+    <tr><td>信昌電</td><td>2492.TW</td><td>筆記作者推測主持人持有/加碼標的</td><td>只被提及 / 主持人未明確表態</td><td>「應該就是信昌電」。</td><td>Secondary-only</td><td>不得當作主持人觀點；若研究需獨立查基本面。</td></tr>
+    <tr><td>國巨</td><td>2327.TW</td><td>secondary 延伸的被動元件標的</td><td>主持人未明確表態</td><td>筆記作者猜高壓 MLCC 可能較硬。</td><td>Secondary-only</td><td>查法說/產品組合/AI exposure。</td></tr>
+    <tr><td>金山電</td><td>8042.TW</td><td>secondary 延伸的鋁電容標的</td><td>主持人未明確表態</td><td>筆記作者猜牛角電容/鋁電容受益。</td><td>Secondary-only</td><td>查產能、客戶、產品規格。</td></tr>
+    <tr><td>台達電 / 光寶科</td><td>2308.TW / 2301.TW</td><td>Power Rack / 電源櫃推論標的</td><td>主持人未明確表態</td><td>估計和 Power Rack 機會相關。</td><td>Secondary-only</td><td>查 AI data center power revenue、訂單、毛利率。</td></tr>
+    <tr><td>健策</td><td>3653.TW</td><td>處置股/筆記作者操作日記</td><td>主持人未明確表態</td><td>「抄一點」。</td><td>Secondary operation diary</td><td>僅保留為風控提醒，不納入投資假說。</td></tr>
+  </tbody></table>
+
+  <h2>投資假說草稿</h2>
+  <h3>H1. AI 算力變現若持續被驗證，硬體 capex 的尾端瓶頸比 GPU 本身更有彈性</h3>
+  <p><strong>來源依據：</strong>Anthropic 獲利預期、xAI 算力出租、Google/Blackstone TPU Cloud。<strong>風險：</strong>Anthropic profitability 是 investor-shared projection，全年可能因 compute cost 再轉虧；AI capex 若過度融資化，硬體訂單可能突然修正。</p>
+  <h3>H2. 高階 MLCC 與 Snap-in 鋁電容可能進入結構性供需緊張，但個股對應要保守</h3>
+  <p><strong>來源依據：</strong>主持人談高壓 MLCC、47u/22u、Power Rack、Snap-in；Murata/TrendForce 支持 AI server 高階 MLCC mix 升級與產能負載。<strong>風險：</strong>消費電子仍弱，T3 泛用品可能只是恐慌補貨；若大廠擴產，缺貨週期縮短。</p>
+  <h3>H3. TPU 外部化會改變 AI accelerator 估值敘事，但 Google 股價受益可能不如供應鏈明顯</h3>
+  <p><strong>來源依據：</strong>Blackstone JV、Broadcom 8-K、主持人談 TPU Cloud 第三方化與 3:1 比例。<strong>風險：</strong>TPU capacity 是否真正被外部客戶採用、軟體生態、Google 是否願意犧牲 Cloud 控制權仍需觀察。</p>
+  <h3>H4. 處置股與操作日記只能作為風控提醒，不可轉成交易建議</h3>
+  <p><strong>來源依據：</strong>主持人中性看待處置股；secondary note 有健策抄一點與信昌電推測。<strong>處理方式：</strong>流動性被抽離時，盤面可能失真；研究可記錄制度影響，但不能追隨個人操作。</p>
+
+  <h2>外部查證摘要</h2>
+  <table><thead><tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr></thead><tbody>
+    <tr><td>Anthropic 2026 Q2 可能首次達 operating profit，但全年可能仍虧損。</td><td>Partially supported</td><td><a href="https://techcrunch.com/2026/05/21/anthropic-reportedly-projects-its-first-profit-this-quarter/">TechCrunch citing WSJ</a></td><td>支持「AI 算力變現」敘事，但仍非 audited public filing。</td></tr>
+    <tr><td>Google + Blackstone TPU Cloud：5B equity、500MW、2027 開始。</td><td>Verified</td><td><a href="https://www.blackstone.com/news/press/blackstone-and-google-cloud-announce-strategic-partnership-to-accelerate-the-future-of-ai-infrastructure/">Blackstone press release</a></td><td>支持 TPU Cloud 外部化/第三方化主線。</td></tr>
+    <tr><td>Google Ironwood TPU 為第七代 TPU，面向 inference era。</td><td>Verified</td><td><a href="https://cloud.google.com/blog/products/compute/ironwood-tpu-age-of-inference">Google Cloud blog</a></td><td>支持 Google TPU 路線持續推進；不證明 3:1 比例。</td></tr>
+    <tr><td>Broadcom/Google supply agreement 至 2031；Anthropic commitment up to 3.5GW TPU capacity。</td><td>Verified</td><td><a href="https://investors.broadcom.com/node/76621/html">Broadcom 8-K</a></td><td>支持 TPU demand、AI rack/networking 供應鏈重要性。</td></tr>
+    <tr><td>AI server 帶動高階 MLCC 需求與產品 mix 升級。</td><td>Partially supported</td><td><a href="https://www.trendforce.com/news/2026/05/22/news-mlcc-suppliers-rally-on-cloud-demand-murata-semco-yageo-to-benefit-from-surge-in-ai-server-components/">TrendForce</a>、<a href="https://article.murata.com/en-us/article/mlcc-for-automotive-servers-smartphones-10uf-0603m">Murata article</a></td><td>支持大方向；不等於已驗證 47u/22u 缺貨與特定台股受益。</td></tr>
+    <tr><td>47u/22u MLCC 缺貨、Snap-in 產能不足、NVIDIA 包雷射產能。</td><td>Source-supported only</td><td>Podcast/NotebookLM + secondary note</td><td>有研究價值，但不可寫成外部 verified fact。</td></tr>
+    <tr><td>信昌電是主持人加碼標的、健策抄一點。</td><td>Secondary-only / operation diary</td><td>Social Worker Daily secondary note</td><td>不得視為主持人觀點或投資建議。</td></tr>
+  </tbody></table>
+
+  <h2>追蹤計畫 / Event triggers</h2>
+  <table><thead><tr><th>追蹤項目</th><th>為什麼重要</th><th>事件觸發條件</th><th>目前 stance</th></tr></thead><tbody>
+    <tr><td>Anthropic profitability / compute cost</td><td>若模型商能獲利，AI capex 的終端需求更可信。</td><td>正式財務揭露、revenue run-rate、gross margin、compute spend。</td><td>偏正向觀察；未上市資料需保守。</td></tr>
+    <tr><td>Google + Blackstone TPU Cloud</td><td>第三方 TPU access 可能改變 ASIC/GPU 競爭格局。</td><td>500MW 建設進度、客戶名單、pricing、utilization、2027 milestone。</td><td>高優先追蹤。</td></tr>
+    <tr><td>Broadcom + Google + Anthropic TPU/rack agreement</td><td>支持 custom AI accelerator 與 AI rack/networking 需求。</td><td>AVGO AI revenue、AI rack/networking backlog、Google/Anthropic capex。</td><td>高優先追蹤。</td></tr>
+    <tr><td>高壓 MLCC / 47u / 22u</td><td>本集最直接的供需瓶頸敘事。</td><td>Murata/SEMCO/Yageo/Walsin lead time、ASP、產能利用率、AI server mix。</td><td>偏正向觀察；料號缺貨需驗證。</td></tr>
+    <tr><td>Snap-in 牛角鋁電容</td><td>AI Power Rack 可能帶來規格/用量升級。</td><td>Nichicon/Rubycon/Panasonic/金山電產品線、交期、AI customer exposure。</td><td>值得研究；證據不足。</td></tr>
+    <tr><td>Power Rack 電源供應</td><td>高功耗 AI server 使 rack-level power 更重要。</td><td>台達電/光寶科 data center power revenue、毛利率、客戶訂單。</td><td>secondary-only，先觀察。</td></tr>
+    <tr><td>TSMC / advanced packaging / OSAT / optics</td><td>產能瓶頸決定 AI capex 消化速度。</td><td>CoWoS/SoIC capex、customer allocation、HBM supply、laser/optics capacity。</td><td>中立偏正向，亦是泡沫風險控制器。</td></tr>
+  </tbody></table>
+
+  <h2>方法限制</h2>
+  <ul>
+    <li>NotebookLM primary report 未提供精確時間戳；若要精準引用，仍需回原始音訊。</li>
+    <li>Anthropic、xAI、TPU 比例與多數供應鏈資訊包含未上市公司資料或市場傳聞，不能視為 audited fact。</li>
+    <li>Social Worker Daily 是高品質 secondary note，但作者明確聲明含主觀補述與操作日記；本報告已將這些內容隔離。</li>
+    <li>本報告是學習與研究整理，不構成個人化投資建議。投資前仍需依資產配置、風險承受度與稅務狀況判斷。</li>
+  </ul>
+
+  <footer>Generated and maintained by 雙雙 🦞🌱</footer>
+</main>
+</body>
+</html>
