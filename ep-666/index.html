@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP666 投資研究筆記</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#111827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; --green:#34d399; --warn:#fbbf24; --red:#fb7185; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 42%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.72; }
+    main { max-width:1180px; margin:0 auto; padding:34px 20px 80px; }
+    .back { display:inline-block; margin-bottom:18px; color:#fed7aa; text-decoration:none; font-weight:700; }
+    header { border:1px solid var(--line); background:rgba(17,24,39,.86); border-radius:26px; padding:30px; margin-bottom:24px; }
+    .eyebrow { color:#fbbf24; letter-spacing:.1em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { margin:.2em 0; font-size:34px; line-height:1.18; }
+    h2 { margin-top:36px; border-left:5px solid var(--accent); padding-left:12px; }
+    h3 { margin-top:28px; color:#bae6fd; }
+    p, li { color:#d8e2f0; }
+    .note { color:var(--muted); }
+    .pill { display:inline-block; padding:4px 9px; border-radius:999px; background:#172033; border:1px solid var(--line); color:#c7d2fe; font-size:13px; margin:2px; }
+    .warn { border-left:4px solid var(--warn); background:rgba(251,191,36,.08); padding:12px 14px; border-radius:12px; }
+    table { width:100%; border-collapse:collapse; margin:18px 0 26px; background:rgba(17,24,39,.72); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:block; overflow-x:auto; }
+    th, td { border:1px solid var(--line); padding:10px 12px; vertical-align:top; min-width:120px; }
+    th { background:#172033; color:#f8fafc; text-align:left; }
+    a { color:#7dd3fc; }
+    code { color:#fde68a; }
+    footer { margin-top:44px; color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye EP666 Research Notes</div>
+    <h1>股癌 EP666：高檔市場槓桿風險、被動元件需求轉折與 AI 軟體估值修復</h1>
+    <p class="note">依 NotebookLM primary report、Social Worker Daily validated secondary note、supplementary triangulation 與外部查證整理。這是研究筆記，不構成個人化投資建議。</p>
+    <p><span class="pill">Primary: YouTube / NotebookLM</span><span class="pill">Secondary: Social Worker Daily</span><span class="pill">Verification: external sources</span><span class="pill">Language: 繁體中文</span></p>
+  </header>
+
+  <h2>核心結論</h2>
+  <ol>
+    <li><strong>本集核心不是單純看多，而是「基本面仍健康、但市場槓桿與流動性風險正在升高」。</strong>主持人提到處置股、融資快速增加與不限用途借款收攏；這些訊號使追價與開槓桿的風險上升。</li>
+    <li><strong>被動元件是本集最高價值產業線索。</strong>主持人描述被動元件從「成本驅動漲價」轉向「需求驅動漲價」，尤其鋁電容、SP-Cap、OS-CON、牛角電容、高階 MLCC、電感與電阻可能出現供需緊張。</li>
+    <li><strong>軟體股的敘事從「被 AI 取代」轉成「受 AI 加值」。</strong>Salesforce、ServiceNow、Snowflake、Okta 與 IGV 被用來觀察軟體族群表態；但 token/usage-based 計費與 AI 收入占比仍要逐家公司驗證。</li>
+    <li><strong>AI 應用層的護城河可概括成資料、業務能力與可歸責性。</strong>當模型能力趨同，企業客戶更在意封閉資料、商務解題能力、法遵與責任承擔。</li>
+    <li><strong>筆記作者的操作日記必須隔離。</strong>國巨減碼、PLTR/NET/CRWD 右側交易、ODM 開槓桿等內容不是主持人買賣建議，只能作為 attribution warning。</li>
+  </ol>
+
+  <div class="warn"><strong>研究紀律提醒：</strong>本報告保留節目中有研究價值的線索，但不把供應鏈 memo、筆記作者操作、或 NotebookLM 推論寫成已驗證事實。</div>
+
+  <h2>來源層級</h2>
+  <table><thead><tr><th>層級</th><th>來源</th><th>用途</th><th>限制</th></tr></thead><tbody>
+    <tr><td>Primary</td><td>NotebookLM primary report from YouTube：<code>sources/notebooklm_source.md</code></td><td>投資主題、主持人語氣、公司/產業清單</td><td>NotebookLM 未提供精確時間戳；部分數字與供應鏈 memo 需查證。</td></tr>
+    <tr><td>Secondary</td><td>Social Worker Daily 筆記：<code>sources/secondary_note.md</code></td><td>補足章節順序、筆記作者心得與操作日記</td><td>筆記作者明確聲明含主觀補述；操作日記不可視為主持人觀點。</td></tr>
+    <tr><td>Supplementary</td><td>NotebookLM triangulation：<code>sources/notebooklm_supplementary_report.md</code></td><td>比對主持人觀點、筆記作者詮釋與 AI 推論</td><td>仍需人工降級處理 ticker 對應與過度推論。</td></tr>
+    <tr><td>External verification</td><td>公司公告、SEC/IR、產業資料</td><td>查證可公開驗證的財務、產品與產業 claims</td><td>多數供應鏈 memo 與主持人市場觀察無法完全外部驗證。</td></tr>
+  </tbody></table>
+
+  <h2>來源交叉比對</h2>
+  <table><thead><tr><th>主題</th><th>Primary / Podcast source</th><th>Secondary note</th><th>Triangulation / 判斷</th><th>後續查證</th></tr></thead><tbody>
+    <tr><td>市場高檔與槓桿</td><td>90% 資金在處置股、融資增加快、不限用途借款收攏可視為外部風控。</td><td>同步記錄，語氣偏操作與自嘲。</td><td>Host stance 是「基本面健康但流動性風險升高」。</td><td>TWSE 融資餘額、處置股清單、券商信用條件。</td></tr>
+    <tr><td>被動元件</td><td>公司派從成本驅動改稱需求驅動；鋁電容與多種被動元件缺料。</td><td>同步記錄，並加入「破線再停利」等操作語氣。</td><td>產業主線可列入高優先研究；個人操作不可採用。</td><td>江海 memo、日系出貨資料、台廠法說、通路報價。</td></tr>
+    <tr><td>老 AI / ODM</td><td>ODM/OEM 財報好、硬體跟著美股攻上去，但主持人說自己不偏好 ODM。</td><td>筆記作者推論 ODM 可開槓桿。</td><td>Host stance 是中立觀察，不是買進建議。</td><td>鴻海、廣達、緯創等營收與融資變化。</td></tr>
+    <tr><td>軟體股</td><td>CRM、NOW、OKTA、SNOW 以財報/回購/指引反駁 AI 取代論；IGV 表態。</td><td>筆記作者延伸到 PLTR/NET/CRWD 右側交易。</td><td>Host stance 對族群偏正向；特定個股交易屬筆記作者詮釋。</td><td>各公司 10-Q、earnings release、billing model、AI product adoption。</td></tr>
+    <tr><td>AI 應用護城河</td><td>模型同質化後，資料、業務能力、可歸責性成為關鍵。</td><td>筆記作者推論 Apple/Google/Microsoft/Amazon 雲端資料平台。</td><td>大方向可保留；雲端巨頭對應是 secondary interpretation。</td><td>企業 AI 採用、資料主權、SLA/責任條款。</td></tr>
+  </tbody></table>
+
+  <h2>主持人觀點 vs 筆記作者詮釋</h2>
+  <table><thead><tr><th>主題</th><th>Likely host view</th><th>筆記作者詮釋</th><th>我們的處理</th></tr></thead><tbody>
+    <tr><td>被動元件缺貨</td><td>需求驅動漲價逐漸被公司派承認；市場派可能領先公司派。</td><td>仍缺，破線再停利。</td><td>投資假說保留；操作語句隔離。</td></tr>
+    <tr><td>軟體股</td><td>AI 沒有毀掉 SaaS，反而可能讓軟體股重新表態。</td><td>PLTR、NET、CRWD 可右側交易。</td><td>族群主線保留；個股交易只列 secondary-only。</td></tr>
+    <tr><td>ODM/OEM</td><td>基本面健康、資金輪動回來，但主持人個人不偏好。</td><td>ODM 大廠可在無槓桿狀況下開槓桿。</td><td>標示為筆記作者槓桿偏好，不列為 host stance。</td></tr>
+    <tr><td>資料/業務/可歸責性</td><td>應用層勝負關鍵在資料、商務能力、責任承擔。</td><td>對應到 Apple iCloud、Google Drive、Microsoft OneDrive、AWS。</td><td>大方向保留；具體公司對應需外部研究。</td></tr>
+    <tr><td>國巨操作</td><td>未明確給買賣建議。</td><td>操作日記：國巨繼續減碼一點點。</td><td>僅列為操作日記，不納入研究結論。</td></tr>
+  </tbody></table>
+
+  <h2>公司與 ticker 對照表</h2>
+  <table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead><tbody>
+    <tr><td>國巨</td><td>2327.TW</td><td>被動元件龍頭、筆記作者操作日記</td><td>主持人未明確表態 / 被動元件族群偏正向</td><td>繼續減碼一點點</td><td>Secondary-only operation diary</td><td>法說、AI server MLCC/電阻/鉭電容 exposure；不要當 host 建議。</td></tr>
+    <tr><td>華新科</td><td>2492.TW</td><td>被動元件標的 mapping check</td><td>被動元件族群偏正向</td><td>無明確個股操作</td><td>NotebookLM inference / needs mapping check</td><td>確認產品與缺料項目；避免把 2492.TW 寫成鋁電容純標的。</td></tr>
+    <tr><td>江海電容</td><td>002484.SZ</td><td>鋁電容 memo / 全球缺口 20% claim</td><td>偏正向觀察</td><td>作為缺貨證據</td><td>Primary+secondary source-supported only</td><td>找原 memo 或公司 IR；確認 20% 缺口來源。</td></tr>
+    <tr><td>Murata</td><td>6981.T</td><td>日系被動元件、MLCC 對照</td><td>偏正向觀察</td><td>需看月度出貨</td><td>External partially supported</td><td>查 MLCC demand、AI server mix、產能利用率。</td></tr>
+    <tr><td>Taiyo Yuden</td><td>6976.T</td><td>日系被動元件對照</td><td>偏正向觀察</td><td>需看月度出貨</td><td>External partially supported</td><td>查出貨/月報與 AI server exposure。</td></tr>
+    <tr><td>Salesforce</td><td>CRM</td><td>軟體股表態、回購、AI/使用量計費轉型</td><td>偏正向觀察</td><td>軟體族群可嘗試右側交易</td><td>Primary + external earnings partially supported</td><td>查 FY2027 Q1 earnings、share repurchase authorization、AI revenue quality。</td></tr>
+    <tr><td>ServiceNow</td><td>NOW</td><td>軟體股財報/指引</td><td>偏正向觀察</td><td>軟體族群表態</td><td>Primary; external to verify</td><td>查 subscription revenue、AI agent adoption、guidance。</td></tr>
+    <tr><td>Snowflake</td><td>SNOW</td><td>雲端資料平台、AI data demand</td><td>偏正向觀察</td><td>軟體族群表態</td><td>Primary + SEC exhibit supported</td><td>查 product revenue growth、AI accounts、consumption model。</td></tr>
+    <tr><td>Okta</td><td>OKTA</td><td>身分識別軟體、財報支持 AI 未毀掉 SaaS</td><td>偏正向觀察</td><td>軟體族群表態</td><td>Primary; external to verify</td><td>查 subscription revenue、AI/security demand。</td></tr>
+    <tr><td>IGV ETF</td><td>IGV</td><td>軟體族群價格表態</td><td>偏正向觀察</td><td>右側交易參考</td><td>Primary+secondary</td><td>查成分股、資金流與估值擴張。</td></tr>
+    <tr><td>鴻海</td><td>2317.TW</td><td>ODM/OEM 老 AI 輪動</td><td>中立觀察 / 基本面健康</td><td>可在 ODM 大廠開槓桿</td><td>Primary+secondary, note-author interpretation</td><td>查營收、AI server guidance、融資與處置股狀態。</td></tr>
+    <tr><td>廣達</td><td>2382.TW</td><td>ODM/OEM old AI 參照</td><td>中立觀察</td><td>同上</td><td>Source-supported only</td><td>查 AI server revenue、margin、融資。</td></tr>
+    <tr><td>PLTR / NET / CRWD</td><td>PLTR / NET / CRWD</td><td>筆記作者右側交易延伸</td><td>主持人未明確表態</td><td>可上去打看看</td><td>Secondary-only</td><td>不得列為 host recommendation；若研究需另開公司報告。</td></tr>
+    <tr><td>Apple / Google / Microsoft / Amazon</td><td>AAPL / GOOGL / MSFT / AMZN</td><td>筆記作者把資料/雲端護城河對應到大型平台</td><td>主持人未明確點名為本集標的</td><td>iCloud/Drive/OneDrive/AWS 是未來贏家</td><td>Secondary-only interpretation</td><td>需另查 AI monetization 與 enterprise data moat。</td></tr>
+  </tbody></table>
+
+  <h2>投資假說草稿</h2>
+  <h3>H1. 被動元件若真由需求而非成本推升，毛利率與報價續航可能高於市場原先預期</h3>
+  <p><strong>來源依據：</strong>主持人說公司派從成本驅動改口需求驅動，並提及鋁電容缺口與多種被動元件缺料。<strong>風險：</strong>20% 缺口是 source-supported only；若只是短期恐慌補貨，價格彈性會反轉。</p>
+  <h3>H2. 軟體股 AI 敘事可能從「被取代」轉成「用量/資料/工作流變現」</h3>
+  <p><strong>來源依據：</strong>Salesforce、ServiceNow、Snowflake、Okta 被主持人視為證明 AI 沒有毀掉 SaaS；IGV 已表態。<strong>風險：</strong>AI 功能若只是行銷話術，估值修復可能是短期 rerating。</p>
+  <h3>H3. 「資料 + 業務能力 + 可歸責性」比單純模型能力更接近企業 AI 應用層護城河</h3>
+  <p><strong>來源依據：</strong>主持人認為公開資料訓練的模型同質化，掌握封閉資料、企業流程與責任承擔才是勝負點。<strong>風險：</strong>大型模型商可能向上整合；SI/軟體商的毛利與責任風險要一起看。</p>
+  <h3>H4. 老 AI/ODM 是資金輪動與基本面健康的觀察項，不是本集最清楚的高勝率假說</h3>
+  <p><strong>來源依據：</strong>主持人承認 ODM/OEM 成績好、資金輪動回來，但說自己不偏好。<strong>風險：</strong>筆記作者延伸到槓桿操作，需排除。</p>
+
+  <h2>外部查證摘要</h2>
+  <table><thead><tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr></thead><tbody>
+    <tr><td>Snowflake FY2027 Q1 product revenue 13.3 億美元、YoY +34%，並提高全年 product revenue guidance。</td><td>Verified</td><td><a href="https://www.sec.gov/Archives/edgar/data/1640147/000164014726000027/fy2027q1earnings.htm">Snowflake SEC exhibit</a></td><td>支持資料平台受 AI/資料需求帶動的說法；仍需看估值與 consumption 波動。</td></tr>
+    <tr><td>Salesforce 執行大規模 share repurchase，AI/Agentforce 是財報敘事之一。</td><td>Partially supported</td><td>Salesforce Investor Relations FY2027 Q1 earnings release / materials</td><td>支持主持人對軟體族群修復的方向；token-based 收入占比仍需逐項查證。</td></tr>
+    <tr><td>ServiceNow / Okta 財報支持 SaaS 族群表態。</td><td>Partially supported</td><td>各公司 earnings release、10-Q、guidance（待逐項補完）</td><td>source 方向可研究，但本報告不把它寫成完整 verified fact。</td></tr>
+    <tr><td>江海 memo 稱鋁電容全球缺口 20% 以上。</td><td>Source-supported only</td><td>Podcast/NotebookLM + Social Worker Daily secondary note</td><td>高價值但未驗證；需找原 memo 或供應鏈報告。</td></tr>
+    <tr><td>47u/22u MLCC、SP-Cap、OS-CON、牛角電容等缺料。</td><td>Source-supported only</td><td>Podcast/secondary note</td><td>需用通路報價、日系廠與台廠法說確認；目前不可寫成 verified fact。</td></tr>
+    <tr><td>國巨減碼、PLTR/NET/CRWD 右側交易、ODM 開槓桿是主持人建議。</td><td>Contradicted / misattributed</td><td>Social Worker Daily note 的心得與操作日記</td><td>這些是筆記作者詮釋或操作，不是主持人建議。</td></tr>
+  </tbody></table>
+
+  <h2>追蹤計畫 / Event triggers</h2>
+  <table><thead><tr><th>追蹤項目</th><th>為什麼重要</th><th>事件觸發條件</th><th>目前 stance</th></tr></thead><tbody>
+    <tr><td>被動元件廠法說與交期</td><td>驗證需求驅動與缺貨是否真實。</td><td>Yageo/Walsin/Murata/Taiyo/Nichicon/Rubycon/Panasonic/江海 IR、通路報價、lead time 延長。</td><td>高優先；偏正向但缺口未驗證。</td></tr>
+    <tr><td>江海 20% 缺口原始來源</td><td>決定鋁電容假說信心。</td><td>原 memo、公司 IR、產業報告。</td><td>待查；目前 source-supported only。</td></tr>
+    <tr><td>軟體公司 AI/usage revenue</td><td>驗證 AI 是否真正提高使用量與收入。</td><td>CRM/NOW/SNOW/OKTA 10-Q、earnings transcript、AI product KPIs。</td><td>值得研究；不可泛化。</td></tr>
+    <tr><td>IGV 與軟體股 breadth</td><td>判斷族群表態是否擴散或只是短線 rerating。</td><td>ETF 成分股、earnings revisions、fund flows、估值。</td><td>偏正向但需看估值。</td></tr>
+    <tr><td>TWSE 融資與處置股</td><td>量化市場流動性風險。</td><td>融資餘額加速、處置股比例升高、券商信用公告。</td><td>風險升高。</td></tr>
+    <tr><td>ODM/OEM AI server revenue</td><td>確認老 AI 輪動是否有基本面支撐。</td><td>月營收、AI server guidance、毛利率、融資水位。</td><td>中立觀察；主持人不偏好 ODM。</td></tr>
+  </tbody></table>
+
+  <h2>方法限制</h2>
+  <ul>
+    <li>NotebookLM 未提供完整逐字稿定位，重要語氣與數字仍需回原始音訊確認。</li>
+    <li>被動元件缺口、江海 memo、特定料號與 ticker 對應多屬供應鏈 source layer，需後續外部查證。</li>
+    <li>外部查證只完成最重要的公開資料初篩；完整公司別研究需另查 earnings call transcript、10-Q、法說與估值。</li>
+    <li>本報告是學習與研究筆記，不構成個人化投資建議或買賣指令。</li>
+  </ul>
+
+  <footer>Generated and maintained by 雙雙 🦞🌱</footer>
+</main>
+</body>
+</html>
