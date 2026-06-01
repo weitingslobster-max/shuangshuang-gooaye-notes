@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP665 投資研究筆記</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#111827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; --green:#34d399; --warn:#fbbf24; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 42%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.72; }
+    main { max-width:1180px; margin:0 auto; padding:34px 20px 80px; }
+    .back { display:inline-block; margin-bottom:18px; color:#fed7aa; text-decoration:none; font-weight:700; }
+    header { border:1px solid var(--line); background:rgba(17,24,39,.86); border-radius:26px; padding:30px; margin-bottom:24px; }
+    .eyebrow { color:#fbbf24; letter-spacing:.1em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { margin:.2em 0; font-size:34px; line-height:1.18; }
+    h2 { margin-top:36px; border-left:5px solid var(--accent); padding-left:12px; }
+    h3 { margin-top:28px; color:#bae6fd; }
+    p, li { color:#d8e2f0; }
+    .note { color:var(--muted); }
+    .pill { display:inline-block; padding:4px 9px; border-radius:999px; background:#172033; border:1px solid var(--line); color:#c7d2fe; font-size:13px; margin:2px; }
+    table { width:100%; border-collapse:collapse; margin:18px 0 26px; background:rgba(17,24,39,.72); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:block; overflow-x:auto; }
+    th, td { border:1px solid var(--line); padding:10px 12px; vertical-align:top; min-width:120px; }
+    th { background:#172033; color:#f8fafc; text-align:left; }
+    a { color:#7dd3fc; }
+    footer { margin-top:44px; color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye EP665 Research Notes</div>
+    <h1>股癌 EP665：被動元件週期復甦、SpaceX IPO 與 Neo Cloud 願景</h1>
+    <p class="note">依 NotebookLM primary report、Social Worker Daily validated secondary note、supplementary triangulation 與外部查證整理。這是研究筆記，不構成個人化投資建議。</p>
+    <p><span class="pill">Primary: YouTube / NotebookLM</span><span class="pill">Secondary: Social Worker Daily</span><span class="pill">Verification: SEC / external sources</span><span class="pill">Language: 繁體中文</span></p>
+  </header>
+
+  <h2>核心結論</h2>
+  <ol>
+    <li><strong>EP665 的主軸是高檔市場裡的訊號辨識。</strong>主持人承認盤勢「噴到看不懂」、帶有賭的成分，但仍把被動元件週期、SpaceX IPO / Neo Cloud、機器人與台積電分紅拆成不同可信度的研究線索。</li>
+    <li><strong>被動元件是本集最可量化的主線。</strong>來源提到國巨 B/B ratio 拉升、特規品稼動率約 90%、標準品約 80%，並用 2018 年毛利率高峰作為壓力測試；真正要追的是漲價斜率與 EPS 上修，而不是單純追股價。</li>
+    <li><strong>SpaceX 是事件驅動 + 願景驅動。</strong>SEC S-1 / S-1A 讓 SpaceX 上市程序成為官方文件可追蹤事件；但軌道 AI server / Neo Cloud 仍是長期願景，不能直接當成已驗證商業模型。</li>
+    <li><strong>二階題材要降級處理。</strong>太陽能、散熱、6/12 出貨日、機器人與個人操作日記多半來自筆記作者延伸或題材擴散，不能寫成主持人核心觀點。</li>
+    <li><strong>台積電分紅目前更像情緒雜訊。</strong>除非後續出現薪酬制度或人才流動的硬資料，否則不應把員工抱怨升級為基本面看空。</li>
+  </ol>
+
+  <h2>來源層級</h2>
+  <table><thead><tr><th>層級</th><th>來源</th><th>用途</th><th>限制</th></tr></thead><tbody>
+    <tr><td>Primary</td><td><code>sources/notebooklm_source.md</code></td><td>節目投資主題、主持人語氣、公司/產業清單</td><td>無精確時間戳；供應鏈與術語需查證。</td></tr>
+    <tr><td>Secondary</td><td><code>sources/secondary_note.md</code></td><td>章節順序、金句、筆記作者心得與操作日記</td><td>含主觀補述；操作日記不可視為主持人觀點。</td></tr>
+    <tr><td>Supplementary</td><td><code>sources/notebooklm_supplementary_report.md</code></td><td>比對 host view、note-author interpretation、NotebookLM inference</td><td>對 SpaceX / Neo Cloud 的推論需保守。</td></tr>
+    <tr><td>External verification</td><td>SEC EDGAR、公開公司/產業資料</td><td>查證可外部支持的 factual claims</td><td>可支持方向，不必然支持所有數字與時點。</td></tr>
+  </tbody></table>
+
+  <h2>來源交叉比對</h2>
+  <table><thead><tr><th>主題</th><th>Primary / Podcast source</th><th>Secondary note</th><th>Triangulation / 判斷</th><th>待查證</th></tr></thead><tbody>
+    <tr><td>盤勢過熱</td><td>行情噴到看不懂，某程度是提高勝率的賭。</td><td>同步記錄「被動元件整組做壞」「捏住卵蛋」。</td><td>這是風險管理語境，不是確定性預測。</td><td>市場溫度、處置股、融資、成交量。</td></tr>
+    <tr><td>被動元件</td><td>國巨 B/B ratio、稼動率回升；全球同業同步；用 2018 類比。</td><td>同步記錄，但另有國巨慢慢減碼。</td><td>產業方向 both-source supported；減碼是筆記作者操作。</td><td>國巨法說、Vishay/VPG/江海/Murata lead time 與 ASP。</td></tr>
+    <tr><td>鉭替代</td><td>鉭是爭議金屬，MLCC / 鋁電容可能替代。</td><td>同步記錄。</td><td>有研究價值，但需確認料號、認證與替代速度。</td><td>產品規格、客戶 qualification、供應鏈法說。</td></tr>
+    <tr><td>台積電分紅</td><td>分紅比例看似變少，但長期 pay 仍佳；員工抱怨多。</td><td>同步記錄。</td><td>偏中立 / 情緒雜訊，不等於看壞台積電。</td><td>薪酬制度、人才流動。</td></tr>
+    <tr><td>SpaceX IPO / Neo Cloud</td><td>可能先卡位 SpaceX、降低 TSLA；衛星 AI server / Neo Cloud 可拉估值。</td><td>同步記錄，並延伸 6/12、太陽能、散熱族群。</td><td>SpaceX / Neo Cloud 是核心主線；6/12 與二階族群是 speculative extension。</td><td>SEC filing、IPO timetable、AI/space data-center disclosure。</td></tr>
+    <tr><td>機器人概念股</td><td>若未來兩三年狂推，題材可能提早發酵；但目前受持倉/處置股限制。</td><td>列為未來觀察題材。</td><td>觀察清單，不是已驗證營收貢獻。</td><td>具體公司營收占比、量產時間。</td></tr>
+  </tbody></table>
+
+  <h2>主持人觀點 vs 筆記作者詮釋</h2>
+  <table><thead><tr><th>主題</th><th>Likely host view</th><th>筆記作者詮釋</th><th>我們的處理</th></tr></thead><tbody>
+    <tr><td>被動元件</td><td>全球趨勢同步轉強，重點看漲價斜率與 2018 類比。</td><td>國巨慢慢減碼。</td><td>產業復甦列高優先；減碼列 operation diary。</td></tr>
+    <tr><td>SpaceX / Neo Cloud</td><td>發射能力是第一棒；衛星 AI server 能拉估值，願意先卡位。</td><td>6/12 出貨日、太陽能與散熱延伸。</td><td>SpaceX 核心假說保留；日期與族群延伸降級。</td></tr>
+    <tr><td>台積電分紅</td><td>短期不滿不改變長期薪酬/競爭力框架。</td><td>同情基層情緒。</td><td>列為人才/情緒監測，不納入主線。</td></tr>
+    <tr><td>機器人</td><td>題材有吸引力，但未必介入。</td><td>未來觀察題材。</td><td>放入 watchlist，不列核心。</td></tr>
+  </tbody></table>
+
+  <h2>公司與 ticker 對照表</h2>
+  <table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead><tbody>
+    <tr><td>國巨 YAGEO</td><td>2327.TW</td><td>被動元件核心指標</td><td>偏正向觀察</td><td>操作日記：慢慢減碼</td><td>Both-source for industry; operation secondary-only</td><td>法說、B/B ratio、稼動率、毛利率、AI/specialty mix。</td></tr>
+    <tr><td>Vishay</td><td>VSH</td><td>全球被動元件同業參照</td><td>偏正向觀察</td><td>無</td><td>Primary / supplementary</td><td>營收、book-to-bill、inventory、pricing。</td></tr>
+    <tr><td>Vishay Precision Group</td><td>VPG</td><td>精密元件同業參照</td><td>只被提及</td><td>無</td><td>Primary / supplementary</td><td>確認與被動元件週期關聯。</td></tr>
+    <tr><td>江海股份</td><td>002484.SZ</td><td>鋁電容 / 鉭替代線索</td><td>偏正向觀察</td><td>無</td><td>Primary / supplementary</td><td>產品規格、客戶、替代認證速度。</td></tr>
+    <tr><td>Murata / 日系被動元件</td><td>6981.T</td><td>全球趨勢與高階 MLCC 參照</td><td>偏正向觀察</td><td>日系廠同步</td><td>Primary + secondary</td><td>lead time、AI server MLCC mix、價格。</td></tr>
+    <tr><td>台積電 TSMC</td><td>2330.TW / TSM</td><td>分紅情緒、長期競爭力語境</td><td>中立觀察</td><td>員工不滿但 pay 仍佳</td><td>Both-source</td><td>分紅制度、人才流動、CoWoS/先進製程需求。</td></tr>
+    <tr><td>聯發科 MediaTek</td><td>2454.TW</td><td>AI 動能轉型案例</td><td>只被提及 / 中立偏正向</td><td>長期持有者獲得回報</td><td>Primary</td><td>AI 產品線營收、邊緣 AI / ASIC / 手機 SoC 動能。</td></tr>
+    <tr><td>SpaceX</td><td>Private / filed S-1</td><td>IPO / Starlink / Neo Cloud 核心</td><td>偏正向觀察但高不確定</td><td>6/12、太陽能/散熱延伸</td><td>Both-source for topic; SEC supports filing exists</td><td>S-1/A、IPO timing、segment revenue、AI/space data-center disclosures。</td></tr>
+    <tr><td>Starlink</td><td>SpaceX segment</td><td>現金流與衛星網路基礎</td><td>偏正向觀察</td><td>無</td><td>Primary + SEC context</td><td>Connectivity revenue、ARPU、capex、terminal subsidies。</td></tr>
+    <tr><td>Tesla</td><td>TSLA</td><td>馬斯克 exposure 重新配置參照</td><td>中立觀察</td><td>降 TSLA 換 SpaceX</td><td>Both-source</td><td>TSLA/SpaceX exposure overlap、能源/機器人/FSD 貢獻。</td></tr>
+    <tr><td>Palantir</td><td>PLTR</td><td>IPO 先卡位類比</td><td>只被提及</td><td>無</td><td>Both-source</td><td>僅作歷史交易心理類比。</td></tr>
+    <tr><td>NVIDIA</td><td>NVDA</td><td>AI 算力與情緒背景</td><td>只被提及</td><td>無</td><td>NotebookLM</td><td>GB200 / AI server demand、機器人題材關聯。</td></tr>
+    <tr><td>機器人概念股</td><td>N/A</td><td>題材擴散 watch</td><td>中立偏正向但需謹慎</td><td>未來觀察題材</td><td>Both-source</td><td>實際營收占比、量產時程、處置股風險。</td></tr>
+    <tr><td>太陽能類股</td><td>N/A</td><td>SpaceX 衛星能源延伸</td><td>主持人未明確表態</td><td>好奇衛星需求是否帶動</td><td>Secondary-only</td><td>不得直接由衛星太陽能板推論地面太陽能景氣。</td></tr>
+    <tr><td>散熱族群</td><td>N/A</td><td>衛星 AI server 散熱延伸</td><td>主持人未明確表態</td><td>等待修正後觀察</td><td>Secondary-only</td><td>查太空散熱技術、材料、供應鏈與時間表。</td></tr>
+  </tbody></table>
+
+  <h2>投資假說草稿</h2>
+  <h3>H1. 被動元件若漲價斜率明確，國巨與全球同業可能進入 EPS 上修循環</h3>
+  <p><strong>來源依據：</strong>國巨 B/B ratio、稼動率、全球同業與 2018 類比。<strong>風險：</strong>2018 是極端週期，若只是補庫存，股價可能已提前反映。</p>
+  <h3>H2. 鉭替代若加速，MLCC / 鋁電容供應鏈會出現非線性機會</h3>
+  <p><strong>來源依據：</strong>鉭供應鏈/責任採購限制與戰時資本推動驗證。<strong>風險：</strong>客戶認證仍慢，替代不一定能快速反映營收。</p>
+  <h3>H3. SpaceX 的估值核心可能從 launch / Starlink 擴到 Neo Cloud，但仍是願景型假說</h3>
+  <p><strong>來源依據：</strong>主持人認為發射能力是第一棒，衛星 AI server 可拉估值；SEC filing 讓 IPO 可追蹤。<strong>風險：</strong>軌道資料中心仍可能停留在故事，折舊、維修、散熱、監管與資本支出風險高。</p>
+  <h3>H4. 台積電分紅與機器人題材都屬「情緒/題材監測」</h3>
+  <p><strong>來源依據：</strong>分紅議題是員工情緒；機器人有題材但未對應具體短期營收。<strong>處理方式：</strong>列入 watchlist，不取代主線研究。</p>
+
+  <h2>外部查證摘要</h2>
+  <table><thead><tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr></thead><tbody>
+    <tr><td>SpaceX 已有 SEC S-1 / S-1A 文件，不只是 PDF 傳聞。</td><td>Verified</td><td><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm">SEC EDGAR S-1</a></td><td>上市程序與公開文件存在；但 pricing、上市日、6/12 仍需官方確認。</td></tr>
+    <tr><td>SpaceX 會成為 Neo Cloud / 軌道 AI server 概念股。</td><td>Source-supported only</td><td>Podcast / NotebookLM / secondary note</td><td>高想像力假說；需 S-1/A 或 roadshow 明確 disclosure。</td></tr>
+    <tr><td>國巨 B/B ratio 拉升、特規品 90%、標準品 80%。</td><td>Source-supported only / needs exact transcript</td><td>Podcast / NotebookLM / secondary note</td><td>核心量化 claim；需國巨法說或產業通路資料驗證。</td></tr>
+    <tr><td>國巨 2018 年毛利率曾達 6X%。</td><td>Partially supported</td><td>需回國巨 2018 年年報/財報核表</td><td>方向可信但不寫死精確數字；用作壓力測試而非目標價捷徑。</td></tr>
+    <tr><td>全球被動元件同步轉強。</td><td>Partially supported</td><td>Podcast mentions Vishay、VPG、江海、日系廠；需逐家公司查證</td><td>研究價值高，但要看營收、book-to-bill、inventory、lead time。</td></tr>
+    <tr><td>鉭替代 MLCC / 鋁電容。</td><td>Partially supported</td><td>鉭長期有 responsible sourcing / conflict minerals 議題；替代需料號和認證資料</td><td>供應鏈方向可追；替代速度未驗證。</td></tr>
+    <tr><td>6/12 是 SpaceX IPO 大出貨日。</td><td>Not verified / secondary-only</td><td>Social Worker Daily note-author intuition</td><td>不得寫成主持人觀點或官方日期。</td></tr>
+    <tr><td>國巨慢慢減碼。</td><td>Verified as secondary operation diary only</td><td>Social Worker Daily 操作日記</td><td>筆記作者個人操作，不是主持人指令，也不是本報告建議。</td></tr>
+  </tbody></table>
+
+  <h2>追蹤計畫 / Event triggers</h2>
+  <table><thead><tr><th>追蹤項目</th><th>為什麼重要</th><th>事件觸發條件</th><th>目前 stance</th></tr></thead><tbody>
+    <tr><td>SpaceX S-1/A、pricing、上市日期</td><td>官方上市事件會帶動 SpaceX / Starlink / satellite supply chain 重新定價。</td><td>新版 S-1/A、pricing range、ticker、上市日、use of proceeds、segment financials。</td><td>高優先追蹤；不追隨未證實日期。</td></tr>
+    <tr><td>SpaceX Neo Cloud / orbital AI server</td><td>若從 Starlink/launch 轉成 compute infrastructure story，估值框架可能重寫。</td><td>官方 disclosure、roadshow、capex、compute customer hints、供應鏈訂單。</td><td>願景型核心假說；需硬證據。</td></tr>
+    <tr><td>國巨與被動元件同業</td><td>本集最接近基本面的主線。</td><td>B/B ratio、稼動率、ASP、lead time、庫存、毛利率上修。</td><td>偏正向觀察；需官方/通路資料驗證。</td></tr>
+    <tr><td>鉭替代 / MLCC / 鋁電容</td><td>若替代加速，可能出現非線性供需缺口。</td><td>客戶 qualification、料號替代、AI/工業需求、交期拉長。</td><td>值得研究；證據不足。</td></tr>
+    <tr><td>台積電分紅與人才</td><td>若情緒變成制度/人才風險，才影響長期競爭力。</td><td>薪酬制度變動、人才流出、招聘競爭力下滑。</td><td>目前偏情緒雜訊。</td></tr>
+    <tr><td>機器人 / 太陽能 / 散熱二階題材</td><td>可能成為盤面擴散題材，但容易過度推論。</td><td>具體公司訂單、營收占比、量產時程、官方供應鏈資料。</td><td>觀察但不追。</td></tr>
+  </tbody></table>
+
+  <h2>方法限制</h2>
+  <ul>
+    <li>NotebookLM primary report 未提供精確時間戳；重要主張若要交易化，應回聽原音。</li>
+    <li>Social Worker Daily 明確包含筆記作者主觀補述與操作日記，必須與主持人觀點隔離。</li>
+    <li>外部查證只能支持部分 factual claims；不能把 SpaceX / Neo Cloud 願景直接升級成已驗證營收模型。</li>
+    <li>本報告是研究筆記，不構成個人化投資建議。</li>
+  </ul>
+
+  <footer>Generated and maintained by 雙雙 🦞🌱</footer>
+</main>
+</body>
+</html>
