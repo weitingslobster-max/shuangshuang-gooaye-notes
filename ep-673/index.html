@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP673 投資筆記｜流動性風險、半導體供應鏈與被動元件漲價</title>
+  <style>
+    :root { --bg:#f8fafc; --card:#ffffff; --text:#172033; --muted:#5b667a; --line:#dbe3ef; --accent:#b42318; --accent2:#0f766e; --soft:#fff4ed; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",sans-serif; line-height:1.65; background:var(--bg); color:var(--text); }
+    header { background:linear-gradient(135deg,#7f1d1d,#b42318 55%,#ea580c); color:white; padding:32px 18px; }
+    main { max-width:1080px; margin:0 auto; padding:20px 16px 56px; }
+    .topbar { max-width:1080px; margin:0 auto 16px; }
+    .back { color:white; text-decoration:none; font-weight:700; display:inline-block; padding:6px 0; }
+    .back:hover { text-decoration:underline; }
+    h1 { margin:10px 0 8px; font-size:clamp(1.7rem,4vw,2.7rem); line-height:1.2; }
+    h2 { margin-top:34px; border-left:5px solid var(--accent); padding-left:12px; font-size:1.45rem; }
+    h3 { margin-top:24px; color:#7f1d1d; }
+    .subtitle { color:#ffe7dc; max-width:820px; font-size:1.05rem; }
+    .meta { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    .pill { display:inline-flex; align-items:center; border:1px solid rgba(255,255,255,.35); border-radius:999px; padding:4px 10px; color:#fff7ed; font-size:.9rem; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:18px 0; box-shadow:0 8px 22px rgba(15,23,42,.05); }
+    .note { background:var(--soft); border-left:4px solid #f97316; padding:12px 14px; border-radius:12px; color:#6b2d12; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .kpi { background:#f1f5f9; border-radius:14px; padding:14px; }
+    .kpi strong { display:block; color:#7f1d1d; margin-bottom:4px; }
+    table { width:100%; border-collapse:collapse; margin:12px 0; background:white; }
+    th, td { border:1px solid var(--line); padding:10px 11px; text-align:left; vertical-align:top; }
+    th { background:#f1f5f9; color:#243044; }
+    td { color:#243044; }
+    .status { font-weight:700; color:var(--accent2); }
+    .risk { color:#b42318; font-weight:700; }
+    ul { padding-left:1.3rem; }
+    .small { color:var(--muted); font-size:.92rem; }
+    footer { color:var(--muted); border-top:1px solid var(--line); margin-top:34px; padding-top:18px; }
+    @media (max-width: 720px) {
+      header { padding:24px 14px; }
+      main { padding:14px 12px 40px; }
+      .grid { grid-template-columns:1fr; }
+      .card { padding:14px; border-radius:14px; }
+      table { display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; white-space:nowrap; }
+      th, td { min-width:150px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="topbar"><a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a></div>
+  <div class="topbar">
+    <h1>股癌 EP673 投資筆記</h1>
+    <p class="subtitle">全球流動性連動、半導體供應鏈技術變革與被動元件定價權。這份筆記把主持人觀點、筆記作者詮釋、NotebookLM 交叉驗證與待查清單分層整理。</p>
+    <div class="meta">
+      <span class="pill">繁體中文研究筆記</span>
+      <span class="pill">非投資建議</span>
+      <span class="pill">Source-layer separated</span>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="card">
+    <h2>核心結論</h2>
+    <div class="grid">
+      <div class="kpi"><strong>市場主軸</strong>本集不是單純看多或看空，而是把「創高後流動性回檔」與「產業定價權改善」分開處理。</div>
+      <div class="kpi"><strong>最高優先線索</strong>R-chip / 被動元件七月初漲價與採購端加單，是來源內最一致、最值得外部驗證的產業訊號。</div>
+      <div class="kpi"><strong>最大紀律提醒</strong>Triggerfish、韓國因素、台積電資金切換都容易被過度解讀，需回到資料與時間軸驗證。</div>
+    </div>
+    <ul>
+      <li>主持人將盤面偏向解讀為創新高後拉回，不是典型假突破；韓國高槓桿清算是可能觸發因素，但仍屬推論。</li>
+      <li>聯發科漲價是基本面加分項；Google Triggerfish 代表合作進展，但處於早期，不宜直接估入短期 EPS。</li>
+      <li>博通 wfish / Whitefish 雙拼設計的投資重點在 ABF 載板需求，而非只看晶片代號。</li>
+      <li>功率元件題材是否成立，取決於 8 吋成熟製程產能、IDM 能力與後段封測，不是族群名稱本身。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Source triangulation / 來源交叉比對</h2>
+    <table>
+      <thead><tr><th>主題</th><th>Podcast / NotebookLM primary</th><th>Secondary note</th><th>Supplementary report</th><th>綜合判斷</th></tr></thead>
+      <tbody>
+        <tr><td>市場回檔</td><td>偏韓國槓桿與跨資產清算；長多拉回。</td><td>找不到像樣修正理由，類比 Archegos。</td><td>標示為 feeling / 體感分析。</td><td>可作風控框架，不可當已證實因果。</td></tr>
+        <tr><td>台積電與中小股</td><td>觀察資金在避風港與中小股間切換。</td><td>延伸為等待台積電右側交易。</td><td>提醒主持人原意偏體感微調。</td><td>避免把短線盤感神化成策略。</td></tr>
+        <tr><td>聯發科</td><td>全產品線漲價；Triggerfish 早期。</td><td>寫成「發哥依舊看多」。</td><td>建議改為報價動能正向觀察。</td><td>正向但需查漲價與毛利傳導。</td></tr>
+        <tr><td>博通 / ABF</td><td>雙拼晶片，載板有機會。</td><td>博通新東西用前一個 Fish 雙拼。</td><td>補充第九代未缺席、ABF 需求可能增加。</td><td>供應鏈追蹤價值高，產品細節待查。</td></tr>
+        <tr><td>R-chip</td><td>七月初漲價、採購怕而先加單。</td><td>壓不住要噴；但作者說追不一定有肉。</td><td>提醒追價判斷是作者詮釋。</td><td>保留漲價與採購轉向訊號。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+    <table>
+      <thead><tr><th>議題</th><th>主持人觀點</th><th>筆記作者詮釋</th><th>研究處理</th></tr></thead>
+      <tbody>
+        <tr><td>市場下跌原因</td><td>偏漲多拉回，可能受韓國槓桿清算影響。</td><td>控制資金水位，打強勢題材仍有期望值。</td><td>保留為風控提醒，不轉成操作建議。</td></tr>
+        <tr><td>台積電配置</td><td>台積電可作避風港，但中小型股未死透。</td><td>等待突破小波段高點再追右側。</td><td>標示為作者詮釋；本集方向為中立操作。</td></tr>
+        <tr><td>聯發科</td><td>漲價信是加分；Google 案代表開發順利但早期。</td><td>發哥依舊看多。</td><td>改寫為偏正向觀察，不直接等於看多股價。</td></tr>
+        <tr><td>被動元件</td><td>R-chip 漲價與採購加單值得注意。</td><td>追高不見得有肉。</td><td>只保留供需訊號；估值與交易另查。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Company / ticker map / 公司與 ticker 對照表</h2>
+    <table>
+      <thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead>
+      <tbody>
+        <tr><td>台積電</td><td>2330 / TSM</td><td>避風港、拉積盤觀察</td><td>中立觀察</td><td>等待右側交易</td><td>secondary + supplementary</td><td>觀察是否只拉權值、殺中小；法說另查。</td></tr>
+        <tr><td>聯發科</td><td>2454</td><td>漲價、Google Triggerfish</td><td>偏正向觀察</td><td>發哥依舊看多</td><td>三層來源均提及</td><td>漲價幅度、毛利率、Google 時程。</td></tr>
+        <tr><td>Google / Alphabet</td><td>GOOGL / GOOG</td><td>Triggerfish 客戶端</td><td>只被提及</td><td>額外案子訊號</td><td>來源內提及，無官方確認</td><td>晶片路線圖、供應商公開資訊。</td></tr>
+        <tr><td>Broadcom</td><td>AVGO</td><td>wfish / Whitefish 雙拼、ABF 需求</td><td>中立觀察</td><td>博通沒被跳過一代</td><td>三層來源支持方向</td><td>產品代號、封裝規格、ABF 用量。</td></tr>
+        <tr><td>國巨</td><td>2327</td><td>R-chip / 被動元件代表</td><td>偏正向觀察</td><td>追高肉不多</td><td>primary 延伸，secondary 未直接點名</td><td>7 月營收、報價、稼動率。</td></tr>
+        <tr><td>華新科</td><td>2492</td><td>被動元件同業驗證</td><td>主持人未明確表態</td><td>無</td><td>primary 查證步驟延伸</td><td>營收與報價是否同步改善。</td></tr>
+        <tr><td>欣興 / 南電 / 景碩</td><td>3037 / 8046 / 3189</td><td>ABF 載板候選供應鏈</td><td>主持人未明確表態</td><td>無</td><td>primary / supplementary 延伸</td><td>ABF 客戶組合、Broadcom exposure。</td></tr>
+        <tr><td>Marvell</td><td>MRVL</td><td>AI / 光通訊競爭標的</td><td>只被提及</td><td>可持續關注</td><td>QA + supplementary</td><td>AI revenue、custom silicon、optical exposure。</td></tr>
+        <tr><td>Lumentum / Coherent</td><td>LITE / COHR</td><td>光通訊 watchlist</td><td>只被提及</td><td>主持人喜歡 / 關注</td><td>QA + supplementary</td><td>資料中心光通訊需求與毛利。</td></tr>
+        <tr><td>Teradyne / Nokia</td><td>TER / NOK</td><td>測試設備 / 光網路轉機</td><td>只被提及</td><td>可持續關注</td><td>QA + supplementary</td><td>訂單循環、轉型業務與 CSP 客戶。</td></tr>
+        <tr><td>酒類品牌</td><td>未上市 / 品牌</td><td>生活風格閒聊</td><td>只被提及</td><td>CP 值與口味心得</td><td>secondary note</td><td>不納入投資追蹤。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Watchlist / 觀察清單</h2>
+    <table>
+      <thead><tr><th>分組</th><th>標的</th><th>觀察理由</th><th>下一步</th></tr></thead>
+      <tbody>
+        <tr><td>高優先</td><td>R-chip、國巨 2327、華新科 2492</td><td>七月初漲價與採購加單是本集最清楚的產業訊號。</td><td>追營收、報價、庫存、交期與法說。</td></tr>
+        <tr><td>中高優先</td><td>聯發科 2454、Google</td><td>定價權改善 + 早期 ASIC 合作。</td><td>查漲價執行率、毛利率、Triggerfish 時程。</td></tr>
+        <tr><td>中高優先</td><td>Broadcom AVGO、欣興、南電、景碩</td><td>雙拼封裝若提高 ABF 用量，載板供應鏈受惠。</td><td>查產品規格、ABF 層數 / 面積與供應份額。</td></tr>
+        <tr><td>中優先</td><td>功率元件族群</td><td>關鍵在 8 吋產能與 IDM 能力。</td><td>建立公司級產能地圖。</td></tr>
+        <tr><td>低至中優先</td><td>台積電、櫃買、KOSPI / KOSDAQ</td><td>判斷資金輪動與流動性壓力。</td><td>作為市場溫度計，不作長期假說。</td></tr>
+        <tr><td>僅列 watchlist</td><td>LITE、COHR、MRVL、TER、NOK</td><td>QA 被提及，非本集核心。</td><td>等後續節目或外部研究補強。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>外部查證摘要</h2>
+    <table>
+      <thead><tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr></thead>
+      <tbody>
+        <tr><td>市場回檔較像創高後拉回，而非假突破。</td><td class="status">Source-supported only</td><td>secondary note + primary summary</td><td>需後續指數與均線資料驗證。</td></tr>
+        <tr><td>韓國槓桿清算可能造成連鎖賣壓。</td><td class="status">Source-supported only</td><td>主持人體感 + Archegos 類比</td><td>可作風控假說，不是已證實因果。</td></tr>
+        <tr><td>42,000 / 48,000 點數存在異常。</td><td class="risk">Needs exact transcript</td><td>primary 與 supplementary 均標示異常</td><td>不可當確定市場數據使用。</td></tr>
+        <tr><td>聯發科全產品線漲價。</td><td class="status">Source-supported only</td><td>primary + secondary</td><td>需查漲價幅度、客戶接受度與毛利傳導。</td></tr>
+        <tr><td>Triggerfish 是早期、偏既有晶片加記憶體。</td><td class="status">Source-supported only</td><td>primary + secondary</td><td>需查 Google / 聯發科公開資訊與量產時間。</td></tr>
+        <tr><td>博通 wfish / Whitefish 雙拼增加 ABF 需求。</td><td class="status">Partially supported</td><td>三層來源支持方向</td><td>仍缺封裝層數、面積與供應商份額。</td></tr>
+        <tr><td>R-chip 七月初有新一波漲價。</td><td class="status">Source-supported only</td><td>三層來源一致</td><td>需用報價、營收與法說確認。</td></tr>
+        <tr><td>Social Worker Daily 含主觀詮釋。</td><td class="status">Verified within source scope</td><td>secondary note 開頭聲明</td><td>必須與主持人觀點分離。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>追蹤計畫 / event triggers</h2>
+    <h3>被動元件 / R-chip</h3>
+    <ul>
+      <li><strong>正向觸發：</strong>7 月報價調漲被通路或公司法說確認；國巨 / 華新科月營收同步改善；交期拉長。</li>
+      <li><strong>反向觸發：</strong>漲價只停留在傳聞；營收未跟上；客戶加單後快速取消；庫存偏高。</li>
+    </ul>
+    <h3>聯發科 / Triggerfish</h3>
+    <ul>
+      <li><strong>正向觸發：</strong>漲價幅度被確認、毛利率受惠、Google 案進入 tape-out / 量產時程。</li>
+      <li><strong>反向觸發：</strong>漲價被折扣抵消、Triggerfish 延後、市場過度估入。</li>
+    </ul>
+    <h3>Broadcom / ABF</h3>
+    <ul>
+      <li><strong>正向觸發：</strong>產品規格確認雙拼 / 高階封裝，ABF 廠法說提到 AI ASIC 或 networking ASIC 需求。</li>
+      <li><strong>反向觸發：</strong>產品代號或技術路徑不符，ABF 面積增量有限，供應鏈份額不在台廠。</li>
+    </ul>
+    <h3>功率元件與市場輪動</h3>
+    <ul>
+      <li>功率元件需看到 8 吋產能、IDM 能力與需求回升，而不只是題材。</li>
+      <li>市場若只是流動性清算，強勢族群應快速修復；若跌破主要均線並出現基本面利空，需降級原假說。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>方法限制</h2>
+    <div class="note">本頁是研究輔助筆記，不是買賣建議。所有「本集方向 / Host stance」只描述主持人或來源語氣，不代表我們的投資建議。</div>
+    <ul>
+      <li>本輪未新增外部查證；多數 factual claims 仍是來源內支持。</li>
+      <li>逐字稿可能有技術名詞、酒名與指數點數誤植，尤其 42,000 / 48,000 點需回聽。</li>
+      <li>Secondary note 含筆記作者主觀心得，已盡量與主持人原意分離。</li>
+      <li>盤面觀察有高度時效性，不能用錄音當下的資金流直接推論未來。</li>
+      <li>供應鏈推論需再經公司法說、月營收、報價與產品規格確認。</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Generated from local source layers: <code>notebooklm_source.md</code>, <code>secondary_note.md</code>, <code>notebooklm_supplementary_report.md</code>, plus synthesized verification/tracking artifacts.</p>
+    <p><a href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a></p>
+  </footer>
+</main>
+</body>
+</html>
