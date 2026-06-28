@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP674 投資筆記｜季末再平衡、季線風控與 AI 應用層轉向</title>
+  <style>
+    :root { --bg:#f8fafc; --card:#ffffff; --text:#172033; --muted:#5b667a; --line:#dbe3ef; --accent:#b42318; --accent2:#0f766e; --soft:#fff4ed; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",sans-serif; line-height:1.65; background:var(--bg); color:var(--text); }
+    header { background:linear-gradient(135deg,#7f1d1d,#b42318 55%,#ea580c); color:white; padding:32px 18px; }
+    main { max-width:1080px; margin:0 auto; padding:20px 16px 56px; }
+    .topbar { max-width:1080px; margin:0 auto 16px; }
+    .back { color:white; text-decoration:none; font-weight:700; display:inline-block; padding:6px 0; }
+    .back:hover { text-decoration:underline; }
+    h1 { margin:10px 0 8px; font-size:clamp(1.7rem,4vw,2.7rem); line-height:1.2; }
+    h2 { margin-top:34px; border-left:5px solid var(--accent); padding-left:12px; font-size:1.45rem; }
+    h3 { margin-top:24px; color:#7f1d1d; }
+    .subtitle { color:#ffe7dc; max-width:850px; font-size:1.05rem; }
+    .meta { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    .pill { display:inline-flex; align-items:center; border:1px solid rgba(255,255,255,.35); border-radius:999px; padding:4px 10px; color:#fff7ed; font-size:.9rem; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:18px 0; box-shadow:0 8px 22px rgba(15,23,42,.05); }
+    .note { background:var(--soft); border-left:4px solid #f97316; padding:12px 14px; border-radius:12px; color:#6b2d12; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .kpi { background:#f1f5f9; border-radius:14px; padding:14px; }
+    .kpi strong { display:block; color:#7f1d1d; margin-bottom:4px; }
+    table { width:100%; border-collapse:collapse; margin:12px 0; background:white; }
+    th, td { border:1px solid var(--line); padding:10px 11px; text-align:left; vertical-align:top; }
+    th { background:#f1f5f9; color:#243044; }
+    td { color:#243044; }
+    .status { font-weight:700; color:var(--accent2); }
+    .risk { color:#b42318; font-weight:700; }
+    ul { padding-left:1.3rem; }
+    .small { color:var(--muted); font-size:.92rem; }
+    footer { color:var(--muted); border-top:1px solid var(--line); margin-top:34px; padding-top:18px; }
+    @media (max-width: 720px) {
+      header { padding:24px 14px; }
+      main { padding:14px 12px 40px; }
+      .grid { grid-template-columns:1fr; }
+      .card { padding:14px; border-radius:14px; }
+      table { display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; white-space:nowrap; }
+      th, td { min-width:150px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="topbar"><a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a></div>
+  <div class="topbar">
+    <h1>股癌 EP674 投資筆記</h1>
+    <p class="subtitle">季末再平衡、季線風控、AI 應用層轉向與漲價元件延續性。這份筆記分離主持人觀點、Social Worker Daily 筆記作者詮釋、NotebookLM 推論與外部查證需求。</p>
+    <div class="meta">
+      <span class="pill">繁體中文研究筆記</span>
+      <span class="pill">非投資建議</span>
+      <span class="pill">Source-layer separated</span>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="card">
+    <h2>核心結論</h2>
+    <div class="grid">
+      <div class="kpi"><strong>市場主軸</strong>本集不是單純看多或看空，而是 2026 上半年高報酬後，如何用季線與市場廣度重建風控。</div>
+      <div class="kpi"><strong>最高優先線索</strong>AI 應用層巨頭、Apple 終端定價權、Micron / HBM 毛利，以及仍守強勢形態的漲價元件。</div>
+      <div class="kpi"><strong>最大紀律提醒</strong>筆記作者的聯電試單、健策 / 台達電反彈、3037 猜測不能視為主持人推薦。</div>
+    </div>
+    <ul>
+      <li>4–5 月處置股與強勢題材帶來罕見報酬，但這可能包含制度與流動性紅利，不宜外推成下半年常態。</li>
+      <li>主持人將 6 月底修正偏向解讀為季度 rebalance 與資金流動性調節，而非產業面全面轉壞。</li>
+      <li>跌破季線的過往熱門股，反彈遇到 60MA 時容易有解套賣壓；「站不回去」是本集最明確的風控訊號。</li>
+      <li>AI 研究焦點從硬體建設轉往 Google、Apple、Microsoft 等應用層與 edge AI 變現；Apple 漲價是否成功要看銷量。</li>
+      <li>Micron 高毛利是雙面訊號：證明 HBM / 記憶體供需強，也可能讓雲端巨頭檢討 AI capex ROI。</li>
+    </ul>
+    <p class="note">注意：NotebookLM primary 內文曾把年份寫成 2024；resolver 與來源顯示 EP674 是 2026-06-27 的最新集數，本報告按 2026 上半年脈絡處理。</p>
+  </section>
+
+  <section class="card">
+    <h2>Source triangulation / 來源交叉比對</h2>
+    <table>
+      <thead><tr><th>主題</th><th>Podcast / NotebookLM primary</th><th>Secondary note</th><th>Supplementary report</th><th>綜合判斷</th></tr></thead>
+      <tbody>
+        <tr><td>上半年高光</td><td>處置制度與強勢題材形成 exceptional alpha。</td><td>主持人自認上半年是高光時刻。</td><td>極端牛市後的心理與部位重建。</td><td>回顧價值高，但不能把暴利常態化。</td></tr>
+        <tr><td>修正原因</td><td>季度 rebalance / 流動性修正。</td><td>主權基金、退休基金減碼漲多科技股。</td><td>把「業力引爆」校正為機械式籌碼清洗。</td><td>合理假說；需資金流驗證。</td></tr>
+        <tr><td>季線風控</td><td>跌破 60MA 後，反彈碰均線有套牢賣壓。</td><td>熱門族群摔破季線、做多意願降低。</td><td>Host stance 為風險案例。</td><td>本集最可操作的風控框架。</td></tr>
+        <tr><td>Apple 漲價</td><td>AI 新品高定價前的需求測試。</td><td>MacBook 漲 10–20%，直接看銷量。</td><td>避免採用情緒化「果粉 / 臭盤子」語氣。</td><td>正向但需用出貨與毛利率驗證。</td></tr>
+        <tr><td>Micron / HBM</td><td>高毛利可能讓巨頭檢討 AI 投入產出。</td><td>美光毛利率誇張，AI 伺服器拉貨仍看起來沒問題。</td><td>提醒查清 80–90% 是整體或產品線口徑。</td><td>高重要、高查證需求。</td></tr>
+        <tr><td>筆記作者操作</td><td>未見主持人推薦聯電、健策、台達電、3037。</td><td>聯電試單、反彈策略、3037 猜測。</td><td>標示為 secondary-only / likely interpretation。</td><td class="risk">必須排除於主持人 stance。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+    <table>
+      <thead><tr><th>議題</th><th>主持人觀點</th><th>筆記作者詮釋</th><th>研究處理</th></tr></thead>
+      <tbody>
+        <tr><td>盤面修正</td><td>季度 rebalance、資金流動性、產業面尚未看到明顯異樣。</td><td>「業力引爆」「全面恐慌」等情緒詞。</td><td>保留 rebalance 假說，但不寫成已證實因果。</td></tr>
+        <tr><td>強勢股與破位股</td><td>週四拉尾盤後曾嘗試進攻；週五大跌後市場廣度縮小，破季線要小心。</td><td>延伸為健策 / 台達電搶反彈。</td><td>重點是形態與季線，不是特定標的推薦。</td></tr>
+        <tr><td>Apple 漲價</td><td>看目標客群是否買單與實際銷量；消費端漲價有風險。</td><td>用果粉與臭盤子語氣詮釋受眾。</td><td>保留需求彈性測試，去除情緒化標籤。</td></tr>
+        <tr><td>漲價元件</td><td>手上強勢部位離季線遠；被動 / 功率元件仍相對強。</td><td>推測被動元件、功率元件、IC 載板會集中。</td><td>列 watchlist，但需營收、報價與技術面確認。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Company / ticker map / 公司與 ticker 對照表</h2>
+    <table>
+      <thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead>
+      <tbody>
+        <tr><td>EVOSIS 源點科技</td><td>7922</td><td>贊助商 / 充電網</td><td>只被提及</td><td>無</td><td>both sources</td><td>查站點數、財務、競爭格局；贊助內容不等於投資論點。</td></tr>
+        <tr><td>SpaceX</td><td>未上市</td><td>主持人美股私募配置方向</td><td>偏正向觀察</td><td>無</td><td>primary-supported</td><td>查最新估值、流動性與可投資管道。</td></tr>
+        <tr><td>Tesla</td><td>TSLA</td><td>資金調度來源</td><td>謹慎 / 看不懂</td><td>減碼特斯拉</td><td>primary-supported</td><td>主持人是相對調節，不等同絕對看空。</td></tr>
+        <tr><td>Marvell</td><td>MRVL</td><td>CPU / custom silicon / AI 連結配置</td><td>中立觀察</td><td>已調節</td><td>primary-supported</td><td>查 custom AI、datacenter revenue 與估值。</td></tr>
+        <tr><td>CrowdStrike</td><td>CRWD</td><td>美股組合相對強勢標的</td><td>偏正向觀察</td><td>繼續加碼</td><td>primary-supported</td><td>查 ARR、retention 與資安支出。</td></tr>
+        <tr><td>Google / Alphabet</td><td>GOOGL / GOOG</td><td>AI 應用層、降本增效、自研晶片</td><td>偏正向觀察</td><td>無</td><td>both sources</td><td>查 Cloud margin、TPU / Gemini 變現。</td></tr>
+        <tr><td>Apple</td><td>AAPL</td><td>Edge AI、終端定價權、MacBook 漲價</td><td>偏正向觀察但需驗證</td><td>果粉 / 受眾區隔</td><td>both sources</td><td>追蹤漲價後銷量、Apple Intelligence adoption、毛利率。</td></tr>
+        <tr><td>Microsoft</td><td>MSFT</td><td>AI 應用層與資金回流觀察</td><td>中立偏正向</td><td>若續漲會挪錢</td><td>primary-supported</td><td>查 Copilot 轉化、Azure AI growth、FCF。</td></tr>
+        <tr><td>Micron</td><td>MU</td><td>HBM / 記憶體高毛利、AI 成本壓力</td><td>中立觀察 / 需查證</td><td>擔心殺估值</td><td>both sources + limited external</td><td>官方 Q3 FY2026 gross margin 84.6%，Q4 指引約 86%；仍需區分整體、BU 與產品線口徑。</td></tr>
+        <tr><td>國巨</td><td>2327</td><td>期貨跌停例子、被動元件風險訊號</td><td>中立觀察</td><td>恐慌解讀</td><td>primary-supported</td><td>查期現貨價差、融資斷頭與報價趨勢。</td></tr>
+        <tr><td>被動元件</td><td>N/A</td><td>漲價概念 / 強勢題材</td><td>偏正向觀察</td><td>後續可能集中</td><td>both sources</td><td>查報價、交期、稼動率、月營收、是否守季線。</td></tr>
+        <tr><td>功率元件</td><td>N/A</td><td>漲價概念 / 強勢題材</td><td>偏正向觀察</td><td>後續可能集中</td><td>both sources</td><td>查終端需求、8 吋產能、庫存與法說。</td></tr>
+        <tr><td>IC 載板 / ABF</td><td>N/A</td><td>可能集中題材</td><td>中立觀察</td><td>筆記作者推測</td><td>secondary-supported / source-supported</td><td>查 ABF 稼動率、AI ASIC 拉貨。</td></tr>
+        <tr><td>聯電</td><td>2303 / UMC</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>試單打進去</td><td>secondary-only</td><td class="risk">不列主持人觀點。</td></tr>
+        <tr><td>欣興 / 健策 / 台達電</td><td>3037 / 3653 / 2308</td><td>筆記作者反彈與型態猜測</td><td>主持人未明確表態</td><td>個人猜測 / 策略</td><td>secondary-only</td><td class="risk">另案研究，不列本集主線。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Watchlist / 觀察清單</h2>
+    <table>
+      <thead><tr><th>分組</th><th>觀察標的</th><th>為什麼追蹤</th><th>需要看的資料</th></tr></thead>
+      <tbody>
+        <tr><td>市場風控</td><td>加權、櫃買、過往熱門 AI 題材股</td><td>判斷修正是 rebalance 後恢復，還是市場廣度持續縮小。</td><td>60MA、成交量、上漲家數、強勢族群家數。</td></tr>
+        <tr><td>AI 應用層</td><td>GOOGL、AAPL、MSFT</td><td>主持人相信後續會轉去應用層，並觀察 Apple / Microsoft 弱盤中轉強。</td><td>AI revenue、Cloud margin、Apple 銷量、Copilot / Gemini adoption。</td></tr>
+        <tr><td>AI 成本鏈</td><td>MU、雲端巨頭 capex、台系 AI 伺服器</td><td>高毛利零組件可能壓迫下游 ROI，但伺服器拉貨仍需驗證。</td><td>Micron margin、HBM pricing、capex、ODM 月營收。</td></tr>
+        <tr><td>漲價元件</td><td>被動元件、功率元件、IC 載板</td><td>仍是主持人手上相對強勢題材；關鍵是守住季線與報價落實。</td><td>報價、交期、稼動率、月營收、法說。</td></tr>
+        <tr><td>另案研究</td><td>SpaceX、TSLA、MRVL、CRWD</td><td>主持人美股配置線索，但需要公司級研究。</td><td>估值、營收結構、技術面與風險承受度。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>外部查證摘要</h2>
+    <table>
+      <thead><tr><th>主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>判斷</th></tr></thead>
+      <tbody>
+        <tr><td>EP674 屬 2026 年 6 月底最新集數。</td><td class="status">Verified within workflow</td><td>Resolver 顯示 YouTube EP674 發布於 2026-06-27，Social Worker Daily EP674 已匹配。</td><td>NotebookLM 的 2024 年份為日期漂移。</td></tr>
+        <tr><td>Micron 毛利率進入極高區間。</td><td class="status">Partially supported</td><td>Micron FY2026 Q3 results 公告顯示 GAAP gross margin 84.6%，Q4 指引約 86%。</td><td>方向有支持，但需查清是否整體、BU 或 HBM 口徑；AI capex ROI 疑慮仍是推論。</td></tr>
+        <tr><td>Apple MacBook 漲 10–20%。</td><td>Partially supported / needs price history</td><td>來源內一致；Apple 官方網站可查現價，但歷史漲幅需外部價格資料。</td><td>漲價是否成功必須看銷量與毛利率。</td></tr>
+        <tr><td>季度 rebalance 是修正主因。</td><td>Source-supported only</td><td>主持人與 secondary note 均支持，但未查資金流。</td><td>作為假說追蹤，不當成確定事實。</td></tr>
+        <tr><td>聯電、健策、台達電、3037 是主持人推薦。</td><td class="risk">Contradicted</td><td>來源顯示為筆記作者操作 / 猜測。</td><td>不得放入主持人 stance。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>追蹤計畫 / Event triggers</h2>
+    <h3>市場 / 季線風控</h3>
+    <ul>
+      <li><strong>正向觸發：</strong>加權與櫃買守住或快速站回 60MA；強勢族群反彈有量並創新高。</li>
+      <li><strong>反向觸發：</strong>熱門股反彈到季線遇大量賣壓；市場廣度持續縮小。</li>
+      <li><strong>升級研究：</strong>資金流支持季度 rebalance 結束，且企業指引未下修。</li>
+    </ul>
+    <h3>AI 應用層巨頭</h3>
+    <ul>
+      <li><strong>正向觸發：</strong>AAPL / MSFT / GOOGL 在弱盤中相對強，並有 AI revenue、margin 或 adoption 支持。</li>
+      <li><strong>反向觸發：</strong>漲價造成銷量下滑；AI 功能轉化率低；capex 壓力持續壓縮 FCF。</li>
+    </ul>
+    <h3>Micron / HBM / AI capex</h3>
+    <ul>
+      <li><strong>正向觸發：</strong>Micron 高毛利延續，但雲端巨頭 AI revenue / utilization 同步改善。</li>
+      <li><strong>反向觸發：</strong>雲端巨頭 capex 放緩、供應鏈訂單下修、HBM 報價見頂。</li>
+    </ul>
+    <h3>漲價元件</h3>
+    <ul>
+      <li><strong>正向觸發：</strong>被動 / 功率元件報價與月營收同步改善，且個股維持季線上方。</li>
+      <li><strong>反向觸發：</strong>報價只停留在傳聞、營收未跟上、跌破季線站不回。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>方法限制</h2>
+    <ul>
+      <li>NotebookLM 報告缺少精準 citation，且有年份漂移；涉及數字、產品價格、毛利率與資金流都需外部驗證。</li>
+      <li>Social Worker Daily 筆記含作者主觀詮釋與操作日記，不能等同主持人原話。</li>
+      <li>本報告是研究筆記，不是個人化投資建議；所有 watchlist 只代表後續研究方向。</li>
+    </ul>
+  </section>
+
+  <footer>
+    Source layers: NotebookLM primary report, Social Worker Daily secondary note, NotebookLM supplementary source-triangulation, limited external verification. Generated by 雙雙 🦞🌱
+  </footer>
+</main>
+</body>
+</html>
