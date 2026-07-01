@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP675 投資研究筆記</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#111827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; --ok:#86efac; --warn:#fde68a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 44%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.75; }
+    main { max-width:1120px; margin:0 auto; padding:34px 18px 72px; }
+    .back { display:inline-block; margin:0 0 18px; color:#fed7aa; text-decoration:none; font-weight:700; }
+    .back:hover { text-decoration:underline; }
+    header, section { border:1px solid var(--line); background:rgba(17,24,39,.78); border-radius:24px; padding:26px; margin:18px 0; }
+    .eyebrow { color:#fed7aa; letter-spacing:.14em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { margin:.2rem 0 .7rem; font-size:34px; line-height:1.2; }
+    h2 { margin-top:0; border-left:5px solid var(--accent); padding-left:12px; }
+    h3 { color:#bfdbfe; margin-bottom:.35rem; }
+    .meta { color:var(--muted); margin:0; }
+    .callout { border-left:4px solid var(--blue); padding:12px 14px; background:rgba(56,189,248,.08); border-radius:12px; }
+    .warn { border-left-color:var(--warn); background:rgba(253,230,138,.08); }
+    table { width:100%; border-collapse:collapse; margin:14px 0 20px; font-size:14px; }
+    th, td { border:1px solid var(--line); padding:10px; vertical-align:top; }
+    th { background:#172033; color:#f8fafc; text-align:left; }
+    td { color:#dbeafe; }
+    a { color:#7dd3fc; }
+    .pill { display:inline-block; padding:2px 8px; border-radius:999px; background:#1f2937; color:#fde68a; font-size:12px; }
+    footer { color:var(--muted); margin-top:26px; font-size:13px; }
+    @media (max-width:720px) { table { display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; white-space:nowrap; } header, section { padding:20px; } h1{font-size:28px;} }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye Investment Notes</div>
+    <h1>股癌 EP675：再平衡後的族群輪動、零組件漲價與台積電法說檢驗</h1>
+    <p class="meta">Podcast / NotebookLM primary + Social Worker Daily secondary note + supplementary triangulation + external verification。繁體中文研究筆記；不是個人化投資建議。</p>
+  </header>
+
+  <section>
+    <h2>核心結論</h2>
+    <ol>
+      <li>本集主軸是 6/30 再平衡與績效結算壓力後，市場重新尋找主流族群；短線反彈仍需接受大均線與量價檢驗。</li>
+      <li>被動元件與功率元件仍是最重要的漲價 / 缺貨敘事，但必須用漲價信、月營收、lead time 與客戶接受度驗證，不可直接相信小作文。</li>
+      <li>IC 設計要分辨「需求驅動漲價」與「成本轉嫁漲價」；筆記作者的發哥操作不等於主持人建議。</li>
+      <li>台積電法說會、毛利率與 AI/HPC 需求是大盤定錨；市場預期高，符合預期也可能短線震盪。</li>
+      <li>肖楠資本段落偏長期產業觀察：重點是台灣遊戲開發的退出機制與創辦人決心，不是公開市場短線題材。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>來源層級與交叉比對</h2>
+    <table>
+      <tr><th>Layer</th><th>來源</th><th>用途</th><th>限制</th></tr>
+      <tr><td>Primary</td><td>NotebookLM source report from YouTube EP675</td><td>節目語境最高優先</td><td>無逐句 citation；時間定位需回聽確認</td></tr>
+      <tr><td>Secondary</td><td>Social Worker Daily validated note</td><td>交叉檢查主題與遺漏</td><td>含筆記作者主觀理解與操作紀錄</td></tr>
+      <tr><td>Supplementary</td><td>NotebookLM triangulation report</td><td>分離 host view、筆記作者詮釋、AI 推論</td><td>仍是 AI 生成 source layer</td></tr>
+      <tr><td>External</td><td>官方 IR / 公司公告</td><td>查核財務與事件</td><td>供應鏈傳聞多仍需追蹤</td></tr>
+    </table>
+    <table>
+      <tr><th>主題</th><th>Primary / Podcast</th><th>Secondary note</th><th>研究處理</th></tr>
+      <tr><td>盤勢與再平衡</td><td>6/30 後台積電與台股尾盤壓力減輕</td><td>記錄再平衡風潮可能落幕</td><td>作為資金面觀察，仍需法人與成交量驗證</td></tr>
+      <tr><td>IC 設計</td><td>發哥、創意、世芯轉強；需求驅動優於成本轉嫁</td><td>補充「發哥接跌停」為作者操作</td><td>主持人觀點與作者操作分離</td></tr>
+      <tr><td>被動元件</td><td>7 月漲價信、T2/T3 外溢、營收驗證</td><td>同樣記錄漲價信與利多反應</td><td>列入 tracking，重點看漲價落地率與利多不漲</td></tr>
+      <tr><td>功率元件</td><td>lead time / 價格上升，AI 高階料造成外溢可能</td><td>同樣記錄交期與外溢劇本</td><td>假說成立中，需通路 lead time 驗證</td></tr>
+      <tr><td>台積電</td><td>再平衡壓力結束，法說會毛利率關鍵</td><td>記錄投信法規、法說會與高毛利期待</td><td>最高優先事件觸發</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>公司 / ticker map</h2>
+    <table>
+      <tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr>
+      <tr><td>台積電</td><td>2330.TW / TSM</td><td>大盤定錨、法說與毛利預期</td><td>偏正向觀察，但法說是檢驗點</td><td>進可攻退可守</td><td>both-supported</td><td>法說、毛利率、AI demand、資金回流</td></tr>
+      <tr><td>聯發科</td><td>2454.TW</td><td>IC 設計代表</td><td>中立觀察；需看需求驅動</td><td>接跌停 / 相對安全</td><td>both-supported + note-author operation</td><td>毛利率、手機需求、成本轉嫁能力</td></tr>
+      <tr><td>創意 / 世芯</td><td>3443.TW / 3661.TW</td><td>IC 設計高 beta</td><td>只被提及 / 中立觀察</td><td>波動大</td><td>both-supported</td><td>ASIC 客戶、NRE / 量產節奏</td></tr>
+      <tr><td>南電</td><td>8046.TW</td><td>ABF 載板族群代表</td><td>偏正向觀察</td><td>ABF 受資金歡迎</td><td>both-supported</td><td>月營收、上修幅度、訂單能見度</td></tr>
+      <tr><td>被動元件族群</td><td>N/A</td><td>漲價循環與主流題材</td><td>偏正向觀察，進入營收驗證期</td><td>利多不漲為下車點</td><td>both-supported</td><td>漲價信、營收、庫存、lead time</td></tr>
+      <tr><td>功率元件 / MOSFET</td><td>N/A</td><td>外溢劇本</td><td>偏正向觀察但需驗證</td><td>看子彈飛</td><td>both-supported</td><td>分銷 lead time、台廠接單、overbooking</td></tr>
+      <tr><td>onsemi / Synaptics</td><td>ON / SYNA</td><td>功率半導體與併購事件</td><td>只被提及 / 事件風險</td><td>併購會崩</td><td>external verified for transaction</td><td>交易完成、財務稀釋、產品組合</td></tr>
+      <tr><td>肖楠資本 / 紅眼路比</td><td>非上市</td><td>遊戲創投生態</td><td>偏正向觀察 / 長期產業</td><td>個人感想</td><td>both-supported</td><td>投資組合、Steam wishlist、銷量與評價</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>外部查證摘要</h2>
+    <table>
+      <tr><th>Claim</th><th>Status</th><th>Evidence</th><th>Interpretation</th></tr>
+      <tr><td>台積電毛利與法說會是關鍵</td><td><span class="pill">Verified as relevant</span></td><td><a href="https://investor.tsmc.com/english/quarterly-results/2026/q1">TSMC IR 2026Q1 results</a> 顯示 2026Q2 revenue guidance 與 gross margin 65.5%–67.5%。</td><td>官方資料支持毛利率為高關注變數；「市場胃口很高」仍是節目判斷。</td></tr>
+      <tr><td>聯發科需看毛利與需求</td><td><span class="pill">Verified ticker / source-supported stance</span></td><td><a href="https://www.mediatek.com/investor-relations">MediaTek IR</a> 與 <a href="https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q1/%E5%85%AC%E5%8F%B8%E8%AC%9B%E7%A8%BF.pdf">2026Q1 earnings material</a>。</td><td>公司與 ticker 可確認；需求驅動 vs 成本轉嫁需產品與客戶資料。</td></tr>
+      <tr><td>南電上修 / ABF 轉強</td><td><span class="pill">Partially supported</span></td><td><a href="https://www.nanyapcb.com.tw/nypcb/english/InvestorRelations/FinancialReports">Nan Ya PCB IR monthly sales</a> 有官方月營收入口。</td><td>需找上修來源與幅度；目前只確認可追蹤官方營收。</td></tr>
+      <tr><td>onsemi 併購 Synaptics</td><td><span class="pill">Verified</span></td><td><a href="https://investor.onsemi.com/news-releases/news-release-details/onsemi-acquire-synaptics-enable-next-generation-intelligent">onsemi official release</a>。</td><td>交易存在；股價與財務影響需另查交易文件與市場反應。</td></tr>
+      <tr><td>被動元件 / MOSFET 漲價與缺貨</td><td><span class="pill">Source-supported only</span></td><td>Podcast + secondary note 一致提及。</td><td>仍需料號、漲幅、生效日、通路 lead time；不可把小作文當事實。</td></tr>
+    </table>
+    <div class="callout warn">查證底線：EP675 可作為 7 月族群輪動與零組件漲價驗證的研究地圖，但價格、lead time、漲價信大多仍需外部追蹤。不要把節目敘事直接轉成買賣結論。</div>
+  </section>
+
+  <section>
+    <h2>追蹤計畫 / event triggers</h2>
+    <table>
+      <tr><th>Bucket</th><th>事件觸發</th><th>判斷方式</th><th>風險</th></tr>
+      <tr><td>台積電 / 大盤定錨</td><td>下一次法說會、毛利率 guidance、AI/HPC demand</td><td>若高於高預期，資金可能回權值；若低於高預期，短線震盪</td><td>市場預期過高，容易 sell-the-news</td></tr>
+      <tr><td>被動元件</td><td>7 月漲價信、月營收、量價反應</td><td>漲價落地 + 營收強才支持續航；利多不漲轉入風控</td><td>股價先噴、追高風險</td></tr>
+      <tr><td>功率元件 / MOSFET</td><td>lead time 與價格續升、台廠接單</td><td>分銷與公司資料確認外溢，假說提高</td><td>overbooking / 心理性拉貨</td></tr>
+      <tr><td>IC 設計</td><td>聯發科、創意、世芯毛利與需求 commentary</td><td>需求驅動優先；成本轉嫁較弱</td><td>漲價不等於獲利改善</td></tr>
+      <tr><td>遊戲創投</td><td>《紅眼路比》發售評價、wishlist / 銷量</td><td>驗證肖楠資本退出與出海口敘事</td><td>非上市、資料少、不可直接交易</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>方法限制</h2>
+    <ul>
+      <li>NotebookLM primary source 沒有逐句 citation；重要語氣與時間點仍需回聽。</li>
+      <li>Social Worker Daily 是二手筆記，且含筆記作者主觀操作紀錄。</li>
+      <li>供應鏈漲價、lead time、Panasonic EOL 等高價值 claim 尚未完全外部驗證。</li>
+      <li>本頁是研究筆記，不構成任何買賣建議。</li>
+    </ul>
+  </section>
+
+  <footer>Generated by 雙雙 🦞🌱 · Published HTML only · Source layers kept in the private workflow repo.</footer>
+</main>
+</body>
+</html>
