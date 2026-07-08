@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP677 投資研究筆記｜雙雙</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#101827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; --green:#86efac; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 44%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.72; }
+    main { max-width:1120px; margin:0 auto; padding:42px 20px 80px; }
+    .back { display:inline-block; margin-bottom:18px; color:#fed7aa; text-decoration:none; font-weight:800; }
+    .back:hover { color:white; }
+    header { border:1px solid var(--line); background:rgba(16,24,39,.86); border-radius:28px; padding:30px; margin-bottom:24px; }
+    .eyebrow { color:#fbbf24; letter-spacing:.12em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { margin:.2em 0; font-size:36px; line-height:1.2; }
+    h2 { margin-top:34px; padding-left:12px; border-left:5px solid var(--accent); }
+    h3 { color:#bfdbfe; margin-top:28px; }
+    p, li { color:#dbe7f5; }
+    .meta { color:var(--muted); }
+    .note { border:1px solid var(--line); background:rgba(56,189,248,.08); border-radius:18px; padding:16px 18px; margin:18px 0; }
+    .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:18px 0 24px; border:1px solid var(--line); border-radius:16px; }
+    table { width:100%; min-width:850px; border-collapse:collapse; background:rgba(16,24,39,.72); }
+    th, td { padding:11px 12px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+    th { color:#fed7aa; background:rgba(249,115,22,.11); white-space:nowrap; }
+    td { color:#dbe7f5; }
+    a { color:var(--blue); }
+    hr { border:0; border-top:1px solid var(--line); margin:34px 0; }
+    footer { margin-top:36px; color:var(--muted); font-size:14px; }
+    @media (max-width:720px) { main { padding:26px 14px 60px; } header { padding:22px; border-radius:22px; } h1 { font-size:28px; } table { display:table; white-space:nowrap; } }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye Investment Notes</div>
+    <h1>股癌 EP677：槓桿風險、AI 族群輪動與 Kyber / Midplane 時程雜音</h1>
+    <p class="meta">Podcast source：<a href="https://www.youtube.com/watch?v=OJ7HLygPhWE">EP677 | 🐎</a>｜Secondary source：<a href="https://socialworkerdaily.com/notes-of-gooaye-ep-677/">Social Worker Daily 股癌筆記EP677</a></p>
+    <div class="note">這份筆記是研究用 source-layer synthesis，不是投資建議。重點在區分主持人觀點、筆記作者詮釋、NotebookLM 推論與外部待查證項。</div>
+  </header>
+  <h2>EP677 structured notes — 股癌投資研究筆記</h2>
+<h2>Source stack / 來源層級</h2>
+<div class="table-wrap"><table><thead><tr><th>來源層</th><th>檔案 / URL</th><th>用途</th><th>限制</th></tr></thead><tbody>
+<tr><td>Podcast / NotebookLM primary</td><td>`sources/notebooklm_source.md`; YouTube `https://www.youtube.com/watch?v=OJ7HLygPhWE`</td><td>主要 podcast source layer；用來判斷主持人語氣、核心主題與需查證主張</td><td>NotebookLM 摘要可能有推論與 citation 不足；個別細節仍需逐字稿或外部資料確認</td></tr>
+<tr><td>Secondary note</td><td>`sources/secondary_note.md`; Social Worker Daily `https://socialworkerdaily.com/notes-of-gooaye-ep-677/`</td><td>交叉檢查節目重點、主持人金句、筆記作者心得與操作日記</td><td>筆記作者有主觀補述；操作日記不是主持人建議</td></tr>
+<tr><td>Supplementary triangulation</td><td>`sources/notebooklm_supplementary_report.md`</td><td>區分主持人觀點、筆記作者詮釋與 NotebookLM 推論</td><td>仍是 NotebookLM 生成層，不取代 primary source</td></tr>
+<tr><td>External verification</td><td>`verification.md`</td><td>驗證公開資料能否支撐技術 / 產品 / 市場主張</td><td>只做研究驗證，不構成投資建議</td></tr>
+</tbody></table></div>
+<h2>Core takeaways / 核心結論</h2>
+<p>1. 本集最強的投資紀律訊號不是「買哪個族群」，而是槓桿風險：主持人把自己過去約 2.5 倍融資槓桿，對比新一代用信貸、股期、選擇權疊加到 5–6 倍以上，重點是提醒 downside 可能拖累家庭資產負債表。 2. 市場面上，主持人把近期震盪偏向解讀為降槓 / 族群輪動，而不是 AI 長線基本面立刻破壞；但這是 source-supported view，不是已驗證事實。 3. 強勢族群被放在「資金可否放大」框架下看：功率元件雖強但市值容量較小；CCL、晶圓、封測更適合觀察法人資金是否接力。 4. SemiAnalysis / Kyber 144 / Midplane 的討論重點是：研發與產品化時程的雜音可能被市場放大。外部資料支持「市場確有相關延遲報導」，但 NVIDIA 官方資料仍呈現 Rubin / Vera Rubin 平台推進；因此要列為待查與風險情境，而非單邊定論。 5. Social Worker Daily 的「操作日記」提到大中、捷敏、國巨、群聯，必須嚴格標示為筆記作者個人紀錄，不可混成主持人建議。</p>
+<h2>Source triangulation / 來源交叉比對</h2>
+<div class="table-wrap"><table><thead><tr><th>主題</th><th>Podcast / NotebookLM primary</th><th>Secondary note</th><th>Triangulation judgment</th></tr></thead><tbody>
+<tr><td>槓桿風險</td><td>強調 2.5x vs 5–6x 的世代風險差異，downside 可能把家庭帶入負債地獄</td><td>完整保留金句與四貸同堂、股期、選擇權等描述</td><td>高一致性；本集最可行動的風控提醒</td></tr>
+<tr><td>台股盤勢</td><td>市場震盪像降槓與族群輪動，不一定是行情短期結束</td><td>記錄中小轉強、強勢族群、若不破前低則找可放大資金族群</td><td>高一致性；但仍屬主持人盤感，需用市場資料追蹤</td></tr>
+<tr><td>SemiAnalysis 報告</td><td>報告可能讓短期預期修正被放大，Alpha / 信譽可能衰減</td><td>記錄「市場速食、只看標題」與短期逆風不等於毀滅性改變</td><td>一致；外部驗證只能確認有相關報導，不能確認所有技術細節</td></tr>
+<tr><td>Kyber 144 / Midplane</td><td>提到正交背板 / Midplane 製造與材料難題，可能遞延</td><td>記錄 PTFE + Q 布混搭、Rubin Ultra / Feynman 時程說法</td><td>需外部查證；目前只列為 source-supported / partially supported</td></tr>
+<tr><td>CCL、晶圓、封測</td><td>可放大資金的強勢族群候選</td><td>筆記作者延伸為機會所在</td><td>主持人層是族群觀察；作者層有較主觀機會判斷</td></tr>
+<tr><td>功率元件</td><td>強勢但容量有限，大資金難直接進入</td><td>同樣記錄為強勢族群</td><td>一致；需要追蹤成交值、法人買賣與族群擴散</td></tr>
+<tr><td>被動元件 / 記憶體</td><td>被動元件修正；記憶體與韓股反彈連動較像猜測</td><td>筆記作者延伸至國巨、群聯操作</td><td>主持人未給個股建議；作者操作須隔離</td></tr>
+</tbody></table></div>
+<h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+<div class="table-wrap"><table><thead><tr><th>主題</th><th>本集方向 / Host stance</th><th>Likely Host View</th><th>Note-Author Interpretation</th><th>NotebookLM / AI Inference</th><th>Risk of Overstatement</th></tr></thead><tbody>
+<tr><td>槓桿與家庭風險</td><td>偏負面 / 風險案例</td><td>高槓桿若只看 upside，可能讓自己與家人承受負債地獄；要先想 downside</td><td>保留金句，未大幅扭曲</td><td>市場震盪可視為槓桿壓力測試</td><td>低</td></tr>
+<tr><td>市場盤勢</td><td>偏正向觀察</td><td>不像行情短期結束，比較像族群輪動與降槓</td><td>若不破前低，關注可放大資金族群</td><td>把降槓視為主要解釋</td><td>中：需要市場資料驗證</td></tr>
+<tr><td>SemiAnalysis / AI 雜音</td><td>謹慎 / 看不懂</td><td>可能是短期逆風與預期修正，不必過度解讀為長線崩壞</td><td>市場太速食，閱聽人只看標題</td><td>機構 alpha decay / 信譽衰退</td><td>中：部分屬語氣與市場解讀</td></tr>
+<tr><td>Kyber 144 / Midplane</td><td>偏負面 / 風險案例</td><td>產品 / 材料 / 研發時程存在延後與製造困難</td><td>具體記錄 PTFE、Q 布與 Rubin Ultra / Feynman</td><td>材料科學形成 CCL / PCB 護城河</td><td>高：外部未完全驗證</td></tr>
+<tr><td>CCL、晶圓、封測</td><td>偏正向觀察</td><td>可容納較大資金、相對強勢，值得觀察</td><td>視為後續機會所在</td><td>法人資金可能轉入</td><td>中</td></tr>
+<tr><td>功率元件</td><td>偏正向觀察</td><td>目前強，但市值容量較小，不一定適合大資金</td><td>仍列為強勢族群</td><td>強勢但流動性受限</td><td>低到中</td></tr>
+<tr><td>被動元件</td><td>謹慎 / 看不懂</td><td>很多進入修正，但仍可觀察是否守住關鍵均線</td><td>筆記作者提到資金效率與月線</td><td>技術面整理</td><td>中</td></tr>
+<tr><td>大中、捷敏、國巨、群聯</td><td>主持人未明確表態</td><td>不可視為主持人建議</td><td>筆記作者操作日記：買底單 / 加碼 / 搶反彈</td><td>若被放進投資假說，只能作為作者行為樣本</td><td>高</td></tr>
+</tbody></table></div>
+<h2>Company / ticker map / 公司與 ticker 對照表</h2>
+<div class="table-wrap"><table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead><tbody>
+<tr><td>NVIDIA</td><td>NVDA</td><td>AI 平台、Rubin / Vera Rubin / Kyber 相關背景</td><td>中立觀察</td><td>無直接操作</td><td>Primary / supplementary 提及；外部官方資料支持 Rubin 平台仍推進</td><td>區分官方 Rubin / NVL72 進度與媒體報導的 Kyber NVL144 延遲</td></tr>
+<tr><td>台積電</td><td>2330.TW / TSM</td><td>AI 供應鏈核心與可能催化（法說）</td><td>主持人未明確表態</td><td>社工筆記未作操作</td><td>Primary NotebookLM 提及較多，secondary 支持不足</td><td>查法說、資本支出、CoWoS / 先進製程指引；避免過度引申</td></tr>
+<tr><td>CCL / PCB 材料族群</td><td>多檔，ticker 未逐一確認</td><td>AI 伺服器材料 / 高速傳輸題材</td><td>偏正向觀察</td><td>視為可放大資金族群之一</td><td>Primary + secondary 高一致</td><td>追蹤高階 CCL 稼動、報價、AI server exposure</td></tr>
+<tr><td>晶圓 / Wafer 族群</td><td>多檔，ticker 未逐一確認</td><td>可容納較大資金的強勢族群</td><td>偏正向觀察</td><td>視為後續機會所在</td><td>Secondary 明確；primary 支持</td><td>追蹤法人資金、成交值、產業基本面是否同步</td></tr>
+<tr><td>封測 / OSAT</td><td>多檔，ticker 未逐一確認</td><td>可容納較大資金的強勢族群</td><td>偏正向觀察</td><td>與前集連結，認為是機會所在</td><td>Secondary 明確；supplementary 支持</td><td>查 AI 封測需求、先進封裝產能與報價</td></tr>
+<tr><td>功率元件</td><td>多檔，ticker 未逐一確認</td><td>當前強勢但容量較小</td><td>偏正向觀察</td><td>仍關注</td><td>Secondary 明確</td><td>追蹤成交值是否足以容納法人、漲勢是否擴散</td></tr>
+<tr><td>被動元件</td><td>多檔</td><td>修正中、資金效率下降</td><td>謹慎 / 看不懂</td><td>作者傾向等盤整或站回均線</td><td>Secondary 明確</td><td>查庫存、報價、季線 / 月線是否修復</td></tr>
+<tr><td>大中</td><td>6435.TWO</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>買底單</td><td>Secondary only</td><td>不可視為主持人建議；若研究，需另查公司財報與題材</td></tr>
+<tr><td>捷敏</td><td>6525.TW</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>買底單</td><td>Secondary only</td><td>不可視為主持人建議；需另查 OSAT / 功率模組 exposure</td></tr>
+<tr><td>國巨</td><td>2327.TW</td><td>筆記作者操作日記 / 被動元件代表</td><td>主持人未明確表態</td><td>打折加碼搶反彈，等月線</td><td>Secondary only</td><td>區分被動元件族群修正 vs 個股財務基本面</td></tr>
+<tr><td>群聯</td><td>8299.TWO</td><td>筆記作者操作日記 / 記憶體相關</td><td>主持人未明確表態</td><td>搶反彈，看韓股是否帶動記憶體</td><td>Secondary only</td><td>驗證 NAND / SSD 控制晶片基本面與韓股連動</td></tr>
+<tr><td>韓國股市 / 槓桿 ETF</td><td>KOSPI / KOSDAQ</td><td>投機情緒 proxy</td><td>偏負面 / 風險案例</td><td>被用來類比降槓</td><td>Primary / supplementary 支持；外部只支持韓國有槓桿 ETF 熱度</td><td>不宜直接當台股領先指標，需量化驗證</td></tr>
+</tbody></table></div>
+<h2>Topic map / 主題地圖</h2>
+<ul>
+<li>風控主軸：高槓桿、家庭 downside、不要當預言家、識別問題後再解題。</li>
+<li>市場主軸：中小型股轉強、族群輪動、強勢族群與資金容量、系統性風險的早期訊號。</li>
+<li>AI / 半導體主軸：SemiAnalysis 報告衝擊、Kyber 144 / Midplane / PTFE / Q 布、Rubin Ultra / Feynman 時程不確定性。</li>
+<li>研究主軸：不要把研發時程雜音直接等同長線趨勢破壞；但也不能把所有延遲都當成買點。</li>
+<li>資訊紀律：主持人觀點、社工筆記作者心得、操作日記、NotebookLM 推論必須分層。</li>
+</ul>
+<h2>Draft investment hypotheses / 投資假說草稿</h2>
+<div class="table-wrap"><table><thead><tr><th>假說</th><th>Source basis</th><th>需要驗證</th><th>反證條件</th><th>初步優先級</th></tr></thead><tbody>
+<tr><td>AI 族群震盪若主要來自去槓與預期修正，資金可能轉向可容納大錢的 CCL / 晶圓 / 封測</td><td>主持人盤勢判斷 + secondary note</td><td>成交值、法人買賣、族群相對強度、產業訂單</td><td>大盤破前低且強勢族群同步跌破關鍵均線；基本面指引下修</td><td>高</td></tr>
+<tr><td>功率元件雖強，但因市值容量較小，可能更適合中小資金，不一定是法人主戰場</td><td>Secondary note + supplementary</td><td>族群市值、成交值、法人持股變化</td><td>大型法人明顯進場且成交值放大</td><td>中</td></tr>
+<tr><td>Kyber / Midplane 延遲若是研發摩擦而非需求消失，對高階 CCL / PCB 技術門檻可能是長期正面</td><td>Primary + supplementary + 外部報導</td><td>NVIDIA 官方產品節奏、供應鏈良率、材料規格</td><td>官方或主要客戶確認需求取消 / 架構替代使材料需求下降</td><td>中高，但查證要求高</td></tr>
+<tr><td>被動元件與記憶體短線反彈屬交易性質，若無基本面 / 技術面確認，應低於 AI 核心供應鏈優先級</td><td>Secondary note 作者操作日記 + 主持人較保守語氣</td><td>報價、庫存、韓股與記憶體報價連動</td><td>財報 / 報價明顯轉強且站回關鍵均線</td><td>中低</td></tr>
+</tbody></table></div>
+<h2>Research discipline notes / 研究紀律</h2>
+<ul>
+<li>不把「主持人提到族群」翻譯成「主持人推薦個股」。</li>
+<li>不把「筆記作者操作日記」納入主持人 stance；只能作為二級市場情緒或個人交易樣本。</li>
+<li>不把媒體報導的 Kyber 延遲視為已被 NVIDIA 官方確認；應列為部分支持 / 待查證。</li>
+<li>不用高槓桿追逐短線題材；本集最重要的提醒是 downside 與家庭風險。</li>
+<li>若沒有可追的族群或強勢族群全面失守，才提高系統性風險權重。</li>
+</ul>
+<hr><h2>外部查證摘要</h2>
+<h2>EP677 verification — 外部查證</h2>
+<h2>Verification scope / 查證範圍</h2>
+<p>本查證只處理 EP677 最終報告會用到的 factual / investable claims：AI 伺服器平台時程、Kyber 144 / Midplane / PTFE / Q 布相關說法、族群輪動與槓桿風險、以及筆記作者操作日記個股的 source-layer 歸屬。外部查證不把任何內容轉成買賣建議。</p>
+<h2>Verification table / 查證表</h2>
+<div class="table-wrap"><table><thead><tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr></thead><tbody>
+<tr><td>本集來源已可用：YouTube EP677 與 Social Worker Daily EP677</td><td>Verified</td><td>Resolver output；YouTube `https://www.youtube.com/watch?v=OJ7HLygPhWE`；Social Worker Daily `https://socialworkerdaily.com/notes-of-gooaye-ep-677/`</td><td>來源齊全，可執行完整 workflow。</td></tr>
+<tr><td>EP677 secondary note 包含槓桿風險、盤勢、SemiAnalysis、Kyber 144 / Midplane、CCL / 晶圓 / 封測等內容</td><td>Verified</td><td>`sources/secondary_note.md` extractor + validator passed；markdown 約 4.9k chars</td><td>可作為 secondary layer，但其心得與操作日記需隔離。</td></tr>
+<tr><td>新一代投資人 5–6 倍槓桿、downside 可能傷害家庭財務</td><td>Source-supported only</td><td>Primary NotebookLM + secondary note 均記錄；無獨立統計數據</td><td>這是主持人的風控觀點與市場觀察；不可當成市場整體槓桿倍數事實。</td></tr>
+<tr><td>市場震盪主要是降槓 / 族群輪動，不是行情短期結束</td><td>Source-supported only</td><td>Primary + secondary note</td><td>屬主持人盤感；需用加權 / 櫃買指數、融資餘額、成交值、族群相對強度後續追蹤。</td></tr>
+<tr><td>CCL、晶圓、封測是可放大資金的強勢族群</td><td>Source-supported only</td><td>Secondary note 明確記錄；supplementary triangulation 支持</td><td>屬本集投資線索；要用成交值、法人買賣、公司基本面驗證。</td></tr>
+<tr><td>功率元件強勢但市值容量較小，大資金較難直接進入</td><td>Source-supported only</td><td>Secondary note 明確記錄</td><td>市值 / 流動性可外部量化，但本報告未逐檔驗證。</td></tr>
+<tr><td>NVIDIA 正在推進 Rubin / Vera Rubin AI platform 世代</td><td>Verified</td><td>NVIDIA 官方 roadmap / Computex keynote / data center product materials（需以發布當時官方資料為準）</td><td>支持「Rubin 世代仍在 roadmap」；不等於確認 Kyber 144 詳細時程。</td></tr>
+<tr><td>Kyber 144 / NVL144 / Midplane 製造困難導致遞延至 Rubin Ultra / Feynman</td><td>Partially supported</td><td>Primary + secondary note + market reports mention related concerns；官方公開資料未完全逐字確認此敘事</td><td>應列為「source-supported + partially supported by external reporting」，不可寫成已被官方確認。</td></tr>
+<tr><td>PTFE / Q 布 / Quartz-like material 是 Midplane 的關鍵瓶頸</td><td>Needs exact transcript</td><td>Secondary note 記錄「PTFE 材料跟 Q 布混搭」；primary NotebookLM 提到材料科學與 SI / 熱挑戰</td><td>專業材料 claim 需要逐字稿、供應鏈報告或公司技術文件；目前不作定論。</td></tr>
+<tr><td>SemiAnalysis 報告造成市場回檔 / 市場信譽快速燒掉</td><td>Source-supported only</td><td>Primary + secondary note</td><td>外部可能能確認有相關報告，但「造成回檔」是主持人市場解讀，需事件研究。</td></tr>
+<tr><td>大中、捷敏、國巨、群聯是主持人推薦</td><td>Contradicted / not supported</td><td>Secondary note 將四檔列於「操作日記」且有免責；supplementary 警示主持人未明確表態</td><td>報告必須明確標示為筆記作者個人操作紀錄，不可當主持人建議。</td></tr>
+<tr><td>記憶體反彈可由韓股反彈帶動</td><td>Source-supported only</td><td>Secondary note 作者操作日記：「看韓股反彈會不會把記憶體帶上去」</td><td>這是筆記作者交易假說，不是已驗證相關性。</td></tr>
+</tbody></table></div>
+<h2>Open verification queue / 待查清單</h2>
+<p>1. 查 NVIDIA 官方與供應鏈資料：Rubin / Vera Rubin / Rubin Ultra / Feynman 與 NVL144 / Kyber 144 的精確產品命名、量產時程與是否公開提到 Midplane 延遲。 2. 查高階 CCL / PCB 廠商技術資料：PTFE、Q cloth / quartz cloth、low-Dk/Df 材料在 224G / 高速背板中的良率、熱與訊號完整性問題。 3. 查 TWSE / TPEx：融資餘額、當沖比重、股期 / 選擇權未平倉與近期斷頭壓力，驗證「降槓」是否有量化證據。 4. 查各族群成交值與法人買賣：CCL、晶圓、封測、功率元件、被動元件、記憶體是否真的符合「可放大資金 / 相對強勢」。 5. 逐檔查大中、捷敏、國巨、群聯基本面與題材前，先保留為作者操作日記，不進入核心 watchlist。</p>
+<h2>Bottom line / 查證結論</h2>
+<p>EP677 可以發布為研究筆記，但結論要保守：本集最可靠的是風控與 source-layer 分層；族群方向可作為觀察清單；Kyber / Midplane / 材料時程只能列為待查技術線索；筆記作者操作日記不可被轉譯成主持人投資建議。</p>
+<hr><h2>追蹤計畫</h2>
+<h2>EP677 tracking — 追蹤計畫</h2>
+<h2>Watchlist buckets / 觀察清單分組</h2>
+<div class="table-wrap"><table><thead><tr><th>Bucket</th><th>觀察項目</th><th>Source basis</th><th>追蹤資料</th><th>初步姿態</th></tr></thead><tbody>
+<tr><td>風控 / 市場結構</td><td>槓桿降溫、融資餘額、股期 / 選擇權風險、韓股投機情緒</td><td>主持人強調 5–6 倍槓桿 downside</td><td>TWSE / TPEx 融資餘額、期交所資料、KOSPI / KOSDAQ 走勢</td><td>高優先；先保命再找機會</td></tr>
+<tr><td>AI 族群輪動</td><td>CCL、晶圓、封測是否接替前波主流</td><td>主持人提到可放大資金族群</td><td>成交值、法人買賣、族群相對強度、公司月營收</td><td>高優先；需等資料確認</td></tr>
+<tr><td>高階材料 / Midplane</td><td>Kyber 144 / NVL144、PTFE / Q cloth、正交背板良率</td><td>Primary + secondary 的技術線索</td><td>NVIDIA 官方資料、供應鏈法說、材料廠技術文件</td><td>中高優先；查證門檻高</td></tr>
+<tr><td>功率元件</td><td>強勢但容量有限</td><td>主持人指出強勢與流動性限制</td><td>市值、成交值、法人進出、族群擴散</td><td>中優先；注意流動性</td></tr>
+<tr><td>被動元件 / 記憶體</td><td>修正 / 搶反彈情境</td><td>筆記作者操作日記 + 主持人盤勢脈絡</td><td>報價、庫存、韓股與記憶體指標、月線 / 季線</td><td>中低；需區分交易反彈與基本面</td></tr>
+<tr><td>作者操作日記個股</td><td>大中、捷敏、國巨、群聯</td><td>Secondary note only</td><td>個股財報、月營收、籌碼、題材</td><td>Parking lot；不可當主持人建議</td></tr>
+</tbody></table></div>
+<h2>Event triggers / 事件觸發條件</h2>
+<div class="table-wrap"><table><thead><tr><th>Trigger</th><th>若發生</th><th>行動</th></tr></thead><tbody>
+<tr><td>大盤 / 櫃買不破前低且 CCL / 晶圓 / 封測成交值放大</td><td>支持「族群輪動而非行情結束」</td><td>提高族群研究優先級，挑選龍頭與供應鏈位置</td></tr>
+<tr><td>強勢族群跌破 5 日 / 10 日線後無法收復，且融資餘額快速下降</td><td>支持降槓壓力尚未結束</td><td>降低短線追價，等待風險釋放</td></tr>
+<tr><td>NVIDIA 或供應鏈官方確認 Rubin / NVL144 / Midplane 時程變化</td><td>技術線索變成可驗證事件</td><td>更新 verification；重估 CCL / PCB / connector / thermal 受益鏈</td></tr>
+<tr><td>SemiAnalysis 或其他機構後續報告被官方 / 客戶端數據反駁</td><td>短期雜音可能消退</td><td>觀察 AI 硬體族群是否修復型態</td></tr>
+<tr><td>TSMC / AI server 供應鏈法說上修需求或 capex</td><td>強化 AI 長線邏輯</td><td>把核心供應鏈優先級上調</td></tr>
+<tr><td>若市場找不到可打的族群且強勢股全面轉弱</td><td>系統性風險上升</td><td>回到現金 / 風控框架，不硬找題材</td></tr>
+</tbody></table></div>
+<h2>Current stance / 目前判斷</h2>
+<ul>
+<li>本集報告不給買賣建議；目前最重要的是把風險框架寫清楚。</li>
+<li>可研究主線：AI 供應鏈的資金輪動、可容納大錢的族群、以及高階材料 / Midplane 技術瓶頸。</li>
+<li>暫不升級為個股結論：大中、捷敏、國巨、群聯只來自筆記作者操作日記，先留在 parking lot。</li>
+<li>若要後續投資研究，優先做「族群量化 + 官方資料查證」，而不是直接追逐節目語境。</li>
+</ul>
+<h2>Parking lot / 暫停追蹤</h2>
+<ul>
+<li>SpaceX / Tesla / CrowdStrike 等 primary NotebookLM 可能提及但 secondary note 未支撐的項目：本次 HTML 不列核心，避免 source drift。</li>
+<li>任何把 SemiAnalysis 報告簡化為「一定利空」或「一定買點」的說法：待外部資料完整後再判斷。</li>
+</ul>
+  <footer>生成：雙雙 🦞🌱｜僅供研究，不構成買賣建議。</footer>
+</main>
+</body>
+</html>
