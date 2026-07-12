@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP678 投資研究筆記｜雙雙</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#101827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; --green:#86efac; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 44%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.72; }
+    main { max-width:1120px; margin:0 auto; padding:42px 20px 80px; }
+    .back { display:inline-block; margin-bottom:18px; color:#fed7aa; text-decoration:none; font-weight:800; }
+    .back:hover { color:white; }
+    header { border:1px solid var(--line); background:rgba(16,24,39,.86); border-radius:28px; padding:30px; margin-bottom:24px; }
+    .eyebrow { color:#fbbf24; letter-spacing:.12em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { margin:.2em 0; font-size:36px; line-height:1.2; }
+    h2 { margin-top:34px; padding-left:12px; border-left:5px solid var(--accent); }
+    h3 { color:#bfdbfe; margin-top:28px; }
+    p, li { color:#dbe7f5; }
+    .meta { color:var(--muted); }
+    .note { border:1px solid var(--line); background:rgba(56,189,248,.08); border-radius:18px; padding:16px 18px; margin:18px 0; }
+    .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:18px 0 24px; border:1px solid var(--line); border-radius:16px; }
+    table { width:100%; min-width:850px; border-collapse:collapse; background:rgba(16,24,39,.72); }
+    th, td { padding:11px 12px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+    th { color:#fed7aa; background:rgba(249,115,22,.11); white-space:nowrap; }
+    td { color:#dbe7f5; }
+    code { color:#fde68a; }
+    a { color:var(--blue); }
+    hr { border:0; border-top:1px solid var(--line); margin:34px 0; }
+    footer { margin-top:36px; color:var(--muted); font-size:14px; }
+    @media (max-width:720px) { main { padding:26px 14px 60px; } header { padding:22px; border-radius:22px; } h1 { font-size:28px; } table { display:table; white-space:nowrap; } }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye Investment Notes</div>
+    <h1>股癌 EP678：Meta 算力租賃、功率元件漲價、導線架瓶頸與光通路線輪動</h1>
+    <p class="meta">Podcast source：<a href="https://www.youtube.com/watch?v=dF-Fhpmh_8c">EP678 | 🎮</a>｜Secondary source：<a href="https://socialworkerdaily.com/notes-of-gooaye-ep-678/">Social Worker Daily 股癌筆記EP678</a></p>
+    <div class="note">這份筆記是研究用 source-layer synthesis，不是投資建議。重點在區分主持人觀點、筆記作者詮釋、NotebookLM 推論與外部待查證項。</div>
+  </header>
+  <h2>EP678 structured notes — 股癌投資研究筆記</h2>
+<h2>Source stack / 來源層級</h2>
+<div class="table-wrap"><table><thead><tr><th>來源層</th><th>檔案 / URL</th><th>用途</th><th>限制</th></tr></thead><tbody>
+<tr><td>Podcast / NotebookLM primary</td><td><code>sources/notebooklm_source.md</code>; YouTube <a href="https://www.youtube.com/watch?v=dF-Fhpmh_8c">https://www.youtube.com/watch?v=dF-Fhpmh_8c</a></td><td>主要 podcast source layer；判斷主持人語氣、核心主題與需查證主張</td><td>NotebookLM 摘要可能有識音與推論誤差；重要數字仍需逐字稿或外部資料確認</td></tr>
+<tr><td>Secondary note</td><td><code>sources/secondary_note.md</code>; Social Worker Daily <a href="https://socialworkerdaily.com/notes-of-gooaye-ep-678/">https://socialworkerdaily.com/notes-of-gooaye-ep-678/</a></td><td>交叉檢查節目重點、筆記作者心得與操作日記</td><td>筆記作者含主觀補述；操作日記不是主持人建議</td></tr>
+<tr><td>Supplementary triangulation</td><td><code>sources/notebooklm_supplementary_report.md</code></td><td>區分主持人觀點、筆記作者詮釋與 NotebookLM 推論</td><td>仍是 NotebookLM 生成層，不取代 primary source</td></tr>
+<tr><td>External verification</td><td><code>verification.md</code></td><td>檢查公開資料能否支撐 Meta / ETF / 元件漲價 / 技術路線等主張</td><td>本輪只做快速公開資料查證，不構成投資建議</td></tr>
+</tbody></table></div>
+<h2>Core takeaways / 核心結論</h2>
+<p>1. 本集主軸不是單一個股，而是 AI 基礎建設的資產化：Meta 若把 GPU / 算力從純自用資產轉成可租賃資源，會同時回應折舊疑慮、壓低算力單價、並讓 NeoCloud 類型商業模式的「朦朧美」被更可計算的價格取代。 2. 半導體零組件的漲價故事仍在延伸：記憶體價格仍上行但漲幅可能收斂；被動元件多數漲價成功；功率元件 / MOSFET 與後段封裝被主持人放在「稼動率拉滿後獲利跳很快」框架下。 3. 導線架是本集最具體的供應鏈瓶頸：secondary note 與 primary report 都提到 10–20% 漲價、lead time 從 3–4 個月拉長到 7–8 個月；這是可追蹤的事實型線索，但仍需廠商法說或產業資料驗證。 4. 光通訊不是主持人高信心主線，比較像「聽眾服務」與資金輪動觀察：SiPh / InP（Narrow-and-Fast）偏弱，Wide-and-Slow / VCSEL / AOC / Micro LED 敘事偏強；要避免把技術路線討論直接翻成買賣結論。 5. Social Worker Daily 的捷敏、群聯、國巨紀錄必須嚴格標為筆記作者個人操作日記，不是主持人建議。</p>
+<h2>Source triangulation / 來源交叉比對</h2>
+<div class="table-wrap"><table><thead><tr><th>主題</th><th>Podcast / NotebookLM primary</th><th>Secondary note</th><th>Triangulation judgment</th></tr></thead><tbody>
+<tr><td>市場情緒 / 0050</td><td>0050 高報酬與颱風休市抱怨反映散戶參與度提高</td><td>詳細記錄颱風假、少一天交易日與證交稅抱怨</td><td>高一致；可作為情緒指標，不等於可直接交易訊號</td></tr>
+<tr><td>Meta 出租算力</td><td>Meta double down AI、GPU 可訓練 / 推論 / 出租，回應折舊問題</td><td>記錄祖克柏訪問、滿倉衝、GPU 折舊與 NeoCloud 壓力</td><td>高一致；外部資料目前支持 Meta 大幅投入 AI，但「出租 Hopper」需更精確官方或訪談原文確認</td></tr>
+<tr><td>記憶體</td><td>合約價仍漲但漲幅收斂、巨頭採購決心仍強</td><td>同樣記錄下季持續但收斂、基本面未見敗象</td><td>高一致；需用報價與公司資料驗證</td></tr>
+<tr><td>被動 / 功率元件</td><td>被動元件漲價成功、ADI 漲價信、功率元件缺貨擴張</td><td>同樣記錄 ADI 漲價信、台股 MOSFET / 後段封裝走強</td><td>高一致；ADI 漲價信需原始信件或通路資料確認</td></tr>
+<tr><td>後段封裝 / 導線架</td><td>導線架交期與漲價是封裝瓶頸</td><td>QA 明確記錄 10–20% 漲價、lead time 3–4 月到 7–8 月</td><td>本集最具體的供應鏈查證項</td></tr>
+<tr><td>光通訊路線</td><td>Narrow-and-Fast vs Wide-and-Slow、SiPh / InP 弱、VCSEL / AOC 等相對強</td><td>記錄「聽眾服務」、主持人不想介入、Slow-and-Wide 較硬</td><td>一致；主持人語氣偏謹慎，不應過度升級成高信心買點</td></tr>
+<tr><td>筆記作者操作</td><td>primary 未給個股建議</td><td>捷敏加碼、群聯短 V 出、國巨減碼丟功率半導體</td><td>必須隔離為作者操作日記</td></tr>
+</tbody></table></div>
+<h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+<div class="table-wrap"><table><thead><tr><th>主題</th><th>本集方向 / Host stance</th><th>Likely Host View</th><th>Note-Author Interpretation</th><th>NotebookLM / AI Inference</th><th>Risk of Overstatement</th></tr></thead><tbody>
+<tr><td>台股 / 0050 市場情緒</td><td>偏正向觀察</td><td>多頭氣氛強，大家開始理解「少一天交易日」的機會成本</td><td>股市好到大眾與市場參與者觀點靠近</td><td>情緒韌性強，但過熱時波動會放大</td><td>中：0050 報酬數字需精算</td></tr>
+<tr><td>NVIDIA / Meta</td><td>偏正向觀察</td><td>美股高估值若轉強，資金可能回流；Meta 不是退賽而是更積極投入 AI</td><td>祖克柏訪問被解讀為滿倉衝、GW 級建置</td><td>算力資產化可回應折舊疑慮</td><td>中：租賃模式細節需官方確認</td></tr>
+<tr><td>算力租賃 / NeoCloud</td><td>中立觀察</td><td>大咖進場會讓算力更便宜、定價更清楚；不利純 NeoCloud 估值朦朧美</td><td>價格可算後本夢比下降，但軟體公司受益</td><td>算力供給擴大壓縮租賃商估值倍數</td><td>高：定價與供給節奏仍未驗證</td></tr>
+<tr><td>記憶體</td><td>偏正向觀察</td><td>基本面未見敗象，但資金可能擁擠</td><td>中大資金不一定再往記憶體塞</td><td>漲幅收斂可能讓資金輪動</td><td>中</td></tr>
+<tr><td>被動元件</td><td>偏正向觀察</td><td>大廠漲價帶小廠調整，後續 1–2 季仍可觀察</td><td>國巨短 V 沒力，作者轉向功率半導體</td><td>漲價循環仍在但資金偏好轉移</td><td>中：作者操作不可代表主持人</td></tr>
+<tr><td>功率元件 / MOSFET / 封裝</td><td>偏正向觀察</td><td>ADI 漲價信、缺貨擴張、稼動率拉滿可能讓獲利跳升</td><td>主旋律仍在功率半導體和封裝</td><td>毛利率彈性可能高於營收年增</td><td>中低：需逐檔財務驗證</td></tr>
+<tr><td>導線架</td><td>偏正向觀察</td><td>10–20% 漲價、lead time 拉長是明確瓶頸</td><td>列為 QA 重點</td><td>供應鏈短板可能提高封裝 / 導線架廠議價力</td><td>中：需廠商資料確認</td></tr>
+<tr><td>光通訊 / SiPh / VCSEL / AOC</td><td>謹慎 / 看不懂</td><td>光通是聽眾服務，主持人資金與注意力不在這裡</td><td>若要買偏考慮 Slow-and-Wide；LITE / COHR / AXT 殺低才可能撿</td><td>資金追逐新技術敘事、賣舊名追新夢</td><td>高：技術與資金敘事容易過度推論</td></tr>
+<tr><td>捷敏、群聯、國巨</td><td>主持人未明確表態</td><td>不可視為主持人建議</td><td>捷敏加碼、群聯出場、國巨減碼</td><td>只可作為筆記作者交易樣本</td><td>極高</td></tr>
+</tbody></table></div>
+<h2>Company / ticker map / 公司與 ticker 對照表</h2>
+<div class="table-wrap"><table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead><tbody>
+<tr><td>NVIDIA</td><td>NVDA</td><td>美股高估值 / AI 核心；技術面回季線</td><td>偏正向觀察</td><td>無操作</td><td>Primary + secondary</td><td>查股價、財報、AI 出貨 / Rubin / Blackwell 需求</td></tr>
+<tr><td>Meta Platforms</td><td>META</td><td>算力租賃、AI capex、折舊討論</td><td>偏正向觀察</td><td>無操作</td><td>Primary + secondary；外部資料支持 Meta 大規模 AI 投入</td><td>查訪談原文、10-K / capex、是否正式提供 GPU 租賃</td></tr>
+<tr><td>NeoCloud / 算力租賃商</td><td>ticker 未確認</td><td>被 Meta 進場影響的商業模式</td><td>中立觀察</td><td>無操作</td><td>Primary + secondary</td><td>查 GPU 租賃價格、Lambda / CoreWeave / Nebius 等同業資料</td></tr>
+<tr><td>Analog Devices</td><td>ADI</td><td>漲價信 / 功率元件循環指標</td><td>偏正向觀察</td><td>無操作</td><td>Primary + secondary；外部只找到相關類比供應吃緊報導</td><td>找 ADI 原始價格通知或通路商文件</td></tr>
+<tr><td>記憶體族群</td><td>多檔</td><td>合約價仍漲但漲幅收斂</td><td>偏正向觀察</td><td>群聯反彈交易</td><td>Primary + secondary</td><td>查 DRAM/NAND 報價、廠商法說與庫存</td></tr>
+<tr><td>被動元件 / 國巨</td><td>2327.TW</td><td>漲價循環與資金輪動對照</td><td>偏正向觀察</td><td>國巨減碼，資金轉功率半導體</td><td>Secondary author diary + source theme</td><td>不把作者操作混成主持人建議；查 MLCC 報價與財報</td></tr>
+<tr><td>功率元件 / MOSFET</td><td>多檔</td><td>漲價、缺貨、台股走勢強</td><td>偏正向觀察</td><td>作者轉向功率半導體</td><td>Primary + secondary</td><td>建立台系研究池；查月營收、自結獲利、法說</td></tr>
+<tr><td>後段封裝 / 捷敏</td><td>6525.TW</td><td>稼動率 / 獲利跳升；作者操作</td><td>偏正向觀察（族群）</td><td>捷敏加碼蓋牌</td><td>Secondary only for operation</td><td>查封裝廠自結、導線架瓶頸與毛利率</td></tr>
+<tr><td>導線架 Lead Frame</td><td>多檔</td><td>10–20% 漲價、lead time 7–8 月</td><td>偏正向觀察</td><td>無直接操作</td><td>Primary + secondary</td><td>查導線架廠法說、產能、銅價轉嫁</td></tr>
+<tr><td>光通訊：SiPh / InP</td><td>LITE / COHR / AXT 等</td><td>Narrow-and-Fast 舊路線代表</td><td>謹慎 / 看不懂</td><td>殺夠低才考慮撿</td><td>Secondary note + primary</td><td>查公司 exposure、估值、資金流</td></tr>
+<tr><td>Wide-and-Slow / VCSEL / AOC / Micro LED</td><td>ticker 未確認</td><td>新路線 / 遠期敘事</td><td>謹慎 / 看不懂</td><td>若真要買較偏這邊</td><td>Primary + secondary</td><td>不熟不追；查技術成熟度與量產時程</td></tr>
+<tr><td>0050</td><td>0050.TW</td><td>市場情緒 proxy</td><td>偏正向觀察</td><td>無操作</td><td>Primary + secondary</td><td>精算 YTD 報酬與資金流</td></tr>
+</tbody></table></div>
+<h2>Topic map / 主題地圖</h2>
+<ul><li>市場心理：颱風假、交易日、0050 報酬與散戶上車感。  </li><li>AI 基礎建設：Meta / NVIDIA / 算力租賃 / 折舊 / NeoCloud 定價壓力。  </li><li>漲價循環：記憶體、被動元件、功率元件、ADI、MOSFET、後段封裝。  </li><li>供應鏈瓶頸：導線架漲價與交期拉長。  </li><li>光通路線：Narrow-and-Fast vs Wide-and-Slow；SiPh / InP vs VCSEL / AOC / Micro LED。  </li><li>研究紀律：主持人語氣、NotebookLM 推論、筆記作者操作日記必須分層。</li></ul>
+<h2>Draft investment hypotheses / 投資假說草稿</h2>
+<div class="table-wrap"><table><thead><tr><th>假說</th><th>Source basis</th><th>需要驗證</th><th>反證條件</th><th>初步優先級</th></tr></thead><tbody>
+<tr><td>功率元件 / MOSFET / 後段封裝若進入漲價與滿稼動循環，獲利彈性可能大於營收年增</td><td>主持人與 secondary note 均提到 ADI 漲價、台股功率 / 封裝走強、自結獲利跳升</td><td>月營收、自結 EPS / 毛利率、法說、報價</td><td>漲價失敗、稼動率下滑、股價先行過熱後基本面跟不上</td><td>高</td></tr>
+<tr><td>導線架若成為封裝瓶頸，具備短板供應商議價力</td><td>QA 具體提到 10–20% 漲價與 lead time 拉長</td><td>導線架廠法說、客戶拉貨、銅價轉嫁</td><td>lead time 回落、客戶改設計或庫存轉高</td><td>高</td></tr>
+<tr><td>Meta 算力租賃若擴大，會壓低 NeoCloud 類型高本夢比估值，但有利 AI 軟體與推論使用量</td><td>主持人對 Meta 出租算力與定價清楚化的討論</td><td>官方服務、定價、capex、GPU 折舊政策</td><td>Meta 未實際對外供應，或租賃價格仍高於市場預期</td><td>中高</td></tr>
+<tr><td>光通訊資金可能從 SiPh / InP 輪到 VCSEL / AOC / Wide-and-Slow，但這是高波動敘事交易</td><td>primary + secondary 的技術路線討論與「聽眾服務」語氣</td><td>ETF 持股、技術成熟度、公司 revenue exposure</td><td>大盤未創高、高估值修正、路線沒有商業化時間表</td><td>中</td></tr>
+<tr><td>記憶體與被動元件仍有基本面，但若資金擁擠或轉向功率半導體，短線優先級下降</td><td>主持人提到記憶體無敗象但較擁擠；被動漲價成功但國巨操作弱</td><td>報價、庫存、資金流、龍頭財報</td><td>報價加速、資金重新回流、龍頭突破</td><td>中</td></tr>
+</tbody></table></div>
+<h2>Research discipline notes / 研究紀律</h2>
+<ul><li>不把「主持人提到族群」翻成「主持人推薦個股」。  </li><li>不把「Social Worker Daily 操作日記」納入主持人 stance。  </li><li>對 Meta 算力租賃、ADI 漲價信、導線架交期、光通技術路線等 claim，先列為研究線索，再用官方 / 法說 / 報價資料驗證。  </li><li>光通本集明確偏「聽眾服務」，不要讓遠期技術故事壓過功率元件 / 導線架這類更具體的供應鏈查證項。  </li><li>本報告是研究筆記，不是個人化投資建議。</li></ul>
+<p>---</p>
+<h2>外部查證摘要</h2>
+<h2>EP678 verification — 外部查證</h2>
+<h2>Verification scope / 查證範圍</h2>
+<p>本查證只處理 EP678 最終報告會用到的 factual / investable claims：來源可用性、Meta / AI capex 與算力租賃敘事、SemiAnalysis ETF 與光通資金催化、功率元件 / ADI 漲價信、導線架交期與漲價、0050 / 市場情緒、以及筆記作者操作日記歸屬。外部查證不把任何內容轉成買賣建議。</p>
+<h2>Verification table / 查證表</h2>
+<div class="table-wrap"><table><thead><tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr></thead><tbody>
+<tr><td>EP678 來源齊全：YouTube EP678 與 Social Worker Daily EP678</td><td>Verified</td><td>Resolver output；YouTube <a href="https://www.youtube.com/watch?v=dF-Fhpmh_8c；Social">https://www.youtube.com/watch?v=dF-Fhpmh_8c；Social</a> Worker Daily <a href="https://socialworkerdaily.com/notes-of-gooaye-ep-678/">https://socialworkerdaily.com/notes-of-gooaye-ep-678/</a></td><td>可執行完整 workflow。</td></tr>
+<tr><td>Social Worker Daily EP678 secondary note 包含盤勢、Meta 出租算力、漲價故事、光通、導線架與操作日記</td><td>Verified</td><td><code>sources/secondary_note.md</code> extractor + validator passed；約 4.5k chars，無 quality flags</td><td>可作為 secondary layer，但作者心得與操作日記需隔離。</td></tr>
+<tr><td>Meta / Zuckerberg 近期加大 AI 基礎建設投入、GW 級資料中心 / 算力是市場討論主題</td><td>Partially supported</td><td>Podcast / secondary source；Meta 官方與媒體訪談需另查；Meta SEC filing 可查 capex / AI infrastructure</td><td>支持「Meta 大幅投入 AI」方向，但本報告不把每個訪談細節寫成官方定案。</td></tr>
+<tr><td>Meta 正式出租舊型 GPU / Hopper 給第三方</td><td>Needs exact transcript / external confirmation</td><td>Podcast source 提到；secondary note 記錄「GPU 不只訓練推論，還能出租」</td><td>這是本集重要線索，但需要訪談原文、Meta 官方服務或雲端產品公告確認。</td></tr>
+<tr><td>Meta 進入算力租賃會壓低 NeoCloud 類型估值朦朧美</td><td>Source-supported only</td><td>Primary + secondary note</td><td>屬主持人市場解讀；需要租賃價格、供給量與同業估值資料追蹤。</td></tr>
+<tr><td>Tema ETFs 與 SemiAnalysis 已宣布合作推出半導體 / AI infrastructure ETF 相關產品</td><td>Verified</td><td>Tema press release, 2026-06-29: <a href="https://temaetfs.com/press/tema-etfs-and-semianalysis-launch-exclusive-semiconductor-etf-partnership">https://temaetfs.com/press/tema-etfs-and-semianalysis-launch-exclusive-semiconductor-etf-partnership</a></td><td>支持「SemiAnalysis ETF / 資金催化」這個外部事件存在；不代表 ETF 一定買進特定光通股。</td></tr>
+<tr><td>SemiAnalysis ETF 具體成分股包含哪些光通元件股</td><td>Needs external verification</td><td>需 ETF holdings / prospectus；source layer 未列完整持股</td><td>最終報告不可把 LITE / COHR / AXT 寫成已確認 ETF 成分，除非查到持股表。</td></tr>
+<tr><td>ADI 發出漲價信、功率元件全面漲價</td><td>Partially supported / needs source</td><td>Primary + secondary note；外部可查類比 / 功率供應吃緊與公司資料，但未取得 ADI 原始漲價信</td><td>可列為 source-supported 產業線索；投資前需通路信、客戶通知或法說確認。</td></tr>
+<tr><td>導線架漲價 10–20%，lead time 從 3–4 個月拉長到 7–8 個月</td><td>Source-supported only / high-priority verification</td><td>Primary + secondary note 高一致</td><td>本集最具體查證項；需導線架廠法說、客戶拉貨、報價與銅價資料驗證。</td></tr>
+<tr><td>0050 YTD / 年化報酬超過 50% 造成市場心理轉變</td><td>Needs exact calculation</td><td>Podcast / NotebookLM primary；secondary note 記錄「股市太好、大家上車」但未精算</td><td>可作情緒觀察，不宜把精確報酬率當已驗證事實；需用 0050.TW 價格與配息重算。</td></tr>
+<tr><td>光通 Narrow-and-Fast vs Wide-and-Slow，SiPh / InP 轉弱、VCSEL / AOC / Micro LED 轉強</td><td>Source-supported only</td><td>Primary + secondary note</td><td>屬主持人技術 / 資金觀察；需要公司 exposure、ETF 資金、產品路線圖驗證。</td></tr>
+<tr><td>LITE、COHR、AXT 是可以撿的主持人建議</td><td>Contradicted / not supported</td><td>Secondary note 明確是筆記作者「若殺夠低可以撿」的延伸想法；主持人語氣是聽眾服務、自己不想介入</td><td>最終報告必須標示為筆記作者詮釋，不可當主持人建議。</td></tr>
+<tr><td>捷敏、群聯、國巨是主持人推薦</td><td>Contradicted / not supported</td><td>Secondary note 將三者放在「操作日記」，且有免責；primary 沒給買賣建議</td><td>只作為筆記作者交易紀錄，不納入主持人 stance。</td></tr>
+</tbody></table></div>
+<h2>Open verification queue / 待查清單</h2>
+<p>1. 查 Meta 官方與訪談原文：是否明確提到出租 Hopper / GPU、租賃對象、定價、會計折舊與 capex 計畫。 2. 查 Tema / SemiAnalysis ETF 持股表：確認是否實際持有光通元件與權重。 3. 查 ADI 或通路商原始漲價通知：確認漲價品類、幅度、生效日與客戶範圍。 4. 查導線架廠法說與報價：lead time 是否真的 7–8 個月、報價是否 10–20% 上調、毛利是否受銅價與稼動率影響。 5. 查台系功率元件 / MOSFET / 後段封裝月營收、自結獲利、毛利率與法人資金。 6. 查 0050.TW YTD / total return 精算，避免把節目中的情緒數字直接當驗證事實。</p>
+<h2>Bottom line / 查證結論</h2>
+<p>EP678 可以發布為研究筆記，但結論要保守：功率元件、後段封裝與導線架是最具體可追的供應鏈線索；Meta 算力租賃是重要但需官方細節確認的 AI infrastructure 線索；光通更偏資金輪動與技術敘事，主持人語氣並非高信心介入；筆記作者操作日記不可轉譯成主持人投資建議。</p>
+<p>---</p>
+<h2>追蹤計畫</h2>
+<h2>EP678 tracking — 追蹤計畫</h2>
+<h2>Watchlist buckets / 觀察清單分組</h2>
+<div class="table-wrap"><table><thead><tr><th>Bucket</th><th>觀察項目</th><th>Source basis</th><th>追蹤資料</th><th>初步姿態</th></tr></thead><tbody>
+<tr><td>漲價循環核心</td><td>功率元件、MOSFET、後段封裝</td><td>ADI 漲價信、缺貨擴張、稼動率拉滿、台股相關族群走強</td><td>月營收、自結 EPS / 毛利率、法說、報價、法人買賣</td><td>高優先；先查資料再選標的</td></tr>
+<tr><td>供應鏈瓶頸</td><td>導線架 Lead Frame</td><td>10–20% 漲價、lead time 3–4 月到 7–8 月</td><td>導線架廠法說、產能利用率、銅價轉嫁、客戶拉貨</td><td>高優先；本集最具體 factual claim</td></tr>
+<tr><td>AI 算力經濟學</td><td>Meta、NVIDIA、NeoCloud / GPU rental</td><td>Meta double down、GPU 折舊 / 出租、算力價格清楚化</td><td>Meta 官方、10-Q/10-K capex、GPU rental pricing、CoreWeave/Nebius/Lambda 同業資料</td><td>中高；先驗證商業模式細節</td></tr>
+<tr><td>記憶體與被動元件</td><td>DRAM/NAND、MLCC、國巨、群聯</td><td>漲價仍在但資金可能擁擠 / 輪動</td><td>報價、庫存、月營收、股價相對強弱</td><td>中；避免只追已擁擠題材</td></tr>
+<tr><td>光通技術路線</td><td>SiPh / InP vs VCSEL / AOC / Micro LED；LITE / COHR / AXT</td><td>SemiAnalysis ETF 催化、Wide-and-Slow 轉強、主持人聽眾服務</td><td>ETF 持股、產品量產時程、公司 revenue exposure、估值</td><td>中低到中；高波動敘事，不熟不追</td></tr>
+<tr><td>市場情緒 / 風控</td><td>0050、颱風休市心理、交易日焦慮</td><td>多頭市場參與度升高</td><td>0050 total return、成交值、融資餘額、散戶資金流</td><td>風控指標；不直接當買點</td></tr>
+<tr><td>作者操作日記 parking lot</td><td>捷敏、群聯、國巨</td><td>Social Worker Daily 作者個人紀錄</td><td>若要研究，另查公司基本面</td><td>Parking lot；不可當主持人建議</td></tr>
+</tbody></table></div>
+<h2>Event triggers / 事件觸發條件</h2>
+<div class="table-wrap"><table><thead><tr><th>Trigger</th><th>若發生</th><th>行動</th></tr></thead><tbody>
+<tr><td>功率元件 / MOSFET / 封裝廠自結獲利明顯優於營收年增</td><td>支持稼動率拉滿與毛利率彈性</td><td>提高族群研究優先級；建立龍頭 / 二線對照表</td></tr>
+<tr><td>導線架廠或客戶確認交期 7 個月以上、報價上調 10–20%</td><td>支持供應鏈短板假說</td><td>更新 verification；追蹤導線架 / 封裝毛利率受益鏈</td></tr>
+<tr><td>ADI 或通路商公開確認漲價</td><td>支持功率元件漲價循環外部化</td><td>把 ADI claim 從 source-supported 升級為 verified/partially verified</td></tr>
+<tr><td>Meta 官方或訪談原文確認 GPU rental / external compute service</td><td>支持算力資產化假說</td><td>追蹤 GPU 租賃價格與 NeoCloud 同業估值變化</td></tr>
+<tr><td>GPU 租賃價格快速下跌但 token / inference 用量更快上升</td><td>支持「單價便宜、總量更大」的軟體受益邏輯</td><td>增加 AI software / inference 應用研究</td></tr>
+<tr><td>光通舊路線持續被賣、新路線放量但無 revenue support</td><td>支持資金敘事過熱</td><td>降低追價，等待技術 / 財務確認</td></tr>
+<tr><td>0050 / 台股成交值過熱且融資快速上升</td><td>情緒過熱風險升高</td><td>強化風控，不把颱風假 / 開盤焦慮當正面訊號</td></tr>
+</tbody></table></div>
+<h2>Current stance / 目前判斷</h2>
+<ul><li>本集最值得研究的是「漲價 + 滿稼動 + 供應鏈瓶頸」：功率元件、MOSFET、後段封裝、導線架。  </li><li>Meta 算力租賃值得追，但目前要先確認官方細節；不要只根據二手摘要下結論。  </li><li>光通屬高波動資金輪動 / 技術路線討論；主持人語氣偏聽眾服務，優先級低於功率與導線架。  </li><li>捷敏、群聯、國巨目前只在作者操作 parking lot；若要研究，必須另起個股基本面分析。</li></ul>
+<h2>Parking lot / 暫停追蹤</h2>
+<ul><li>任何把 LITE / COHR / AXT 寫成主持人建議的說法。  </li><li>任何把「Meta 可能出租算力」直接延伸成所有 NeoCloud 都會崩的單線結論。  </li><li>未查證的 ADI 原始漲價信、導線架精確 lead time、0050 報酬率數字。  </li><li>筆記作者個人操作日記。</li></ul>
+  <footer>生成：雙雙 🦞🌱｜僅供研究，不構成買賣建議。</footer>
+</main>
+</body>
+</html>
