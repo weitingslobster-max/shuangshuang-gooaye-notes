@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP679 投資研究筆記｜雙雙</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#111827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 42%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.72; }
+    main { max-width:1080px; margin:0 auto; padding:34px 18px 72px; }
+    a { color:#7dd3fc; }
+    .back { display:inline-block; margin:0 0 20px; color:#fed7aa; text-decoration:none; font-weight:700; }
+    header { border:1px solid var(--line); background:rgba(17,24,39,.84); border-radius:26px; padding:30px; margin-bottom:24px; }
+    .eyebrow { color:#fed7aa; letter-spacing:.12em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { font-size:36px; line-height:1.18; margin:.35em 0; }
+    h2 { margin-top:38px; border-left:5px solid var(--accent); padding-left:12px; font-size:26px; }
+    h3 { margin-top:26px; color:#fbbf24; }
+    p.lead { font-size:19px; color:#dbeafe; }
+    .note { border:1px solid #334155; background:#0f172a; border-radius:16px; padding:14px 16px; color:#cbd5e1; }
+    code { background:#111827; border:1px solid #334155; border-radius:6px; padding:1px 5px; }
+    .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:16px 0 24px; border:1px solid var(--line); border-radius:14px; }
+    table { width:100%; border-collapse:collapse; min-width:760px; background:rgba(15,23,42,.72); }
+    th,td { border-bottom:1px solid var(--line); padding:10px 12px; vertical-align:top; }
+    th { background:#111827; color:#f8fafc; text-align:left; }
+    tr:last-child td { border-bottom:0; }
+    footer { margin-top:46px; color:var(--muted); font-size:14px; }
+    @media (max-width:720px) { main { padding:22px 12px 56px; } header { padding:22px; } h1 { font-size:30px; } table { display:table; white-space:nowrap; } }
+  </style>
+</head>
+<body>
+<main>
+<a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+<header><div class="eyebrow">Gooaye EP679 Research Notes</div><h1>股癌 EP679：韓國去槓桿、AI 推理成本與業績股輪動</h1><p class="lead">Podcast/NotebookLM primary + validated Social Worker Daily secondary note + supplementary triangulation + verification queue.</p></header>
+<h1>股癌 EP679 投資研究筆記</h1>
+<p>&lt;p class=&quot;lead&quot;&gt;韓國去槓桿、台灣券商風控、AI 推理成本，與從強勢動能轉向財報驗證的研究線索。&lt;/p&gt;</p>
+<p>&lt;p class=&quot;note&quot;&gt;這是 podcast 投資討論的研究筆記，不構成個人化投資建議。Source layer 已分離：Podcast/NotebookLM primary、Social Worker Daily secondary note、supplementary triangulation、外部查證。&lt;/p&gt;</p>
+<h2>結構化筆記</h2>
+<h2>Source stack / 來源層級</h2>
+<div class="table-wrap"><table>
+<tr><th>來源層</th><th>檔案 / URL</th><th>用途</th><th>限制</th></tr>
+<tr><td>Podcast / NotebookLM primary</td><td><code>sources/notebooklm_source.md</code>；YouTube: https://www.youtube.com/watch?v=_-RlJfI9X2c</td><td>主要 source layer；整理主持人對 AI 成本、韓國去槓桿、台股風控與族群輪動的說法</td><td>NotebookLM 未提供完整逐字稿定位；部分 ticker/公司名需外部查證</td></tr>
+<tr><td>Secondary note</td><td><code>sources/secondary_note.md</code>；Social Worker Daily EP679</td><td>交叉比對與節目脈絡補強</td><td>筆記作者有主觀心得與操作日記，不能當主持人觀點</td></tr>
+<tr><td>Supplementary triangulation</td><td><code>sources/notebooklm_supplementary_report.md</code></td><td>分離主持人觀點、筆記作者詮釋與 AI inference</td><td>不加入外部資料，只能做 source triangulation</td></tr>
+<tr><td>External verification</td><td><code>verification.md</code></td><td>將可查證主張分類，列出官方/一手資料查證路徑</td><td>本次未把未驗證傳聞改寫成事實</td></tr>
+</table></div>
+<h2>Core takeaways / 核心結論</h2>
+<p>1. 本集主軸不是單一利空，而是「槓桿與流動性」問題。 主持人把亞股壓力歸因於韓國市場前期漲幅、記憶體權重集中、ETF/融資/信貸疊加後的去槓桿連鎖反應；這比較像資金面壓力，而非單純基本面崩壞。</p>
+<p>2. 台股的「物理性風控」正在影響交易節奏。 Podcast 與 secondary note 都提到券商對單檔融資、質押與下單額度收緊；這使強勢股即使基本面仍好，短線也可能因資金供給下降而鈍化。</p>
+<p>3. AI 應用進入成本效率檢驗期。 主持人認為通用型 AI 在特定專業任務已有用，但 agentic / 反覆驗證流程可能造成 token 成本暴增；投資研究上要關注 AI 軟體與企業導入的 ROI，而非只看模型能力進步。</p>
+<p>4. 產業線索從「最強動能」轉向「財報可驗證」。 載板、CCL、矽晶圓仍被提到，但主持人對追強勢族群較謹慎；較值得追的是台積電法說、7 月底 IDM 財報、功率元件 / MOSFET 與封測供需能否被財報驗證。</p>
+<p>5. 國巨、台積電等操作日記是筆記作者個人行為。 這些不能當成主持人建議，也不應轉成買賣訊號。</p>
+<h2>Source triangulation / 來源交叉比對</h2>
+<div class="table-wrap"><table>
+<tr><th>主題</th><th>Primary / podcast layer</th><th>Secondary note layer</th><th>Triangulation judgment</th></tr>
+<tr><td>AI 邊際效益與 token 成本</td><td>AI 已可處理很多整理任務，但為追求精確而反覆驗證，成本可能高到不划算；通用 AI 直接上工可能踩雷</td><td>摘錄為「AI 達甜蜜點、開始重視 cost down」</td><td>高度一致；重點是成本效率與 domain knowledge，不是簡單看空 AI</td></tr>
+<tr><td>韓國去槓桿</td><td>韓國指數與記憶體集中度、槓桿 ETF/融資/信貸疊加，可能造成十幾倍曝險與人踩人</td><td>記錄「韓國去槓桿影響全世界」與台股提前拆彈</td><td>方向一致；實際槓桿倍數需外部資料驗證</td></tr>
+<tr><td>台灣券商風控</td><td>單檔融資、質押額度、下單風控造成交易受限</td><td>詳列單檔上限、質押額度縮水與風控卡單</td><td>一致；屬市場微結構觀察，仍需與個別券商/市場統計分開看</td></tr>
+<tr><td>強勢族群</td><td>載板、CCL、矽晶圓、設備、光通等熱門族群仍有供需故事，但追強勢在降槓桿環境風險高</td><td>筆記作者補充自己近期追熱門族群被回檔修理</td><td>主持人偏謹慎；筆記作者心得不可升格為普遍結論</td></tr>
+<tr><td>功率元件 / 封測</td><td>等 IDM 財報檢驗功率元件狀況；封測、MOSFET 供需緊繃是可追線索</td><td>Q&amp;A 提到力積電會議、功率封裝緊繃、精材表態</td><td>值得列入追蹤，但公司名稱與數據須查證</td></tr>
+</table></div>
+<h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+<div class="table-wrap"><table>
+<tr><th>題目</th><th>主持人 / source-grounded view</th><th>筆記作者詮釋</th><th>不可混淆處</th></tr>
+<tr><td>市場回檔</td><td>大盤回不到 10%，熱門股回 20–30% 但前期漲太多；目前先視為資金面壓力</td><td>認為籌碼洗乾淨後可能繼續北上，也類比過去洗盤劇本</td><td>「繼續北上」屬筆記作者/AI 推論，不是主持人明確預測</td></tr>
+<tr><td>台積電</td><td>法說前展望應不差，但市場若期待 70% 毛利率太高，短期可能不現實</td><td>盤勢不好就把資金甩去台積電放著</td><td>筆記作者配置不等於主持人推薦</td></tr>
+<tr><td>強勢族群</td><td>越動能越容易被修理；不想看到剩什麼強就追什麼</td><td>作者反思追功率半熱門族群被預約回檔</td><td>這是風險管理討論，不是放空強勢股建議</td></tr>
+<tr><td>國巨</td><td>primary report 未顯示主持人明確表態</td><td>筆記作者操作日記：先減碼再撿回</td><td>僅可列為 secondary-note only</td></tr>
+</table></div>
+<h2>Company / ticker map / 公司與 ticker 對照表</h2>
+<div class="table-wrap"><table>
+<tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr>
+<tr><td>台積電</td><td>2330 / TSM</td><td>法說、避風港、台股權值核心</td><td>中立觀察</td><td>筆記作者稱盤不好就放台積電</td><td>Podcast + secondary；毛利率 70% 為市場期待/討論，不是已發生事實</td><td>查官方法說與財測、毛利率 guidance</td></tr>
+<tr><td>韓國股市 / 記憶體權重</td><td>KOSPI / KRX data</td><td>去槓桿震央與亞股情緒來源</td><td>偏負面 / 風險案例</td><td>認同韓國去槓桿外溢</td><td>Source-supported but needs data</td><td>查 KRX 融資餘額、槓桿 ETF 規模、Samsung/SK Hynix 權重</td></tr>
+<tr><td>Jane Street / 量化資金</td><td>Private</td><td>波動率/套利受益者舉例</td><td>只被提及</td><td>「賺韓國韭菜錢」的節目語境</td><td>Source-supported only；不可視為確證</td><td>若要引用，需查新聞或公司資料；目前當市場語氣案例</td></tr>
+<tr><td>載板 / CCL</td><td>多家公司，ticker 未逐一確認</td><td>前期強勢、供需緊、但籌碼擁擠</td><td>謹慎 / 看不懂</td><td>作者認為強勢避風港可能天氣放晴後被殺</td><td>Podcast + secondary</td><td>查各公司接單、報價、庫存與轉單證據</td></tr>
+<tr><td>矽晶圓</td><td>ticker 未確認</td><td>可能報價上行但偏貴偏早、庫存仍高</td><td>謹慎 / 看不懂</td><td>作者列為近期熱門族群</td><td>Podcast + secondary</td><td>查主要矽晶圓廠庫存、報價、法說</td></tr>
+<tr><td>功率元件 / MOSFET / IDM</td><td>TI / STM / Infineon 等</td><td>7 月底財報催化、跌深族群觀察</td><td>偏正向觀察</td><td>作者看作業績股轉向線索</td><td>Source-supported but needs exact verification</td><td>查 IDM 財報與對 automotive/industrial/power 的 guidance</td></tr>
+<tr><td>力積電 /「立積」待確認</td><td>6770? / ticker 未確認</td><td>secondary/NotebookLM 對法說公司名有歧義</td><td>只被提及</td><td>功率封裝緊繃、MOSFET 滿載</td><td>Needs exact transcript；公司名可能錯聽</td><td>查原始法說與 transcript，避免 ticker 誤植</td></tr>
+<tr><td>精材</td><td>3374</td><td>封測/台積電外包相關表態</td><td>偏正向觀察</td><td>「瘋狂表態」</td><td>Secondary + NotebookLM；需外部驗證</td><td>查公司公告、月營收、法說</td></tr>
+<tr><td>國巨</td><td>2327</td><td>僅筆記作者操作日記</td><td>主持人未明確表態</td><td>先減碼一半，趁亂撿回</td><td>Secondary-note only</td><td>不納入主持人觀點；若研究需另查基本面</td></tr>
+<tr><td>勝宏科</td><td>300476.SZ?</td><td>載板材料問題/轉單傳聞</td><td>偏負面 / 風險案例</td><td>材料問題導致訂單跑台系</td><td>Weak / needs external verification</td><td>查公司公告與可靠新聞；未證實前不可當事實</td></tr>
+<tr><td>AI 模型 / Opus / fable</td><td>N/A</td><td>AI 成本效率與 domain knowledge 案例</td><td>偏負面 / 風險案例</td><td>AI 進入 cost down 階段</td><td>Podcast + secondary</td><td>查企業 AI 導入成本、token spend、模型定價</td></tr>
+</table></div>
+<h2>Topic map / 主題地圖</h2>
+<h3>1. AI 應用成本與投資含義</h3>
+<ul>
+<li>來源重點： AI 在整理資料、法說會摘要等任務已很有用，但 agentic workflow 可能為追求精確而反覆切片、驗證、重跑，造成 token 消耗過高。</li>
+<li>投資含義： AI 應用公司的毛利與客戶 ROI 要重新檢查；「模型越強」不一定等於「商業上越划算」。</li>
+<li>研究下一步： 看 AI 軟體公司是否揭露 inference cost、gross margin、客戶使用量與定價策略。</li>
+</ul>
+<h3>2. 去槓桿與流動性</h3>
+<ul>
+<li>來源重點： 韓國股市前期漲幅與槓桿堆疊造成被迫平倉壓力；台灣券商風控使槓桿買盤受限。</li>
+<li>投資含義： 在流動性收縮時，基本面好也可能短期鈍化；不要把所有回檔都解讀成基本面反轉。</li>
+<li>研究下一步： 追蹤台股融資餘額、KRX margin loan、ETF 折溢價、強勢族群成交量與融資集中度。</li>
+</ul>
+<h3>3. 強勢族群與財報驗證</h3>
+<ul>
+<li>來源重點： 載板/CCL/矽晶圓仍有供需故事，但市場一致預期太高；功率元件、封測、IDM 財報是下一個可驗證點。</li>
+<li>投資含義： 從「追最強」改為「等數據驗證、看估值乘數能否回來」。</li>
+<li>研究下一步： 整理台積電與國際 IDM 法說重點，對照台股供應鏈月營收。</li>
+</ul>
+<h2>Draft investment hypotheses / 投資假說草稿</h2>
+<div class="table-wrap"><table>
+<tr><th>假說</th><th>支持來源</th><th>需要驗證</th><th>失效條件</th></tr>
+<tr><td>亞股短線壓力主要來自去槓桿，而非半導體基本面同步惡化</td><td>Podcast 對韓國與券商風控的討論</td><td>KRX / TWSE 融資餘額、ETF 槓桿資產規模、台股融資減幅</td><td>融資數據未顯著變動，但基本面數據同步轉弱</td></tr>
+<tr><td>強勢 CCL/載板/矽晶圓仍可能有基本面，但短期風險報酬轉差</td><td>主持人對「猴子都知道強」與籌碼擁擠的描述</td><td>報價、接單、庫存與成交量/融資集中度</td><td>價格修正後成交量健康、基本面數據持續上修</td></tr>
+<tr><td>功率元件與封測若有 IDM 財報確認，可能成為跌深後的業績股線索</td><td>Podcast 提到 7 月底 IDM 財報與 MOSFET/封測緊繃</td><td>TI/ST/Infineon 財報、台股封測月營收與法說</td><td>IDM guidance 不佳或台廠營收未跟上</td></tr>
+<tr><td>AI 應用投資從「模型能力」轉向「成本效率」</td><td>AI token cost / domain knowledge 討論</td><td>AI SaaS gross margin、inference cost、客戶留存與定價</td><td>新模型顯著降低推理成本並提高可靠度</td></tr>
+</table></div>
+<h2>Research discipline notes / 研究紀律</h2>
+<ul>
+<li>不把 podcast 語氣、玩笑或誇張比喻當可交易事實。</li>
+<li>不把 secondary note 操作日記當主持人建議。</li>
+<li>所有公司名、ticker、法說日期、毛利率、產能利用率、轉單傳聞，都需用官方資料或可信新聞驗證。</li>
+<li>在流動性壓力期，先問「誰被迫賣？」再問「基本面是否壞掉？」。</li>
+</ul>
+<h2>外部查證摘要</h2>
+<h2>Verification scope / 查證範圍</h2>
+<p>本次查證聚焦可影響投資判斷的 factual claims：台積電法說/毛利率期待、台股與韓股融資去槓桿、券商風控、功率元件/封測供需、載板/CCL/矽晶圓傳聞，以及 AI 推理成本。未經官方或一手資料確認的內容，在最終報告中保守標示為 source-supported only 或 needs external verification。</p>
+<h2>Verification table / 查證表</h2>
+<div class="table-wrap"><table>
+<tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr>
+<tr><td>EP679 的 primary source 指向 Gooaye YouTube 影片 <code>_ -RlJfI9X2c</code>，secondary source 指向 Social Worker Daily EP679</td><td>Verified</td><td>Resolver output；YouTube URL；Social Worker Daily URL</td><td>來源齊備，流程可建立雙 source layer</td></tr>
+<tr><td>AI 使用已進入成本效率檢驗期，agentic workflow 可能因反覆驗證造成 token 成本過高</td><td>Source-supported only</td><td>Podcast/NotebookLM primary；secondary note</td><td>這是主持人使用經驗與投資研究啟發；需用公司財務/產品資料驗證投資含義</td></tr>
+<tr><td>韓國股市因記憶體權重集中、槓桿 ETF/融資/信貸疊加，形成十幾倍曝險</td><td>Needs external verification</td><td>Podcast/NotebookLM primary；secondary note</td><td>方向可作為風險假說；倍數與規模需查 KRX、ETF、券商與市場資料，不應當定量事實使用</td></tr>
+<tr><td>台灣券商限制單檔融資與質押額度，造成買盤受物理性限制</td><td>Source-supported only</td><td>Podcast/NotebookLM primary；secondary note</td><td>屬第一線經驗與市場觀察；可列為風控背景，但需區分個別券商政策與整體市場資料</td></tr>
+<tr><td>台股本波融資只減一百多億，健康洗盤可能需兩三百億</td><td>Needs external verification</td><td>Podcast/secondary note</td><td>需查 TWSE/TPEx 融資融券餘額日資料；目前不把金額當已驗證事實</td></tr>
+<tr><td>台積電法說前市場期待 70% 毛利率，但短期不一定會發生</td><td>Source-supported only / Needs official data</td><td>Podcast/secondary note；待查 TSMC IR</td><td>70% 應視為市場期待/節目討論，不是公司 guidance；正式判斷需以 TSMC IR 法說資料為準</td></tr>
+<tr><td>載板/CCL 缺貨、漲價信、勝宏科材料問題導致台系轉單</td><td>Needs external verification</td><td>Podcast/secondary note</td><td>供應鏈傳聞必須查公司公告、法說、可靠新聞；未證實前只能列為觀察</td></tr>
+<tr><td>矽晶圓可能報價上行，但庫存仍高、偏貴偏早</td><td>Source-supported only / Needs external verification</td><td>Podcast/secondary note</td><td>可作為產業研究問題；需查主要矽晶圓廠法說、庫存與報價資料</td></tr>
+<tr><td>功率 MOSFET / 功率封裝供不應求，7 月底 IDM 財報可能觸發跌深族群反彈</td><td>Needs exact transcript + external verification</td><td>Podcast/secondary note；公司名/ticker 有歧義</td><td>投資假說有價值，但需查 TI/ST/Infineon 等官方財報與台廠月營收；不要直接交易傳聞</td></tr>
+<tr><td>國巨減碼後撿回、資金放台積電</td><td>Verified as secondary-note author statement only</td><td>Social Worker Daily 操作日記</td><td>這不是主持人建議，也不是本報告建議</td></tr>
+</table></div>
+<h2>Open verification queue / 待查清單</h2>
+<p>1. KRX / 韓國融資資料： 韓國 margin loan、槓桿 ETF 規模、Samsung/SK Hynix 權重與近期去槓桿幅度。</p>
+<p>2. TWSE / TPEx 融資資料： 台股本波融資餘額變化是否符合節目提到的一百多億，並追蹤是否進一步減少。</p>
+<p>3. TSMC IR： 查最新法說資料、毛利率 guidance、資本支出與 AI/HPC demand commentary；把「70% 毛利率」歸類為市場期待而非公司承諾。</p>
+<p>4. IDM 財報： TI、STMicroelectronics、Infineon 等對 automotive / industrial / power semiconductor 的 guidance。</p>
+<p>5. 台灣封測與功率元件供應鏈： 釐清「力積電/立積」公司名與 ticker；查精材、京元電、相關封測/功率元件公司月營收與法說。</p>
+<p>6. 載板/CCL/勝宏科： 查公司公告與可靠新聞，確認材料問題與轉單是否存在。</p>
+<h2>Bottom line / 查證結論</h2>
+<p>本集最可用的研究結論是「流動性/槓桿壓力會讓強基本面標的短期失去動能」以及「AI 應用進入成本效率檢驗期」。但所有定量數字、供應鏈傳聞、個股操作、公司名/ticker 對應，都應維持查證狀態；報告不把傳聞改寫為已驗證投資事實。</p>
+<h2>追蹤計畫</h2>
+<h2>Watchlist buckets / 觀察清單分組</h2>
+<div class="table-wrap"><table>
+<tr><th>Bucket</th><th>觀察對象</th><th>為什麼追</th><th>主要資料</th></tr>
+<tr><td>去槓桿 / 流動性</td><td>韓國股市、台股融資、槓桿 ETF、券商風控</td><td>本集主軸；若去槓桿未完成，強勢股反彈容易鈍化</td><td>KRX、TWSE/TPEx、ETF 折溢價、融資餘額</td></tr>
+<tr><td>權值防守與台積電法說</td><td>台積電、設備、廠務、HPC/AI demand</td><td>市場避風港與預期檢驗；毛利率期待不可過度外推</td><td>TSMC IR、法說 transcript、供應鏈月營收</td></tr>
+<tr><td>功率元件 / IDM / 封測</td><td>TI、ST、Infineon；台灣功率/封測供應鏈</td><td>可能是從追強勢轉向業績股的可驗證線索</td><td>官方財報、法說、月營收、訂單/產能 utilization</td></tr>
+<tr><td>強勢但擁擠族群</td><td>載板、CCL、矽晶圓</td><td>供需故事仍在，但籌碼擁擠與估值偏早</td><td>報價、庫存、融資集中度、成交量、公司公告</td></tr>
+<tr><td>AI 成本效率</td><td>AI SaaS、模型供應商、企業導入案例</td><td>從模型能力轉向 inference cost / ROI</td><td>毛利率、usage-based revenue、token pricing、客戶留存</td></tr>
+</table></div>
+<h2>Event triggers / 事件觸發條件</h2>
+<div class="table-wrap"><table>
+<tr><th>Trigger</th><th>可能意義</th><th>下一步</th></tr>
+<tr><td>台股融資餘額連續大幅下降且強勢族群成交量縮</td><td>去槓桿可能接近尾聲</td><td>重新檢查基本面仍上修、籌碼轉乾淨的標的</td></tr>
+<tr><td>韓國融資/槓桿 ETF 資料顯示去槓桿趨緩</td><td>亞股外部流動性壓力下降</td><td>觀察台股反彈廣度是否擴散</td></tr>
+<tr><td>TSMC 法說低於過高期待但長期 demand 穩健</td><td>市場可能先修正預期再回到基本面</td><td>分離短線 sell-the-news 與長線 thesis</td></tr>
+<tr><td>IDM 財報確認 power / industrial / automotive recovery</td><td>功率元件與封測假說獲得支持</td><td>追台灣相關公司月營收與接單能見度</td></tr>
+<tr><td>載板/CCL/矽晶圓供需傳聞被官方資料支持</td><td>強勢族群基本面支持度提升</td><td>仍需檢查估值與籌碼是否過擠</td></tr>
+<tr><td>AI 應用公司 disclosure 顯示 inference cost 壓縮毛利</td><td>AI 應用層投資需重新估值</td><td>比較定價能力與 cost optimization roadmap</td></tr>
+</table></div>
+<h2>Current stance / 目前判斷</h2>
+<ul>
+<li>市場： 偏謹慎。先把本集定位為流動性/去槓桿風險提醒，而不是全面看空基本面。</li>
+<li>強勢族群： 不追高。即使供需好，也要等待籌碼與估值重設。</li>
+<li>業績股線索： 功率元件、封測、IDM 財報值得追，但必須由官方資料確認。</li>
+<li>AI： 從「能不能做」改看「做得划不划算」。AI 投資研究要看成本效率、可靠度與人類校閱需求。</li>
+</ul>
+<h2>Parking lot / 暫停追蹤</h2>
+<ul>
+<li>筆記作者個人操作日記（國巨、台積電配置）不納入主持人觀點追蹤。</li>
+<li>未能確認公司名/ticker 的「力積電/立積」相關說法暫列待查，不作個股結論。</li>
+</ul>
+<footer>Generated by 雙雙 🦞🌱｜Published research note, not personalized investment advice.</footer>
+</main>
+</body>
+</html>
