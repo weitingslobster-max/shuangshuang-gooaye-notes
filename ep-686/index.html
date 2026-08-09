@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP686 投資研究筆記</title>
+  <style>
+:root{--bg:#0b1020;--panel:#111827;--ink:#e5edf7;--muted:#9fb0c5;--line:#2a3850;--accent:#f97316;--blue:#38bdf8;--ok:#22c55e;--warn:#facc15;--bad:#fb7185;}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,#1e293b 0,#0b1020 45%,#060913 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif;line-height:1.7} main{max-width:1120px;margin:0 auto;padding:34px 18px 72px}.back{display:inline-block;margin-bottom:18px;color:#fed7aa;text-decoration:none;font-weight:700}.back:hover{color:#fff} header,.card{border:1px solid var(--line);background:rgba(17,24,39,.82);border-radius:24px;padding:26px;margin:18px 0;box-shadow:0 18px 40px rgba(0,0,0,.24)}.eyebrow{color:#fed7aa;letter-spacing:.12em;text-transform:uppercase;font-size:13px;font-weight:800}h1{font-size:36px;line-height:1.18;margin:8px 0 10px}h2{margin-top:34px;border-left:5px solid var(--accent);padding-left:12px}h3{color:#bfdbfe;margin-top:22px}.sub,.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 10px;margin:3px;color:#dbeafe;background:#0f172a}table{width:100%;border-collapse:collapse;margin:14px 0 22px;background:rgba(15,23,42,.72);border:1px solid var(--line)}th,td{border:1px solid var(--line);padding:10px 12px;vertical-align:top}th{background:#172033;color:#fed7aa;text-align:left}.status-ok{color:var(--ok);font-weight:700}.status-warn{color:var(--warn);font-weight:700}.status-bad{color:var(--bad);font-weight:700}.callout{border-left:4px solid var(--accent);background:rgba(249,115,22,.08);padding:14px 16px;border-radius:12px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.small{font-size:14px}.footer{margin-top:40px;color:var(--muted);font-size:14px}a{color:#7dd3fc}@media(max-width:720px){main{padding:22px 12px 56px}h1{font-size:29px}table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap}th,td{min-width:150px}.card,header{padding:20px;border-radius:20px}}
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye Investment Notes · EP686</div>
+    <h1>股癌 EP686：修正後風控、軟體 / 光通領跑、800V 電力架構與元件輪動</h1>
+    <p class="sub">Source layers：YouTube/NotebookLM primary、Social Worker Daily validated secondary note、NotebookLM supplementary triangulation、外部官方 / IR 查證。本文是研究筆記，不是個人化投資建議。</p>
+    <p><span class="pill">風控 / drawdown</span><span class="pill">PLTR / NET</span><span class="pill">光通訊 / InP</span><span class="pill">800V / BBU / PSU</span><span class="pill">被動 / 功率元件</span></p>
+  </header>
+
+  <section class="card">
+    <h2>核心結論</h2>
+    <ul>
+      <li>本集核心不是「崩盤預測」，而是修正後的風險控管：基本面未明顯轉弱前，主持人不預設崩盤；但若基本面真的轉弱，市場脆弱度會放大修正。</li>
+      <li>下一階段要看誰率先創新高。軟體（PLTR、Cloudflare）與光通訊率先轉強，是 risk-on 回流線索；但高估值也代表波動與估值風險。</li>
+      <li>AI data center 電力架構是本集最可研究的產業主軸：800V、BBU、PSU、功率 / 電源元件規格升級，有機會帶來 ASP 與供應鏈價值重估。</li>
+      <li>被動元件、功率元件、光通、散熱是輪動觀察，不是追價指令。主持人特別提醒：七月受傷最重的，常是切換部位最快的人。</li>
+      <li>Social Worker Daily 操作日記（例如「繼續抄指數、正2」）是筆記作者個人紀錄，不是主持人建議。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Source triangulation / 來源交叉比對</h2>
+    <table>
+      <thead><tr><th>主題</th><th>Primary / NotebookLM</th><th>Secondary note</th><th>Supplementary 判斷</th><th>綜合判斷</th></tr></thead>
+      <tbody>
+        <tr><td>台股修正與季線橫盤</td><td>由極端動能轉向風險控管；基本面未變前崩盤機率偏低。</td><td>「拉到季線」「崩盤機率偏低」「若基本面改變會殺更大」。</td><td>低衝突；重點是風控與接下來誰創高。</td><td>Host stance：中立觀察 / 謹慎。</td></tr>
+        <tr><td>風控與 Long/Short</td><td>從全倉 beta 轉向 drawdown control；例：long MTK / short QCOM。</td><td>保本大於賺更多；配避險、股債或多空配置可降低 drawdown。</td><td>對一般投資人門檻高，不應簡化成操作建議。</td><td>偏正向觀察；執行需高度專業。</td></tr>
+        <tr><td>軟體：PLTR / Cloudflare</td><td>高估值軟體股領漲，代表資金願意回到 expensive growth。</td><td>PLTR 和 Cloudflare 噴很多，錢往軟體靠。</td><td>可作 risk-on 訊號，但估值與嘎空需查。</td><td>偏正向觀察但估值風險高。</td></tr>
+        <tr><td>光通訊</td><td>早跌早轉強；需求好，材料端可能缺。</td><td>台股光通 Tier 2 仍受惠；InP 基板缺料；攻新高才願意丟大錢。</td><td>需要財報與供應缺口驗證。</td><td>偏正向觀察。</td></tr>
+        <tr><td>功率 / 電力 / 800V</td><td>非 CSP 美系 AI player 提早走 800V，BBU/PSU/元件 ASP 數倍。</td><td>美系非 CSP AI player 下很多單；元件與 BBU 用量、規格提升；台達電強、光寶科噴出。</td><td>Delta 官方已展示 800VDC / BBU / PSU 架構；ASP 數倍仍需公司資料。</td><td>偏正向觀察；部分 verified / 部分 source-only。</td></tr>
+        <tr><td>矽電容 vs MLCC</td><td>市場鬼故事：不是取代，而是功耗上升後一起成長。</td><td>「矽電容取代高階 MLCC 的鬼故事」；會一起成長。</td><td>需要 BOM / 供應鏈資料查證。</td><td>謹慎；不可把互補假說當已驗證事實。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Host view vs note-author interpretation</h2>
+    <table>
+      <thead><tr><th>主題</th><th>本集方向 / Host stance</th><th>Likely Host View</th><th>Note-Author Interpretation</th><th>NotebookLM / AI Inference</th><th>誇大風險</th></tr></thead>
+      <tbody>
+        <tr><td>市場修正後走勢</td><td>中立觀察</td><td>基本面未變前不預設崩盤；但市場很脆弱，要觀察誰創高。</td><td>大崩前通常會先大噴、島狀反轉後仍有時間跑。</td><td>市場從動能轉向基本面 / 風控框架。</td><td>中：技術型態是作者詮釋。</td></tr>
+        <tr><td>風控</td><td>偏正向觀察</td><td>家庭與資產階段改變後，保本與降低 drawdown 更重要。</td><td>連結股債配置、避險、多空對沖。</td><td>資產成熟後追求 smoother equity curve。</td><td>中：Long/Short 不適合簡化。</td></tr>
+        <tr><td>軟體股</td><td>偏正向觀察</td><td>PLTR / Cloudflare 等高估值股轉強，代表資金願意承擔估值。</td><td>高估值標的撐住，行情可續。</td><td>高估值 leadership 是反彈初期訊號。</td><td>中到高：估值昂貴且波動大。</td></tr>
+        <tr><td>光通訊</td><td>偏正向觀察</td><td>光通先休息、先站起來；若創新高可能成主流。</td><td>光通、散熱籌碼洗兩次，較乾淨。</td><td>早跌早轉強可能是資金接棒順序。</td><td>中：需成交量與營收確認。</td></tr>
+        <tr><td>800V / 電力</td><td>偏正向觀察</td><td>AI data center 電力架構升級，帶動 BBU/PSU/元件規格與用量。</td><td>台達電龍頭但線型不好；光寶科財報後帶動族群。</td><td>800V 是電源供應鏈 re-rating 主軸。</td><td>中：ASP「數倍」需查證。</td></tr>
+        <tr><td>筆記作者操作</td><td>主持人未明確表態</td><td>無主持人建議。</td><td>繼續抄指數、正2；台達電較安全。</td><td>不納入 host view。</td><td>高：不可誤讀為建議。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Company / ticker map</h2>
+    <table>
+      <thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead>
+      <tbody>
+        <tr><td>台積電</td><td>2330.TW / TSM</td><td>台股權值、防守 / 指數切換</td><td>中立觀察</td><td>有換台積、切台指被視為較穩健</td><td>Source-supported only</td><td>查當週台股反彈、台積權重與外資流向。</td></tr>
+        <tr><td>聯發科</td><td>2454.TW</td><td>Long/Short 示例</td><td>只被提及 / 謹慎</td><td>可做 long/short 對沖示例</td><td>Needs exact transcript</td><td>不把對沖例子解讀成方向判斷。</td></tr>
+        <tr><td>Qualcomm</td><td>QCOM</td><td>Long/Short short-leg 示例</td><td>只被提及</td><td>對沖 beta 的例子</td><td>Source-supported only</td><td>不當作公司負面判斷。</td></tr>
+        <tr><td>Palantir</td><td>PLTR</td><td>高估值 AI 軟體 / risk-on 訊號</td><td>偏正向觀察</td><td>高估值標的撐住代表行情仍可續</td><td>Partially supported</td><td>查財報、營收成長、估值、short interest。</td></tr>
+        <tr><td>Cloudflare</td><td>NET</td><td>軟體族群反彈訊號</td><td>偏正向觀察</td><td>錢往軟體靠</td><td>Partially supported</td><td>查 Q2 2026 earnings / guidance。</td></tr>
+        <tr><td>台達電</td><td>2308.TW</td><td>800V / BBU / PSU / AI data center power</td><td>偏正向觀察</td><td>龍頭、線型不好、相對沒漲到；「買套也安全」屬作者主觀</td><td>Partially supported</td><td>查 800V 產品、AI data center revenue、法說與訂單。</td></tr>
+        <tr><td>光寶科</td><td>2301.TW</td><td>AI server power / BBU / 電源族群輪動</td><td>偏正向觀察</td><td>財報後噴出，帶動電功相關公司</td><td>Partially supported</td><td>查月營收、AI/cloud power demand、Q3 outlook。</td></tr>
+        <tr><td>光通訊族群</td><td>多檔</td><td>AI cluster interconnect / InP substrate</td><td>偏正向觀察</td><td>台股 Tier 2 仍可受惠；攻新高是大資金訊號</td><td>Source-supported only</td><td>查 InP substrate supply、光模組財報與美股光通 leadership。</td></tr>
+        <tr><td>指數 / 正2</td><td>00631L.TW 等</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>繼續抄指數、正2</td><td>Secondary-only</td><td>不納入研究建議。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Watchlist / 觀察清單</h2>
+    <div class="grid">
+      <div class="callout"><h3>市場風險偏好</h3><p>PLTR / NET 等高估值軟體股財報後是否站穩；光通 / 散熱是否帶量創新高。</p></div>
+      <div class="callout"><h3>AI data center power</h3><p>Delta / LITEON 等公司是否量化 800V、BBU、PSU 的訂單、毛利率與 ASP 貢獻。</p></div>
+      <div class="callout"><h3>光通瓶頸</h3><p>InP substrate 缺料是否限制營收；上游材料供給何時緩解。</p></div>
+      <div class="callout"><h3>風控紀律</h3><p>不要把多空配置、正2、作者操作日記當作一般投資人可直接複製的策略。</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>外部查證摘要</h2>
+    <table>
+      <thead><tr><th>Claim</th><th>Status</th><th>Evidence / source</th><th>判斷</th></tr></thead>
+      <tbody>
+        <tr><td>EP686 source pair 一致且可用</td><td class="status-ok">Verified</td><td>Resolver ready；YouTube + Social Worker Daily EP686。</td><td>可發布。</td></tr>
+        <tr><td>Social Worker Daily extraction / validation passed</td><td class="status-ok">Verified</td><td>secondary_note.extract.json / validate.json 無 quality flags。</td><td>Secondary note 可作交叉檢查層。</td></tr>
+        <tr><td>Delta 已展示 800VDC power、BBU、PSU 架構</td><td class="status-ok">Verified</td><td><a href="https://www.deltaww.com/en-US/news/64214">Delta 2026-03-16 官方新聞</a>。</td><td>佐證技術方向；不直接證明 Gooaye 提到的 ASP 倍數。</td></tr>
+        <tr><td>LITEON AI / cloud power demand 與 BBU / data center power 相關</td><td class="status-warn">Verified / Partially supported</td><td><a href="https://www.liteon.com/en-us/newscenter/pressreleases">LITEON press releases</a> / June 2026 sales materials。</td><td>佐證供應鏈主題；毛利 / ASP 仍需法說。</td></tr>
+        <tr><td>Cloudflare Q2 2026 財報檢查窗口</td><td class="status-ok">Verified</td><td><a href="https://cloudflare.net/news/news-details/2026/Cloudflare-to-Announce-Second-Quarter-2026-Financial-Results-on-August-6-2026/default.aspx">Cloudflare IR</a>。</td><td>可用於追蹤 NET 財報與 guidance。</td></tr>
+        <tr><td>Palantir Q2 2026 財報事件</td><td class="status-warn">Verified / event-level</td><td><a href="https://investors.palantir.com/">Palantir IR</a>。</td><td>財報事件可查；股價噴出與嘎空比例需市場資料。</td></tr>
+        <tr><td>800V 使相關元件 / BBU / PSU ASP 達數倍</td><td class="status-warn">Source-supported only</td><td>Podcast / secondary / NotebookLM support。</td><td>保留為研究假說，不寫成已驗證財務事實。</td></tr>
+        <tr><td>矽電容與高階 MLCC 會共存而非取代</td><td class="status-warn">Source-supported only</td><td>Podcast / secondary source。</td><td>合理假說；需 BOM / 供應鏈資料驗證。</td></tr>
+        <tr><td>筆記作者「繼續抄指數、正2」是主持人建議</td><td class="status-bad">Contradicted</td><td>Secondary note 明確標示為操作日記，且提醒不要亂跟單。</td><td>必須隔離，不得寫成 host view。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>追蹤計畫 / Event triggers</h2>
+    <table>
+      <thead><tr><th>Trigger</th><th>代表意義</th><th>後續動作</th></tr></thead>
+      <tbody>
+        <tr><td>光通 / 軟體代表股創新高且成交量擴大</td><td>Leadership 假說加分</td><td>深入查個股財報與供應鏈；避免只看技術線。</td></tr>
+        <tr><td>高估值軟體財報後 revenue growth 強、margin 無明顯惡化</td><td>AI 軟體估值修復假說加分</td><td>比較同業估值、客戶集中度、inference cost。</td></tr>
+        <tr><td>台達電 / 光寶科法說量化 800V / BBU / PSU 訂單或毛利貢獻</td><td>800V re-rating 假說加分</td><td>更新 verification status；建立供應鏈地圖。</td></tr>
+        <tr><td>官方或客戶資料顯示 800V adoption 延後 / 限於展示</td><td>800V 假說扣分</td><td>下修短期 EPS 連結，保留長期技術方向。</td></tr>
+        <tr><td>InP substrate 供給緩解或價格下滑</td><td>光通瓶頸減弱</td><td>重估光通營收彈性與毛利壓力。</td></tr>
+        <tr><td>指數未創高、融資快速回升、強勢股補跌</td><td>第二隻腳 / 風控風險升高</td><td>將市場 stance 調為謹慎；降低追價假說權重。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>方法限制</h2>
+    <ul>
+      <li>NotebookLM 可能把口語內容專業化或推論化；若 secondary note 未支持，本文一律降級為待查或弱化處理。</li>
+      <li>外部查證只確認「方向與事件存在」，不確認個股買賣價值。</li>
+      <li>所有操作日記與槓桿工具都不構成建議；投資前仍需依個人資產配置、風險承受度與稅務狀況判斷。</li>
+    </ul>
+  </section>
+
+  <p class="footer">Generated by 雙雙 🦞🌱 · Sources: YouTube EP686, Social Worker Daily EP686, NotebookLM primary/supplementary reports, selected official / IR pages.</p>
+</main>
+</body>
+</html>
