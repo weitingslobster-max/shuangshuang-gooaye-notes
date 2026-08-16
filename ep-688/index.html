@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP688 投資筆記｜800VDC 電力架構、Cerebras 推論與私募股權解禁</title>
+  <style>
+    :root { --bg:#f8fafc; --card:#ffffff; --ink:#172033; --muted:#64748b; --line:#e2e8f0; --accent:#b91c1c; --accent2:#0f766e; --soft:#fff7ed; }
+    * { box-sizing: border-box; } body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif; line-height:1.65; }
+    .wrap { max-width:1120px; margin:0 auto; padding:24px 18px 48px; } a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+    .back { display:inline-block; margin:4px 0 18px; font-weight:700; } header { background:linear-gradient(135deg,#7f1d1d,#dc2626 52%,#f97316); color:white; border-radius:22px; padding:30px 26px; box-shadow:0 18px 40px rgba(127,29,29,.18); }
+    header .eyebrow { opacity:.9; font-size:.92rem; letter-spacing:.08em; text-transform:uppercase; } h1 { margin:.2rem 0 .6rem; font-size:clamp(1.8rem,4vw,3rem); line-height:1.15; } header p { max-width:850px; margin:0; font-size:1.05rem; opacity:.96; }
+    .notice { margin-top:16px; padding:12px 14px; border-left:4px solid #f59e0b; background:#fffbeb; color:#78350f; border-radius:10px; } section { background:var(--card); margin-top:18px; border:1px solid var(--line); border-radius:18px; padding:22px; box-shadow:0 8px 24px rgba(15,23,42,.05); }
+    h2 { margin:18px 0 12px; font-size:1.45rem; border-top:1px solid var(--line); padding-top:18px; } h2:first-child { border-top:0; padding-top:0; } h3 { margin:20px 0 8px; font-size:1.12rem; color:#334155; }
+    ul, ol { padding-left:1.25rem; } li + li { margin-top:.35rem; } table { width:100%; border-collapse:collapse; margin:12px 0 18px; font-size:.92rem; } th, td { border:1px solid var(--line); padding:9px 10px; vertical-align:top; } th { background:#f1f5f9; text-align:left; color:#334155; } tr:nth-child(even) td { background:#fbfdff; } code { background:#f1f5f9; padding:1px 4px; border-radius:4px; } footer { color:var(--muted); font-size:.9rem; padding:18px 2px; }
+    @media (max-width: 720px) { .wrap { padding:14px 10px 32px; } header, section { border-radius:16px; padding:18px; } table { display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; white-space:nowrap; } th, td { min-width:150px; } }
+  </style>
+</head>
+<body><main class="wrap">
+<a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+<header><div class="eyebrow">Gooaye EP688 Investment Note</div><h1>800VDC 電力架構、Cerebras 推論與私募股權解禁</h1><p>本集把 AI 基建研究從晶片本身推向資料中心電力鏈：當 rack 功耗上升，低壓大電流的銅材、空間、connector、power shelf 與冷卻瓶頸會把 800VDC、BBU、功率半導體與重電系統推到研究核心。</p></header>
+<div class="notice">本報告僅供研究參考，不構成投資建議。白皮書、解禁、缺貨與二手筆記操作日記都需要獨立查證後才能進入投資決策。</div>
+<section><h1>股癌 EP688 投資研究筆記｜800VDC 電力架構、Cerebras 推論與私募股權解禁</h1>
+<h2>Source stack / 來源層級</h2>
+<table>
+<thead><tr><th>來源層</th><th>檔案 / URL</th><th>用途</th><th>限制</th></tr></thead>
+<tbody>
+<tr><td>Primary / Podcast via NotebookLM</td><td>`sources/notebooklm_source.md`; YouTube: https://www.youtube.com/watch?v=PD_IMPvMBc0</td><td>最高優先來源，整理主持人對 SpaceX、Cerebras、NVIDIA 800VDC、AI 電力鏈的討論</td><td>NotebookLM 摘要可能失去口語細節，重要敘述仍需逐字稿或原音確認</td></tr>
+<tr><td>Secondary / Social Worker Daily</td><td>`sources/secondary_note.md`; https://socialworkerdaily.com/notes-of-gooaye-ep-688/</td><td>第三方筆記與操作日記，用於交叉檢查與捕捉主持人提及段落</td><td>筆記作者明確聲明含主觀理解；操作日記不可視為主持人建議</td></tr>
+<tr><td>Supplementary triangulation</td><td>`sources/notebooklm_supplementary_report.md`</td><td>區分主持人觀點、筆記作者詮釋與 AI 推論</td><td>仍屬 NotebookLM 產物，不補外部資料</td></tr>
+<tr><td>External verification</td><td>`verification.md`</td><td>核對 Cerebras 上市狀態、AMD/Cerebras Helios、NVIDIA 800VDC 官方敘述</td><td>未查到的市場傳聞需保留為待查</td></tr>
+</tbody></table>
+<h2>Core takeaways / 核心結論</h2>
+<ol>
+<li>本集最可研究主線是 AI 資料中心電力鏈。 800VDC 不是單純效率題材，而是由高功耗 rack 帶出的銅排、線纜、connector、power shelf、冷卻與空間瓶頸。</li>
+<li>2026–2027 第一階段仍偏 Power Rack / PRC，受惠重點在 AC→800V PSU、800V→54V shelf、電容、連接器、BBU。 主持人語氣偏正向，但更像「下檔有基本面支撐」而非立即無腦上修估值。</li>
+<li>第二、三階段更偏中長期夢想與基建升級。 Power Center、SiC/GaN、DC UPS、Busway、SSCB、BESS、DC Switchboard、重電與系統整合值得建研究清單，但時間點與訂單不能從白皮書直接推導。</li>
+<li>Cerebras / AMD disaggregated inference 是推論時代線索。 WSE / SRAM 低延遲 decode 與 AMD Helios / Instinct / EPYC 的分工值得追蹤；但 Cerebras 本身仍要分清「上市後 lockup / 解禁」與基本面。</li>
+<li>SpaceX / Cerebras 解禁討論是籌碼流動性模型，不是普遍定律。 主持人對流動性增加偏正向，因為價格發現更健康；但每家公司解禁條款、買方結構與基本面都需個別驗證。</li>
+<li>筆記作者操作日記要隔離。 台達電、捷敏-KY 是 secondary note 作者個人操作紀錄，不是主持人明確推介；只能作為「市場可能聯想到的台股映射」待外部研究。</li>
+</ul>
+<h2>Source triangulation / 來源交叉比對</h2>
+<table>
+<thead><tr><th>主題</th><th>Primary / 主稿</th><th>Secondary / 二手筆記</th><th>校驗判斷</th><th>合成結論</th></tr></thead>
+<tbody>
+<tr><td>SpaceX 股票解禁</td><td>解禁前下殺，解禁後反而打底；流動性增加有助價格發現</td><td>詳列禁止解禁前套利、釋出批次與籌碼影響</td><td>primary-supported；批次細節待外部查</td><td>可作私募股權流動性模型；不可套用成「解禁必漲」</td></tr>
+<tr><td>Cerebras 股票解禁</td><td>WSE / SRAM / prefill-decode / 與 AMD 合作；注意大量股票釋出</td><td>補充 AMD Helios、投片量增加、NVIDIA CPX 替代風險</td><td>both-supported；Cerebras 上市狀態已外部確認</td><td>研究重點是 inference 架構與上市後 lockup 供給</td></tr>
+<tr><td>800VDC 白皮書</td><td>三階段架構、54V 低壓大電流瓶頸、350–400kW 門檻</td><td>詳列 2026–2027、2028–2030、2030+ 受惠環節</td><td>primary + secondary；官方 NVIDIA 支持大方向</td><td>電力鏈是本集高優先研究主線</td></tr>
+<tr><td>GaN / SiC / IGBT</td><td>電話會議稱 IGBT 不缺，SiC/GaN 特別是 GaN 超乎想像缺</td><td>同步記錄</td><td>source-supported only</td><td>需用 Infineon、ST、onsemi、Navitas 等法說交叉驗證</td></tr>
+<tr><td>台達電、捷敏-KY</td><td>主持人 primary 未明確給 ticker</td><td>作者操作日記：台達電看對加碼、捷敏-KY 轉倉</td><td>secondary-only</td><td>嚴格標示為筆記作者操作，不放入主持人 stance</td></tr>
+</tbody></table>
+<h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+<table>
+<thead><tr><th>主題</th><th>本集方向 / Host stance</th><th>Likely Host View</th><th>Note-Author Interpretation</th><th>NotebookLM/AI Inference</th><th>Risk of Overstatement</th></tr></thead>
+<tbody>
+<tr><td>SpaceX / Cerebras 解禁</td><td>中立偏正向觀察</td><td>流動性增加後價格較能反映共識；早期大節點過關後，後續衝擊可能遞減</td><td>後續釋出可視為隨機事件，長期影響不大</td><td>籌碼集中度下降可改善市場定價效率</td><td>中：需每家公司條款與買方結構驗證</td></tr>
+<tr><td>Cerebras inference</td><td>偏正向觀察</td><td>WSE / SRAM 可能在 decode 低延遲有優勢，需觀察推論時代是否有搞頭</td><td>AMD Helios + Cerebras WSE 是推論受惠線索</td><td>Disaggregated inference 可能挑戰整合式 GPU 架構</td><td>中：技術效能與商業化待驗證</td></tr>
+<tr><td>NVIDIA 800VDC</td><td>偏正向觀察</td><td>高功耗 AI rack 逼出高壓 DC / power 架構升級</td><td>第一階段有基本面支撐，第二階段可研究，夢想階段易炒也易修正</td><td>電力、散熱、儲能、重電會成為 AI 基建瓶頸</td><td>低至中：官方白皮書支持方向，但滲透率與訂單待查</td></tr>
+<tr><td>BBU 標配化</td><td>偏正向觀察</td><td>功耗越高，BBU 從選配走向標配機率提高</td><td>BBU 機會來了</td><td>標配化將提高相關廠商營收確定性</td><td>中：仍需產品規格與客戶採用率</td></tr>
+<tr><td>台達電 / 捷敏-KY</td><td>主持人未明確表態</td><td>Primary 未見主持人將本集主線直接指向個股</td><td>作者個人加碼 / 轉倉</td><td>市場可能把電力鏈題材映射到台股個股</td><td>高：必須隔離為 secondary-only</td></tr>
+</tbody></table>
+<h2>Company / ticker map / 公司與 ticker 對照表</h2>
+<table>
+<thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead>
+<tbody>
+<tr><td>NVIDIA</td><td>NVDA</td><td>800VDC 架構推動者；CPX 被提及為潛在競爭/替代方案</td><td>偏正向觀察</td><td>白皮書帶動 power 題材</td><td>Primary + official NVIDIA</td><td>追白皮書版本、Kyber / rack 架構、合作供應商名單</td></tr>
+<tr><td>Cerebras Systems</td><td>CBRS</td><td>WSE / SRAM / decode；股票解禁</td><td>偏正向觀察但需驗證</td><td>推論時代受惠；大量股票釋出需注意</td><td>Primary + secondary + SEC/公司 IR</td><td>追 lockup release、營收、Cerebras Cloud、WSE 產能</td></tr>
+<tr><td>AMD</td><td>AMD</td><td>Helios / EPYC / Instinct 與 Cerebras disaggregated inference</td><td>偏正向觀察</td><td>Helios 處理 prompt / 長文，Cerebras 處理 decode</td><td>Secondary + external reports；primary 概念支持</td><td>查 AMD 官方 press release / Helios 規格、實際客戶採用</td></tr>
+<tr><td>SpaceX</td><td>私有</td><td>私募股權解禁與流動性案例</td><td>中立偏正向觀察</td><td>釋出越多流動性越好</td><td>Primary + secondary</td><td>查解禁批次、成交平台、估值與買方結構</td></tr>
+<tr><td>台達電</td><td>2308.TW</td><td>AI power 可能映射；作者操作日記</td><td>主持人未明確表態</td><td>看對加碼</td><td>Secondary-only</td><td>查 AI power 營收占比、800V 產品、法說與毛利</td></tr>
+<tr><td>捷敏-KY</td><td>6525.TW</td><td>作者操作日記</td><td>主持人未明確表態</td><td>從指數正 2 轉入一點</td><td>Secondary-only</td><td>查與本集主線是否真的相關；避免跟單</td></tr>
+<tr><td>電容 / connector / BBU 族群</td><td>N/A</td><td>800V 第一階段受惠環節</td><td>偏正向觀察</td><td>有基本面支撐</td><td>Primary + secondary</td><td>建立台股/美股供應鏈清單，逐一查訂單與估值</td></tr>
+<tr><td>SiC / GaN / IGBT 供應鏈</td><td>N/A</td><td>Power Center 階段與功率半導體</td><td>中立偏正向觀察</td><td>GaN 超乎想像缺；第二階段可研究</td><td>Source-supported only</td><td>查 Infineon、STMicro、onsemi、Navitas、Renesas 法說</td></tr>
+<tr><td>UPS / Busway / BESS / 重電</td><td>N/A</td><td>2028–2030 / 2030+ 長期 DC infrastructure</td><td>低優先 / 暫無短期催化</td><td>兩三年後大型電源廠、UPS 廠受惠</td><td>Source-supported only + NVIDIA long-term direction</td><td>追資料中心新建案、電網接入與 DC power block 標準</td></tr>
+</tbody></table>
+<h2>Topic map / 主題地圖</h2>
+<ul>
+<li>籌碼與流動性：SpaceX、Cerebras 解禁；禁止套利；流動性增加後價格發現。</li>
+<li>推論架構：Prefill / Decode 分工；Cerebras WSE / SRAM；AMD Helios / Instinct / EPYC；NVIDIA CPX 競爭。</li>
+<li>AI power 第一階段：AC→800V PSU、800V→54V shelf、電容、connector、BBU，2026–2027 仍偏 Power Rack / PRC。</li>
+<li>AI power 第二階段：Power Center、集中式整流器、SiC、GaN、IGBT。</li>
+<li>AI power 第三階段 / 設施級：DC UPS、Busway、SSCB、BESS、DC Switchboard、大電流 Busbar、重電、系統整合。</li>
+<li>風控與市場心理：不能完美抓底；大反彈需法人資金確認；消費電子漲價邏輯不同於 AI。</li>
+</ul>
+<h2>Draft investment hypotheses / 投資假說草稿</h2>
+<table>
+<thead><tr><th>假說</th><th>Source basis</th><th>驗證方式</th><th>反證條件</th></tr></thead>
+<tbody>
+<tr><td>800VDC 第一階段可支撐 AI power 供應鏈基本面</td><td>主持人與二手筆記都指向 2026–2027 Power Rack / PRC，NVIDIA 官方說 800VDC 支援 MW-scale rack 並自 2027 起推動</td><td>查供應商法說、800V 產品認證、客戶導入、營收占比</td><td>白皮書延後、客戶採用低、營收仍停在低壓舊架構</td></tr>
+<tr><td>BBU 從選配變標配會帶動價值量</td><td>主持人提及高功耗下 BBU 可能標準化</td><td>查 AI server rack 規格、ODM / PSU 廠 BOM、BBU 滲透率</td><td>客戶仍選擇集中式 UPS 或 facility-level BESS，不在 rack 端加值</td></tr>
+<tr><td>Cerebras + AMD 可成為 inference 特定工作負載替代方案</td><td>WSE / SRAM 解決 decode；AMD Helios 提供 rackscale infrastructure</td><td>查 Cerebras Cloud 客戶、tokens/W benchmark、實際 deployment</td><td>NVIDIA CPX / Rubin / 其他方案性能或成本更優，Cerebras 產能不足</td></tr>
+<tr><td>解禁後流動性改善有利價格發現</td><td>SpaceX 案例與主持人對流動性的判斷</td><td>查交易量、買方分散度、解禁條款</td><td>解禁供給遠大於需求、內部人拋售訊號傷害信心</td></tr>
+</tbody></table>
+<h2>Research discipline notes / 研究紀律</h2>
+<ul>
+<li>不把白皮書當訂單；不把題材當 EPS；不把二手筆記作者的操作日記當主持人建議。</li>
+<li>對 800VDC 應先拆成「時間階段 × 零組件 × 客戶採用 × 財務貢獻」四層，而不是直接買整個 power 題材。</li>
+<li>對 Cerebras，先分清「技術架構有效」與「股票解禁供給壓力」是兩個不同問題。</li>
+<li>對任何「缺貨」敘事，至少查兩家上游/下游法說或交期資料；單一 podcast 來源只能當研究入口。</li>
+</ul>
+<h1>股癌 EP688 verification / 外部查證</h1>
+<h2>Verification scope / 查證範圍</h2>
+<p>本次只查證會影響投資研究邊界的高風險事實：Cerebras 上市與 ticker、AMD/Cerebras disaggregated inference 與 Helios 關係、NVIDIA 800VDC 官方架構、以及來源中較具交易含義的 800VDC 滲透率/缺貨/解禁敘事。未查到官方或一手資料者保留為待查，不做投資結論。</p>
+<h2>Verification table / 查證表</h2>
+<table>
+<thead><tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr></thead>
+<tbody>
+<tr><td>Cerebras 已上市，ticker 為 CBRS</td><td>Verified</td><td>Cerebras 公司 IR investor FAQ 顯示 Cerebras went public on May 14, 2026, at $185/share；公司 IPO 新聞稿稱擬以 CBRS 在 Nasdaq 掛牌；SEC S-1/A 文件存在</td><td>主持人「已上市一段時間」在 2026-08-16 的時間點可成立；但解禁、lockup 與流通股仍需看招股書與 IR</td></tr>
+<tr><td>Cerebras IPO lockup 有分批提前釋出結構</td><td>Partially supported</td><td>Cerebras investor FAQ 提到 IPO lockup structure includes periodic early release of certain pre-IPO shares in tranches</td><td>支持「分批釋出」大方向，但 podcast 中具體 9–10 批、規模與日期仍未完全查證</td></tr>
+<tr><td>AMD Helios 與 Cerebras WSE 形成 disaggregated inference workflow</td><td>Partially supported</td><td>AMD Helios 官方頁說 Helios 整合 AMD Instinct、EPYC、Pensando networking，用於 large-scale inference；多家新聞報導 AMD/Cerebras 合作、Helios 搭配 WSE</td><td>方向支持；仍需 AMD / Cerebras 官方 press release 原文確認性能數字與 deployment 時程</td></tr>
+<tr><td>NVIDIA 推動 800VDC 支援下一代 AI factories / MW-scale racks</td><td>Verified</td><td>NVIDIA Technical Blog（2025-05-20）稱 800VDC support 1 MW IT racks and beyond, starting in 2027；官方 800VDC architecture 頁面說其為 next-generation power distribution</td><td>官方支持 800VDC 大方向、54V 局限與效率/銅材/架構簡化邏輯</td></tr>
+<tr><td>54V / 48V 低壓架構在高功耗 rack 遇到銅材、空間與轉換瓶頸</td><td>Verified</td><td>NVIDIA blog 描述傳統低壓 rack power 不適合未來 MW-scale rack，800VDC 可減少轉換、銅材與複雜度</td><td>支持主持人「小伏特數到 800V」的物理瓶頸邏輯</td></tr>
+<tr><td>800VDC 未來一年滲透率 5%</td><td>Source-supported only</td><td>podcast / secondary note 引述海外研調主筆；本次未找到原始研調</td><td>可作研究假說，不可直接作估值輸入；需確認定義是 rack 數、出貨量、產值或新建資料中心占比</td></tr>
+<tr><td>GaN 超乎想像缺，IGBT 不太缺</td><td>Source-supported only</td><td>podcast / secondary note 來源於主持人引述電話會議</td><td>高投資含義但未外部驗證；需查 Infineon、STMicro、onsemi、Navitas、Power Integrations 等法說與交期</td></tr>
+<tr><td>SpaceX 解禁前禁止套利、解禁分 9–10 批</td><td>Source-supported only</td><td>podcast / secondary note</td><td>私募交易資訊不透明；只可當籌碼研究入口，不可當已驗證事實</td></tr>
+<tr><td>台達電、捷敏-KY 是本集主持人投資標的</td><td>Contradicted / secondary-only</td><td>secondary note 的「操作日記」明確屬作者個人紀錄；primary NotebookLM / supplementary 指出主持人未明確提個股 ticker</td><td>不應寫成主持人建議；若納入 tracking，只能當筆記作者映射或台股研究候選</td></tr>
+</tbody></table>
+<h2>Open verification queue / 待查清單</h2>
+<p>1. 找到 AMD / Cerebras 官方合作新聞稿，確認 Helios、WSE、tokens-per-watt、推出時間、Cerebras Cloud 部署細節。</p>
+<p>2. 查 Cerebras 最新 10-Q / S-1/A / lockup release table，建立解禁日期與釋股規模。</p>
+<p>3. 查 NVIDIA 800VDC architecture design guide / OCP 相關文件，確認 Power Rack、Power Center、DC Power Block 分期是否與 podcast 用語一致。</p>
+<p>4. 查 Delta、LiteOn、Flex Power、Lead Wealth、Megmeet 等 NVIDIA 列名 power partner 是否揭露 800VDC 產品與客戶導入。</p>
+<p>5. 查 GaN / SiC / IGBT 供需：Infineon、STMicro、onsemi、Navitas、Renesas、Power Integrations 最近法說與交期。</p>
+<p>6. 查 SpaceX 私募交易平台或公開報導，確認解禁批次、限制條款與成交價格。</p>
+<h2>Bottom line / 查證結論</h2>
+<p>800VDC 作為 AI 資料中心高功耗下的電力架構升級，已獲 NVIDIA 官方資料支持，是本集最穩固的研究主線。Cerebras 已上市與 AMD/Cerebras inference 合作大方向也有外部支持；但「5% 滲透率」、「GaN 超缺」、「SpaceX 解禁批次」與任何台股個股對應仍屬待查或 secondary-only，不能直接轉成投資建議。</p>
+<h1>股癌 EP688 tracking / 投資研究追蹤</h1>
+<h2>Watchlist buckets / 觀察清單分組</h2>
+<h3>A. 高優先：AI power 第一階段（2026–2027）</h3>
+<table>
+<thead><tr><th>觀察對象</th><th>為什麼追</th><th>第一個檢查點</th><th>風險</th></tr></thead>
+<tbody>
+<tr><td>AC→800V PSU / 800V→54V shelf</td><td>主持人與 NVIDIA 官方方向一致；短中期較接近營收</td><td>供應商法說是否出現 800VDC、AI rack、客戶認證</td><td>題材先行但訂單延後</td></tr>
+<tr><td>高壓電容、connector、busbar / cable</td><td>54V 低壓大電流瓶頸會推動空間/材料升級</td><td>BOM 變化、單 rack 價值量、客戶規格</td><td>價格已提前反映；規格變動</td></tr>
+<tr><td>BBU</td><td>可能由選配轉標配</td><td>AI server rack 是否要求 rack-level backup</td><td>facility-level UPS/BESS 替代 rack-level BBU</td></tr>
+</tbody></table>
+<h3>B. 中優先：Power Center / 功率半導體</h3>
+<table>
+<thead><tr><th>觀察對象</th><th>為什麼追</th><th>第一個檢查點</th><th>風險</th></tr></thead>
+<tbody>
+<tr><td>SiC / GaN</td><td>podcast 稱第二階段受惠，GaN 特別缺</td><td>法說交期、產能利用率、AI data center 訂單</td><td>缺貨敘事未被多方驗證</td></tr>
+<tr><td>IGBT</td><td>podcast 稱目前不是較缺</td><td>需求是否因 Power Center 普及重新拉升</td><td>週期性供過於求</td></tr>
+<tr><td>集中式整流器</td><td>Power Center 轉換主體</td><td>Schneider / Vertiv / Eaton / Delta 等資料中心方案</td><td>採用時程比市場預期慢</td></tr>
+</tbody></table>
+<h3>C. 長期：DC facility / 重電 / 儲能</h3>
+<table>
+<thead><tr><th>觀察對象</th><th>為什麼追</th><th>第一個檢查點</th><th>風險</th></tr></thead>
+<tbody>
+<tr><td>DC UPS、Busway、SSCB</td><td>2028–2030 可能進入資料中心設施級升級</td><td>新建 AI data center 規格、OCP 標準</td><td>太早估值化，短期無營收</td></tr>
+<tr><td>BESS、DC Switchboard、重電</td><td>2030+ DC Power Block / 系統整合</td><td>utility interconnect、資料中心電力採購、Eaton/Schneider/Vertiv roadmap</td><td>政策、電網瓶頸、資本開支週期</td></tr>
+</tbody></table>
+<h3>D. Inference architecture / 股票流動性</h3>
+<table>
+<thead><tr><th>觀察對象</th><th>為什麼追</th><th>第一個檢查點</th><th>風險</th></tr></thead>
+<tbody>
+<tr><td>Cerebras (CBRS)</td><td>WSE / SRAM decode 與上市後解禁雙主線</td><td>lockup release calendar、Cerebras Cloud 客戶、AMD 合作進度</td><td>解禁供給壓力、產能與客戶集中度</td></tr>
+<tr><td>AMD Helios / Cerebras WSE</td><td>disaggregated inference 可作 NVIDIA 之外路線</td><td>官方 benchmark、實際 deployment、tokens/W</td><td>內部 benchmark 不等於市場採用</td></tr>
+<tr><td>SpaceX secondary shares</td><td>私募流動性與價格發現案例</td><td>成交價、成交量、解禁條款</td><td>資訊不透明，難以量化</td></tr>
+</tbody></table>
+<h2>Event triggers / 事件觸發條件</h2>
+<ul>
+<li>NVIDIA 更新 800VDC architecture design guide、Kyber rack 或合作夥伴清單。</li>
+<li>Delta / LiteOn / Flex Power / Megmeet / Vertiv / Schneider / Eaton 法說明確量化 800VDC、AI rack power、BBU 或 Power Center 訂單。</li>
+<li>Cerebras 公布 lockup release、季報、Cerebras Cloud 客戶、AMD Helios deployment。</li>
+<li>AMD / Cerebras 官方發布 disaggregated inference 性能與商業時程。</li>
+<li>GaN / SiC 供應商法說出現交期拉長、AI data center 訂單或價格上修。</li>
+<li>市場從「題材」轉為「EPS 上修」：供應商月營收、毛利率或 backlog 明顯改善。</li>
+</ul>
+<h2>Current stance / 目前判斷</h2>
+<ul>
+<li>800VDC / AI power：偏高優先研究。 官方與節目來源方向一致，但要拆成階段與財務貢獻，避免把 2030+ 題材折現到今天。</li>
+<li>Cerebras / AMD inference：中高優先觀察。 技術敘事有吸引力，上市後流動性也更可追蹤；但 lockup 與估值波動會干擾基本面判斷。</li>
+<li>SpaceX 解禁：低至中優先模型參考。 可學流動性邏輯，但因資訊不透明，不適合當主研究標的。</li>
+<li>台達電 / 捷敏-KY：只列為 secondary-note 操作映射，不列為主持人建議。 若要研究需獨立建模。</li>
+</ul>
+<h2>Parking lot / 暫停追蹤</h2>
+<ul>
+<li>功能性訓練、下背痛、走路姿勢等內容僅保留為主持人長期決策狀態管理的背景，不納入投資追蹤。</li>
+<li>消費電子漲價排擠效應先放低優先，除非出現可驗證的 EPS 修正或庫存週期反轉。</li>
+</ul></section>
+<footer>Generated from NotebookLM primary report, validated Social Worker Daily secondary note, supplementary triangulation, and external verification. 雙雙 🦞🌱</footer>
+</main></body></html>
