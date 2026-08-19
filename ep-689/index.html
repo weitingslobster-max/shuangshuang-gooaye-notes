@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP689 投資筆記｜科技股回檔、AI 表外承諾與記憶體 / 封測輪動</title>
+  <style>
+    :root { --bg:#f8fafc; --card:#ffffff; --ink:#172033; --muted:#64748b; --line:#e2e8f0; --accent:#b91c1c; --accent2:#0f766e; --soft:#fff7ed; }
+    * { box-sizing: border-box; } body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif; line-height:1.65; }
+    .wrap { max-width:1120px; margin:0 auto; padding:24px 18px 48px; } a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+    .back { display:inline-block; margin:4px 0 18px; font-weight:700; } header { background:linear-gradient(135deg,#7f1d1d,#dc2626 52%,#f97316); color:white; border-radius:22px; padding:30px 26px; box-shadow:0 18px 40px rgba(127,29,29,.18); }
+    header .eyebrow { opacity:.9; font-size:.92rem; letter-spacing:.08em; text-transform:uppercase; } h1 { margin:.2rem 0 .6rem; font-size:clamp(1.8rem,4vw,3rem); line-height:1.15; } header p { max-width:850px; margin:0; font-size:1.05rem; opacity:.96; }
+    .notice { margin-top:16px; padding:12px 14px; border-left:4px solid #f59e0b; background:#fffbeb; color:#78350f; border-radius:10px; } section { background:var(--card); margin-top:18px; border:1px solid var(--line); border-radius:18px; padding:22px; box-shadow:0 8px 24px rgba(15,23,42,.05); }
+    h2 { margin:18px 0 12px; font-size:1.45rem; border-top:1px solid var(--line); padding-top:18px; } h2:first-child { border-top:0; padding-top:0; } h3 { margin:20px 0 8px; font-size:1.12rem; color:#334155; }
+    ul, ol { padding-left:1.25rem; } li + li { margin-top:.35rem; } table { width:100%; border-collapse:collapse; margin:12px 0 18px; font-size:.92rem; } th, td { border:1px solid var(--line); padding:9px 10px; vertical-align:top; } th { background:#f1f5f9; text-align:left; color:#334155; } tr:nth-child(even) td { background:#fbfdff; } code { background:#f1f5f9; padding:1px 4px; border-radius:4px; } footer { color:var(--muted); font-size:.9rem; padding:18px 2px; }
+    @media (max-width: 720px) { .wrap { padding:14px 10px 32px; } header, section { border-radius:16px; padding:18px; } table { display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; white-space:nowrap; } th, td { min-width:150px; } }
+  </style>
+</head>
+<body><main class="wrap">
+<a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+<header><div class="eyebrow">Gooaye EP689 Investment Note</div><h1>科技股回檔、AI 表外承諾與記憶體 / 封測輪動</h1><p>本集把 AI 多頭放在風控框架下檢查：回檔不等於立刻崩盤，但 Big Tech 表外承諾、記憶體估值天花板、封測瓶頸交易是否推得動，都是下一階段要追的關鍵訊號。</p></header>
+<div class="notice">本報告僅供研究參考，不構成投資建議。Podcast、NotebookLM、二手筆記與外部查證已分層；二手筆記作者操作日記不可視為主持人建議。</div>
+<section><h1>股癌 EP689 structured notes / 投資研究筆記</h1>
+<h2>Source stack / 來源層級</h2>
+<table><thead><tr><th>來源層</th><th>檔案 / URL</th><th>用途</th><th>限制</th></tr></thead><tbody>
+<tr><td>Primary / Podcast via NotebookLM</td><td><code>sources/notebooklm_source.md</code>; YouTube: <a href="https://www.youtube.com/watch?v=sI5DUiG42Q8">https://www.youtube.com/watch?v=sI5DUiG42Q8</a></td><td>最高優先來源，整理主持人對科技股回檔、AI 表外承諾、記憶體、封測瓶頸與附加價值族群的討論</td><td>NotebookLM 摘要可能失去口語細節；重要數字與語氣仍需逐字稿或原音確認</td></tr>
+<tr><td>Secondary / Social Worker Daily</td><td><code>sources/secondary_note.md</code>; <a href="https://socialworkerdaily.com/notes-of-gooaye-ep-689/">https://socialworkerdaily.com/notes-of-gooaye-ep-689/</a></td><td>第三方筆記，用於交叉檢查段落、金句與市場話題</td><td>作者明確聲明含主觀理解；「操作日記」是作者個人紀錄，不是主持人建議</td></tr>
+<tr><td>Supplementary triangulation</td><td><code>sources/notebooklm_supplementary_report.md</code></td><td>區分主持人觀點、筆記作者詮釋與 AI 推論</td><td>仍屬 NotebookLM 產物，不補外部資料</td></tr>
+<tr><td>External verification</td><td><code>verification.md</code></td><td>查證 WSJ 3T 表外承諾、Micron/HBM、NVIDIA/OSAT、Palantir 獲利等會影響投資判斷的事實</td><td>未取得原文或官方資料者保留為待查，不做確定結論</td></tr>
+</tbody></table>
+<h2>Core takeaways / 核心結論</h2>
+<ol>
+<li>本集核心不是「科技股要不要崩」，而是回檔後如何分辨泡泡、泡沫與可承受的多頭震盪。主持人把年度獲利回吐程度當成風控基準：若今年獲利緩衝夠厚，回吐三成仍可留場觀察；若年度獲利只剩 20–30% 卻被一次回檔打光，風控就要更嚴格。</li>
+<li>AI 表外支出 / 採購承諾是本集最大風險提醒。WSJ「Big Tech AI spending is $3 trillion higher than it seems」提供了敘事轉折：多頭時是訂單能見度，回檔時會變成隱性槓桿與現金流壓力。</li>
+<li>主持人對立即爆炸不做斷言，真正警訊是 AI 債務被證券化、打包成零售理財商品，變成一般投資人也可大量買到的資料中心債券。</li>
+<li>產業觀察架構是「Component trade → Bottleneck trade → Value add」。記憶體若無法拉高 PE，其他元件族群估值也會受壓；封測/後段若利多推不動，瓶頸交易可能暫休；之後市場可能回到能創造無形資產與客戶價值的公司。</li>
+<li>Social Worker Daily 的操作日記必須隔離。群聯、捷敏-KY、元大台灣 50 正 2、晶技是筆記作者自己的交易紀錄，不是主持人立場，也不能放入 host stance。</li>
+</ol>
+<h2>Source triangulation / 來源交叉比對</h2>
+<table><thead><tr><th>主題</th><th>Primary / 主稿</th><th>Secondary / 二手筆記</th><th>校驗判斷</th><th>合成結論</th></tr></thead><tbody>
+<tr><td>科技股回檔</td><td>市場在七月回檔後八月快速反彈；主持人不完全買單「殖利率變高＝要出大事」的單因子解釋</td><td>詳列殖利率、反彈回前高、身邊很多人降部位</td><td>both-supported</td><td>用「誰能先站回回檔前高」觀察族群韌性，比單看宏觀敘事更接近主持人框架</td></tr>
+<tr><td>AI 表外支出 / WSJ 3T</td><td>AI 開銷水下化、採購承諾與租約可能隱藏槓桿；若被金融商品化才更接近泡沫末端</td><td>用《大賣空》次貸類比強化泡沫風險</td><td>primary-supported；secondary 有情緒放大</td><td>保留風險，但不要把主持人說成「立即看空」；重點是監控金融化程度與現金流壓力</td></tr>
+<tr><td>泡泡與泡沫</td><td>多頭最後常會泡沫化，但完美避開泡沫會錯過資產增長；需在回吐程度觸發時停下</td><td>金句完整記錄並加入作者個人心態</td><td>both-supported</td><td>這是風控紀律，不是鼓勵無限追高</td></tr>
+<tr><td>記憶體 / Component trade</td><td>記憶體是最缺且展望最明確的族群；若 PE 乘數上不去，其他元件更難說服市場</td><td>同步記錄記憶體強勢是元件股發動前提</td><td>both-supported</td><td>記憶體是 AI 硬體風向標與估值天花板測試</td></tr>
+<tr><td>封測 / 後段 bottleneck</td><td>後段是重大瓶頸；客戶可能買設備交給封測廠以降低供應商擴產風險</td><td>同步記錄 OSAT / 封裝測試若推不動，瓶頸交易暫休</td><td>both-supported</td><td>觀察先進封裝/測試與客供設備、預付款、產能協議，而非只看題材</td></tr>
+<tr><td>附加價值族群</td><td>若缺貨漲價與瓶頸交易休息，市場可能回到能為客戶產生更多價值的無形資產 / 平台型公司</td><td>記錄「目前看起來偏向這族群會先站回來」</td><td>both-supported</td><td>研究重點從缺貨轉向 value-add 與獲利能力；Palantir 被 NotebookLM 作為案例，但仍需外部驗證</td></tr>
+<tr><td>操作日記</td><td>主持人未明確提及</td><td>群聯、捷敏-KY、正 2、晶技</td><td>secondary-only</td><td>嚴禁視為主持人研究覆蓋或推薦</td></tr>
+</tbody></table>
+<h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+<table><thead><tr><th>主題</th><th>本集方向 / Host stance</th><th>Likely Host View</th><th>Note-Author Interpretation</th><th>NotebookLM/AI Inference</th><th>Risk of Overstatement</th></tr></thead><tbody>
+<tr><td>AI 表外支出 / 3T</td><td>謹慎 / 風險監控</td><td>這是房間裡的大象；多頭時可解讀成供應鏈利多，回檔時會被市場解讀為隱性槓桿</td><td>類比《大賣空》次貸危機，語氣更恐慌</td><td>AI 泡沫末端風險正在累積</td><td>中高：需避免把「監控風險」寫成「立即崩盤預測」</td></tr>
+<tr><td>科技股回檔</td><td>偏正向觀察</td><td>若沒有破底、反彈夠快，反而要找下一個站回前高的主流族群</td><td>作者承認被回檔嚇到，但低點部位可控</td><td>市場從恐慌轉為篩選韌性族群</td><td>中：主觀帳戶績效不可外推到所有人</td></tr>
+<tr><td>泡泡與風控</td><td>中立偏紀律</td><td>多頭一定可能泡沫化；重點是賺到後能不能識別回吐幅度並暫停</td><td>作者偏向「跟泡泡上去，再想辦法跑」</td><td>以年度 drawdown 做風控基準</td><td>中：容易被誤讀成鼓勵高槓桿參與泡沫</td></tr>
+<tr><td>記憶體 / HBM</td><td>偏正向觀察</td><td>記憶體是最缺、展望最明確的硬體族群，也是其他元件估值的基準</td><td>記憶體強，元件才會動</td><td>HBM / DRAM 仍是 AI 硬體景氣領先指標</td><td>中：需求與報價仍需公司法說查證</td></tr>
+<tr><td>封測 / 後段瓶頸</td><td>偏正向但看股價確認</td><td>後段瓶頸可透過高價包產能、客戶買設備交給封測廠解決；若股價推不動，交易暫休</td><td>OSAT/封裝股是否續強是觀察點</td><td>Bottleneck trade 轉為產能協議與會計處理研究</td><td>中：客供設備細節需官方/法說查證</td></tr>
+<tr><td>附加價值族群</td><td>偏正向觀察</td><td>缺貨漲價交易休息後，市場可能回到能真正替客戶創造價值的公司</td><td>認為這族群可能先站回來</td><td>AI 軟體/平台若能證明獲利，可能接棒</td><td>中：需用財報而非敘事判斷</td></tr>
+<tr><td>群聯 / 捷敏-KY / 正 2 / 晶技</td><td>主持人未明確表態</td><td>不適用</td><td>筆記作者操作日記</td><td>不應納入主持人投資框架</td><td>高：若混同會造成重大歸因錯誤</td></tr>
+</tbody></table>
+<h2>Company / ticker map / 公司與 ticker 對照表</h2>
+<table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead><tbody>
+<tr><td>Nvidia</td><td>NVDA</td><td>AI supply chain 採購承諾、光通訊/封裝/設備掌控力、AI 需求核心</td><td>偏正向但需監控隱性槓桿與供應鏈金融化</td><td>供應鏈利多與泡沫風險並存</td><td>Primary + external company/newsroom support</td><td>查 10-K/10-Q commitment、預付款、合作供應商合約性質</td></tr>
+<tr><td>Micron</td><td>MU</td><td>記憶體 / HBM 領先指標</td><td>偏正向觀察</td><td>最缺且展望明確，若 PE 拉不上去會壓抑元件估值</td><td>Primary + Micron IR 支持 AI memory 需求強</td><td>追 HBM4E 量產、HBM 供需、毛利與庫存</td></tr>
+<tr><td>Palantir</td><td>PLTR</td><td>AI value-add / 獲利能力案例</td><td>NotebookLM 推論：偏正向觀察；主持人是否直接點名需原音確認</td><td>AI 軟體可證明實質賺錢</td><td>NotebookLM + Palantir IR external support</td><td>查 GAAP net income、U.S. commercial growth、AIP 客戶留存</td></tr>
+<tr><td>TSMC</td><td>2330.TW / TSM</td><td>先進封裝、AI 產能擴張背景</td><td>偏正向觀察但本集非核心個股</td><td>封裝擴產對象</td><td>NotebookLM source-supported</td><td>查 CoWoS/先進封裝產能、客供設備與折舊/毛利處理</td></tr>
+<tr><td>ASE Technology / 日月光投控</td><td>3711.TW / ASX</td><td>封測/OSAT bottleneck 代表</td><td>偏正向但看股價/產能確認</td><td>OSAT 股若推不動，瓶頸交易休息</td><td>Primary + ASE/Amkor/NVIDIA ecosystem external support</td><td>查先進封裝合作、產能協議、AI 測試需求</td></tr>
+<tr><td>Amkor</td><td>AMKR</td><td>美國 OSAT / NVIDIA capacity agreement 類比</td><td>偏正向觀察</td><td>非二手筆記主軸</td><td>External support</td><td>作為「NVIDIA 支援封裝產能」外部參考，不直接替代台灣 OSAT 結論</td></tr>
+<tr><td>群聯</td><td>8299.TW</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>搶反彈失敗</td><td>Secondary-only</td><td>不納入 host stance；若研究需另查 NAND/controller 基本面</td></tr>
+<tr><td>捷敏-KY</td><td>6525.TW</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>加碼等突破季線</td><td>Secondary-only</td><td>嚴格隔離；勿視為主持人建議</td></tr>
+<tr><td>元大台灣 50 正 2</td><td>00631L.TW</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>波動太大、降槓桿</td><td>Secondary-only</td><td>僅作風控案例，不作投資建議</td></tr>
+<tr><td>晶技</td><td>3042.TW</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>看線買</td><td>Secondary-only</td><td>嚴格隔離；若研究需另查石英元件供需</td></tr>
+<tr><td>10 年美債殖利率</td><td>US10Y</td><td>市場解釋科技股估值壓縮的宏觀敘事</td><td>主持人不完全買單</td><td>被當作回檔原因之一</td><td>Both-supported</td><td>查利率與科技股 PE 敏感度，但不當成本集單一主因</td></tr>
+</tbody></table>
+<h2>Topic map / 主題地圖</h2>
+<ul>
+<li>市場風控：年度獲利回吐、是否破底、反彈速度、誰能先站回前高。</li>
+<li>AI 金融化風險：表外承諾、未開始租約、採購承諾、資料中心債券、零售理財商品化。</li>
+<li>Component trade：記憶體、HBM、報價是否持續漲或開始平台化。</li>
+<li>Bottleneck trade：封裝/測試/晶圓後段、客供設備、預付款、產能包下來。</li>
+<li>Value-add：缺貨漲價交易休息後，市場是否回到軟體、平台、品牌或整合價值。</li>
+<li>二手筆記噪音：操作日記與作者心得不可混入主持人觀點。</li>
+</ul>
+<h2>Draft investment hypotheses / 投資假說草稿</h2>
+<table><thead><tr><th>假說</th><th>Source basis</th><th>驗證方式</th><th>反證條件</th></tr></thead><tbody>
+<tr><td>AI 多頭仍可參與，但風控要用年度 drawdown，而非只看新聞標題</td><td>主持人對泡泡/泡沫與年度回吐的討論</td><td>設定帳戶層級 drawdown 門檻；觀察指數/族群是否破底</td><td>回吐打掉年度大部分獲利、基本面指標轉弱、領先股無法收復失土</td></tr>
+<tr><td>記憶體是硬體族群估值天花板測試</td><td>記憶體「最缺、展望最明確」若 PE 拉不上去，其他元件更難</td><td>追 MU/SK hynix/Samsung HBM 展望、DRAM 報價、庫存與毛利</td><td>記憶體報價平台化、HBM 供給過剩、龍頭股價利多不漲</td></tr>
+<tr><td>封測/後段仍有 bottleneck premium，但要防交易暫休</td><td>後段瓶頸與客戶買設備交給供應商的討論</td><td>查 ASE/Amkor/TSMC 先進封裝產能、預付款、客供設備會計</td><td>OSAT 股價無法對利多反應、產能快速舒緩、毛利被客戶壓回</td></tr>
+<tr><td>AI 表外承諾不一定立即爆炸，但金融商品化是泡沫末端警訊</td><td>WSJ 3T 與主持人對資料中心債券商品化的警示</td><td>追 Big Tech 10-K commitments、未開始租約、AI infrastructure ABS/債券發行</td><td>承諾可被現金流消化，且未出現大規模零售化/高槓桿包裝</td></tr>
+<tr><td>Value-add 族群可能接棒缺貨交易</td><td>主持人對附加價值的討論；NotebookLM 提及 PLTR 獲利作案例</td><td>查 PLTR 等 AI 軟體/平台公司 GAAP 獲利、收入品質、客戶增長</td><td>成長率放緩且估值無法消化，或硬體缺貨交易重新主導市場</td></tr>
+</tbody></table>
+<h2>Research discipline notes / 研究紀律</h2>
+<ul>
+<li>不把二手筆記作者操作日記當主持人建議。</li>
+<li>不把 WSJ 3T 數字直接當「一定爆炸」；拆成租約、採購承諾、預付款、股權投資與金融化程度。</li>
+<li>不把「元件仍漲價」等同於無風險；真正要看報價是否開始平台化、利多是否推不動。</li>
+<li>對 value-add 公司，必須看現金流、GAAP/非 GAAP 獲利、客戶留存與收入品質，不能只看 AI 敘事。</li>
+<li>本報告是研究入口，不構成投資建議。</li>
+</ul>
+<h1>股癌 EP689 verification / 外部查證</h1>
+<h2>Verification scope / 查證範圍</h2>
+<p>本次只查證會影響投資研究邊界的高風險事實：WSJ 3T AI 表外承諾、NVIDIA 對 AI 供應鏈/光通訊/封裝 capacity 的合作模式、Micron/HBM 需求、Palantir 獲利能力，以及二手筆記操作日記的歸因邊界。未查到官方或一手資料者保留為待查，不做投資結論。</p>
+<h2>Verification table / 查證表</h2>
+<table><thead><tr><th>Claim / 主張</th><th>Status / 狀態</th><th>Evidence / source</th><th>Interpretation / 判斷</th></tr></thead><tbody>
+<tr><td>WSJ 報導九家大型科技/AI 公司約有 3 兆美元表外承諾，多與 AI infrastructure 有關</td><td>Partially supported</td><td>WSJ 原文標題與摘要可查；公開轉載/討論稱 WSJ 依最新 securities filings 腳註分析，涵蓋 Alphabet、Meta、Oracle、NVIDIA、Broadcom、SpaceX、AMD 等。原文需訂閱確認計算口徑。</td><td>方向符合本集風險；但 3T 組成、公司範圍、租約 vs 採購承諾比例不可未查即當定值輸入估值。</td></tr>
+<tr><td>未開始租約 / 採購承諾在多頭時是訂單能見度，在回檔時會被視為隱性槓桿</td><td>Source-supported only</td><td>Podcast / NotebookLM / secondary note</td><td>屬主持人框架與市場心理判斷；需搭配各公司 10-K/10-Q commitments 查證。</td></tr>
+<tr><td>NVIDIA 與光通訊、封裝、AI infrastructure 供應商有長期/策略合作以擴產</td><td>Verified</td><td>NVIDIA Newsroom：與 Lumentum、Coherent、Corning 等合作擴大 AI data center optics / connectivity；Amkor IR 稱 NVIDIA 以 prepayment 支援 U.S. advanced packaging capacity expansion；NVIDIA 美國供應鏈頁面列 advanced chips、packaging、optics、systems。</td><td>支持「NVIDIA/AI demand 透過合作與資金安排鎖供應鏈 capacity」的大方向；但不能自動推出所有 OSAT 都有同樣條款。</td></tr>
+<tr><td>NVIDIA 直接買設備交給封測廠</td><td>Partially supported</td><td>Podcast source-supported；Amkor 官方僅揭露 NVIDIA prepayment 支援封裝產能；尚未看到「買設備交給台灣 OSAT」的官方證據。</td><td>可作研究假說；需查 ASE/TSMC/Amkor 法說與財報腳註確認客供設備、預付款與產權歸屬。</td></tr>
+<tr><td>Micron / HBM 需求強，AI 時代記憶體具戰略價值</td><td>Verified</td><td>Micron FY2026 Q3 earnings release 指出 record results 與 AI era memory strategic value；公司說 HBM4E 開發進行中，預計 2027 年量產。</td><td>支持記憶體是 AI 硬體風向標；但股價 PE 能否擴張仍是市場定價問題。</td></tr>
+<tr><td>「記憶體若 PE 拉不上去，其他元件更難」</td><td>Source-supported only</td><td>Podcast / secondary note</td><td>這是主持人估值框架，不是可直接外部驗證的事實；追蹤時用族群相對強弱驗證。</td></tr>
+<tr><td>Palantir 已證明 AI 軟體具獲利能力</td><td>Partially supported</td><td>Palantir Q4 2025 shareholder letter 指出創紀錄季度 profit；Q1 2026 shareholder letter 稱 revenue/profit 創新高並強調 AIP。</td><td>支持「部分 AI 軟體公司可產生實質獲利」；但估值是否合理需另查 revenue quality、客戶集中、SBC、GAAP vs non-GAAP。</td></tr>
+<tr><td>Social Worker Daily 操作日記中的群聯、捷敏-KY、正 2、晶技是主持人投資標的</td><td>Contradicted / secondary-only</td><td>secondary_note.md 明列於「操作日記」且聲明非推薦；supplementary report 指出主持人 primary 未提及這些操作</td><td>不應寫成主持人建議或本集 host stance；只能作筆記作者個人紀錄。</td></tr>
+<tr><td>AI 債務被證券化/零售化會是泡沫末端警訊</td><td>Source-supported only</td><td>Podcast / secondary note</td><td>合理的風險監控框架，但目前本報告未查到足以證明「已廣泛零售化」的資料；列入 tracking。</td></tr>
+</tbody></table>
+<h2>Open verification queue / 待查清單</h2>
+<ol>
+<li>取得 WSJ 原文與九家公司最新 10-K/10-Q，拆解 3T 的租約、採購承諾、股權投資、prepayment、未開始 lease obligations。</li>
+<li>查 NVIDIA / Amkor / ASE / TSMC 法說是否明確揭露客供設備或預付款的會計處理。</li>
+<li>追蹤 Micron、SK hynix、Samsung 的 HBM 2026–2027 capacity、pricing、gross margin 與 inventory 訊號。</li>
+<li>追蹤 AI infrastructure / data-center debt 是否出現 securitization、high-yield retail product、private credit 包裝與違約利差擴大。</li>
+<li>對 Palantir 或其他 value-add 軟體公司，拆解 GAAP net income、free cash flow、SBC、客戶集中度與 AIP 真實使用案例。</li>
+</ol>
+<h2>Bottom line / 查證結論</h2>
+<p>本集大方向可成立：AI 供應鏈仍有基本面支撐，但表外承諾與金融化程度是必須追的風險；記憶體與封測仍是硬體族群風向標；如果缺貨交易休息，市場可能轉向能證明 value-add 的平台/軟體公司。最大紀律是：把主持人的產業框架、NotebookLM 推論、Social Worker Daily 作者詮釋與作者操作日記嚴格分層。</p>
+<h2>External links / 外部查證連結</h2>
+<ul>
+<li>WSJ：Why Big Tech’s AI Spending Is $3 Trillion Higher Than It Seems — <a href="https://www.wsj.com/tech/ai/why-big-techs-ai-spending-is-3-trillion-higher-than-it-seems-e1067bb2">https://www.wsj.com/tech/ai/why-big-techs-ai-spending-is-3-trillion-higher-than-it-seems-e1067bb2</a></li>
+<li>NVIDIA / Lumentum strategic partnership — <a href="https://nvidianews.nvidia.com/news/nvidia-announces-strategic-partnership-with-lumentum-to-develop-state-of-the-art-optics-technology">https://nvidianews.nvidia.com/news/nvidia-announces-strategic-partnership-with-lumentum-to-develop-state-of-the-art-optics-technology</a></li>
+<li>NVIDIA / Coherent strategic partnership — <a href="https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture">https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture</a></li>
+<li>Amkor / NVIDIA advanced packaging agreement — <a href="https://ir.amkor.com/news-releases/news-release-details/amkor-technology-announces-strategic-partnership-nvidia-expand">https://ir.amkor.com/news-releases/news-release-details/amkor-technology-announces-strategic-partnership-nvidia-expand</a></li>
+<li>Micron FY2026 Q3 results — <a href="https://investors.micron.com/node/50671">https://investors.micron.com/node/50671</a></li>
+<li>Palantir Q1 2026 shareholder letter — <a href="https://www.palantir.com/q1-2026-letter/en/">https://www.palantir.com/q1-2026-letter/en/</a></li>
+</ul>
+<h1>股癌 EP689 tracking / 追蹤計畫</h1>
+<h2>Watchlist buckets / 觀察清單分組</h2>
+<table><thead><tr><th>Bucket</th><th>觀察對象</th><th>為什麼重要</th><th>優先度</th></tr></thead><tbody>
+<tr><td>市場韌性 / 風控</td><td>Nasdaq / SOX / AI leaders 是否站回七月回檔前高；年度獲利回吐幅度</td><td>判斷回檔是健康震盪還是趨勢反轉</td><td>高</td></tr>
+<tr><td>Component trade</td><td>Micron、HBM 供應鏈、DRAM/NAND 報價</td><td>記憶體是本集硬體族群估值天花板測試</td><td>高</td></tr>
+<tr><td>Bottleneck trade</td><td>TSMC advanced packaging、ASE、Amkor、OSAT / test capacity</td><td>後段瓶頸若利多推不動，代表 bottleneck premium 暫休</td><td>高</td></tr>
+<tr><td>AI financialization</td><td>Big Tech 10-K commitments、data center debt、private credit、AI infrastructure ABS/債券</td><td>表外承諾金融商品化是泡沫末端警訊</td><td>高</td></tr>
+<tr><td>Value-add</td><td>Palantir、AI 軟體/平台、能證明客戶 ROI 與 GAAP/FCF 的公司</td><td>缺貨漲價休息後可能接棒</td><td>中高</td></tr>
+<tr><td>二手筆記操作</td><td>群聯、捷敏-KY、正 2、晶技</td><td>僅作歸因邊界提醒，不作主持人立場</td><td>低 / 隔離</td></tr>
+</tbody></table>
+<h2>Event triggers / 事件觸發條件</h2>
+<table><thead><tr><th>觸發條件</th><th>代表意義</th><th>行動</th></tr></thead><tbody>
+<tr><td>記憶體報價由持續上漲轉為平台化，且 MU / HBM 龍頭利多不漲</td><td>Component trade 可能進入休息或估值天花板</td><td>降低對其他元件估值擴張期待，重查庫存與 capex</td></tr>
+<tr><td>OSAT / 先進封裝族群公布 capacity / prepayment 利多但股價無法續創高</td><td>Bottleneck trade 可能暫休</td><td>檢查毛利、折舊、客戶議價權與訂單可持續性</td></tr>
+<tr><td>AI infrastructure debt 被打包成高收益/零售理財產品並快速擴散</td><td>泡沫金融化警訊上升</td><td>提高整體 AI 部位風控門檻，檢查 counterparty 與信用風險</td></tr>
+<tr><td>主要 AI 軟體公司財報顯示 GAAP profit、FCF、客戶留存同步改善</td><td>Value-add 接棒機率提高</td><td>建立軟體/平台研究清單，但避免只看營收增速</td></tr>
+<tr><td>指數或 AI 領先股破底，年度獲利回吐超過預先設定門檻</td><td>回檔可能從可承受震盪變成風控事件</td><td>暫停加風險，回到帳戶層級風控</td></tr>
+<tr><td>多數領先股快速站回前高，且基本面/報價未惡化</td><td>主流族群韌性確認</td><td>研究「先站回來」的族群，而不是追最弱反彈</td></tr>
+</tbody></table>
+<h2>Current stance / 目前判斷</h2>
+<ul>
+<li>對市場：謹慎偏正向觀察。主持人不是無視泡沫風險，而是認為有獲利緩衝時可以承受一定回檔，並用是否破底、反彈速度、回吐幅度做風控。</li>
+<li>對 AI 硬體：記憶體與封測仍是高優先觀察，但如果最缺的族群 PE 都推不動，其他元件估值要保守。</li>
+<li>對 AI 金融化：列為高優先風險雷達；現在不判定立即爆炸，等債務/承諾被零售化、證券化、信用利差擴大時再提高警戒。</li>
+<li>對 value-add：可開始建立候選清單，但必須用獲利、現金流、客戶 ROI 驗證，不用 AI 標籤直接買單。</li>
+</ul>
+<h2>Parking lot / 暫停追蹤</h2>
+<ul>
+<li>Social Worker Daily 作者操作日記中的群聯、捷敏-KY、正 2、晶技：除非另有獨立研究需求，否則不納入本集主持人投資框架。</li>
+<li>過度精準的「何時泡沫破裂」預測：本集框架更重視風控觸發與金融化程度，不做日期預言。</li>
+</ul></section>
+<footer>Generated by 雙雙 🦞🌱 · Sources: NotebookLM primary, validated Social Worker Daily secondary note, supplementary triangulation, external verification links.</footer>
+</main></body></html>
