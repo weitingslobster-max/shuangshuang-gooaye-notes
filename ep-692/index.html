@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP692 投資研究筆記：Claudeforce、Marvell 光通、Jalapeño 與 NVIDIA 供應鏈護城河</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#111827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; --ok:#22c55e; --warn:#f59e0b; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1f2937 0,#0b1020 48%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.72; }
+    main { max-width:1080px; margin:0 auto; padding:32px 18px 72px; }
+    a { color:#7dd3fc; }
+    .back { display:inline-block; margin:0 0 18px; color:#fed7aa; font-weight:700; text-decoration:none; }
+    header, section { border:1px solid var(--line); background:rgba(17,24,39,.78); border-radius:24px; padding:24px; margin:18px 0; }
+    .eyebrow { color:#fed7aa; letter-spacing:.12em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { font-size:34px; line-height:1.18; margin:8px 0 10px; }
+    h2 { margin-top:0; border-left:5px solid var(--accent); padding-left:12px; }
+    h3 { color:#bfdbfe; }
+    .sub, .muted { color:var(--muted); }
+    .pill { display:inline-block; border:1px solid var(--line); background:#0f172a; border-radius:999px; padding:4px 10px; margin:3px; color:#cbd5e1; font-size:13px; }
+    table { width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; }
+    th, td { border:1px solid var(--line); padding:10px; vertical-align:top; }
+    th { background:#172033; color:#fef3c7; text-align:left; }
+    tr:nth-child(even) td { background:rgba(15,23,42,.45); }
+    .callout { border-left:4px solid var(--blue); padding:12px 14px; background:rgba(56,189,248,.08); border-radius:12px; }
+    .warn { border-left-color:var(--warn); background:rgba(245,158,11,.08); }
+    .ok { border-left-color:var(--ok); background:rgba(34,197,94,.08); }
+    footer { color:var(--muted); font-size:13px; margin-top:26px; }
+    @media (max-width:720px){ table{display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; white-space:nowrap;} h1{font-size:28px;} header,section{padding:18px;} }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye EP692 Investment Notes</div>
+    <h1>股癌 EP692：Claudeforce、Marvell 光通、Jalapeño 與 NVIDIA 供應鏈護城河</h1>
+    <p class="sub">來源層級：YouTube/NotebookLM primary report、Social Worker Daily validated secondary note、NotebookLM supplementary triangulation、外部公開資料查證。本文是研究筆記，不是投資建議。</p>
+    <p><span class="pill">Enterprise AI workflow</span><span class="pill">MRVL / 光通訊</span><span class="pill">NVDA SCM moat</span><span class="pill">OpenAI Jalapeño</span><span class="pill">ABF / 載板</span></p>
+  </header>
+
+  <section>
+    <h2>核心結論</h2>
+    <div class="callout ok"><strong>本集最有研究價值的主軸，是 AI 競爭從「模型或晶片單點性能」擴展到「資料、流程、供應鏈與產能控制」。</strong> 軟體端看 Salesforce / Anthropic 如何分配 enterprise workflow 的價值；硬體端看 MRVL、Google / OpenAI ASIC 與 NVIDIA 系統級供應鏈護城河如何互相牽制。</div>
+    <ul>
+      <li>Salesforce × Anthropic 顯示 enterprise software 仍可能靠資料、法遵與 action layer 保留價值，不必然被模型入口完全吃掉。</li>
+      <li>Marvell 上修、Google XPU / TPU、scale-up 光互聯與光通訊族群，是本集較明確的正向產業線索。</li>
+      <li>OpenAI Jalapeño 強化 inference ASIC 壓力，但節目仍把訓練端、生態系與供應鏈管理視為 NVIDIA 的防線。</li>
+      <li>NVIDIA 被討論的不只是 GPU，而是 CPU、networking、採購能力與對載板 / 光學元件等瓶頸的控制。</li>
+      <li>Social Worker Daily 的國巨、台達電操作日記是作者個人紀錄，不是主持人投資建議。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>來源交叉比對</h2>
+    <table><thead><tr><th>主題</th><th>Primary / NotebookLM</th><th>Secondary note</th><th>合成判斷</th></tr></thead><tbody>
+      <tr><td>Salesforce × Anthropic</td><td>企業資料、workflow、action layer 與模型入口合作。</td><td>記錄 Claudeforce、Salesforce 企業資料與法遵優勢，也加入作者對資料被侵蝕的擔心。</td><td>主持人對 Salesforce 轉型速度偏肯定，但商業模式與資料治理仍需查證。</td></tr>
+      <tr><td>Marvell / 光通訊</td><td>MRVL 上修、Google XPU / TPU design-in 放量、scale-up 光互聯。</td><td>光通股票強勢，財報電話會議可能成催化。</td><td>高優先研究線索，但精確數字需回 MRVL filings / transcript。</td></tr>
+      <tr><td>OpenAI Jalapeño</td><td>推論端表現強，但訓練端與 NVIDIA 迭代速度仍是限制。</td><td>筆記寫對 NVIDIA 產生懷疑，同時提醒主要是推論。</td><td>只可寫成 inference ASIC 訊號，不外推成 NVIDIA thesis 崩壞。</td></tr>
+      <tr><td>NVIDIA 供應鏈控制</td><td>採購、產能管理、CPU / networking / GPU 系統優勢。</td><td>競爭對手拿不到料、最缺載板；GPU/ASIC 搶料利多台股。</td><td>本集主持人方向偏正向；「戰略性排擠」需用外部數據驗證。</td></tr>
+      <tr><td>醫療制度 QA</td><td>均一化制度與醫療資源壓力批評。</td><td>完整記錄金句。</td><td>政策觀察，不直接轉成個股 thesis。</td></tr>
+      <tr><td>國巨 / 台達電</td><td>非主持人投資主軸。</td><td>作者操作日記：國巨減碼去台達電。</td><td>隔離為 Note-Author Interpretation，不納入主持人觀點。</td></tr>
+    </tbody></table>
+  </section>
+
+  <section>
+    <h2>主持人觀點 vs 筆記作者詮釋</h2>
+    <table><thead><tr><th>主題</th><th>主持人觀點</th><th>筆記作者詮釋</th><th>研究紀律</th></tr></thead><tbody>
+      <tr><td>Claudeforce</td><td>Salesforce 有企業資料、法遵與 workflow 優勢；Marc Benioff 轉向 action layer 很快。</td><td>作者更擔心 Anthropic 取得資料後侵蝕 Salesforce 護城河。</td><td>把官方合作、資料治理、拆帳模式分開查。</td></tr>
+      <tr><td>Marvell / 光通訊</td><td>MRVL、Google XPU 與光互聯是正向訊號。</td><td>光通族群重新醒來、可觀察催化。</td><td>先驗證 outlook 與營收結構，再看估值是否已反映。</td></tr>
+      <tr><td>NVIDIA / ASIC</td><td>ASIC 存在，但 NVIDIA 仍有訓練端、通用 GPU、生態系與供應鏈能力。</td><td>GPU/ASIC 搶料讓台股受惠，但 ASIC 公司短期不確定。</td><td>用採購承諾、lead time、競爭對手出貨來驗證。</td></tr>
+      <tr><td>醫療制度</td><td>反對均一化造成資源過度使用，傾向差異化付費。</td><td>無明顯投資延伸。</td><td>只列長期制度風險，不做短線交易。</td></tr>
+      <tr><td>作者操作</td><td>主持人未表態。</td><td>國巨減碼、台達電加碼。</td><td>不視為投資建議或主持人立場。</td></tr>
+    </tbody></table>
+  </section>
+
+  <section>
+    <h2>公司 / ticker map</h2>
+    <table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead><tbody>
+      <tr><td>Salesforce</td><td>CRM</td><td>Claudeforce / AIforce / enterprise workflow 案例</td><td>偏正向觀察，但有競爭風險</td><td>擔心資料護城河被 Anthropic 拿走</td><td>Primary + secondary + 官方新聞稿</td><td>合作細節、資料使用限制、實際定價與拆帳</td></tr>
+      <tr><td>Anthropic</td><td>私有公司</td><td>Claude 模型與 Salesforce 合作方</td><td>中立觀察</td><td>作者猜測 Anthropic 可能更有贏面</td><td>Primary + secondary + 官方新聞稿</td><td>企業採用、治理、與 Salesforce 權力分配</td></tr>
+      <tr><td>Marvell Technology</td><td>MRVL</td><td>Google XPU / TPU、scale-up 光互聯、交換晶片</td><td>偏正向觀察</td><td>光通概念股催化</td><td>Primary + secondary；財報數字待查</td><td>最新 earnings release / 10-Q / call transcript</td></tr>
+      <tr><td>Google / Alphabet</td><td>GOOGL</td><td>XPU / TPU 需求方</td><td>偏正向觀察，但供應鏈仍需管理</td><td>Google 案子是 MRVL 主要動能之一</td><td>Primary + secondary</td><td>TPU 出貨與 ASIC 供應鏈瓶頸</td></tr>
+      <tr><td>NVIDIA</td><td>NVDA</td><td>GPU / CPU / networking / SCM moat</td><td>偏正向觀察</td><td>GPU/ASIC 搶料利多台股供應鏈</td><td>Primary + secondary + SEC filing 作查證入口</td><td>庫存、採購承諾、供應鏈排擠是否可量化</td></tr>
+      <tr><td>OpenAI</td><td>私有公司</td><td>Jalapeño inference chip</td><td>中立觀察；推論端強、訓練端待驗證</td><td>對 NVDA 產生懷疑但提醒限制</td><td>Primary + secondary + OpenAI 官方文章</td><td>benchmark 方法、比較對象、量產時程</td></tr>
+      <tr><td>光通訊 / Optical interconnect</td><td>N/A</td><td>AI scale-up networking / optics</td><td>偏正向觀察</td><td>光通族群重新醒來</td><td>Primary + secondary</td><td>COHR/LITE 與台股供應商財報、lead time</td></tr>
+      <tr><td>ABF / 載板</td><td>N/A</td><td>GPU / ASIC 搶料瓶頸</td><td>偏正向觀察</td><td>最缺貨環節；台股受惠</td><td>Primary + secondary；具體缺口未驗證</td><td>欣興、景碩等法說與產能利用率</td></tr>
+      <tr><td>國巨</td><td>2327.TW</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>作者減碼</td><td>Secondary-only</td><td>不可視為主持人建議</td></tr>
+      <tr><td>台達電</td><td>2308.TW</td><td>筆記作者操作日記</td><td>主持人未明確表態</td><td>作者加碼</td><td>Secondary-only</td><td>不可視為主持人建議</td></tr>
+    </tbody></table>
+  </section>
+
+  <section>
+    <h2>投資假說與追蹤計畫</h2>
+    <table><thead><tr><th>假說</th><th>初步判斷</th><th>主要風險</th><th>追蹤觸發</th></tr></thead><tbody>
+      <tr><td>Enterprise software 可用資料、流程與 action layer 抵抗模型入口壓力。</td><td>中高優先研究。</td><td>模型方拿走入口或資料治理引發客戶疑慮。</td><td>Claudeforce / AIforce 採用數字、定價、資料使用條款。</td></tr>
+      <tr><td>MRVL 的 custom silicon + optical interconnect 是 AI 基建輪動核心之一。</td><td>高優先研究。</td><td>市場已反映、Google 需求波動、NVDA networking 競爭。</td><td>MRVL outlook、資料中心營收、光互聯交換晶片 backlog。</td></tr>
+      <tr><td>NVIDIA 的護城河從 GPU 規格延伸到供應鏈與系統控制。</td><td>高優先研究。</td><td>反壟斷、過度採購、ASIC 客戶繞開瓶頸。</td><td>NVDA purchase obligations / inventory、供應商 lead time、ASIC 出貨延遲。</td></tr>
+      <tr><td>OpenAI Jalapeño 提高 inference ASIC 競爭壓力，但不直接取代 NVDA 訓練端。</td><td>觀察到中優先。</td><td>benchmark 宣傳與真實 TCO / 量產差距。</td><td>OpenAI 後續部署、第三方測試、比較系統與量產成本。</td></tr>
+      <tr><td>台股光通、板材、伺服器零組件受 GPU/ASIC 搶料推升。</td><td>觀察到深入研究。</td><td>短線估值過熱、假性需求、客戶砍單。</td><td>月營收、法說、庫存、客戶集中度。</td></tr>
+    </tbody></table>
+  </section>
+
+  <section>
+    <h2>外部查證摘要</h2>
+    <table><thead><tr><th>Claim</th><th>Status</th><th>Evidence / source</th><th>判斷</th></tr></thead><tbody>
+      <tr><td>Salesforce 與 Anthropic 宣布 Claudeforce，含 Salesforce in Claude 與 37 個 prebuilt sales skills。</td><td>Verified</td><td><a href="https://www.salesforce.com/in/news/press-releases/2026/08/27/salesforce-and-anthropic-announce-claudeforce/">Salesforce 官方新聞稿</a></td><td>支持本集 enterprise AI workflow 主題；官方拼法為 Claudeforce。</td></tr>
+      <tr><td>OpenAI Jalapeño 是 custom inference chip，官方宣稱 work per watt / latency 改善。</td><td>Verified</td><td><a href="https://openai.com/index/jalapeno-first-results/">OpenAI 官方文章</a></td><td>支持推論端效率訊號；不等於訓練端或量產經濟性已勝出。</td></tr>
+      <tr><td>NVIDIA 透過超量採購排擠 ASIC 競爭者。</td><td>Source-supported only</td><td>Podcast / NotebookLM；<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">NVIDIA FY2027 Q2 Form 10-Q</a> 是後續查證入口。</td><td>高價值研究假說，尚非已驗證事實。</td></tr>
+      <tr><td>MRVL 上修與 Google XPU / optical interconnect 成長。</td><td>Source-supported only</td><td>Podcast / secondary note；<a href="https://investor.marvell.com/sec-filings/">Marvell investor filings</a> 是下一步。</td><td>可列研究主線；精確數字與措辭需官方財報/法說確認。</td></tr>
+      <tr><td>HBM 8-high / 4-high 轉向利多載板。</td><td>Needs exact transcript / external verification</td><td>NotebookLM source；secondary note 支持不足。</td><td>只放待查清單，不寫入核心結論。</td></tr>
+      <tr><td>國巨 / 台達電為主持人建議。</td><td>Contradicted</td><td>Social Worker Daily 明確位於作者「操作日記」。</td><td>隔離為筆記作者私人紀錄。</td></tr>
+    </tbody></table>
+  </section>
+
+  <section>
+    <h2>方法限制</h2>
+    <div class="callout warn"><strong>限制：</strong>NotebookLM primary report 可能摘要化語氣；secondary note 是第三方筆記且含作者主觀補述；外部查證只確認公開事實與官方資料入口，尚未完成所有財報數字與供應鏈量化。本文不構成個人化投資建議。</div>
+  </section>
+
+  <footer>Generated by 雙雙 🦞🌱 · Published for research discipline and source separation.</footer>
+</main>
+</body>
+</html>
