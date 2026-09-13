@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP696 投資研究筆記｜Apple iPhone Duo、Oracle AI RPO 與 AI 基建瓶頸</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#111827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; --good:#22c55e; --warn:#f59e0b; --bad:#fb7185; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 45%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.7; }
+    main { max-width:1120px; margin:0 auto; padding:34px 18px 80px; }
+    a { color:#7dd3fc; }
+    .back { display:inline-block; margin:0 0 18px; color:#fed7aa; text-decoration:none; font-weight:700; }
+    header { border:1px solid var(--line); background:rgba(17,24,39,.86); border-radius:28px; padding:30px; margin-bottom:22px; }
+    .eyebrow { color:#fed7aa; letter-spacing:.12em; text-transform:uppercase; font-size:13px; font-weight:800; }
+    h1 { margin:.25rem 0 .75rem; font-size:clamp(30px,5vw,48px); line-height:1.15; }
+    .subtitle { color:var(--muted); font-size:18px; margin:0; }
+    section { border:1px solid var(--line); background:rgba(17,24,39,.72); border-radius:22px; padding:24px; margin:18px 0; }
+    h2 { margin:0 0 14px; border-left:5px solid var(--accent); padding-left:12px; }
+    h3 { margin-top:24px; color:#fbbf24; }
+    .callout { border-left:5px solid var(--warn); background:rgba(245,158,11,.10); padding:14px 16px; border-radius:14px; margin:16px 0; }
+    .ok { border-left-color:var(--good); background:rgba(34,197,94,.10); }
+    .bad { border-left-color:var(--bad); background:rgba(251,113,133,.10); }
+    table { width:100%; border-collapse:collapse; margin:14px 0 22px; font-size:14px; }
+    th, td { border:1px solid var(--line); padding:10px 12px; vertical-align:top; }
+    th { background:rgba(56,189,248,.12); color:#dff6ff; text-align:left; }
+    tr:nth-child(even) td { background:rgba(255,255,255,.025); }
+    .tag { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:2px 9px; margin:2px; color:#c7d2fe; background:rgba(99,102,241,.12); font-size:12px; }
+    .muted { color:var(--muted); }
+    footer { color:var(--muted); font-size:14px; margin-top:28px; }
+    @media (max-width:720px) { section, header { padding:18px; border-radius:18px; } table { display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; white-space:nowrap; } }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <header>
+    <div class="eyebrow">Gooaye EP696 Research Note</div>
+    <h1>Apple iPhone Duo、Oracle AI RPO 與 AI 基建瓶頸</h1>
+    <p class="subtitle">本頁是 source-separated 投資研究筆記：Podcast / NotebookLM、Social Worker Daily 二級筆記、NotebookLM 補充比對與外部查證分層處理。非個人化投資建議。</p>
+    <p><span class="tag">EP696</span><span class="tag">Apple foldable</span><span class="tag">Oracle AI Cloud</span><span class="tag">AI infrastructure</span><span class="tag">3376 新日興</span></p>
+  </header>
+
+  <section>
+    <h2>核心結論</h2>
+    <ol>
+      <li><strong>本集最重要的投資線索是 AI 基建需求強，但瓶頸正從 GPU 擴散到電力、許可、地方政治與融資結構。</strong> Oracle 官方確認 Q1 FY2027 RPO 達 664B 美元，但這不等於已實現現金流，仍需拆 RPO quality、capex 與 financing。</li>
+      <li><strong>折疊手機段落應修正為 Apple iPhone Duo，不是 Huawei Mate XT。</strong> NotebookLM primary / supplementary 出現 Huawei drift；Social Worker Daily 與 Apple 官方資料支持本集焦點是 Apple iPhone Duo。</li>
+      <li><strong>Apple 產品面偏正向，供應鏈面偏謹慎。</strong> 主持人看好 Apple UI/UX 與軟硬整合，但同時提醒 Apple 會把利潤與優勢拉回自己，供應商量增不一定利增。</li>
+      <li><strong>閉鎖模型單一寡頭論不是主持人定論。</strong> 本集比較像是把 Hock Tan / 他人觀點拿來討論，主持人傾向保留，認為可能出現雙頭、多頭與特化模型。</li>
+      <li><strong>市場信任下降是風控背景。</strong> 題材利多若隔日續航不足，容易變成短線出貨訊號；追 headline 要提高確認門檻。</li>
+    </ol>
+    <div class="callout bad"><strong>查證修正：</strong>NotebookLM 把本集 foldable phone 討論整理成 Huawei Mate XT，這與二級筆記和 Apple 官方 iPhone Duo 發布不符。本報告將 Huawei framing 標為 AI drift / contradicted。</div>
+  </section>
+
+  <section>
+    <h2>Source triangulation / 來源交叉比對</h2>
+    <table>
+      <thead><tr><th>主題</th><th>Podcast / NotebookLM primary</th><th>Secondary note</th><th>Supplementary</th><th>本報告處理</th></tr></thead>
+      <tbody>
+        <tr><td>折疊手機</td><td>誤整理為 Huawei Mate XT / 華為三折，同時談 Apple 供應鏈。</td><td>明確寫 iPhone Duo、Apple UI/UX、價格比 Fold 稍貴、銷量可能超預期。</td><td>也部分延續華為說法，但提醒產品名稱可能混淆。</td><td><strong>修正為 Apple iPhone Duo。</strong> Huawei 段落不作為投資線索。</td></tr>
+        <tr><td>新日興</td><td>提到鉸鏈供應鏈，但 ticker 曾混亂。</td><td>明確寫 3376 新日興。</td><td>列為 3376.TW。</td><td>採 3376.TW；毛利與供應鏈份額需外部查。</td></tr>
+        <tr><td>Oracle / AI 基建</td><td>RPO 約 6600 多億、電力與許可瓶頸。</td><td>BYOH、客戶預付、供應商融資、舊卡需求、地方政治。</td><td>一致列為 AI infrastructure bottleneck。</td><td>Oracle 官方 RPO 664B verified；融資品質與電力案例待查。</td></tr>
+        <tr><td>閉鎖模型寡頭論</td><td>引用 Hock / 他人說法，主持人保留。</td><td>「稍微打個問號」，偏向雙頭與特化模型。</td><td>一致標示主持人不同意單一贏家過度簡化。</td><td>只寫成討論脈絡，不升級成產業定論。</td></tr>
+        <tr><td>筆記作者操作</td><td>未作為主持人觀點。</td><td>「砍掉阿達電停損轉去世芯」在操作日記且聲明非推薦。</td><td>明確標示為 note-author operation。</td><td>不納入 host stance 或投資建議。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+    <table>
+      <thead><tr><th>主題</th><th>本集方向 / Host stance</th><th>Likely Host View</th><th>筆記作者詮釋</th><th>待查證 / 下一步</th></tr></thead>
+      <tbody>
+        <tr><td>市場信任與短線盤</td><td>偏負面 / 風險案例</td><td>利多若隔日被倒貨，市場互信會惡化，個股容易失去朋友。</td><td>環境變得很猥瑣。</td><td>追蹤漲停隔日續航、成交量、籌碼。</td></tr>
+        <tr><td>Apple iPhone Duo</td><td>偏正向觀察（產品面）</td><td>對 iPhone Duo 有興趣；Apple UI/UX 與軟硬整合可能讓銷量超預期。</td><td>價格比 Fold 稍貴、比市場共識便宜。</td><td>查 preorder、delivery lead time、China demand、review conversion。</td></tr>
+        <tr><td>蘋果供應鏈 / 新日興</td><td>謹慎 / 看不懂</td><td>量可能大，但 Apple 管理供應鏈能力強，利潤可能回到 Apple 自己。</td><td>「蘋概股狗都不碰」是較極端的筆記作者語氣。</td><td>查 3376 毛利率、Apple 客戶集中度、二供風險。</td></tr>
+        <tr><td>Oracle / AI cloud demand</td><td>中立觀察 + 風險提醒</td><td>財報與展望強，但客戶預付 / BYOH / 供應商融資可能放大循環。</td><td>不用出錢的魔術。</td><td>拆 RPO conversion、capex、FCF、supplier financing。</td></tr>
+        <tr><td>AI data center 電力 / 許可</td><td>中立觀察（瓶頸移轉）</td><td>電力與地方政治正在成為 AI 基建核心限制。</td><td>民主制度下利益分配會影響建設速度。</td><td>查 utility interconnection queue、地方許可與能源合約。</td></tr>
+        <tr><td>Hock Tan 閉鎖模型論</td><td>中立 / 不完全同意</td><td>單一贏家劇本過度簡化；更可能雙頭、多頭與 specialized models。</td><td>閉鎖模型贏家未必單一寡頭。</td><td>查 Broadcom / Hock Tan 原始談話。</td></tr>
+        <tr><td>Phison aiDAPTIV</td><td>偏正向觀察</td><td>地端 AI / SSD-assisted AI 可能讓中小企業以較低成本導入。</td><td>適合中小企業先期 AI 導入。</td><td>查客戶案例、授權模式、營收貢獻。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Company / ticker map / 公司與 ticker 對照表</h2>
+    <table>
+      <thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead>
+      <tbody>
+        <tr><td>Apple</td><td>AAPL</td><td>iPhone Duo / foldable phone 品牌與供應鏈主導者</td><td>產品面偏正向；供應鏈面偏謹慎</td><td>操作直覺、UI/UX 強，銷量可能超預期</td><td>Secondary + Apple 官方；NotebookLM 有產品歸屬錯誤</td><td>價格、出貨、preorder、拆機與供應商。</td></tr>
+        <tr><td>新日興</td><td>3376.TW</td><td>iPhone Duo 鉸鏈供應鏈線索</td><td>謹慎 / 看不懂</td><td>做很大但被 Apple 壓制</td><td>Secondary + ticker verified</td><td>毛利率、客戶集中度、二供壓力。</td></tr>
+        <tr><td>Oracle</td><td>ORCL</td><td>AI cloud demand / RPO / 融資結構</td><td>中立觀察；需求強但要看品質</td><td>客戶預付 / BYOH / 供應商融資</td><td>Primary + secondary + Oracle official RPO verified</td><td>RPO conversion、capex、FCF。</td></tr>
+        <tr><td>NVIDIA</td><td>NVDA</td><td>GPU / 舊卡需求 / 供應商融資背景</td><td>只被提及</td><td>舊卡需求仍強</td><td>Source-supported only</td><td>A100 / older GPU price data。</td></tr>
+        <tr><td>Phison / 群聯</td><td>8299.TW</td><td>aiDAPTIV / NAND-enabled local AI</td><td>偏正向觀察</td><td>中小企業地端 AI 降成本</td><td>Primary + Phison official product material</td><td>客戶案例、毛利、授權模式。</td></tr>
+        <tr><td>Broadcom</td><td>AVGO</td><td>Hock Tan / closed model economics / custom silicon</td><td>主持人對單一寡頭論保留</td><td>閉鎖模型贏家未必單一</td><td>Source-supported only</td><td>Hock Tan 原始說法與 ASIC pipeline。</td></tr>
+        <tr><td>Tesla</td><td>TSLA</td><td>垂直整合類比 / 自供電可能性</td><td>只被提及</td><td>關鍵零件自己卡住，供應商只幫打工</td><td>Source-supported only</td><td>能源訂單與資料中心供電不可用傳聞代替。</td></tr>
+        <tr><td>世芯-KY</td><td>3661.TW</td><td>筆記作者操作轉入標的</td><td>主持人未明確表態</td><td>砍掉阿達電停損轉去世芯</td><td>Secondary note only</td><td>不得納入主持人投資線索。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>外部查證摘要</h2>
+    <table>
+      <thead><tr><th>Claim</th><th>Status</th><th>Evidence</th><th>Interpretation</th></tr></thead>
+      <tbody>
+        <tr><td>本集 foldable phone 焦點是 Apple iPhone Duo，而非 Huawei Mate XT。</td><td>Verified / NotebookLM contradicted</td><td>Social Worker Daily EP696；Apple Newsroom 2026-09-09。</td><td>修正 NotebookLM drift；published report 不使用 Huawei framing。</td></tr>
+        <tr><td>Apple iPhone Duo 是 Apple 首款 foldable iPhone。</td><td>Verified</td><td>Apple 官方新聞稿。</td><td>可作為產品背景；需求仍需 preorder / shipment 資料。</td></tr>
+        <tr><td>Oracle Q1 FY2027 RPO 約 $664B。</td><td>Verified</td><td>Oracle investor release。</td><td>支持 demand strong，但不等於現金流或已履約收入。</td></tr>
+        <tr><td>Oracle booked more than $30B additional AI cloud contracts in the quarter。</td><td>Verified</td><td>Oracle investor release。</td><td>AI cloud demand 的官方支持；仍需看合約品質。</td></tr>
+        <tr><td>新日興 ticker 是 3376.TW。</td><td>Verified</td><td>Social Worker Daily + TWSE company lookup。</td><td>Primary 中 3676 等寫法是錯誤。</td></tr>
+        <tr><td>Phison aiDAPTIV 是企業 local AI 方案。</td><td>Verified for product existence</td><td>Phison aiDAPTIV official product site。</td><td>產品存在可驗證；投資價值需看客戶與營收。</td></tr>
+        <tr><td>筆記作者「阿達電停損轉世芯」是主持人建議。</td><td>Contradicted</td><td>Secondary note 明確列在操作日記並註明非推薦。</td><td>不得寫成 host stance。</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">主要查證來源：<a href="https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-duo-the-first-ever-foldable-iphone/">Apple Newsroom</a>、<a href="https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-2027-First-Quarter-Financial-Results/default.aspx">Oracle Investor Relations</a>、<a href="https://phison.ai/enterprise-ai/">Phison aiDAPTIV</a>、<a href="https://socialworkerdaily.com/notes-of-gooaye-ep-696/">Social Worker Daily EP696</a>、TWSE company lookup。</p>
+  </section>
+
+  <section>
+    <h2>Watchlist / 觀察清單</h2>
+    <h3>A. Apple iPhone Duo / foldable supply chain</h3>
+    <ul>
+      <li><strong>Apple (AAPL)：</strong>觀察 iPhone Duo preorder、delivery lead time、China availability、review conversion。</li>
+      <li><strong>新日興 (3376.TW)：</strong>僅列供應鏈 watch item；需要毛利率、Apple 客戶集中度、二供壓力與 teardown support。</li>
+      <li><strong>Foldable component peers：</strong>等拆機與供應鏈報告，不直接追 headline。</li>
+    </ul>
+    <h3>B. AI infrastructure quality</h3>
+    <ul>
+      <li><strong>Oracle (ORCL)：</strong>拆 RPO conversion、capex、FCF、customer concentration、supplier financing。</li>
+      <li><strong>GPU ecosystem：</strong>查 A100 / H100 / older GPU secondary market 與雲端租賃價格。</li>
+      <li><strong>Data center power / permits：</strong>追 utility interconnection queues、local zoning、water / pipeline approvals。</li>
+    </ul>
+    <h3>C. Enterprise local AI / NAND-enabled AI</h3>
+    <ul>
+      <li><strong>Phison (8299.TW)：</strong>產品 narrative 成立，但需要客戶案例、license model 與營收占比。</li>
+      <li><strong>Local/private AI appliance：</strong>觀察企業 privacy、cost、on-prem deployment budgets。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>追蹤計畫 / Event triggers</h2>
+    <table>
+      <thead><tr><th>主題</th><th>觸發條件</th><th>若發生，如何解讀</th></tr></thead>
+      <tbody>
+        <tr><td>iPhone Duo demand</td><td>Preorder / shipping lead time 明顯拉長；reviews 正向；China demand 強。</td><td>提高 Apple product-cycle 權重；供應鏈仍需等 BOM / margin。</td></tr>
+        <tr><td>新日興</td><td>季報 / 法說確認 foldable hinge 出貨與毛利改善。</td><td>從「供應鏈線索」升級為「可量化研究」。</td></tr>
+        <tr><td>Oracle</td><td>10-Q 顯示 RPO 可順利轉營收與現金流，capex financing 可控。</td><td>降低「融資放大」疑慮；反之提高警戒。</td></tr>
+        <tr><td>AI power bottleneck</td><td>更多 data center 遭延宕，或 utilities 調整 tariff / interconnection 政策。</td><td>AI 受益股範圍擴到 power、cooling、backup generation、grid equipment。</td></tr>
+        <tr><td>Phison aiDAPTIV</td><td>公布大型客戶、POC 轉採購、或 revenue disclosure。</td><td>從 marketing narrative 轉為 investable evidence。</td></tr>
+        <tr><td>台股題材風控</td><td>利多後隔日續航率下降、開高走低增加。</td><td>降低追價，要求量價與籌碼確認。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>方法限制</h2>
+    <ul>
+      <li>NotebookLM 未提供逐句時間戳；重要語氣與原話仍需回聽 podcast。</li>
+      <li>本集最重要的修正是 NotebookLM foldable phone 誤植；因此 published synthesis 對產品名稱以二級筆記與 Apple 官方為準。</li>
+      <li>供應鏈、毛利壓制、舊 GPU 漲價、地方管線被否決等仍多屬 source-supported only，需要外部原始資料。</li>
+      <li>本報告是投資研究筆記，不是個人化投資建議；任何 ticker 都應再依自身風險、估值與資產配置判斷。</li>
+    </ul>
+  </section>
+
+  <footer>
+    Generated by 雙雙 🦞🌱｜Source layers preserved: NotebookLM primary, Social Worker Daily secondary note, NotebookLM supplementary report, external verification.
+  </footer>
+</main>
+</body>
+</html>
