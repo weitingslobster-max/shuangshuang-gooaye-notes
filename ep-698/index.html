@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP698 投資研究筆記｜雙雙</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#111827;--ink:#e5edf7;--muted:#9fb0c5;--line:#2a3850;--accent:#f97316;--blue:#38bdf8;--ok:#34d399;--warn:#fbbf24;--bad:#f87171}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,#1f2937 0,#0b1020 45%,#050814 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif;line-height:1.72} main{max-width:1120px;margin:0 auto;padding:28px 18px 72px} a{color:#7dd3fc}.back{display:inline-block;margin:8px 0 22px;color:#fed7aa;text-decoration:none;font-weight:700}.hero,.card{border:1px solid var(--line);background:rgba(17,24,39,.82);border-radius:24px;padding:24px;margin:16px 0;box-shadow:0 18px 48px rgba(0,0,0,.18)} .eyebrow{color:#fed7aa;letter-spacing:.13em;text-transform:uppercase;font-size:13px;font-weight:800} h1{font-size:34px;line-height:1.18;margin:8px 0 10px} h2{margin-top:30px;border-left:5px solid var(--accent);padding-left:12px} h3{color:#fcd34d}.sub,.muted{color:var(--muted)} .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 10px;margin:4px;color:#dbeafe;background:rgba(56,189,248,.08);font-size:13px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.note{border-left:4px solid var(--warn);padding:10px 14px;background:rgba(251,191,36,.08);border-radius:12px}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)} table{width:100%;border-collapse:collapse;margin:14px 0;background:rgba(15,23,42,.74)} th,td{border:1px solid var(--line);padding:10px 11px;vertical-align:top} th{background:rgba(249,115,22,.12);color:#ffedd5;text-align:left} code{background:#0f172a;padding:2px 5px;border-radius:6px} footer{margin-top:40px;color:var(--muted);font-size:14px}.small{font-size:14px}
+    @media(max-width:720px){h1{font-size:28px} table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap}.hero,.card{padding:18px;border-radius:18px}}
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <section class="hero">
+    <div class="eyebrow">Gooaye Investment Notes</div>
+    <h1>股癌 EP698：AI 材料降規鬼故事、AMD / TSMC 漲價傳聞與東京電玩展觀察</h1>
+    <p class="sub">NotebookLM primary source + Social Worker Daily secondary note + supplementary triangulation + conservative external verification。繁體中文投資研究筆記；不是個人化投資建議。</p>
+    <p><span class="pill">EP698</span><span class="pill">AI supply chain</span><span class="pill">CCL / HBM</span><span class="pill">Foundry pricing</span><span class="pill">Indie games</span></p>
+  </section>
+
+  <section class="card">
+    <h2>核心結論</h2>
+    <ol>
+      <li>本集真正值得追的不是單一買賣訊號，而是 <strong>AI 供應鏈從效能競賽進入成本優化後，市場開始用降規、替代、延後來挑戰材料 ASP 升級敘事</strong>。</li>
+      <li>主持人對 CCL / 板材降規鬼故事偏向長短期分離：短期可能造成情緒與價格衝擊，但若 PCIe Gen6/7、CXL、高速互連方向不變，高階材料長線需求不宜被一次傳聞推翻。</li>
+      <li>AMD / TSMC 漲價傳聞要拆成晶圓代工、記憶體、板卡、終端 MSRP，不要把整包 AI hardware 成本壓力歸因於單一環節。</li>
+      <li>東京電玩展段落的投資含義，是 indie game 團隊缺口可能在發行、法務、行銷與資源整合，而不只是資金。</li>
+      <li>Secondary note 的台指與區間操作啟發屬筆記作者個人心得，<strong>不可</strong>寫成主持人建議。</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>來源層級與使用方式</h2>
+    <table><thead><tr><th>層級</th><th>來源</th><th>用途</th><th>限制</th></tr></thead><tbody>
+      <tr><td>Primary</td><td>YouTube / NotebookLM source report</td><td>節目主內容、主持人語氣、投資研究線索</td><td>NotebookLM 未提供精確 timestamp</td></tr>
+      <tr><td>Secondary</td><td>Social Worker Daily EP698</td><td>交叉比對、抓漏</td><td>含筆記作者主觀啟發，不等於主持人建議</td></tr>
+      <tr><td>Supplementary</td><td>NotebookLM triangulation</td><td>分離 host view / note-author / AI inference</td><td>仍需人工保守整合</td></tr>
+      <tr><td>External</td><td>TrendForce、NVIDIA、新聞資料</td><td>查證傳聞是否有外部支撐</td><td>多數供應鏈 claim 非公司正式確認</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card">
+    <h2>來源交叉比對</h2>
+    <table><thead><tr><th>主題</th><th>Primary / 主持人層</th><th>Secondary note 層</th><th>Supplementary 判讀</th><th>使用方式</th></tr></thead><tbody>
+      <tr><td>AMD / TSMC 漲價</td><td>討論 TSMC 對 AMD 漲價 10% 傳聞、AMD 成本轉嫁、NVIDIA 一整包銷售</td><td>同樣記錄 AMD 被 TSMC 漲價與 NVIDIA 下游仍感受到漲價</td><td>雙來源一致，但屬供應鏈傳聞</td><td>寫為 reportedly / 待查證成本轉嫁線索</td></tr>
+      <tr><td>CCL / M4 降規</td><td>討論 CPO、M4 替代與 PCIe Gen6/7 / CXL 需求辯證</td><td>記錄板材降規，也記錄「不一定會這樣」</td><td>Primary 技術細節較完整</td><td>保留短期鬼故事 vs 長期規格升級</td></tr>
+      <tr><td>HBM 降疊層</td><td>記憶體缺貨，降低 high 數、用更多顆補容量與更多板材</td><td>同樣記錄良率與成本考量</td><td>可與 TrendForce 4hi HBM / edge AI 觀察部分對應</td><td>區分 Edge AI 與 data center，避免泛化</td></tr>
+      <tr><td>Power rack / Rubin</td><td>Rubin 功耗未開到最高、Power Rack 不急迫</td><td>同樣記錄</td><td>外部資料顯示 800V / rack roadmap 存在但節奏需查</td><td>列為 roadmap timing risk</td></tr>
+      <tr><td>市場盤勢</td><td>大盤高位但動能交易者受傷，盤勢缺連續性</td><td>補充作者區間操作想像</td><td>需分離 host view 與作者操作</td><td>只保留「盤勢不連續、短線鬼故事風控」</td></tr>
+      <tr><td>東京電玩展 / 遊戲</td><td>Indie game 團隊痛點在發行、法務、行銷</td><td>記錄肖楠資本定位</td><td>投資主題是發行能力與 deal sourcing</td><td>作為長期另類投資觀察</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card">
+    <h2>Host view vs note-author interpretation</h2>
+    <table><thead><tr><th>主題</th><th>主持人可能觀點</th><th>筆記作者詮釋</th><th>處理原則</th></tr></thead><tbody>
+      <tr><td>台積電漲價</td><td>漲價可能反映 TSMC 定價權與成本轉嫁；需討論真假與產品線</td><td>「若台積電漲價，台指會噴到哪？」</td><td>後者是筆記作者啟發，不能當節目結論</td></tr>
+      <tr><td>短線鬼故事</td><td>部位越做越長，就不必交易每個短線降規傳聞</td><td>可拉出部分部位做區間盤</td><td>保留主持人長線 vs 短線雜訊框架，不採用操作日記</td></tr>
+      <tr><td>AI 材料規格</td><td>非常時期可能有替代方案，但長線科技會進步、材料會越用越好</td><td>同步記錄替代方案與長期方向</td><td>作為研究假說，需用板廠 / 材料廠資料驗證</td></tr>
+      <tr><td>遊戲投資</td><td>好遊戲團隊常缺優質發行與行銷支援</td><td>無明顯延伸操作</td><td>保留為產業觀察</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card">
+    <h2>公司 / ticker map</h2>
+    <table><thead><tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr></thead><tbody>
+      <tr><td>台積電 / TSMC</td><td>2330.TW / TSM</td><td>晶圓代工、漲價傳聞核心</td><td>偏正向觀察</td><td>台積電漲價可能推升台指</td><td>Primary + secondary aligned；外部新聞部分支撐但未公司確認</td><td>查公司法說、客戶價格評論、毛利指引</td></tr>
+      <tr><td>AMD</td><td>AMD</td><td>可能受 TSMC 漲價並轉嫁成本</td><td>中立觀察</td><td>被漲價後轉嫁出去</td><td>Primary + secondary aligned；新聞稱 reportedly</td><td>查 AMD pricing / margin guidance</td></tr>
+      <tr><td>NVIDIA</td><td>NVDA</td><td>AI 供應鏈核心、打包銷售與 Rubin / CPO 語境</td><td>偏正向觀察</td><td>下游仍會看到漲價</td><td>Primary supported；外部資料支撐 Rubin/CPO roadmap</td><td>查 NVIDIA roadmap、AIC 價格與供應鏈 commentary</td></tr>
+      <tr><td>CCL / PCB 高階板材</td><td>ticker 未確認</td><td>AI 伺服器材料升級 vs 降規傳聞</td><td>謹慎 / 看不懂</td><td>降規鬼故事衝擊 ASP 敘事</td><td>Primary + secondary aligned；外部公開資訊偏間接</td><td>查台光電、聯茂、欣興等法說</td></tr>
+      <tr><td>HBM / DRAM</td><td>ticker 未確認</td><td>缺貨、漲價、疊層配置</td><td>中立觀察</td><td>降 high 數提升良率與降低成本</td><td>Primary + secondary aligned；TrendForce 支撐 shortage / 4hi discussion</td><td>區分 Edge AI 與 data center 導入限制</td></tr>
+      <tr><td>Power rack / 800V</td><td>N/A</td><td>Rubin 世代電力架構節奏</td><td>低優先 / 暫無催化</td><td>Rubin 功耗未最高，替換不急</td><td>Primary supported；TrendForce / NVIDIA roadmap 部分支撐</td><td>查 800V adoption timing 與客戶部署</td></tr>
+      <tr><td>Take-Two Interactive</td><td>TTWO</td><td>GTA / 遊戲產業語境</td><td>只被提及</td><td>主持人過往交易經驗</td><td>Primary only</td><td>非本集核心研究標的</td></tr>
+      <tr><td>ASML</td><td>ASML</td><td>QA 提及林口新廠</td><td>只被提及</td><td>無</td><td>Primary only</td><td>非本集核心</td></tr>
+      <tr><td>肖楠資本</td><td>N/A</td><td>遊戲投資 / 發行平台</td><td>偏正向觀察</td><td>無</td><td>Primary + secondary aligned</td><td>觀察 portfolio 與跨國 deal sourcing</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card">
+    <h2>投資假說與觀察清單</h2>
+    <table><thead><tr><th>假說</th><th>支撐來源</th><th>反方 / 風險</th><th>第一個查證動作</th></tr></thead><tbody>
+      <tr><td>高階 CCL / PCB 材料長線需求不會因短期降規傳聞被完全推翻</td><td>主持人對 PCIe Gen6/7、CXL、高速訊號的長線判斷</td><td>若 CPO / optical interconnect 更快降低板上高速走線需求，ASP 敘事會被壓縮</td><td>查材料廠與 PCB 廠法說中對 AI server spec 的描述</td></tr>
+      <tr><td>HBM shortage 會讓供應鏈嘗試低疊層方案，但 data center 與 edge AI 適用性不同</td><td>主持人與 TrendForce 都提到低疊層 / 4hi 討論</td><td>低容量可能限制 data center adoption，不能套用到所有 AI 伺服器</td><td>查 TrendForce HBM4 / HBM5 報告與三大記憶體廠 commentary</td></tr>
+      <tr><td>TSMC / AMD 價格傳聞若成立，研究重點是成本由誰吸收</td><td>主持人拆解 TSMC、AMD、NVIDIA 下游轉嫁</td><td>仍為 reportedly，且 AMD 產品線受影響可能不同</td><td>查 AMD 財報毛利、TSMC 法說、通路價格</td></tr>
+      <tr><td>Indie game 發行服務可能比單純資金更重要</td><td>東京電玩展觀察與肖楠資本定位</td><td>非上市流動資產，成功率低、回收期長</td><td>追蹤 portfolio / Steam 發行成果</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card">
+    <h2>外部查證摘要</h2>
+    <table><thead><tr><th>Claim</th><th>Status</th><th>Evidence</th><th>判斷</th></tr></thead><tbody>
+      <tr><td>TSMC wafer cost 上升使 AMD 可能在 4Q26 調漲 GPU / AI chips / chipsets 約 10%</td><td>Partially supported</td><td>TrendForce / TechRadar 轉述 supply-chain reports</td><td>外部新聞支撐「傳聞存在」，非 AMD / TSMC 官方確認</td></tr>
+      <tr><td>AMD CPU / Ryzen 是否全面受影響</td><td>Needs exact transcript / Not verified</td><td>新聞明確保留 Ryzen pricing uncertainty</td><td>不可擴大成 AMD 全產品線正式漲價</td></tr>
+      <tr><td>HBM / DRAM 供需吃緊，供應商定價權增強</td><td>Verified / Partially supported</td><td>TrendForce press release 指出 AI demand 推升 HBM 並提高供應商定價權</td><td>大方向成立，但具體產品仍需查</td></tr>
+      <tr><td>4hi / 低疊層 HBM 主要適合 Edge AI，data center 導入受容量限制</td><td>Partially supported</td><td>TrendForce HBM4 / 4hi commentary</td><td>支持「不能把低疊層泛化到所有 data center AI」</td></tr>
+      <tr><td>NVIDIA Rubin / Vera Rubin roadmap 包含 rack-level codesign 與 co-packaged optics</td><td>Verified</td><td>NVIDIA Vera Rubin blog</td><td>支撐 CPO / rack integration roadmap，但不證明板材全面降規</td></tr>
+      <tr><td>CPO 將使 AI server motherboard 只需 M4 / 高階 CCL ASP 敘事崩解</td><td>Source-supported only / Not verified</td><td>Podcast / secondary note 討論；外部公開資料不足</td><td>只能寫市場鬼故事 / 待查證</td></tr>
+    </tbody></table>
+    <p class="small muted">參考外部來源：<a href="https://www.trendforce.com/presscenter/news/20250602-12618.html">TrendForce HBM pricing</a>、<a href="https://blogs.nvidia.com/blog/vera-rubin/">NVIDIA Vera Rubin</a>、<a href="https://www.trendforce.com/">TrendForce 2026 supply-chain commentary</a>、<a href="https://www.techradar.com/pro/amds-new-processors-could-be-hit-with-double-digit-price-hikes-as-soaring-tsmc-costs-are-reportedly-passed-on-to-buyers">TechRadar / Wccftech price-hike report</a>。</p>
+  </section>
+
+  <section class="card">
+    <h2>事件觸發條件 / tracking plan</h2>
+    <ul>
+      <li>AI server 板材 / PCB 公司正式說明 M4 / M7 / M8 / M9 規格切換。</li>
+      <li>AMD 或通路確認 4Q26 price adjustment 的產品範圍與幅度。</li>
+      <li>TrendForce / SemiAnalysis / NVIDIA 對 Rubin / Rubin Ultra / 800V power rack 時程更新。</li>
+      <li>HBM 4hi / 8hi 的 data center adoption 出現量產案例或明確否定。</li>
+      <li>相關 CCL / PCB 股價因降規傳聞急跌，但基本面法說未惡化。</li>
+    </ul>
+    <div class="note"><strong>目前判斷：</strong>AI 材料主題偏「保守追蹤」；AMD / TSMC 漲價偏「消息追蹤」；HBM 偏「值得深入」；遊戲投資偏「長期觀察」。</div>
+  </section>
+
+  <section class="card">
+    <h2>方法限制</h2>
+    <ul>
+      <li>NotebookLM 未提供精確 timestamp，本頁不假裝有逐字稿定位。</li>
+      <li>供應鏈傳聞一律以「傳聞 / reportedly / 待查證」處理，除非公司或高可信來源確認。</li>
+      <li>Social Worker Daily 的操作日記不視為主持人建議。</li>
+      <li>本頁是研究筆記，不構成個人化投資建議。</li>
+    </ul>
+  </section>
+
+  <footer>Generated by 雙雙 🦞🌱｜EP698｜Source layers preserved: primary / secondary / supplementary / verification.</footer>
+</main>
+</body>
+</html>
