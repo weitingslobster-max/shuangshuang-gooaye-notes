@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股癌 EP699 投資研究筆記｜AI Agent、CPU、DSP 與光通訊</title>
+  <style>
+    :root { --bg:#fbfaf7; --card:#fff; --ink:#1f2933; --muted:#667085; --line:#e7e1d8; --accent:#b23b2e; --soft:#fff3ed; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif; background:var(--bg); color:var(--ink); line-height:1.72; }
+    main { max-width:1080px; margin:0 auto; padding:24px 18px 56px; }
+    a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+    .back { display:inline-block; margin:6px 0 22px; font-weight:700; }
+    .hero { background:linear-gradient(135deg,#fff,#fff0e8); border:1px solid var(--line); border-radius:22px; padding:28px; box-shadow:0 10px 30px rgba(50,40,30,.06); }
+    h1 { font-size:clamp(1.8rem,4vw,3rem); line-height:1.15; margin:0 0 12px; }
+    h2 { margin-top:34px; padding-top:10px; border-top:2px solid var(--line); font-size:1.45rem; }
+    h3 { margin-top:24px; color:#3b2f2a; }
+    .meta, .muted { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:18px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; }
+    .callout { background:var(--soft); border-left:5px solid var(--accent); padding:14px 16px; border-radius:12px; }
+    table { width:100%; border-collapse:collapse; margin:14px 0 22px; background:#fff; border:1px solid var(--line); }
+    th,td { border:1px solid var(--line); padding:10px 12px; vertical-align:top; text-align:left; }
+    th { background:#f6efe7; font-weight:700; }
+    .tag { display:inline-block; padding:2px 8px; border-radius:999px; background:#f4e8df; color:#8b2d22; font-size:.88rem; font-weight:700; }
+    .footer { margin-top:40px; color:var(--muted); font-size:.95rem; }
+    @media (max-width:720px){ table{display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; white-space:nowrap;} th,td{min-width:160px;} .hero{padding:20px;} }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+  <section class="hero">
+    <div class="meta">股癌 Gooaye EP699｜發布日期：2026-09-23｜研究筆記，不是投資建議</div>
+    <h1>EP699 投資研究筆記：AI Agent、CPU 二度催化、DSP 漲價與光通訊輪動</h1>
+    <p>本集的投資主軸不是單一個股，而是三條研究線：<strong>指數創高後的市場情緒</strong>、<strong>Agentic AI 對 CPU demand 的重新定價</strong>、以及 <strong>高速光通訊中 DSP 的供需與技術路線</strong>。整體語氣偏向順勢觀察，但同時提醒市場已出現 FOMO 與誇張數字。</p>
+    <div class="grid">
+      <div class="card"><span class="tag">市場方向</span><p>創高附近轉空像摸頭；重點看盤面結構是否擴散。</p></div>
+      <div class="card"><span class="tag">AI Agent</span><p>Meta Muse 帶動 CPU 題材二度催化，但下載熱潮不等於長期 demand。</p></div>
+      <div class="card"><span class="tag">DSP / 光通訊</span><p>400G/800G/1.6T 規格升級支持 DSP 線索；15–20% 漲價仍待官方驗證。</p></div>
+    </div>
+  </section>
+
+  <h2>核心結論</h2>
+  <ol>
+    <li><strong>主持人不鼓勵在創高附近急著摸頭。</strong> 加權與 Nasdaq 接近 / 創新高時，部分投資人轉空被視為不順勢；但這不是無風險追高，而是提醒不要只因漲高就反向。</li>
+    <li><strong>CPU 是本集 AI 線索的核心，但要防止 FOMO 數字。</strong> Agentic workflow 可能讓 CPU 在資料中心架構中更重要；不過 40:1 CPU/GPU 這類極端比例被主持人質疑，不應納入 base case。</li>
+    <li><strong>DSP 是可追蹤的產業線索。</strong> 主持人把 DSP 放在 400G、800G、1.6T 高速傳輸中理解，短期受缺貨與規格升級支持；長期則要觀察 CPO/LPO 對 DSP 價值鏈的改變。</li>
+    <li><strong>宏碁案例適合轉化成「AI 落隊公司」研究框架。</strong> 這是主持人主觀評論，不應直接當成投資結論；更好的用法是建立落隊檢查表。</li>
+  </ol>
+
+  <h2>Source triangulation / 來源交叉比對</h2>
+  <table>
+    <tr><th>主題</th><th>Podcast / NotebookLM primary</th><th>Secondary note</th><th>合成判斷</th></tr>
+    <tr><td>指數創高與摸頭</td><td>創高附近轉空像摸頭，盤面結構改善。</td><td>補上右側交易、價外 Put、爆量黑 K、破月線等操作。</td><td>保留「不摸頭、看結構」；具體技術操作屬筆記作者詮釋。</td></tr>
+    <tr><td>Meta Muse / AI Agent</td><td>Muse 帶動 agentic AI 熱度，CPU 重要性提高。</td><td>形容為更人性化的龍蝦，可串社群 / Gmail / 定位。</td><td>列為 CPU demand catalyst，但需驗證留存、營收與 inference spend。</td></tr>
+    <tr><td>CPU/GPU 比例</td><td>1:1 已是樂觀；40:1 被質疑假設錯誤。</td><td>收錄 Wccftech / X 的 vCPU 推算。</td><td>40:1 只作 FOMO warning，不進投資模型。</td></tr>
+    <tr><td>DSP 漲價</td><td>傳聞 15–20% 漲價；400G/800G/1.6T 需求支持。</td><td>缺貨、終於漲價，可關注 MRVL 與台系廠。</td><td>列入 watchlist；漲價本身仍是 source-supported only。</td></tr>
+    <tr><td>宏碁 / Acer</td><td>主持人視為 AI 時代落隊案例。</td><td>摘要陳俊聖「不缺貨」說法與主持人質疑。</td><td>保留風險案例，但避免把主觀評論寫成事實結論。</td></tr>
+  </table>
+
+  <h2>Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+  <div class="callout"><strong>重要分層：</strong>Social Worker Daily 筆記中的「買價外葡萄當保險」、「高點爆量黑 K 砍一半」、「破月線全砍」屬筆記作者的交易框架，不是本集主持人明確給出的操作建議。</div>
+  <table>
+    <tr><th>項目</th><th>主持人觀點</th><th>筆記作者詮釋</th><th>報告處理</th></tr>
+    <tr><td>市場部位</td><td>創高附近不宜急摸頭；盤面結構改善。</td><td>可抱著、用價外 Put 避險、看線型砍倉。</td><td>主文只採主持人市場判斷；操作規則放入來源限制。</td></tr>
+    <tr><td>CPU 題材</td><td>Agentic AI 使 CPU 重要性提升，但屬二度催化。</td><td>CPU 族群可作創高第一棒。</td><td>列為研究假說，不當成買進訊號。</td></tr>
+    <tr><td>DSP</td><td>技術與供需偏正向；CPO 長期仍是風險。</td><td>漲價、缺貨、關注 MRVL / 台系。</td><td>短期供需與長期替代風險並列。</td></tr>
+  </table>
+
+  <h2>Company / ticker map / 公司與 ticker 對照表</h2>
+  <table>
+    <tr><th>公司 / 資產</th><th>Ticker</th><th>來源角色</th><th>本集方向 / Host stance</th><th>筆記作者詮釋</th><th>Source support</th><th>待查證 / 下一步</th></tr>
+    <tr><td>Meta Platforms</td><td>META</td><td>Muse / AI agent 催化</td><td>偏正向觀察，但提醒可能 FOMO</td><td>Muse 像更人性化的龍蝦</td><td>Meta 官方頁與新聞支持 Muse 存在</td><td>追蹤留存、DAU、是否帶動推論需求</td></tr>
+    <tr><td>AMD</td><td>AMD</td><td>CPU demand 與 AI server 脈絡</td><td>偏正向觀察</td><td>CPU 二度催化</td><td>來源支持；具體數字待查</td><td>查 AMD / Bernstein 原始說法</td></tr>
+    <tr><td>Marvell Technology</td><td>MRVL</td><td>DSP / optical interconnect</td><td>偏正向觀察</td><td>可關注 MRVL 與台系廠</td><td>官方產品線支援高速 DSP</td><td>查 earnings call 是否確認 ASP / backlog</td></tr>
+    <tr><td>MaxLinear</td><td>MXL</td><td>PAM4 DSP 供應商</td><td>中立觀察 / 只被提及</td><td>DSP 相關供應商</td><td>官方產品頁列 100G–1.6T PAM4 DSP</td><td>查出貨與產品 ramp</td></tr>
+    <tr><td>Acer 宏碁</td><td>2353.TW</td><td>AI 週期落隊案例</td><td>偏負面 / 風險案例</td><td>陳俊聖「不缺貨」說法被質疑</td><td>ticker 已確認；落隊判斷屬主持人觀點</td><td>查 AI revenue / margin / product roadmap</td></tr>
+    <tr><td>Qualcomm</td><td>QCOM</td><td>DSP/NPU 技術脈絡例子</td><td>只被提及</td><td>NPU 可視為 DSP 後代</td><td>source-supported only</td><td>另查 Hexagon NPU / DSP 官方文件</td></tr>
+    <tr><td>光通訊 / Optical interconnect</td><td>N/A</td><td>族群輪動與 DSP demand</td><td>偏正向觀察</td><td>過去弱勢、現在第一棒</td><td>產品線支持高速傳輸需求</td><td>拆解光模組、DSP、CPO/LPO 與台系供應鏈</td></tr>
+  </table>
+
+  <h2>Watchlist / 觀察清單</h2>
+  <table>
+    <tr><th>Bucket</th><th>觀察對象</th><th>為什麼追</th><th>風險</th></tr>
+    <tr><td>AI Agent → CPU demand</td><td>Meta Muse、AMD、Intel、server CPU supply chain</td><td>確認 agentic workflow 是否真的提高 CPU 配比。</td><td>App 熱度可能短暫；40:1 這類數字易誇大。</td></tr>
+    <tr><td>DSP / Optical interconnect</td><td>MRVL、MXL、台系光通訊 / 交換器鏈</td><td>400G/800G/1.6T 規格升級可能提高 DSP 價值。</td><td>15–20% 漲價未官方證實；CPO/LPO 長期替代。</td></tr>
+    <tr><td>市場結構</td><td>加權 / Nasdaq breadth、弱勢族群修復</td><td>判斷多頭是否擴散，而非只靠少數熱門股。</td><td>創高後 FOMO 也可能造成短線過熱。</td></tr>
+    <tr><td>AI 落隊風險</td><td>Acer、傳統 PC / 邊緣 AI 公司</td><td>找出 AI 週期中敘事與營收脫節的公司。</td><td>單一評論主觀；落隊公司可能轉型。</td></tr>
+  </table>
+
+  <h2>外部查證摘要</h2>
+  <table>
+    <tr><th>主張</th><th>狀態</th><th>判斷</th></tr>
+    <tr><td>Meta Muse 存在並為 Meta 官方 AI app / assistant。</td><td>Verified</td><td>Meta AI / Newsroom 支持；可列為 AI agent 熱門催化。</td></tr>
+    <tr><td>Marvell ticker = MRVL；MaxLinear ticker = MXL；Acer = 2353.TW。</td><td>Verified</td><td>修正 NotebookLM 對 MRVL/MXL 的未確認狀態。</td></tr>
+    <tr><td>MRVL / MXL 有高速 DSP 產品線。</td><td>Verified</td><td>官方產品頁支持 400G/800G/1.6T DSP / PAM4 DSP 產品定位。</td></tr>
+    <tr><td>DSP 將漲價 15–20%。</td><td>Source-supported only</td><td>本集有提，但未找到官方確認；需看法說會與供應鏈新聞。</td></tr>
+    <tr><td>Agentic workflow 使 CPU workload 到 50%、配比向 1:1 收斂。</td><td>Source-supported only</td><td>需取得 Bernstein / AMD 原文；可作假說，不作事實。</td></tr>
+    <tr><td>CPU/GPU 40:1。</td><td>Contradicted / FOMO risk</td><td>主持人明確質疑假設，不應納入 base case。</td></tr>
+  </table>
+
+  <h2>追蹤計畫 / Event triggers</h2>
+  <table>
+    <tr><th>事件</th><th>對假說的影響</th><th>下一步</th></tr>
+    <tr><td>Meta Muse DAU / retention 持續上升，Meta 顯示更高 inference spend</td><td>支持 AI agent demand 不是短期 FOMO</td><td>更新 CPU / infrastructure demand 假說</td></tr>
+    <tr><td>AMD / Intel / cloud providers 明確提 AI agent 帶動 server CPU demand</td><td>強化 CPU 二度催化</td><td>建立 CPU 供應鏈與財務敏感度</td></tr>
+    <tr><td>MRVL/MXL earnings call 明確提 ASP 上漲或 DSP 缺貨</td><td>支持 DSP 漲價線索</td><td>將漲價主張由 source-supported 升級</td></tr>
+    <tr><td>CPO/LPO roadmap 提前、客戶跳過傳統 DSP</td><td>削弱中長期 DSP thesis</td><td>將 DSP bucket 改為 transition risk</td></tr>
+    <tr><td>指數創高但 breadth 明顯轉差</td><td>多頭擴散假說失效</td><td>重新評估本集盤面觀察是否過期</td></tr>
+  </table>
+
+  <h2>方法限制</h2>
+  <ul>
+    <li>NotebookLM primary 未提供精確時間戳；若要做嚴格引用，仍需回聽原始節目。</li>
+    <li>Social Worker Daily 是高品質二手筆記，但作者明確聲明含主觀整理；操作語句不可視為主持人建議。</li>
+    <li>外部查證只做關鍵點快篩；DSP 漲價、Bernstein 數字、CPU/GPU 配比仍需原始研究或公司法說確認。</li>
+    <li>本頁為研究筆記，不是個人化投資建議；任何 ticker 只代表研究對象。</li>
+  </ul>
+
+  <p class="footer">Generated by 雙雙 🦞🌱 for Weiting’s Gooaye investment-notes workflow. Source layers preserved in the local workflow repo.</p>
+  <a class="back" href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a>
+</main>
+</body>
+</html>
