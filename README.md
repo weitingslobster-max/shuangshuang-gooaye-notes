@@ -10,6 +10,7 @@ GitHub Pages：<https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/
 - 每集使用獨立資料夾整理，例如：`ep-657/`
 - 每集資料夾內只保留 HTML：`index.html`
 - 目前內容（新集數在前）：
+  - `ep-706/`：股癌 EP706 投資研究筆記（利多不漲、AI軟硬體輪動與Neocloud信用風險；四層來源與外部查證）
   - `ep-704/`：股癌 EP704 投資研究筆記（NotebookLM primary + validated Social Worker Daily secondary note + supplementary triangulation + conservative verification）
   - `ep-703/`：股癌 EP703 投資研究筆記（NotebookLM primary + validated Social Worker Daily secondary note + supplementary triangulation + conservative verification）
   - `ep-702/`：股癌 EP702 投資研究筆記（NotebookLM primary + validated Social Worker Daily secondary note + supplementary triangulation + conservative verification）
