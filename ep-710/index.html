@@ -1,0 +1,755 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>股癌 EP710 投資研究筆記｜風控、現金流與CPU供應瓶頸</title><style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#142033;--line:#334155;--text:#e5edf7;--muted:#b0bfd1;--accent:#fb923c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif;line-height:1.85}main{max-width:1180px;margin:auto;padding:28px 24px 64px}a{color:#7dd3fc;text-underline-offset:3px}h1{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.35;margin-top:48px;color:#fff}h2{font-size:1.35rem;margin-top:40px;border-left:4px solid var(--accent);padding-left:14px;scroll-margin-top:20px}p,li{max-width:100ch}strong{color:#fed7aa}.badge{display:inline-block;color:#fed7aa;letter-spacing:.1em;font-weight:700}.intro{background:var(--panel);padding:20px;border:1px solid var(--line);border-radius:16px;margin:24px 0}nav{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.9rem}nav a{padding:4px 0}.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:10px;-webkit-overflow-scrolling:touch}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid var(--line);min-width:140px}th{background:#1e3049;color:#fff}tr:nth-child(even){background:#101d30}footer{margin-top:48px;color:var(--muted);font-size:.9rem}@media(max-width:720px){main{padding:20px 14px 50px}table{min-width:900px}td,th{min-width:150px}h2{font-size:1.15rem}.table-wrap{max-width:100%}}
+</style></head><body><main><a href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a><div class="intro"><span class="badge">GOOAYE · EP710 · 2026-11-01</span><p>先管風險，再談機會。保留來源差異、官方查證與尚未解決的問題。</p><p>閱讀順序：核心結論 → 公司對照 → 外部查證 → 追蹤計畫。手機可左右滑動表格。</p><nav><a href="#section-0">利多不漲的風控、雲端現金流與伺服器供應瓶頸</a><a href="#section-1">來源層級</a><a href="#section-2">核心結論</a><a href="#section-3">來源交叉比對</a><a href="#section-4">主持人觀點 vs 筆記作者詮釋</a><a href="#section-5">公司與 ticker 對照表</a><a href="#section-6">主題地圖</a><a href="#section-7">投資假說草稿</a><a href="#section-8">研究紀律</a><a href="#section-9">方法限制</a><a href="#section-10">查證範圍</a><a href="#section-11">查證表</a><a href="#section-12">待查清單</a><a href="#section-13">查證結論</a><a href="#section-14">觀察清單分組</a><a href="#section-15">事件觸發條件</a><a href="#section-16">目前判斷</a><a href="#section-17">暫停追蹤</a></nav></div><h1>股癌 EP710 投資研究筆記</h1>
+<h2 id="section-0">利多不漲的風控、雲端現金流與伺服器供應瓶頸</h2>
+<p>節目：EP710 | 🍒。來源發布：2026-10-31；研究整理：2026-11-01。這是一份來源分層的研究筆記，不是買賣指令。</p>
+<h2 id="section-1">Source stack / 來源層級</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>層級</th>
+<th>資料</th>
+<th>用途與限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原始節目</td>
+<td><a href="https://www.youtube.com/watch?v=4gYDl3wY8fA">YouTube EP710</a></td>
+<td>主持人原意的最終依據；本次沒有逐段人工回聽驗證。</td>
+</tr>
+<tr>
+<td>P：主報告</td>
+<td>NotebookLM primary，9,232字元，以 Copy content with formatting 取得</td>
+<td>只上傳YouTube生成；屬AI整理，不是已驗證逐字稿，未提供時間碼。</td>
+</tr>
+<tr>
+<td>S：次級筆記</td>
+<td><a href="https://socialworkerdaily.com/notes-of-gooaye-ep-710/">Social Worker Daily EP710</a>，本地secondary_note.md</td>
+<td>確定性擷取＋markitdown＋驗證通過；節目摘要、作者交易、作者心得必須分開。</td>
+</tr>
+<tr>
+<td>A：補充比對</td>
+<td>NotebookLM supplementary，9,774字元，同筆記本加入次級筆記後生成</td>
+<td>引用若干疑似ASR片段，但無時間碼；可提示差異，不能當獨立第三方證據。</td>
+</tr>
+<tr>
+<td>E：外部查證</td>
+<td>Microsoft、Alphabet、Amazon、Meta、Intel、Sandisk官方公告；Reuters併購報導</td>
+<td>只用來驗證具體主張；財報當期、口語概算、管理層預測及媒體消息不可混用。</td>
+</tr>
+<tr>
+<td>R：本報告研究判斷</td>
+<td>假說、查證狀態與追蹤條件</td>
+<td>明確屬本報告分析，不回填為主持人原話。</td>
+</tr>
+</tbody>
+</table></div>
+<p>主、補報告原件均保留於來源庫。A使用與P相同的節目資料，因此P與A一致不等於兩個獨立證據。</p>
+<h2 id="section-2">Core takeaways / 核心結論</h2>
+<ol>
+<li><strong>風控優先於猜底。</strong> 主持人描述反彈追入後因買太多而減碼；「可能便宜」與「部位過大」可以同時成立。重點是承受能力，不是把每次修正都解讀成全面熊市。</li>
+<li><strong>需求強與股票不漲並不矛盾。</strong> 雲端公告支持Azure年增48%、Google Cloud年增103%、AWS年增39%。成長不會自動抵銷資本支出、現金流、估值與資金流風險；市場為何下跌仍是多因子問題。</li>
+<li><strong>CPU需求與可交付供給要分開。</strong> Intel官方支持「15年最強資料中心營收成長」；但PC疲弱、製造／封裝限制、AMD競爭與ARM架構分流，不能用單一需求訊號概括。</li>
+<li><strong>不要用逆勢上漲證明景氣輪動。</strong> 主持人提出基金unwind「減多、補空」解釋；尚缺資金流實證，也可能和基本面因素並存。</li>
+<li><strong>NeoCloud風險是條件式劇本。</strong> 融資受阻→硬體／半成品釋出→短期拉貨受影響，尚非本次核實的倒閉潮。</li>
+<li><strong>來源糾錯比補滿故事重要。</strong> 不採用「全市場維持率已130%」的確定說法；Marvell／Lumentum僅查得洽談報導；3008／3108等代碼仍需原音定位。作者換股不能變成主持人推薦。</li>
+</ol>
+<h2 id="section-3">Source triangulation / 來源交叉比對</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>議題</th>
+<th>P主報告／S次級</th>
+<th>A補充比對</th>
+<th>本報告裁決</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>反彈失敗與風控</td>
+<td>皆記反彈後買太多、再減碼</td>
+<td>確認未把作者具體換股歸於主持人</td>
+<td>高信心的節目主軸；不是預測未來必跌。</td>
+</tr>
+<tr>
+<td>融資130%</td>
+<td>P寫成整體與正二逼近門檻；S僅記融資未減、光通再跌5–10%風險</td>
+<td>A引「融資的維持排行…130」但對象含糊、無時間碼</td>
+<td><strong>需精確逐字稿與市場資料</strong>。不將排行榜個股、券商帳戶或門檻等同全市場平均。</td>
+</tr>
+<tr>
+<td>光通維持率／跌幅</td>
+<td>P有150–158%；S有5–10%</td>
+<td>A又出現「5到18」及不同猜測</td>
+<td>數字不穩定，撤回精確斷頭距離，只保留槓桿擁擠風險。</td>
+</tr>
+<tr>
+<td>Intel廠區／時程</td>
+<td>P區分Ireland與Oregon；S將2027H2接在Ireland後</td>
+<td>A引用片段傾向Oregon對應2027H2</td>
+<td>暫列「A提示次級可能錯置」，不當官方已核實時程。</td>
+</tr>
+<tr>
+<td>EMIB良率</td>
+<td>P含低於50%與供應商；S僅記缺貨</td>
+<td>A指出「市場上大家在傳說」語境</td>
+<td>降為供應鏈傳聞；不得用作公司獲利精算。</td>
+</tr>
+<tr>
+<td>雲端成長率</td>
+<td>兩者皆48%、100%+、四成、三成</td>
+<td>A說原話未給完整會計期間</td>
+<td>外部獨立標明FY27Q1／2026Q3數字，不聲稱主持人明說該期間。</td>
+</tr>
+<tr>
+<td>光通新增標的</td>
+<td>P列MRVL、AVGO、3363、3008／3108、006208；S缺漏</td>
+<td>A稱原始轉寫有提及，仍無可點選定位</td>
+<td>保留可疑項目與待查旗標，不憑音譯指定供應商。</td>
+</tr>
+<tr>
+<td>Marvell收購</td>
+<td>P、A使用已收購語氣</td>
+<td>A沒有外部確認，仍稱收購</td>
+<td>Reuters只支持「進階洽談」；本報告撤回已宣布／完成的確定語氣。</td>
+</tr>
+<tr>
+<td>聯發科</td>
+<td>S為作者換股；P未整理相關QA</td>
+<td>A另稱QA有價格回檔評論，但未給定位</td>
+<td>作者買入不能移植為主持人推薦；QA細節需回聽，不採A的確定方向標籤。</td>
+</tr>
+<tr>
+<td>NeoCloud／unwind</td>
+<td>節目風險分析</td>
+<td>A確認屬情境與解釋假說</td>
+<td>保留假說屬性，避免把「若」改成「已經」。</td>
+</tr>
+</tbody>
+</table></div>
+<p>A還出現「如2024 Q3」的示例，與本次2026節目時間不符；視為模板式生成雜訊，不採入財報期間。它提供的「短引文」仍屬模型轉述，不能冒充本報告已自行核對的精確原話。</p>
+<h2 id="section-4">Host view vs note-author interpretation / 主持人觀點 vs 筆記作者詮釋</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>主題</th>
+<th>主持人觀點（依P／S／A整理）</th>
+<th>筆記作者詮釋／操作</th>
+<th>本報告分析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>風險與生活</td>
+<td>已有資產根基後更應避免不必要風險；部位壓力影響家庭活動</td>
+<td>作者亦表示槓桿先不加、反彈保守看</td>
+<td>風控可讓投資不擠壓生活；沒有槓桿仍可能有重大市值損失。</td>
+</tr>
+<tr>
+<td>盤勢</td>
+<td>利多不漲令人難判斷；要看到市場證據才改劇本</td>
+<td>作者以2022經驗描述PTSD與反彈觀察</td>
+<td>歷史相似感不構成重演證據，應列可觀測條件。</td>
+</tr>
+<tr>
+<td>具體台股換股</td>
+<td>主持人描述自身降部位，未核實有作者這組交易</td>
+<td>賣台達電、國巨；賣欣興、台光電換聯發科</td>
+<td>這是作者紀錄，不是本報告建議，不推定主持人同步操作。</td>
+</tr>
+<tr>
+<td>現金流</td>
+<td>市場可能改要求財務穩健</td>
+<td>作者摘錄此市場話題</td>
+<td>FCF數字可驗證，市場定價動機不能只靠財報倒推。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-5">Company / ticker map / 公司與 ticker 對照表</h2>
+<p>方向僅描述本集來源語氣，不是本報告評級。代碼若僅供研究索引不代表供應鏈關係已驗證。</p>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>公司 / 資產</th>
+<th>Ticker</th>
+<th>來源角色</th>
+<th>本集方向 / Host stance</th>
+<th>筆記作者詮釋</th>
+<th>Source support</th>
+<th>待查證 / 下一步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft／Azure</td>
+<td>MSFT</td>
+<td>雲端及現金流比較</td>
+<td>偏正向觀察</td>
+<td>摘錄股價相對強</td>
+<td>P/S/A；E驗證48%</td>
+<td>FCF與CapEx口徑、估值；本集180多億FCF尚未逐項核算。</td>
+</tr>
+<tr>
+<td>Apple</td>
+<td>AAPL</td>
+<td>股價韌性比較</td>
+<td>偏正向觀察</td>
+<td>記年初難預料其表現</td>
+<td>P/S/A，無價格區間核實</td>
+<td>勿推為AI技術已領先；核對同期間總報酬。</td>
+</tr>
+<tr>
+<td>Alphabet／Google Cloud</td>
+<td>GOOGL／GOOG</td>
+<td>雲端成長與利多不漲</td>
+<td>謹慎 / 看不懂</td>
+<td>模型強卻股價跌</td>
+<td>P/S/A；E驗證103%</td>
+<td>分拆TPU系統銷售與服務、模型及股價事件窗口。</td>
+</tr>
+<tr>
+<td>Amazon／AWS</td>
+<td>AMZN</td>
+<td>需求與現金流</td>
+<td>中立觀察</td>
+<td>摘錄約四成成長</td>
+<td>P/S/A；E驗證39%</td>
+<td>比較FCF期間與資本開支；管理層未來成長預測另列。</td>
+</tr>
+<tr>
+<td>Meta</td>
+<td>META</td>
+<td>廣告、CapEx與FCF</td>
+<td>中立觀察</td>
+<td>摘錄廣告約三成</td>
+<td>P/S/A；E季度FCF為負</td>
+<td>季度廣告約26%，查核成本／法律費用與投資回報。</td>
+</tr>
+<tr>
+<td>Intel</td>
+<td>INTC</td>
+<td>CPU需求與供給風險案例</td>
+<td>偏負面 / 風險案例</td>
+<td>摘錄PC與封裝瓶頸</td>
+<td>P/S/A；E支持資料中心成長</td>
+<td>Ireland/Oregon時程、EMIB良率未驗證。</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>AMD</td>
+<td>CPU競爭／後續財報</td>
+<td>偏正向觀察</td>
+<td>預期資料中心同向</td>
+<td>P/S；屬期待非結果</td>
+<td>正式財報、份額、毛利與ARM競爭。</td>
+</tr>
+<tr>
+<td>Sandisk</td>
+<td>SNDK</td>
+<td>儲存與Agentic AI敘事</td>
+<td>偏正向觀察</td>
+<td>新需求曲線</td>
+<td>P/S/A；E確認公司代碼</td>
+<td>不與WDC混同；全產業記憶體推論另驗。</td>
+</tr>
+<tr>
+<td>Marvell</td>
+<td>MRVL</td>
+<td>光通整合與買方風險</td>
+<td>中立觀察</td>
+<td>次級未記</td>
+<td>P/A；E僅有洽談新聞</td>
+<td>等官方協議／融資；不能說已交割。</td>
+</tr>
+<tr>
+<td>Lumentum（音譯疑指）</td>
+<td>LITE</td>
+<td>潛在併購標的</td>
+<td>主持人未明確表態</td>
+<td>次級未記</td>
+<td>P/A音譯不穩；Reuters對應Lumentum</td>
+<td>身分與交易階段分開驗證；不沿用A的買方溢價看多標籤。</td>
+</tr>
+<tr>
+<td>Broadcom</td>
+<td>AVGO</td>
+<td>生態系競爭</td>
+<td>中立觀察</td>
+<td>次級未記</td>
+<td>P/A，ASR映射仍需定位</td>
+<td>不將競爭推成市占已失守。</td>
+</tr>
+<tr>
+<td>上詮／代碼3363</td>
+<td>3363（代碼對應未另查交易所）</td>
+<td>光通傳聞</td>
+<td>謹慎 / 看不懂</td>
+<td>次級未記</td>
+<td>P/A；A稱主持人未看懂</td>
+<td>原音、正式訂單／營收，拒用傳聞當出貨證明。</td>
+</tr>
+<tr>
+<td>3008／3108／「大一光」</td>
+<td>公司映射未確認</td>
+<td>精密加工、CPO及估值疑點</td>
+<td>主持人未明確表態</td>
+<td>次級未記</td>
+<td>P/A有代碼衝突</td>
+<td>保留大立光候選，不將不同代碼／產品合成同一投資標的。</td>
+</tr>
+<tr>
+<td>Ibiden／「EB」</td>
+<td>ticker未確認</td>
+<td>EMIB載板傳聞</td>
+<td>中立觀察</td>
+<td>次級未記良率</td>
+<td>P/A，供應商映射待核</td>
+<td>正式公司與供應鏈資料、良率口徑。</td>
+</tr>
+<tr>
+<td>欣興</td>
+<td>3037（研究索引）</td>
+<td>載板傳聞＋作者交易</td>
+<td>中立觀察</td>
+<td>作者賣出換聯發科</td>
+<td>P/A談供應鏈；S記交易</td>
+<td>主持人觀察與作者買賣分開；良率不當事實。</td>
+</tr>
+<tr>
+<td>台達電</td>
+<td>2308（研究索引）</td>
+<td>作者交易</td>
+<td>主持人未明確表態</td>
+<td>作者賣出</td>
+<td>僅S作者層</td>
+<td>無主持人推薦／賣出結論。</td>
+</tr>
+<tr>
+<td>國巨</td>
+<td>2327（研究索引）</td>
+<td>作者交易</td>
+<td>主持人未明確表態</td>
+<td>作者賣出</td>
+<td>僅S作者層</td>
+<td>無主持人交易結論。</td>
+</tr>
+<tr>
+<td>台光電</td>
+<td>2383（研究索引）</td>
+<td>作者交易</td>
+<td>主持人未明確表態</td>
+<td>作者賣出換聯發科</td>
+<td>僅S作者層</td>
+<td>無主持人交易結論。</td>
+</tr>
+<tr>
+<td>聯發科</td>
+<td>2454（研究索引）</td>
+<td>作者換股；A稱QA提及</td>
+<td>主持人未明確表態</td>
+<td>作者買入</td>
+<td>S作者層；A新增QA待回聽</td>
+<td>不採未定位的1000到4000價格與低優先標籤。</td>
+</tr>
+<tr>
+<td>市值型ETF／富邦台50候選</td>
+<td>006208</td>
+<td>QA提問</td>
+<td>只被提及</td>
+<td>次級未記</td>
+<td>P/A；非主持人買賣指示</td>
+<td>分割時程與基金官方資料未查核。</td>
+</tr>
+<tr>
+<td>正二ETF</td>
+<td>未指定代碼</td>
+<td>融資擁擠風險</td>
+<td>偏負面 / 風險案例</td>
+<td>融資難清理</td>
+<td>P/S/A</td>
+<td>不把不同ETF及帳戶合成單一維持率。</td>
+</tr>
+<tr>
+<td>ARM架構</td>
+<td>非等同ARM股票</td>
+<td>伺服器競爭路徑</td>
+<td>中立觀察</td>
+<td>摘錄架構分流</td>
+<td>P/S</td>
+<td>需市占與客戶部署資料，不自行加碼ARM個股。</td>
+</tr>
+<tr>
+<td>NeoCloud</td>
+<td>未指定公司</td>
+<td>信用風險情境</td>
+<td>偏負面 / 風險案例</td>
+<td>摘錄潛在利空</td>
+<td>P/S/A推論</td>
+<td>A額外舉例的公司不是已證實爆雷者。</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>ticker未確認</td>
+<td>原先盤勢劇本的事件參考</td>
+<td>只被提及</td>
+<td>摘錄上市前後調整構想</td>
+<td>S</td>
+<td>上市時間未驗證，不能拿來排確定交易日。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-6">Topic map / 主題地圖</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>主題</th>
+<th>觀察鏈條</th>
+<th>重要反方／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>風險管理</td>
+<td>反彈追入→超出承壓→減碼→恢復決策空間</td>
+<td>減碼可降低波動但也可能錯過反彈；不是報酬保證。</td>
+</tr>
+<tr>
+<td>雲端重估</td>
+<td>需求／營收→CapEx→FCF與回報期→估值</td>
+<td>不同公司的商業模式與租賃口徑不同，不做單一排名。</td>
+</tr>
+<tr>
+<td>CPU供需</td>
+<td>工作負載成長→CPU與儲存需求→晶圓／封裝→可交付獲利</td>
+<td>x86與ARM、Intel與AMD競爭，需求增量可能分流。</td>
+</tr>
+<tr>
+<td>融資與反彈</td>
+<td>籌碼擁擠→被動賣出→壓力釋放→是否真正止穩</td>
+<td>餘額下降亦可能伴隨需求惡化，沒有必然V轉。</td>
+</tr>
+<tr>
+<td>光通生態系</td>
+<td>併購洽談／技術布局→供應商角色→訂單與營收</td>
+<td>原音／代碼不清楚時先停，長期趨勢不能證明每家公司受惠。</td>
+</tr>
+<tr>
+<td>非AI逆勢強</td>
+<td>基金降槓桿可能同時賣多買空</td>
+<td>需同時檢查訂單、庫存、空單變化；不得排除真實復甦。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-7">Draft investment hypotheses / 投資假說草稿</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>假說（R研究者）</th>
+<th>來源啟發</th>
+<th>需要的支持</th>
+<th>推翻條件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市場更重視可變現成長而非純AI題材</td>
+<td>P/S現金流討論；E財報</td>
+<td>同業FCF、CapEx與估值在一致期間比較</td>
+<td>股價差異主要由其他事件解釋；FCF修復仍無重估。</td>
+</tr>
+<tr>
+<td>CPU／儲存需求值得研究，但供給與份額決定受惠者</td>
+<td>P/S與Intel、Sandisk官方訊號</td>
+<td>可交付出貨、價格、毛利及架構份額</td>
+<td>成長只是提前拉貨，庫存上升或價值由競爭者捕獲。</td>
+</tr>
+<tr>
+<td>去槓桿完成比「跌很多」更有資訊量</td>
+<td>主持人籌碼觀察</td>
+<td>可核實融資清理、價格廣度與成交量</td>
+<td>融資反彈而基本面惡化，或量縮反彈後續破低。</td>
+</tr>
+<tr>
+<td>光通整合可能改變供應鏈議價力</td>
+<td>P/A併購話題；Reuters洽談</td>
+<td>正式協議與可量化產品／客戶重疊</td>
+<td>交易不成、整合成本高、供應商實際貢獻不符。</td>
+</tr>
+<tr>
+<td>信用事件可將估值修正傳導至實物供應</td>
+<td>NeoCloud條件式劇本</td>
+<td>具體違約、硬體出售、客戶減購資料</td>
+<td>資金到位、資產使用率改善且沒有訂單撤銷。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-8">Research discipline notes / 研究紀律</h2>
+<ul>
+<li>「主持人偏正向」只表示來源語氣；與我們是否研究、持有、買入完全不同。</li>
+<li>ASR的「五成／五層」、「5到18」、公司音譯及代號容易出錯；兩份AI報告重複同一說法不會消除錯誤。</li>
+<li>官方新聞稿能核對數字，未必能證明市場因果；管理層展望仍是預測。</li>
+<li>不以作者操作、社群傳聞或特定估值倍數替代公司基本面研究；沒有價格／EPS基準不計算目標價。</li>
+<li>下方完整保留外部查證、待查清單與事件觸發條件，未驗證部分不隱藏。</li>
+</ul>
+<h2 id="section-9">方法限制</h2>
+<p>本次沒有人工回聽逐段時間碼、帳戶級信用資料或付費供應鏈訪查。補充報告有無定位的短引文、數字不一致、模板年份及代碼映射風險，均保留為待查。Meta廣告26%來自官方頁面的搜尋摘要，正文擷取可驗證總營收與FCF，完整廣告表直連擷取被拒絕；不冒充已完成完整財報審閱。這份筆記適合建立查證問題，不適合直接跟單。</p>
+<h1>EP710 外部查證</h1>
+<p>查證日期：2026-11-01。以下區分「公司公告的數字」與「股價變動的因果解釋」；官方新聞稿中的展望仍是管理層預測，不是未來保證。</p>
+<h2 id="section-10">Verification scope / 查證範圍</h2>
+<p>優先查核雲端財報、Intel 資料中心需求、Sandisk 身分及 Marvell 併購狀態。未取得完整券商帳戶融資維持率、各供應商良率或主持人精確時間碼，相關主張不升格為事實。來源摘錄存於 sources/external-*.md；Alphabet 官方 PDF 另存本地並轉成文字。</p>
+<h2 id="section-11">Verification table / 查證表</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Claim / 主張</th>
+<th>Status / 狀態</th>
+<th>Evidence / source</th>
+<th>Interpretation / 判斷</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Azure 成長48%</td>
+<td>Verified／已驗證</td>
+<td><a href="https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast">Microsoft FY27 Q1 公告</a>，Azure revenue increased 48%</td>
+<td>支持營收成長數字；不是整體 Microsoft 成長率，也不證明估值便宜。</td>
+</tr>
+<tr>
+<td>Google Cloud 成長100%以上</td>
+<td>Verified／已驗證</td>
+<td><a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf">Alphabet 2026 Q3 官方PDF</a>：年增103%、營收307億美元</td>
+<td>官方亦說 TPU systems sales 有重要貢獻；不可將全部成長等同純服務使用量增加。</td>
+</tr>
+<tr>
+<td>AWS 成長約四成</td>
+<td>Partially supported／部分支持</td>
+<td><a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx">Amazon Q3公告</a>：年增39%、460億美元</td>
+<td>約四成可視口語近似；2027、2028逾40%為管理層預測，不能與已公布Q3數字混用。</td>
+</tr>
+<tr>
+<td>Meta 廣告成長三成</td>
+<td>Partially supported／部分支持</td>
+<td><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Q3公告</a>：總營收年增26%；公告搜尋表列廣告年增26%</td>
+<td>「三成」不應當作精確季度30%。主報告未明列期間，精確口語仍需逐字稿。</td>
+</tr>
+<tr>
+<td>Meta 自由現金流轉負</td>
+<td>Verified／已驗證</td>
+<td>同一 Meta 公告：營運現金流327.9億美元、資本支出含融資租賃本金349.1億美元、FCF負21.2億美元</td>
+<td>支持現金流壓力存在；不能單憑此斷言它是股價下跌的唯一原因。</td>
+</tr>
+<tr>
+<td>Intel 資料中心成長為15年最強，PC持續疲弱</td>
+<td>Verified／已驗證</td>
+<td><a href="https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results">Intel Q3公告</a>：CFO明說 strongest data center revenue growth in 15 years，預期PC放緩延續至明年上半年</td>
+<td>15年最強指營收成長；PC展望是預測，不能推廣為所有CPU廠商一定受惠。</td>
+</tr>
+<tr>
+<td>Intel 3 愛爾蘭／Oregon擴產及2027下半年投產</td>
+<td>Not verified／未驗證</td>
+<td>primary 與 secondary 地點表述不同；本次Intel新聞稿不足以核實個別廠區時程</td>
+<td>不給出確定投產地點或日期；需Intel廠區與資本支出原始簡報。</td>
+</tr>
+<tr>
+<td>EMIB供應吃緊、Ibiden／欣興良率低於50%</td>
+<td>Source-supported only／僅來源支持</td>
+<td>NotebookLM主報告載有供應鏈說法；次級筆記只記缺貨，未記良率</td>
+<td>未取得官方良率數字；不建立獲利預估，也不把傳聞當公司承認。</td>
+</tr>
+<tr>
+<td>Sandisk代碼為SNDK、資料中心需求強勁</td>
+<td>Verified／已驗證</td>
+<td><a href="https://investor.sandisk.com/news-releases/news-release-details/sandisk-reports-fiscal-first-quarter-2027-financial-results">Sandisk FY27 Q1公告</a>明列 Nasdaq: SNDK，並說資料中心業務需求強勁</td>
+<td>修正主報告混寫Sandisk／Western Digital；SNDK不等於WDC。未因此證實全部增量來自Agentic AI。</td>
+</tr>
+<tr>
+<td>Marvell已宣布／完成收購「Lumanton」</td>
+<td>Not verified／未驗證；確定語氣需撤回</td>
+<td><a href="https://www.reuters.com/business/marvell-advanced-talks-buy-lumentum-bloomberg-news-reports-2026-10-28/">Reuters 10月28日</a>報導與 Lumentum（LITE）進階洽談，雙方未立即回應</td>
+<td>僅核實「有洽談報導」，不是官方交易公告或交割。本次未取得更新官方確認；音譯疑指Lumentum，不把其他併購混入。</td>
+</tr>
+<tr>
+<td>大盤或正二ETF實際維持率已達130%</td>
+<td>Needs exact transcript／需精確逐字稿</td>
+<td>主報告與次級摘要層級不同，未取得當日可靠實際維持率資料</td>
+<td>追繳門檻、單一帳戶、族群估計、全市場平均不能互換；撤回「必然下週斷頭」表述。</td>
+</tr>
+<tr>
+<td>光通再跌5–10%就斷頭、維持率150–158%</td>
+<td>Source-supported only／僅來源支持</td>
+<td>次級記5–10%，主報告記150–158%；皆無可重現帳戶資料</td>
+<td>只能作來源的風險示意，非全族群共同清算價格。</td>
+</tr>
+<tr>
+<td>非AI半導體上漲因基金unwind</td>
+<td>Source-supported only／僅來源支持</td>
+<td>兩層皆記錄此市場解釋；未有個別基金持倉或交易資料</td>
+<td>合理機制不等於實證因果；需空單回補與基本面同時查驗。</td>
+</tr>
+<tr>
+<td>NeoCloud爆雷後硬體釋出、短期拉貨下降</td>
+<td>Source-supported only／僅來源支持</td>
+<td>主持人風險劇本，並非已證實事件</td>
+<td>保存為情境，不寫成正在全面違約。</td>
+</tr>
+<tr>
+<td>3363出貨、3008／3108精密加工切入CPO及20–30倍估值</td>
+<td>Needs exact transcript／需精確逐字稿</td>
+<td>主報告多於次級，代碼與公司對應有疑慮</td>
+<td>缺公司公告、估值日期與EPS口徑；暫不建立確定投資標的。</td>
+</tr>
+<tr>
+<td>AMD市占、ARM滲透、AI需求一定超過供給</td>
+<td>Not verified／未驗證</td>
+<td>本次未取得完整產業出貨資料及AMD最新法說</td>
+<td>Intel與Sandisk訊號不能代替全產業市占或供需統計。</td>
+</tr>
+<tr>
+<td>Google跌逾10%、Apple／Microsoft表現最佳、30倍PE透支三年</td>
+<td>Not verified／未驗證</td>
+<td>來源未給完整比較期間、價格基準及估值模型</td>
+<td>留作節目語境；不計算未經核實的報酬與合理價。</td>
+</tr>
+<tr>
+<td>Anthropic上市前後是明確交易時點</td>
+<td>Not verified／未驗證</td>
+<td>次級記錄原先盤勢劇本，本次未查得用以核實的官方上市時程</td>
+<td>不把口述情境當成已確定催化日期。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-12">Open verification queue / 待查清單</h2>
+<ol>
+<li>回聽融資、光通公司代碼與Intel廠區原句；補上時間碼後再決定可否提高來源信心。</li>
+<li>交易所融資餘額按ETF／個股分組，明確區分餘額與維持率；借券回補亦非一律代表對沖基金。</li>
+<li>Intel、欣興、Ibiden官方產能／良率揭露；沒有數字就維持未驗證，不用券商傳聞填空。</li>
+<li>Marvell／Lumentum正式公告與監管文件；洽談、簽約、交割分開追蹤。</li>
+<li>AMD資料中心營收、毛利、市占與供貨能力，以及NeoCloud財報、債務到期與資產處分證據。</li>
+</ol>
+<h2 id="section-13">Bottom line / 查證結論</h2>
+<p>雲端營收與Intel資料中心強勁有官方支持，但市場因此必漲、基金回補是唯一原因、或全部高槓桿帳戶即將斷頭，均未被證實。最重要的修正是：AWS約四成實為39%、Meta季度廣告不是精確30%、Sandisk為SNDK而非WDC、Marvell案僅查得洽談報導。保留風控框架，拒絕用來源誤差製造確定性。</p>
+<h1>EP710 研究追蹤</h1>
+<h2 id="section-14">Watchlist buckets / 觀察清單分組</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>分組</th>
+<th>主題／公司</th>
+<th>研究優先序</th>
+<th>納入原因</th>
+<th>不做什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>深入研究</td>
+<td>MSFT、GOOGL／GOOG、AMZN、META</td>
+<td>高</td>
+<td>營收強勁與現金流壓力可能同時存在</td>
+<td>不把利多不漲直接等同錯殺</td>
+</tr>
+<tr>
+<td>深入研究</td>
+<td>INTC、AMD、SNDK與ARM架構</td>
+<td>高</td>
+<td>伺服器CPU／儲存需求與供給瓶頸分化</td>
+<td>不把Intel數據移植為AMD確定獲利</td>
+</tr>
+<tr>
+<td>風險監測</td>
+<td>大盤、正二ETF、光通族群</td>
+<td>高</td>
+<td>槓桿擁擠度及反彈品質</td>
+<td>不用單一130%數字預告全面斷頭</td>
+</tr>
+<tr>
+<td>事件觀察</td>
+<td>MRVL／LITE</td>
+<td>中</td>
+<td>媒體報導併購洽談，可能影響光通生態系</td>
+<td>不假設已簽約或完成交易</td>
+</tr>
+<tr>
+<td>尾端風險</td>
+<td>NeoCloud融資與硬體處分</td>
+<td>中</td>
+<td>信用壓力可能傳到訂單與庫存</td>
+<td>不宣布尚未證實的倒閉潮</td>
+</tr>
+<tr>
+<td>暫停標的化</td>
+<td>3363及3008／3108疑點、EMIB良率傳聞</td>
+<td>低</td>
+<td>來源身分／數字未充分核實</td>
+<td>不據此計算目標價或持倉</td>
+</tr>
+<tr>
+<td>作者層留存</td>
+<td>台達電、國巨、欣興、台光電、聯發科</td>
+<td>僅紀錄</td>
+<td>次級作者個人交易背景</td>
+<td>不跟單、不歸於主持人</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-15">Event triggers / 事件觸發條件</h2>
+<p>以下是本報告研究者設計的檢查條件，不是主持人的買賣規則，也不是自動交易指令。</p>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>事件</th>
+<th>檢查資料與頻率</th>
+<th>若出現，如何更新</th>
+<th>反證／降級條件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>雲端財報／CapEx更新</td>
+<td>每季公司IR；營收成長、營業現金流、資本支出、FCF與租賃口徑</td>
+<td>若需求維持且現金流覆蓋改善，提高研究信心</td>
+<td>營收減速而CapEx與債務負擔擴張，降級</td>
+</tr>
+<tr>
+<td>CPU出貨與市占</td>
+<td>AMD下一次正式財報、Intel產能更新；每季</td>
+<td>將需求、可交付產能、產品組合與利潤分開建模</td>
+<td>需求強但無法出貨，或價格／毛利惡化</td>
+</tr>
+<tr>
+<td>槓桿清理後反彈</td>
+<td>每交易日信用交易餘額、族群成交量與價格廣度</td>
+<td>只有可觀測去槓桿後價格止穩才重估；不預設底部</td>
+<td>反彈融資再增、價格續破低或流動性惡化</td>
+</tr>
+<tr>
+<td>非AI半導體逆勢走強</td>
+<td>每週借券／空單資料；每月營收與訂單</td>
+<td>需基本面回升才從籌碼觀察轉為產業研究</td>
+<td>只有空單減少、終端需求未改善</td>
+</tr>
+<tr>
+<td>MRVL／LITE正式公告</td>
+<td>官方IR與監管文件，事件發生時</td>
+<td>分開核對洽談、條件、融資、核准、交割；再評估整合</td>
+<td>無公告、交易取消、融資負擔擴大</td>
+</tr>
+<tr>
+<td>NeoCloud信用事件</td>
+<td>每季財報／事件公告；債務到期、利息、現金與資產售出</td>
+<td>有實際違約／資產釋出證據才評估供應鏈傳導</td>
+<td>只有傳聞；融資完成且使用率／回款改善則降低風險權重</td>
+</tr>
+<tr>
+<td>EMIB／CPO量產證據</td>
+<td>每月營收與每季法說、正式公司文件</td>
+<td>必須核對公司身分、產品與可量化貢獻後才建假說</td>
+<td>無法定位代碼、供應商不證實、營收無貢獻</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-16">Current stance / 目前判斷</h2>
+<p>研究取向偏謹慎：營收強勁不代表估值、資金流或帳戶承壓安全。先檢查現金需求、部位集中與槓桿承受能力，再討論機會。沒有即時價格與個人財務條件，本報告不提出部位比例、進出價格或勝率；「偏正向觀察」僅是來源語氣，不是本報告買進建議。</p>
+<h2 id="section-17">Parking lot / 暫停追蹤</h2>
+<p>未核實的3008／3108映射、精確EMIB良率、Anthropic上市日期及「所有非AI上漲都是回補」保留在待查區。補到原始證據才重新啟動，不以更多摘要互相引用充當驗證。</p><footer>研究整理：雙雙 🦞🌱 · 資料截至2026-11-01。<br><a href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a></footer></main></body></html>
