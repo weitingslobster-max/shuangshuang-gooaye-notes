@@ -1,0 +1,421 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>股癌 EP711 投資研究筆記｜指數風控、主權AI與CPU成長</title><style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#142033;--line:#334155;--text:#e5edf7;--muted:#b0bfd1;--accent:#fb923c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif;line-height:1.85}main{max-width:1180px;margin:auto;padding:28px 24px 64px}a{color:#7dd3fc;text-underline-offset:3px}h1{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.35;margin-top:48px;color:#fff}h2{font-size:1.35rem;margin-top:40px;border-left:4px solid var(--accent);padding-left:14px;scroll-margin-top:20px}p,li{max-width:100ch}strong{color:#fed7aa}.badge{display:inline-block;color:#fed7aa;letter-spacing:.1em;font-weight:700}.intro{background:var(--panel);padding:20px;border:1px solid var(--line);border-radius:16px;margin:24px 0}nav{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.9rem}nav a{padding:4px 0}.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:10px;-webkit-overflow-scrolling:touch}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid var(--line);min-width:140px}th{background:#1e3049;color:#fff}tr:nth-child(even){background:#101d30}footer{margin-top:48px;color:var(--muted);font-size:.9rem}@media(max-width:720px){main{padding:20px 14px 50px}table{min-width:900px}td,th{min-width:150px}h2{font-size:1.15rem}.table-wrap{max-width:100%}}
+</style></head><body><main><a href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a><div class="intro"><span class="badge">GOOAYE · EP711 · 2026-11-08</span><p>先管風險，再談機會。保留來源差異、官方查證與尚未解決的問題。</p><p>閱讀順序：核心結論 → 公司對照 → 外部查證 → 追蹤計畫。手機可左右滑動表格。</p><nav><a href="#section-0">來源與閱讀方式</a><a href="#section-1">核心結論</a><a href="#section-2">來源交叉比對</a><a href="#section-3">主持人觀點與作者心得</a><a href="#section-4">公司與題材對照</a><a href="#section-5">深入研究方向</a><a href="#section-6">紀律與限制</a><a href="#section-7">查證範圍</a><a href="#section-8">查證表</a><a href="#section-9">待查清單</a><a href="#section-10">查證結論</a><a href="#section-11">觀察清單分組</a><a href="#section-12">事件觸發條件</a><a href="#section-13">目前判斷</a><a href="#section-14">暫停追蹤</a></nav></div><h1>股癌 EP711 投資研究筆記</h1>
+<h2 id="section-0">Source stack / 來源與閱讀方式</h2>
+<p>本集發布於2026-11-04；整理與外部查證日期2026-11-08。這是一份來源分層的研究筆記，不是即時交易訊號。</p>
+<ul>
+<li><strong>主來源</strong>：<a href="https://www.youtube.com/watch?v=D6bBOFrKf9U">股癌 EP711 YouTube</a>；NotebookLM無法匯入其字幕，因此改用<a href="https://feeds.soundon.fm/podcasts/954689a5-3096-43a4-a80b-7810b219cef3.xml">官方SoundOn RSS</a>中標題與日期相符的EP711音檔。以本機Whisper large-v3-turbo轉錄，再由NotebookLM Studio產生主報告。下文秒數相對此音檔，ASR未逐句人工校對。</li>
+<li><strong>次來源</strong>：<a href="https://socialworkerdaily.com/notes-of-gooaye-ep-711/">Social Worker Daily EP711筆記</a>，正文擷取與品質檢查通過。只作交叉比對，不取代主持人原話。</li>
+<li><strong>補充層</strong>：NotebookLM Studio以ASR與次來源共同比對，區分主持人、作者與AI推論；最終整理另核對原始ASR，補回主報告遺漏的台積電問答。</li>
+<li><strong>外部查證層</strong>：AMD、Palantir、L3Harris官方公告。摘要模型曾依舊知識推測MI450與96%成長是轉錄錯誤；本筆記以當期官方公告為準，不沿用這些推測。</li>
+</ul>
+<h2 id="section-1">Core takeaways / 核心結論</h2>
+<ol>
+<li><strong>風控先於抄底。</strong> 主持人描述先前太早承接個股而停損，現階段偏指數、等待融資進一步清洗；下影線與利空不跌是觀察條件，不是底部保證。</li>
+<li><strong>PLTR：成長強，不等於估值便宜。</strong> 官方股東信支持營收約23億美元、年增96%；主持人同時提醒價格昂貴，不能只保留樂觀的一半。</li>
+<li><strong>AI機會可能從模型能力延伸到資料與工作流。</strong> 主權AI、特化小模型、SI維護與資安責任值得研究；需要收入、毛利與續約證據才能從敘事升級為投資論點。</li>
+<li><strong>AMD資料中心強，不能全部算作CPU。</strong> 官方確認營收年增45%、資料中心年增97%，驅動同時包括EPYC與Instinct；主持人對CPU偏多，但公司未拆出兩者收入。</li>
+<li><strong>台積電低本益比仍可能有估值風險。</strong> EPS145元乘12倍是主持人的假設壓力情境，算術為1740元；不是公司財測、目標價，也不是要求等到1800元才研究。</li>
+</ol>
+<h2 id="section-2">Source triangulation / 來源交叉比對</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>議題</th>
+<th>主來源支持</th>
+<th>次來源呈現</th>
+<th>最終判讀</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>指數先行、等待融資清洗</td>
+<td>約500–690秒：曾提早買個股後停損，偏向先指數</td>
+<td>強調急殺下影線與反彈機會</td>
+<td>保留風控前提，不濃縮成「現在買」。</td>
+</tr>
+<tr>
+<td>PLTR強成長且昂貴</td>
+<td>約704–766秒同時討論財務與估值</td>
+<td>財報數字與主權AI敘事</td>
+<td>外部確認部分財務；昂貴是主持人判斷，未用即時價格量化。</td>
+</tr>
+<tr>
+<td>L3Harris小模型案例</td>
+<td>約869–905秒引用48小時、95%等說法</td>
+<td>同樣記載降本案例</td>
+<td>同源轉述不是兩個獨立證據；精確基準仍待查。</td>
+</tr>
+<tr>
+<td>SI與Edge商業化</td>
+<td>約980–1050、1220–1505秒談落地、維護與競爭</td>
+<td>強調軟硬體整合與商機</td>
+<td>半年至一年是預期；70–80%品質／30%價格是競爭假設，不是已簽合約。</td>
+</tr>
+<tr>
+<td>AMD CPU與資料中心</td>
+<td>約1614–1704秒提到EPYC、MI450及CPU看法</td>
+<td>摘要集中在高成長數字</td>
+<td>54%為GAAP毛利率，non-GAAP為56%；部門成長不能全歸CPU。</td>
+</tr>
+<tr>
+<td>台積電與價值陷阱</td>
+<td>約2020–2220秒估值問答</td>
+<td>次來源記載循環股價值陷阱概念，但未列此計算</td>
+<td>補回原音檔脈絡，只作壓力測試。</td>
+</tr>
+<tr>
+<td>逐步加碼反彈</td>
+<td>不能由作者日誌反推主持人指令</td>
+<td>作者寫1口、2口、3口及每筆1–2%資金</td>
+<td>明確列為作者個人操作，非主持人或本筆記建議。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-3">Host vs author / 主持人觀點與作者心得</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>主題</th>
+<th>主持人觀點</th>
+<th>作者／研究者延伸</th>
+<th>防止過度推論</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市場進場</td>
+<td>偏好恐慌急殺後的量價反應，先指數後個股</td>
+<td>作者分享自己的分批承接</td>
+<td>不複製口數，不忽略槓桿、停損與資金差異。</td>
+</tr>
+<tr>
+<td>AI落地</td>
+<td>特化資料、小模型與SI可能有更具體商業價值</td>
+<td>研究者追蹤訂單、毛利與續約</td>
+<td>主持人的信心不是財務驗證。</td>
+</tr>
+<tr>
+<td>通用模型與交易</td>
+<td>一般模型傾向共識，未必提供交易優勢</td>
+<td>自有資料可能形成差異化</td>
+<td>沒有回測與成本資料，不能宣稱自建模型有alpha。</td>
+</tr>
+<tr>
+<td>台積電估值</td>
+<td>成長股也可能遭遇倍數壓縮，循環股低PE可能是陷阱</td>
+<td>研究者將EPS及倍數分開做情境</td>
+<td>不能把單一情境當作買點或股價預測。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-4">Company map / 公司與題材對照</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>公司／資產</th>
+<th>Ticker</th>
+<th>來源角色</th>
+<th>本集方向 / Host stance</th>
+<th>作者／研究者詮釋</th>
+<th>Source support</th>
+<th>下一步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Palantir</td>
+<td>PLTR</td>
+<td>核心財報與AI案例</td>
+<td>基本面偏正面；估值保留</td>
+<td>成長與價格需分開評估</td>
+<td>主／次來源；部分官方財務已核對</td>
+<td>合約轉收入、現金流、成長減速情境。</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>AMD</td>
+<td>核心財報</td>
+<td>CPU偏多；留意消費端波動</td>
+<td>資料中心增長由CPU/GPU共同驅動</td>
+<td>主／次來源；官方財報</td>
+<td>產品組合、毛利、消費端指引口徑。</td>
+</tr>
+<tr>
+<td>L3Harris</td>
+<td>LHX</td>
+<td>Palantir客戶案例</td>
+<td>案例偏正面，非個股推薦</td>
+<td>是採用AI的客戶，不等於純AI供應商</td>
+<td>合作已確認；效能／降本數字待查</td>
+<td>原始測試及總部署成本。</td>
+</tr>
+<tr>
+<td>NVIDIA</td>
+<td>NVDA</td>
+<td>產業領導者類比</td>
+<td>中性類比，非新增買進訊號</td>
+<td>領導者可能帶動同業估值聯想</td>
+<td>ASR約1515–1560秒</td>
+<td>不從類比推出供應鏈訂單。</td>
+</tr>
+<tr>
+<td>Intel</td>
+<td>INTC</td>
+<td>CPU需求比較</td>
+<td>作為趨勢佐證，未形成個股結論</td>
+<td>仍需獨立研究</td>
+<td>ASR約1640–1660秒</td>
+<td>同期部門財務與份額。</td>
+</tr>
+<tr>
+<td>台積電</td>
+<td>2330／TSM</td>
+<td>價值陷阱與估值問答</td>
+<td>對長期成長偏正面，不認同直接稱為價值陷阱；仍有倍數風險</td>
+<td>EPS145×12為情境</td>
+<td>ASR約2020–2220秒</td>
+<td>驗證EPS假設；ADR與台股價格不可直接套用。</td>
+</tr>
+<tr>
+<td>SI／Edge／主權AI</td>
+<td>無單一代號</td>
+<td>產業研究方向</td>
+<td>偏正面展望</td>
+<td>尚未形成有證據的受惠股名單</td>
+<td>主／次來源</td>
+<td>生產環境部署、維護收入、資安責任。</td>
+</tr>
+<tr>
+<td>股票指數</td>
+<td>未指定商品</td>
+<td>部位與市場風控</td>
+<td>相對個股優先觀察</td>
+<td>不自動等同低風險，槓桿仍重要</td>
+<td>主／次來源</td>
+<td>融資、廣度及量價延續。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-5">Research themes / 深入研究方向</h2>
+<h3>1. AI價值鏈：模型、資料與工作流</h3>
+<p>主權AI在此語境著重資料控制、企業自有資料與部署選擇。小模型於特定任務的優勢不代表通用能力全面超越大型模型，也不表示閉源模型收入必然萎縮。主持人描述的是市場擴張下的分工可能性。</p>
+<p>SI價值不只「把模型接上去」，還包含權限、既有系統整合、維運、資安與出事後的責任。研究時要看可持續維護費與毛利，而非只數PoC。低價競爭、客製化人力成本與責任負擔都可能稀釋收益。</p>
+<h3>2. 成長、財務口徑與估值</h3>
+<p>AMD的non-GAAP EPS 2.09美元不能配上未標註的54%毛利率，後者是GAAP。MI450在本次官方公告中確有出現，不應被摘要模型依舊產品記憶改成MI300。資料中心收入約85億美元包含CPU與GPU，無法由部門總額反推CPU獨立成長率。</p>
+<p>Palantir官方確認高成長，但營收增長與股票報酬之間仍隔著市場已支付的倍數、未來預期與現金流品質。全公司季增與美國商業季增是不同分母，不能互換。</p>
+<h3>3. 估值壓力測試而非價格預言</h3>
+<p>台積電問答提醒：即使獲利成長，倍數壓縮也可能拖累股價。以假設EPS145元乘12倍得到1740元，只是示範壓力情境；EPS與倍數各自都需證據。循環股高峰獲利造成的低PE，也不能直接類比所有成長企業。</p>
+<h2 id="section-6">Discipline and limits / 紀律與限制</h2>
+<ul>
+<li>來源中的強烈語氣是主持人信心，不等於客觀成功機率；研究者另列反證條件。</li>
+<li>未取得同時點股價、完整估值模型與個人風險預算，本文不形成買賣結論。</li>
+<li>ASR可能錯認專有名詞；NotebookLM也可能遺漏問答或帶入舊知識。官方查證優先，不能用AI摘要彼此循環佐證。補充報告把Intel對照延伸成伺服器衰退、把AMD營收辨識為121.2億美元，均未採用；主來源僅說Intel數字可相互對照，AMD官方營收為133.77億美元。</li>
+<li>不將生活、跑步與個人減重藥物經驗擴寫為生技選股論點。</li>
+</ul>
+<h1>EP711 外部查證</h1>
+<h2 id="section-7">Verification scope / 查證範圍</h2>
+<p>查證日期：2026-11-08。外部資料以公司原始公告為主；節目觀點與市場預測不因出現在兩份摘要中就視為事實。股價／估值倍數未取得同時點行情，不做便宜或昂貴的量化判定。</p>
+<h2 id="section-8">Verification table / 查證表</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Claim / 主張</th>
+<th>Status / 狀態</th>
+<th>Evidence / source</th>
+<th>Interpretation / 判斷</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AMD Q3營收年增45%、non-GAAP EPS 2.09美元</td>
+<td>Verified</td>
+<td><a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results">AMD 2026 Q3官方財報</a>，2026-11-03</td>
+<td>營收133.77億美元，年增45%；GAAP EPS 1.46，non-GAAP EPS 2.09。不能混用兩種口徑。</td>
+</tr>
+<tr>
+<td>AMD毛利率54%</td>
+<td>Verified（限GAAP口徑）</td>
+<td>同上</td>
+<td>54%是GAAP；non-GAAP是56%。摘要把non-GAAP EPS與54%並列，需明確標註。</td>
+</tr>
+<tr>
+<td>AMD資料中心營收年增97%</td>
+<td>Verified</td>
+<td>同上：Data Center收入約85億美元</td>
+<td>公司說明同時由EPYC CPU及Instinct GPU驅動，不能把整個部門增長全歸CPU。</td>
+</tr>
+<tr>
+<td>AMD Instinct MI450產品名稱</td>
+<td>Verified</td>
+<td>AMD 2026 Q3官方財報</td>
+<td>官方公告確認MI450；主摘要基於舊產品知識猜測為辨識錯誤，不能沿用該推測。</td>
+</tr>
+<tr>
+<td>AMD資料中心季增27%</td>
+<td>Not verified</td>
+<td>本次擷取之官方新聞稿未直接提供該部門季增比較</td>
+<td>全公司下一季營收指引中點季增27%是另一指標，不可拿來替代。待核對部門季度表。</td>
+</tr>
+<tr>
+<td>AMD消費端下季下滑20%</td>
+<td>Not verified</td>
+<td>本次官方新聞稿未見此分項指引</td>
+<td>應查法說逐字稿，釐清Client、Gaming或合計部門；不能解讀為全公司營收下降20%。</td>
+</tr>
+<tr>
+<td>Palantir Q3營收年增96%，單季突破20億美元</td>
+<td>Verified</td>
+<td><a href="https://www.palantir.com/q3-2026-letter/en/">Palantir Q3 2026股東信</a>，2026-11-02</td>
+<td>公司公布約23億美元、年增96%；美國商業收入9.84億美元、年增148%，季增29%，與全公司季增不同。</td>
+</tr>
+<tr>
+<td>Palantir全公司季增20%、連續13季加速</td>
+<td>Not verified（此輪範圍）</td>
+<td>股東信未直接提供足以完整重建的13季序列</td>
+<td>需歷季IR數據／簡報，不能以美國商業季增29%替代全公司數字。</td>
+</tr>
+<tr>
+<td>L3Harris與Palantir有實際AI整合合作</td>
+<td>Verified</td>
+<td><a href="https://www.l3harris.com/newsroom/editorial/2025/12/palantir-and-l3harris-reindustrializing-defense-through-ai-powered">L3Harris官方：AI-powered production</a></td>
+<td>官方列出Warp Speed、供應鏈及製造工作流案例；支持整合落地，但不能直接證明整體產業獲利。</td>
+</tr>
+<tr>
+<td>L3Harris微調模型48小時超越前沿模型，成本降低95%</td>
+<td>Partially supported</td>
+<td>合作關係已確認；本輪所讀官方文章未提供該基準測試</td>
+<td>保留為節目引用案例，待原始簡報／訪談。需測試任務、品質門檻、推論或總成本口徑，不能外推為所有任務都省95%。</td>
+</tr>
+<tr>
+<td>300億參數小模型在專用任務勝過超大模型；特定前沿模型有3兆參數</td>
+<td>Needs exact transcript / Not verified</td>
+<td>來源摘要的技術比較，不是公開模型規格證據</td>
+<td>不把參數量、模型名稱或硬體適用性當已核實事實；小模型專用任務優勢不等於通用能力領先。</td>
+</tr>
+<tr>
+<td>SI及Edge Device會成為新投資題材</td>
+<td>Source-supported only</td>
+<td>節目主題；未有特定SI公司訂單或獲利數據</td>
+<td>研究假說而非已實現財務成果。要驗證收入認列、維護費、毛利與競爭。</td>
+</tr>
+<tr>
+<td>台積電「假設明年EPS 145元，乘12倍」的壓力情境</td>
+<td>Source-supported only（情境）；Not verified（EPS預估）</td>
+<td>官方音檔ASR約2130–2180秒；非公司財測</td>
+<td>主持人用歷史低估值作情境示例，不是目標價或保證會跌到。算術145×12=1740元；口語約1700–1800元。不得把假設EPS當作公司已公布數字，也不得直接套用到ADR美元價格。</td>
+</tr>
+<tr>
+<td>下影線放量與壞消息不跌代表市場已見底</td>
+<td>Not verified</td>
+<td>盤勢判讀／作者心得</td>
+<td>可作觀察條件，不是底部保證；沒有特定指數、時間與成交數據就不做回測結論。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-9">Open verification queue / 待查清單</h2>
+<ol>
+<li>AMD法說逐字稿：消費端下季20%降幅的精確分項、資料中心季增數字。</li>
+<li>Palantir歷季IR序列：全公司季增與「連續13季加速」口徑。</li>
+<li>L3Harris原始模型測試：48小時、95%成本下降的分母、比較模型與部署範圍。</li>
+<li>模型／裝置名稱與參數數量逐字核對；未確認前不建立硬體出貨預測。</li>
+<li>若後續評估估值，另記錄價格日期、完全稀釋股數、現金／負債與預估期間。</li>
+</ol>
+<h2 id="section-10">Bottom line / 查證結論</h2>
+<p>AMD與Palantir的強勁營收成長有公司公告支持，但成長並不自動推出股票便宜。AMD必須區分GAAP與non-GAAP毛利率、CPU與GPU的部門貢獻；SI／小模型／邊緣AI仍是需要訂單與經濟效益驗證的研究方向。</p>
+<h1>EP711 追蹤計畫</h1>
+<p>以下是研究者的觀察框架，不是主持人交易指令，也不是價格目標。</p>
+<h2 id="section-11">Watchlist buckets / 觀察清單分組</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>分組</th>
+<th>公司／主題</th>
+<th>研究焦點</th>
+<th>不應混淆的事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本面可量化</td>
+<td>AMD</td>
+<td>EPYC與Instinct的需求、資料中心營收、毛利與產品組合</td>
+<td>資料中心收入不等於CPU收入；GAAP不等於non-GAAP。</td>
+</tr>
+<tr>
+<td>高成長但估值敏感</td>
+<td>Palantir（PLTR）</td>
+<td>美國商業成長、合約轉收入、現金流與估值要求</td>
+<td>好公司與任何價格都值得買是兩回事。</td>
+</tr>
+<tr>
+<td>客戶導入案例</td>
+<td>L3Harris（LHX）</td>
+<td>AI在製造／供應鏈的實際收益與可複製性</td>
+<td>客戶採用AI不等於其股票是純AI供應商。</td>
+</tr>
+<tr>
+<td>題材待選股</td>
+<td>系統整合（SI）、主權AI、Edge Device</td>
+<td>合約、維護收入、客戶資料控制、資安責任與總持有成本</td>
+<td>本集題材不自動映射到任一資服或硬體公司。</td>
+</tr>
+<tr>
+<td>風控觀察</td>
+<td>指數、融資與市場廣度</td>
+<td>放量下影線後的延續性、融資收縮、反彈廣度</td>
+<td>不把一次反彈當作底部確認。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-12">Event triggers / 事件觸發條件</h2>
+<div aria-label="可水平捲動的研究表格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>假說</th>
+<th>支持訊號</th>
+<th>反證／降級條件</th>
+<th>下一步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>企業AI落地由模型轉向資料／工作流整合</td>
+<td>可核實生產環境訂單、續約與維護收入、客戶量化ROI</td>
+<td>專案僅停留PoC、低毛利人力外包、資安責任成本侵蝕獲利</td>
+<td>逐家公司查訂單轉收入與毛利，不以題材名稱選股。</td>
+</tr>
+<tr>
+<td>專用小模型有成本優勢</td>
+<td>同任務、同品質門檻、完整部署成本比較勝出</td>
+<td>遷移／維護成本抵銷推論節省，品質或可靠性不足</td>
+<td>對L3Harris案例補齊原始測試方法。</td>
+</tr>
+<tr>
+<td>AMD資料中心可抵銷消費端波動</td>
+<td>指引落地、EPYC與Instinct持續採用、毛利與營業槓桿改善</td>
+<td>出貨／平台爬坡低於預期、毛利下修、客戶集中風險放大</td>
+<td>下次財報逐項比較公司指引與實績。</td>
+</tr>
+<tr>
+<td>PLTR高速成長可支撐部分估值溢價</td>
+<td>收入／現金流增長延續，商業拓展不犧牲單位經濟</td>
+<td>成長減速但倍數維持高位、合約轉換低於預期</td>
+<td>建立不同成長率與倍數情境；未取得同時點估值前不下結論。</td>
+</tr>
+<tr>
+<td>恐慌後市場回穩</td>
+<td>下影線後不再破低、廣度改善、融資風險降低</td>
+<td>反彈量價背離或再次放量破低</td>
+<td>以一致指數／時間區間記錄訊號，不追認底部。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-13">Current stance / 目前判斷</h2>
+<p>優先研究「已能對上官方財務數字」的AMD及Palantir；對SI／Edge題材保持觀察，等待收入與成本證據。沒有同時點估值、投資期限與風險預算，就不給買賣結論。筆記作者的加碼反彈操作不是本研究的執行建議。</p>
+<h2 id="section-14">Parking lot / 暫停追蹤</h2>
+<ul>
+<li>未核對的超大模型參數量、硬體可以運行何種模型等精確規格。</li>
+<li>沒有指名公司／訂單證據的資服受惠名單。</li>
+<li>「已經見底」及政治消息單因解釋股價的確定性說法。</li>
+</ul><footer>研究整理：雙雙 🦞🌱 · 資料截至2026-11-08。<br><a href="https://weitingslobster-max.github.io/shuangshuang-gooaye-notes/">← 回到股癌投資筆記索引</a></footer></main></body></html>
